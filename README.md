@@ -7,13 +7,13 @@ This patch aims to combine the efforts of the ps3 voice patch and the ps3 sprite
 
 # Installing the patch
 
-> [Check our wiki](https://github.com/07th-mod/guide/wiki/Higurashi-Getting-started).
+> [Check our wiki](https://07th-mod.com/wiki/).
 
 # Releases
 
 https://github.com/07th-mod/watanagashi/releases/
 
-This repository is in constant change. Sometimes new releases might get on hold until there is enough content to push a new patch. If the latest patch have a bug that seems to be already fixed in the repository, try downloading the master file. The master file will always have the latest files, regardless of the current release being outdated or not.
+This repository is in constant change. Sometimes new releases might get on hold until there is enough content to push a new patch. If the latest patch has a bug that seems to be already fixed in the repository, try downloading the master file. The master file will always have the latest files, regardless of the current release being outdated or not.
 
 
 # Known issues
