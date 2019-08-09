@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 //１１■スクラップ帳よりⅩⅠ
@@ -23,7 +23,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "＜双子の忌避について＞",
-		   NULL, "<The Problem With Twins>", Line_Normal);
+		   NULL, "Le problème des jumelles", Line_Normal);
 	ClearMessage();
 
 	SetStyleOfMessageSwinging( 0 );
@@ -32,14 +32,14 @@ void main()
 //　雛見沢に限ったことではないのだろうが、とりわけ、鬼ヶ淵村の御三家は当主跡継ぎに双子が生まれることを嫌った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢に限ったことではないのだろうが、とりわけ、鬼ヶ淵村の御三家は当主跡継ぎに双子が生まれることを嫌った。",
-		   NULL, "This is not limited to just Hinamizawa, but in Onigafuchi Village especially, the Three Families detested giving birth to twins as successors.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pense que c'est un problème qui n'est pas unique à Hinamizawa, mais l'on comprend aisément que la naissance de jumeaux ou de jumelles à la succession du clan n'était jamais bon signe.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　御三家の微妙なバランスの上に成り立った長期独裁体制が、お家騒動などの内紛で瓦解することを恐れたのだろう￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　御三家の微妙なバランスの上に成り立った長期独裁体制が、お家騒動などの内紛で瓦解することを恐れたのだろう。",
-		   NULL, "The long-term dictatorship built on the precarious balance of the Three Families must have feared collapsing under the weight of internal strife from things like family quarrels.", Line_Normal);
+		   NULL, "Le pouvoir était réparti en un équilibre fragile entre les trois clans fondateurs, et ce genre d'anomalie était un risque réel d'instabilité politique.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -47,14 +47,14 @@ void main()
 //　文献には、双子が生まれたなら直ちに間引くべしとまで記されている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　文献には、双子が生まれたなら直ちに間引くべしとまで記されている。",
-		   NULL, "According to the literature, if twins were born, then they had to be culled.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans certaines sources, il est même carrément écrit de tuer le second-né dès la sortie du ventre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　それを思うと、園崎家の当主跡継ぎである園崎魅音と詩音の双子がこの世に生を受けていること自体、興味深いと言わざるを得ない。（現当主お魎の情けだろうか？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを思うと、園崎家の当主跡継ぎである園崎魅音と詩音の双子がこの世に生を受けていること自体、興味深いと言わざるを得ない。（現当主お魎の情けだろうか？）",
-		   NULL, "With that, the very fact that both the Sonozaki family successor, Mion Sonozaki, and her twin, Shion, are alive is in itself deeply interesting. (Perhaps the current leader, Oryou, is sympathetic?)", Line_Normal);
+		   NULL, "Si l'on se réfère à cet usage, le simple fait que Shion Sonozaki ait survécu est déjà en soi une exception très intéressante. (Se pourrait-il qu'Oryô Sonozaki n'ait pas eu le cœur de tuer l'enfant ?)", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -62,26 +62,26 @@ void main()
 //　もっとも、この双子は公平には扱われず、跡継ぎの魅音は別格の扱いを受けているそうだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もっとも、この双子は公平には扱われず、跡継ぎの魅音は別格の扱いを受けているそうだ。",
-		   NULL, "Of course, the twins were not cared for equally, and as the heir, Mion received special treatment.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De toute manière, les jumelles ne furent pas traitées avec équité. L'héritière, Mion, a depuis toujours obtenu un traitement de faveur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //（聞くところでは、魅音と詩音は酷似した外見を持ちながらも、才能のほとんどは魅音が持つと聞く＠...私の知る両者のイメージではそんな偏りは感じられない。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（聞くところでは、魅音と詩音は酷似した外見を持ちながらも、才能のほとんどは魅音が持つと聞く。",
-		   NULL, "(From what I've heard, despite the two of them looking exactly the same on the outside, the talent lies solely with Mion.", Line_WaitForInput);
+		   NULL, "(J'ai entendu dire que malgré leurs apparences si similaires qu'il était impossible de les différencier à l'œil nu, il semblerait que Mion eût hérité de tous les talents naturels.", Line_WaitForInput);
 	OutputLine(NULL, "…私の知る両者のイメージではそんな偏りは感じられない。）",
-		   NULL, " ...My own observations of the two of them don't leave me with that impression).", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je dois avouer pour ma part ne jamais avoir eu cette impression.)", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　伝承では、園崎家の当主は「鬼を継ぐ」と称して、背中に立派な鬼の刺青を彫るという＠しきたりに従い、魅音にはこの刺青が入れられている可能性が極めて高い￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　伝承では、園崎家の当主は「鬼を継ぐ」と称して、背中に立派な鬼の刺青を彫るという。",
-		   NULL, "Tradition dictates that the leader of the Sonozaki family is said to 'inherit a demon,' and they tattoo a magnificent one onto his or her back. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans la tradition, le successeur du clan “hérite du démon” et se voit tatouer un démon géant dans le dos en signe de son futur rôle au sein du clan. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "しきたりに従い、魅音にはこの刺青が入れられている可能性が極めて高い。",
-		   NULL, "In accordance with the tradition, there is an extremely high possibility that Mion has such a tattoo on her back.", Line_Normal);
+		   NULL, "Il est donc extrêmement probable que Mion ait un tatouage énorme dans le dos.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -89,21 +89,21 @@ void main()
 //　伝え聞く話では、現当主お魎の背中にも、それはそれは立派な鬼の刺青が入れられているそうである＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　伝え聞く話では、現当主お魎の背中にも、それはそれは立派な鬼の刺青が入れられているそうである。",
-		   NULL, "From what I've heard, there is apparently a magnificent demon tattooed on Oryou's back as well.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On dit qu'Oryô s'est fait tatouer un ogre énorme et magnifique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　では...跡継ぎの魅音には一体、どんな刺青が彫られているのだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　では…跡継ぎの魅音には一体、どんな刺青が彫られているのだろう。",
-		   NULL, "Then... I wonder what sort of tattoo belongs to the heir, Mion.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je me demande bien quel motif se trouve maintenant sur Mion Sonozaki.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　......魅音の背中に興味が湧く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……魅音の背中に興味が湧く。",
-		   NULL, "...I really want to see her back.", Line_Normal);
+		   NULL, "Je paierais une fortune pour voir son dos.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );

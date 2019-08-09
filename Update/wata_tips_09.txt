@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 //７■スクラップ帳よりⅢ
@@ -22,7 +22,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "＜儀式の祭具について＞",
-		   NULL, "<Implements Used For the Ritual>", Line_Normal);
+		   NULL, "Les reliques sacrées des cérémonies", Line_Normal);
 	ClearMessage();
 
 
@@ -32,14 +32,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　古代の宗教儀式に用いられた儀式道具は「祭具」と呼ばれ、その一部が今日も古手神社や御三家の蔵に祀られている。",
-		   NULL, "Ritual tools utilized for ancient religious ceremonies are commonly referred to as 'implements' or 'ritual implements,' and even now, some of them are enshrined on the property of Furude Shrine and the Three Families.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les objets utilisés lors des rituels sacrés sont communément appelés “reliques”, et une partie de ces objets est aujourd'hui vénérée au temple Furude, ou conservée précieusement dans les maisons des trois clans fondateurs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　だが、それらの確認できる「祭具」はいずれも装飾的なものばかりで、鬼ヶ淵村の暗部を司る儀式に使用されたと思われるものは何一つない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、それらの確認できる「祭具」はいずれも装飾的なものばかりで、鬼ヶ淵村の暗部を司る儀式に使用されたと思われるものは何一つない。",
-		   NULL, "However, the identifiable tools are all decorative, and none appear to have been used in rituals governing the dark side of Onigafuchi Village.", Line_Normal);
+		   NULL, "Mais toutes ces reliques ne sont que des apparâts, et aucune d'entre elle n'a probablement pu servir lors des rituels macabres dédiés aux sacrifices.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -47,30 +47,30 @@ void main()
 //　幕末から明治にかけ、数々の伝統儀式が喪失した際にそれらも紛失＠もしくは闇に葬られてしまったのだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　幕末から明治にかけ、数々の伝統儀式が喪失した際にそれらも紛失、",
-		   NULL, "As the Edo era came to a close and many traditional rituals were lost, were they lost as well,", Line_WaitForInput);
+		   NULL, "Pendant la période entre la fin de l'isolement du territoire et la restauration de Meiji, de nombreuses légendes furent perdues, de nombreux objets de culte, volés ou détruits.", Line_WaitForInput);
 	OutputLine(NULL, "もしくは闇に葬られてしまったのだろうか？",
-		   NULL, " or perhaps buried in the darkness?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Serait-ce le cas ici aussi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　私はそうは思わない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私はそうは思わない。",
-		   NULL, "I don't believe so.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "À vrai dire, je ne le pense pas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　鬼隠しの夜の宴に使った「祭具」も、生贄の儀式に使った「祭具」も、人知れずそれらは祀られ、現存しているに違いない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼隠しの夜の宴に使った「祭具」も、生贄の儀式に使った「祭具」も、人知れずそれらは祀られ、現存しているに違いない。",
-		   NULL, "Both the implements used on the night of the feast of Onikakushi and those used during the sacrificial ceremony must still exist, enshrined away from the eyes of the masses.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les reliques utilisées pendant la nuit de fête dédiée à l'enlèvement des démons et celles utilisées pendant le sacrifice sont forcément conservées dans le plus grand secret.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　それは紛れもなくこの雛見沢に、今日この瞬間にも実在しているのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは紛れもなくこの雛見沢に、今日この瞬間にも実在しているのだ。",
-		   NULL, "Without a doubt, they exist here, today, at this very moment, in Hinamizawa.", Line_Normal);
+		   NULL, "Il est certain qu'elles existent encore aujourd'hui, et qu'elles se trouvent à Hinamizawa.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -78,23 +78,23 @@ void main()
 //　それがどこに祀られているか、九分見当はついている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それがどこに祀られているか、九分見当はついている。",
-		   NULL, "Also, I'm nearly certain where they've been enshrined.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "D'ailleurs, je pense savoir où les reliques se trouvent.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　これまでは堅牢だった施錠が、今年からどういうわけか低廉な安っぽい南京錠に変わったのだ＠あの程度の錠前なら、彼なら何とかできるかもしれない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これまでは堅牢だった施錠が、今年からどういうわけか低廉な安っぽい南京錠に変わったのだ。",
-		   NULL, "What was once locked steadfastly has, for some reason, changed this year to a cheap-looking padlock.", Line_WaitForInput);
+		   NULL, "La porte du bâtiment était fermée par un mécanisme de serrure très lourd, mais pour une raison qui m'échappe, il a été remplacé par un vulgaire cadenas.", Line_WaitForInput);
 	OutputLine(NULL, "あの程度の錠前なら、彼なら何とかできるかもしれない。",
-		   NULL, " He may be able to do something about such a lock.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il devrait pouvoir le forcer et me faire pénétrer dans ce bâtiment sans problème.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　だが、集会所が遠くないということもあり、常に人の気配の絶えない場所でもある￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、集会所が遠くないということもあり、常に人の気配の絶えない場所でもある。",
-		   NULL, "However, it is not far from the assembly hall, nor is it ever far from the presence of people.", Line_Normal);
+		   NULL, "La seule chose, c'est que la salle de réunion est située non loin de là et que quelqu'un pourrait m'entendre.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -102,7 +102,7 @@ void main()
 //　だが私は諦めない。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが私は諦めない。",
-		   NULL, "However, I will not give up.", Line_ContinueAfterTyping);
+		   NULL, "Mais je n'ai pas l'intention d'abandonner.", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_024", 56, 64 );
 
@@ -114,21 +114,21 @@ void main()
 //　…雛見沢中の全ての村人の死角となる夜が、もうすぐやって来る＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…雛見沢中の全ての村人の死角となる夜が、もうすぐやって来る。",
-		   NULL, "...The night when it becomes a blind spot to every villager in Hinamizawa is coming soon.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bientôt, j'aurais ma chance : une nuit où tous les habitants du village seront occupés ailleurs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　もうすぐ、!w800綿流し￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もうすぐ、",
-		   NULL, "Soon, it will be", Line_ContinueAfterTyping);
+		   NULL, "La nuit de la purification du coton.", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+//	SetValidityOfInput( FALSE );
+//	Wait( 1000 );
+//	SetValidityOfInput( TRUE );
 
-	OutputLine(NULL, "綿流し。",
-		   NULL, " Watanagashi.", Line_Normal);
+//	OutputLine(NULL, "綿流し。",
+//		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );

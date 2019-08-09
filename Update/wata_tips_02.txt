@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 //２■詩音って本当にいるの？
@@ -18,9 +18,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400027", 256, TRUE);
 	OutputLine(NULL, "「は？",
-		   NULL, "\"Huh?", Line_Continue);
+		   NULL, "— Pardon ?", Line_Continue);
 	OutputLine(NULL, "　魅音さんの家族？」",
-		   NULL, " Mion-san's family?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Vous voulez en savoir plus sur la famille proche de Mion ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -29,18 +29,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100057", 256, TRUE);
 	OutputLine(NULL, "「あぁ。",
-		   NULL, "\"Yeah.", Line_Continue);
+		   NULL, "— Oui.", Line_Continue);
 	OutputLine(NULL, "もっと平たく言えば、あいつに兄弟とかいないのかなーって思ってさ。」",
-		   NULL, " More broadly, I was just wondering if she had any brothers or anything.\"", Line_Normal);
+		   NULL, " Je sais pas, je me demandais tout bêtement si elle avait des frères et sœurs.", Line_Normal);
 	ClearMessage();
 
 
 //　詩音という双子の妹は実在するのかなと思い＠...好奇心に負け、こっそり沙都子に聞いてみた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音という双子の妹は実在するのかなと思い、",
-		   NULL, "I was actually wondering whether her younger twin sister named Shion really existed,", Line_WaitForInput);
-	OutputLine(NULL, "…好奇心に負け、こっそり沙都子に聞いてみた。",
-		   NULL, " and my curiosity got the better of me, so I quietly asked Satoko about it.", Line_Normal);
+		   NULL, "J'avais passé un fameux moment à me demander si elle avait vraiment une sœur jumelle du nom de Shion, et, la curiosité ayant pris le dessus, j'avais demandé en secret à Satoko de me renseigner là-dessus.", Line_WaitForInput);
+//	OutputLine(NULL, "…好奇心に負け、こっそり沙都子に聞いてみた。",
+//		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -50,17 +50,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400028", 256, TRUE);
 	OutputLine(NULL, "「…う〜ん。",
-		   NULL, "\"...Hmmm.", Line_Continue);
+		   NULL, "— Eh bien...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…どうなんでございましょうねぇ…。",
-		   NULL, " ...I wonder...", Line_WaitForInput);
+		   NULL, " Je ne sais pas trop, je dois dire.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400029", 256, TRUE);
 	OutputLine(NULL, "いるやらいないやら…。」",
-		   NULL, " She might, she might not...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Peut-être bien, mais peut-être pas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -68,7 +68,7 @@ void main()
 //　何だか歯切れが悪い＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何だか歯切れが悪い。",
-		   NULL, "She wasn't being very clear about it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle avait l'air réticente à en parler.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -76,14 +76,14 @@ void main()
 //　...沙都子は魅音の家に何度か遊びに行ったことはないのかな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…沙都子は魅音の家に何度か遊びに行ったことはないのかな？",
-		   NULL, "...Had Satoko never gone over to Mion's house to play?", Line_Normal);
+		   NULL, "Si ça se trouve, elle n'a peut-être jamais été chez Mion ?", Line_Normal);
 	ClearMessage();
 
 //「その反応からすると、...会ったことがないみたいだな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100058", 256, TRUE);
 	OutputLine(NULL, "「その反応からすると、…会ったことがないみたいだな。」",
-		   NULL, "\"From your reaction... I guess you've never met any.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Hmm, d'après ta réaction, je pense pouvoir affirmer que tu ne les as jamais rencontrés, n'est-ce pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -94,9 +94,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400030", 256, TRUE);
 	OutputLine(NULL, "「えぇ。",
-		   NULL, "\"Yes.", Line_Continue);
+		   NULL, "— C'est exact.", Line_Continue);
 	OutputLine(NULL, "お婆さん以外にはありませんですわ。」",
-		   NULL, " I've never seen any of her relatives except for her grandmother.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " J'ai eu l'occasion de parler à sa grand-mère, mais c'est tout.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -104,7 +104,7 @@ void main()
 //　この反応を見る限り、...詩音実在説には早くも暗雲だな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この反応を見る限り、…詩音実在説には早くも暗雲だな。",
-		   NULL, "As far as I could tell... there were already dark clouds over the \"Shion is real\" theory.", Line_Normal);
+		   NULL, "Je restai à la contempler pensivement. Sa réponse n'apportait aucune lumière sur l'existence avérée de Shion.", Line_Normal);
 	ClearMessage();
 
 
@@ -112,9 +112,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400031", 256, TRUE);
 	OutputLine(NULL, "「そういうのは梨花が詳しいですわよ。",
-		   NULL, "\"Rika would know more than I.", Line_Continue);
+		   NULL, "— Rika est très au courant de ce genre de choses.", Line_Continue);
 	OutputLine(NULL, "梨花に聞いて御覧なさいですわ。」",
-		   NULL, " You would do well to ask her.\"", Line_Normal);
+		   NULL, " Demandez-lui donc ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 5, "sprite/normal/ri1_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
@@ -123,7 +123,7 @@ void main()
 //　沙都子が日向ぼっこをしている梨花ちゃんに手を振る￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子が日向ぼっこをしている梨花ちゃんに手を振る。",
-		   NULL, "Satoko waved to Rika-chan, who was basking in the sunlight.", Line_Normal);
+		   NULL, "Rika se prélassait paresseusement au soleil. Satoko fit de grands signes en sa direction pour attirer son attention.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacterWithFiltering(3, 4, "sprite/normal/sa1a_def_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -132,9 +132,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400032", 256, TRUE);
 	OutputLine(NULL, "「梨花ぁ。",
-		   NULL, "\"Rika!", Line_Continue);
+		   NULL, "— Rika ?", Line_Continue);
 	OutputLine(NULL, "魅音さんのご家族のことをご存知ですの？」",
-		   NULL, " Do you know anything about Mion-san's family?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ma chère, connaissez-vous bien les membres de la famille Sonozaki ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -142,7 +142,7 @@ void main()
 //　突然な質問に梨花ちゃんはきょとんとする￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　突然な質問に梨花ちゃんはきょとんとする。",
-		   NULL, "Rika-chan was surprised at the sudden question.", Line_Normal);
+		   NULL, "Rika cligna des yeux plusieurs fois, clairement surprise par l'énoncé de la question.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -152,7 +152,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500019", 256, TRUE);
 	OutputLine(NULL, "「……魅ぃには家族や親戚がいっぱいいますですから、全部はなかなかわからないのですよ。」",
-		   NULL, "\"......Mii has a big family, so I don't really know everything about them.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Mii a beaucoup de cousins, d'oncles et autres. Je ne suis pas sûre de les connaître tous.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -161,18 +161,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100059", 256, TRUE);
 	OutputLine(NULL, "「そんなにたくさんいるのか…。",
-		   NULL, "\"That many, huh...?", Line_WaitForInput);
+		   NULL, "— Il y en a tellement que ça ?", Line_WaitForInput);
 	OutputLine(NULL, "例えばさ、",
-		   NULL, " For example...", Line_WaitForInput);
+		   NULL, " C'est ennuyeux...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100060", 256, TRUE);
 	OutputLine(NULL, "…うーん、",
-		   NULL, " ...Hmm.", Line_WaitForInput);
+		   NULL, " Hmmmmm....", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100061", 256, TRUE);
 	OutputLine(NULL, "園崎詩音ってヤツはいるのか？",
-		   NULL, " Is there someone named Shion Sonozaki?", Line_WaitForInput);
+		   NULL, " Tu sais s'il y a une certaine Shion Sonozaki ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100062", 256, TRUE);
 	OutputLine(NULL, "　えーと、その、…聞き間違いかもしれないから、ひょっとすると実在しないかもしれないんだけど…。」",
-		   NULL, " Umm, well... I might have heard wrong, so she might not actually exist, but...\"", Line_Normal);
+		   NULL, " Il me semble avoir entendu ce nom, mais mes oreilles ne sont pas les plus propres. Si ça se trouve, j'ai mal entendu et elle n'existe pas, en fait.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 5, "sprite/normal/ri1_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -181,9 +181,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500020", 256, TRUE);
 	OutputLine(NULL, "「……詩ぃですか？",
-		   NULL, "\"......You mean Shii?", Line_Continue);
+		   NULL, "— Vous parlez de Shii ?", Line_Continue);
 	OutputLine(NULL, "　詩音はいますですよ。」",
-		   NULL, " Shion exists.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Si, si, il y a bien une Shion.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -191,7 +191,7 @@ void main()
 //　え＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　え？",
-		   NULL, "Huh?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quoi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -199,9 +199,9 @@ void main()
 //　これは意外だ＠実在したのか...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これは意外だ。",
-		   NULL, "That was unexpected.", Line_WaitForInput);
+		   NULL, "Alors ça ! Je ne m'y attendais pas.", Line_WaitForInput);
 	OutputLine(NULL, "実在したのか…！",
-		   NULL, " So she was real...!", Line_Normal);
+		   NULL, " Elle existe vraiment ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 4, "sprite/normal/sa1a_akuwarai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -210,12 +210,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400033", 256, TRUE);
 	OutputLine(NULL, "「ふ〜ん？",
-		   NULL, "\"Hmm?", Line_Continue);
+		   NULL, "— Tiens donc ?", Line_Continue);
 	OutputLine(NULL, "　よく似た名前ですのね。",
-		   NULL, " Their names are quite similar, you know.", Line_WaitForInput);
+		   NULL, " Ce prénom est très ressemblant.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400034", 256, TRUE);
 	OutputLine(NULL, "間違えて舌を噛んじゃいそうですわ。」",
-		   NULL, " I could get tongue-tied trying to tell the difference.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je parie que beaucoup de gens ont la langue qui fourche en voulant faire la différence entre l'une et l'autre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -224,21 +224,21 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500021", 256, TRUE);
 	OutputLine(NULL, "「……魅ぃの双子の妹さんだと聞いたことがありますですが、あまり会ったことはないのです。」",
-		   NULL, "\"......I've heard she's Mii's younger twin sister, but I haven't met her too many times.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Il me semble que c'est sa sœur jumelle cadette, mais je ne l'ai pas rencontrée souvent, je dois dire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　梨花ちゃんも知ってはいるが、あまり会ったことはないという￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんも知ってはいるが、あまり会ったことはないという。",
-		   NULL, "Rika-chan knew a bit about her as well, but hadn't seen her much.", Line_Normal);
+		   NULL, "Rika la connaît de nom, mais même elle ne semble pas savoir grand'chose sur elle.", Line_Normal);
 	ClearMessage();
 
 //「......何年か前に、法事の集まりがあった時に会ったような気がしますですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500022", 256, TRUE);
 	OutputLine(NULL, "「……何年か前に、法事の集まりがあった時に会ったような気がしますですよ。」",
-		   NULL, "\"......I think I met her once at a funeral a few years ago.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Il me semble l'avoir vue lors d'une réunion du conseil municipal il y a quelques années.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -247,7 +247,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100063", 256, TRUE);
 	OutputLine(NULL, "「このクラスにいないってことは、学校は興宮の方に通っているってわけかな。」",
-		   NULL, "\"She's not in this class, so maybe she goes to school in Okinomiya.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Elle n'est pas dans cette classe, donc je suppose qu'elle va à l'école à Okinomiya ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -258,9 +258,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400035", 256, TRUE);
 	OutputLine(NULL, "「お家も興宮なのかもしれませんわよ。",
-		   NULL, "\"She may live there, too.", Line_Continue);
+		   NULL, "— Peut-être même bien que c'est là qu'elle vit.", Line_Continue);
 	OutputLine(NULL, "だって、魅音さん自身、家族とは別でお婆さんと暮らしてるわけですから。」",
-		   NULL, " Mion-san herself lives apart from her family with her grandmother, after all.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je vous rappelle que notre chère Mion vit seule avec sa grand-mère à Hinamizawa, et que ses parents vivent, eux, à Okinomiya.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -268,11 +268,11 @@ void main()
 //　両親と別居してるのか＠　それは何だか変わってるな＠事情でもあるのかな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　両親と別居してるのか？",
-		   NULL, "She didn't live with her parents?", Line_WaitForInput);
+		   NULL, "Elle ne vit pas avec ses parents ?", Line_WaitForInput);
 	OutputLine(NULL, "　それは何だか変わってるな。",
-		   NULL, " That was a bit odd.", Line_WaitForInput);
+		   NULL, " C'est pas commun...", Line_WaitForInput);
 	OutputLine(NULL, "事情でもあるのかな？",
-		   NULL, " Was there something between them?", Line_Normal);
+		   NULL, " Il doit bien y avoir une raison, je suppose...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 5, "sprite/normal/ri1_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -281,7 +281,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500023", 256, TRUE);
 	OutputLine(NULL, "「……とてもややこしいお家なのです。」",
-		   NULL, "\"......It's a very complicated family.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Eh bien... Disons que c'est une famille un peu compliquée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -292,9 +292,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400036", 256, TRUE);
 	OutputLine(NULL, "「親類の数が多いらしいですから。",
-		   NULL, "\"She seems to have many relatives.", Line_Continue);
+		   NULL, "— Et puis, ils sont très nombreux.", Line_Continue);
 	OutputLine(NULL, "きっといろいろと都合があるに違いないのですわ。」",
-		   NULL, " There are doubtless many different circumstances.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ils doivent avoir tous un intérêt à se répartir de la sorte, je présume.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -302,7 +302,7 @@ void main()
 //　とりあえず詩音という双子の妹がいることだけはわかったが、その家族構成は、本人同様、なんともミステリアスなようだな...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　とりあえず詩音という双子の妹がいることだけはわかったが、その家族構成は、本人同様、なんともミステリアスなようだな…。",
-		   NULL, "For now, I learned that she had a younger twin sister named Shion, but her family structure, including her own position, still seemed very mysterious...", Line_Normal);
+		   NULL, "Ok, donc une chose est sûre, elle existe, mais elle et sa famille demeurent un mystère...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
@@ -312,9 +312,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300054", 256, TRUE);
 	OutputLine(NULL, "「お、３人揃って何の話だい？",
-		   NULL, "\"Oh, what are the three of you talking about?", Line_Continue);
+		   NULL, "— Tiens donc, c'est quoi ces cachotteries, vous trois ?", Line_Continue);
 	OutputLine(NULL, "　おじさんも混ぜてよー。」",
-		   NULL, " Let this old man in on it!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je peux m'incruster ? Alleeeez ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -326,9 +326,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400037", 256, TRUE);
 	OutputLine(NULL, "「あら、魅音さん、いいところへ〜！",
-		   NULL, "\"Oh, Mion-san, you've come at a good time~!", Line_Continue);
+		   NULL, "— Justement, vous tombez bien, ma chère !", Line_Continue);
 	OutputLine(NULL, "　魅音さんに双子の妹さんがいるってのは本当でございますのー？」",
-		   NULL, " Might it be true that you have a younger twin sister?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Est-ce donc vrai ? Vous avez une sœur jumelle ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -336,7 +336,7 @@ void main()
 //　あ、...魅音、...まずい...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あ、…魅音、…まずい…。",
-		   NULL, "Ah... Mion... crap...", Line_Normal);
+		   NULL, "Uh-oh... Ça le fait pas.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 3, "sprite/normal/me1a_odoroki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -345,7 +345,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300055", 256, TRUE);
 	OutputLine(NULL, "「…い、…妹…？！",
-		   NULL, "\"...A... a younger sister...!?", Line_WaitForInput);
+		   NULL, "— Une qu- une petite sœur ?", Line_WaitForInput);
 
 	DisableWindow();
 	ModDrawCharacter(3, 3, "sprite/normal/me1a_hau_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -353,14 +353,14 @@ void main()
 //　え、と.........、う、うん＠いるよ...。＠
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300056", 256, TRUE);
 	OutputLine(NULL, "　え、と………、う、うん。",
-		   NULL, " Um, well...... y-yeah.", Line_Continue);
+		   NULL, " Eh bien, euh... Oui, oui.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 2200 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "いるよ…。」",
-		   NULL, " I do...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " En effet.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -368,7 +368,7 @@ void main()
 //　魅音が柄にもなく赤面しながらうろたえる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音が柄にもなく赤面しながらうろたえる。",
-		   NULL, "Mion grew uncharacteristically red in the face, at a loss.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion se mit à rougir, apparemment bien embarrassée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -376,7 +376,7 @@ void main()
 //　...何となく俺の様子を伺っているような......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…何となく俺の様子を伺っているような……。",
-		   NULL, "...I think she's looking at me...", Line_Normal);
+		   NULL, "Je rêve pas, elle est en train de m'implorer du regard ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 4, "sprite/normal/sa1b_akuwarai_b1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -385,15 +385,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400038", 256, TRUE);
 	OutputLine(NULL, "「あら〜！",
-		   NULL, "\"Oh, my~!", Line_Continue);
+		   NULL, "— Tiens donc ?", Line_Continue);
 	OutputLine(NULL, "　それは知らなかったですわ〜！",
-		   NULL, " I had no idea~!", Line_WaitForInput);
+		   NULL, " Mais je ne le savais pas !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400039", 256, TRUE);
 	OutputLine(NULL, "　どんな方なのかしら。",
-		   NULL, " What kind of person might she be?", Line_WaitForInput);
+		   NULL, " Je me demande quelle prestance elle a.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400040", 256, TRUE);
 	OutputLine(NULL, "ぜひ一度お顔を見てみたいですわねー！！」",
-		   NULL, " I would very much like to meet her sometime!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " J'aimerais bien la rencontrer, si cela était possible.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -404,21 +404,21 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300057", 256, TRUE);
 	OutputLine(NULL, "「会わない方がいいよ！",
-		   NULL, "\"You shouldn't bother!", Line_Continue);
+		   NULL, "— Il, il, il vaut mieux pas !", Line_Continue);
 	OutputLine(NULL, "　ぜ、全然可愛くないし！",
-		   NULL, " Sh-She's not cute at all!", Line_WaitForInput);
+		   NULL, " Elle est, euh, elle est moche !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300058", 256, TRUE);
 	OutputLine(NULL, "　生意気だし！",
-		   NULL, " She's really conceited!", Line_WaitForInput);
+		   NULL, " Et puis très malpolie !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300059", 256, TRUE);
 	OutputLine(NULL, "　たまに電話で話すくらいで…私もしばらく会ってないし…！」",
-		   NULL, " Besides, other than talking to her on the phone once in a while... I haven't seen her for a long time, either...!\"", Line_Normal);
+		   NULL, " Je lui parle de temps en temps au téléphone, mais sans plus, je la vois presque jamais !", Line_Normal);
 	ClearMessage();
 
 //　......どうしてこんなに狼狽しながら話すんだか...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……どうしてこんなに狼狽しながら話すんだか…。",
-		   NULL, "...Why did it look like she was in such a panic...?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Eh bien alors, qu'est-ce qu'il lui prend ? Pas besoin de paniquer comme ça…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -426,20 +426,20 @@ void main()
 //　こんな様子じゃ、昨日の詩音は実は偽者でしたーって公言してるようなもんだぞ...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんな様子じゃ、昨日の詩音は実は偽者でしたーって公言してるようなもんだぞ…。",
-		   NULL, "It's like she was declaring that the Shion from yesterday was actually a fake...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est comme si elle admettait publiquement que Shion n'était qu'une fausse identité...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　とりあえず面白いのでしばらく放って置くことにする￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　とりあえず面白いのでしばらく放って置くことにする。",
-		   NULL, "Anyway, this was pretty funny, so I let it go for a little while longer.", Line_Normal);
+		   NULL, "Mais ça m'amuse de la voir psychoter comme ça, alors laissons-la un peu cuire dans son jus.", Line_Normal);
 	ClearMessage();
 
 //　...詩音という名のもうひとりの魅音＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…詩音という名のもうひとりの魅音。",
-		   NULL, "...Another Mion, under the name of Shion.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Shion, c'est donc une autre facette de sa personnalité...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -447,14 +447,14 @@ void main()
 //　...またあの店に行けば会えるのだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…またあの店に行けば会えるのだろうか？",
-		   NULL, "...Will I be able to see her if I go to that restaurant again?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je me demande si elle la montre toujours lorsqu'elle travaille dans ce café.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　魅音と同一人物であると知りながら、まるで新しい友人と知り合ったような、そんな不思議な感覚があった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音と同一人物であると知りながら、まるで新しい友人と知り合ったような、そんな不思議な感覚があった。",
-		   NULL, "I had a mysterious feeling, as if I'd made a new friend, despite knowing that she and Mion were the same person.", Line_Normal);
+		   NULL, "Ça me faisait bizarre. Je savais que Mion et Shion n'étaient qu'une seule et même personne, et pourtant, j'avais l'impression de m'être fait une nouvelle amie.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );

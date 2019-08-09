@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 
@@ -24,7 +24,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "＜生贄の儀式について＞",
-		   NULL, "<The Human Sacrifice Ritual>", Line_Normal);
+		   NULL, "La cérémonie du sacrifice", Line_Normal);
 	ClearMessage();
 
 	SetStyleOfMessageSwinging( 0 );
@@ -33,7 +33,7 @@ void main()
 //　生贄の儀式は、最もシンプルな溺死型で、神聖な沼である鬼ヶ淵沼に犠牲者を沈めることで成立した￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　生贄の儀式は、最もシンプルな溺死型で、神聖な沼である鬼ヶ淵沼に犠牲者を沈めることで成立した。",
-		   NULL, "The sacrificial ritual was a simple drowning, involving plunging sacrifices into Onigafuchi Swamp, which was considered hallowed.", Line_Normal);
+		   NULL, "Le rituel du sacrifice consistait très simplement à noyer une victime dans un marais considéré comme sacré pour la plonger symboliquement dans le marais des démons.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -41,7 +41,7 @@ void main()
 //　鬼ヶ淵村における儀式で特徴的なのは、犠牲者を三日三晩もの長い時間をかけてゆっくりと沈める点にある＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼ヶ淵村における儀式で特徴的なのは、犠牲者を三日三晩もの長い時間をかけてゆっくりと沈める点にある。",
-		   NULL, "Of the rituals of Onigafuchi Village, this one was unique in that the sacrifice would sink slowly over the long course of three days and three nights.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce qui rend la cérémonie particulière dans le rituel constaté dans le village ancestral d'Onigafuchi, c'est le fait que la victime mettait trois jours et trois nuits à être plongée dans les eaux du marais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -49,23 +49,23 @@ void main()
 //　犠牲者を沈めて「殺す」ことよりも＠「沈める（鎮める）」行為に重きが置かれていたと考えられる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　犠牲者を沈めて「殺す」ことよりも、",
-		   NULL, "I believe that it wasn't so much the killing of this sacrifice that was important,", Line_WaitForInput);
+		   NULL, "On pense que le point important de cette cérémonie n'était pas d'offrir une victime en sacrifice, mais de “plonger” (沈める) la victime pour “apaiser” (鎮める) la colère de la déesse,", Line_WaitForInput);
 	OutputLine(NULL, "「沈める（鎮める）」行為に重きが置かれていたと考えられる。",
-		   NULL, " but rather the symbolism of them sinking as the 'submerging' of Oyashiro-sama's anger.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " à cause de la prononciation exactement semblable des deux idéogrammes correspondants -- les croyants pensaient sûrement obtenir l'un en faisant l'autre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　その為、放って置けばあっという間に沈んでしまう犠牲者をいかに緩慢に沈めるかに、様々な工夫が凝らされたはずである＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その為、放って置けばあっという間に沈んでしまう犠牲者をいかに緩慢に沈めるかに、様々な工夫が凝らされたはずである。",
-		   NULL, "For that purpose, they must have had a passion for learning various methods for keeping the sacrifice from sinking too quickly—to force them to sink more slowly.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il est très vraisemblable que les villageois devaient user de nombreux artifices pour faire en sorte de ne pas laisser couler la victime directement au fond de l'eau.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　残念だが、その方法は知る限りの文献には載せられていない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　残念だが、その方法は知る限りの文献には載せられていない。",
-		   NULL, "Unfortunately, as far as I can tell from the records, those methods were not recorded.", Line_Normal);
+		   NULL, "Malheureusement, il n'existe aucun passage parmi les traces écrites connues relatives à ce village offrant une réponse à ce sujet.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -73,15 +73,15 @@ void main()
 //　私の想像では、丸太等で巨大なイカダを組み＠そこに処刑台を設え、縄で犠牲者を吊り上げ、時の刻みに合わせて少しずつ沼へ沈めていったのではないかと思う＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の想像では、丸太等で巨大なイカダを組み、",
-		   NULL, "My thoughts are that they may have used logs or some similar material to create a raft,", Line_WaitForInput);
+		   NULL, "On peut imaginer que les villageois construisaient un radeau géant sur lequel ils plaçaient un échafaud,", Line_WaitForInput);
 	OutputLine(NULL, "そこに処刑台を設え、縄で犠牲者を吊り上げ、時の刻みに合わせて少しずつ沼へ沈めていったのではないかと思う。",
-		   NULL, " then set up a scaffold on there, hung the sacrifice up with ropes, and let them sink little by little over time into the swamp.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " et qu'ils attachaient la victime dans un bassin flottant qui s'enfonçait peu à peu dans l'eau, avec un système de clepsydre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　だがそうだとするのならば、その儀式に使った「祭具」は神聖なものとして崇められ、どこかに祀られていてもおかしくない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だがそうだとするのならば、その儀式に使った「祭具」は神聖なものとして崇められ、どこかに祀られていてもおかしくない。",
-		   NULL, "However, if that were the case, it would not be strange if the 'ritual implements' used for such a ceremony were honored as holy and enshrined somewhere.", Line_Normal);
+		   NULL, "Mais si c'est le cas, il ne serait pas impensable de voir les habitants vouer un culte propre aux outils nécessaires à cette cérémonie.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );

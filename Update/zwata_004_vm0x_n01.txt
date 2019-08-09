@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -15,7 +15,7 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_01", 256, TRUE);
 	OutputLine(NULL, "「いや、お祭りの話は前に魅音たちからも聞いたけどさ。……確か梨花ちゃん、お祭りの実行委員なんだよな。それと関係あるのか？」",
-		   NULL, "\"You guys did tell me about the festival before. That's right, Rika-chan is on the festival comittee, isn't she? Does it have something to do with that?\"", Line_Normal);
+		   NULL, "— Vous m'avez déjà parlé du festival avant. C'est vrai, Rika fait partie du comité d'organisation, non ? Ça a un rapport avec ça ?", Line_Normal);
 
 
 	DisableWindow();
@@ -25,11 +25,11 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200081", 256, TRUE);
 	OutputLine(NULL, "「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね。",
-		   NULL, "\"Rika-chan is a shrine maiden for the Watanagashi, so she has to perform a ritual dance. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Rika est la prêtresse lors de la cérémonie de la purification du coton, alors elle doit faire une danse rituelle. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200082", 256, TRUE);
 	OutputLine(NULL, "その練習なの。」",
-		   NULL, "It's practice for that.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle s'entraîne à ça.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -37,17 +37,17 @@ void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言えば…お袋が夕飯の時、そんな話をしていたような気がする。",
-		   NULL, "Come to think of it, I have a feeling Mom did say something about it during dinner the other day.", Line_Normal);
+		   NULL, "Quoique ! Maintenant qu'elle le dit... Je crois que ma mère en a parlé à table hier soir.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "つまり梨花ちゃんがその巫女役をつとめるってことか。",
-		   NULL, " So, Rika-chan plays the part of a shrine maiden?", Line_Normal);
+		   NULL, " Donc, Rika joue le rôle d'une prêtresse ?", Line_Normal);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_02", 256, TRUE);
 	OutputLine(NULL, "「なるほどな。確か、布団とかどてらの供養だって言ってたよな。…じゃあ、あれか？　演舞か何かで、中に入ってる綿を取り出したりするのか？」",
-		   NULL, "\"I see, Mom did say that futons, padded cloaks and stuff are made as offerings. ...So, does that mean the cotten stuffing gets pulled out during a dance or something?\"", Line_Normal);
+		   NULL, "— Je vois, ma mère disait que des futons et tout le reste sont offerts en guise d'offrandes. Alors, ca veut dire qu'on retire le coton lors d'une danse ou un truc du genre ?", Line_Normal);
 }
 
 void dialog004()
@@ -55,17 +55,17 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 256, TRUE);
 	OutputLine(NULL, "「祭壇にもお布団を積み上げているし。",
-		   NULL, "\"They also pile futons up on the altar.", Line_WaitForInput);
+		   NULL, "— Tu verrais, on empile les futons juste devant l'autel du temple, il y a en a un paquet...", Line_WaitForInput);
 }
 
 void dialog005()
 {
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200083", 256, TRUE);
 	OutputLine(NULL, "綿流しはね、毎年６月の日曜日に神社でやるお祭りなの。",
-		   NULL, "The Watanagashi is a festival that happens at the shrine on a Sunday every June.", Line_WaitForInput);
+		   NULL, "La purification du coton, c'est une fête qui a lieu tous les ans pendant l'un des dimanche de juin, au sanctuaire.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200084", 256, TRUE);
 	OutputLine(NULL, "とってもにぎわうんだよ！」",
-		   NULL, "It's very lively!\"", Line_Normal);
+		   NULL, "Il y a plein de monde !", Line_Normal);
 //	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -74,52 +74,52 @@ void dialog005()
 //そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。",
-		   NULL, "Mion and Rena nodded back at me, looking a bit impressed.", Line_WaitForInput);
+		   NULL, "Mion et Rena acquiescèrent, un peu impressionnées.", Line_WaitForInput);
 
 //どうやら今度の想像は当たっていたようだ。kまぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、k……それだと流れも堰き止められるし、なにより後始末が大変だしな。
 	OutputLine(NULL, "どうやら今度の想像は当たっていたようだ。",
-		   NULL, " It seemed that my observations were on mark.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il semble que j'ai vu juste.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "まぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、",
-		   NULL, " Although, when I first heard about it, I imagined piling futons up in the swamp.", Line_WaitForInput);
+		   NULL, " Même si la première fois que j'en ai entendu parler, j'imaginais que ça consistait à empiler des futons sur l'eau.", Line_WaitForInput);
 	OutputLine(NULL, "……それだと流れも堰き止められるし、なにより後始末が大変だしな。",
-		   NULL, " ...but that'd block the river, and be a real pain to clear up after.", Line_Normal);
+		   NULL, " Mais ca aurait bloquée la rivière, c'est pas pratique du tout.", Line_Normal);
 
 //圭一「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。布団の供養っては初耳だな。どんな謂れがあるんだ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_03", 256, TRUE);
 	OutputLine(NULL, "「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
-		   NULL, "\"I've heard of people leaving offerings of things like needles or kitchen knives to their ancestors or to casualties of war...", Line_Continue);
+		   NULL, "— J'ai déjà entendu parler de cérémonies à la mémoire des ancêtres, ou celles des combattants morts à la guerre. J'ai vu des reportages sur des cérémonies pour les vieux couteaux ou les aiguilles,", Line_Continue);
 	OutputLine(NULL, "布団の供養っては初耳だな。",
-		   NULL, " But an offering of futons is a first for me.", Line_Continue);
+		   NULL, " mais une prière pour du coton ?", Line_Continue);
 	OutputLine(NULL, "どんな謂れがあるんだ？」",
-		   NULL, " What's the history behind that?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il y a une légende particulière par ici, pourquoi tant de ferveur religieuse ?", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog006()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquent</color>", NULL, Line_ContinueAfterTyping); }
 
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50006", 256, TRUE);
 	OutputLine(NULL, "「ンだこの女ぁあぁぁあぁああ！！！",
-		   NULL, "\"Ye fookin biiiiitch!!", Line_WaitForInput);
+		   NULL, "— Espèce de salope,", Line_WaitForInput);
 
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50007", 256, TRUE);
 	OutputLine(NULL, "　ッくぞンにゃろぉおおおぉおお！！」",
-		   NULL, " I'll fookin bash yer ead in!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " tu vas voir !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog007()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Femme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/womb50004", 256, TRUE);
 	OutputLine(NULL, "　はぁ…まったく！」",
-		   NULL, "*sigh*... honestly!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "… Sérieusement !", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
@@ -129,11 +129,11 @@ void dialog008()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600093", 256, TRUE);
 	OutputLine(NULL, "「それよりもさっきのあれ。",
-		   NULL, "\"More importantly, just now...", Line_WaitForInput);
+		   NULL, "— Mais dis-voir, je voulais te demander,", Line_WaitForInput);
 
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600094", 256, TRUE);
 	OutputLine(NULL, "……驚きましたか？」",
-		   NULL, " Were you surprised?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " tu as eu peur tout à l'heure ?", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
