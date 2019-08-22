@@ -123,6 +123,7 @@
 	OutputLine(NULL, "　もうすぐ、綿流し。",
 		   NULL, "La nuit de la purification du coton.", Line_Normal);
 	ClearMessage();
+
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
