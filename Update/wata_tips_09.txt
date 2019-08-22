@@ -120,15 +120,8 @@
 
 //　もうすぐ、!w800綿流し￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　もうすぐ、",
-		   NULL, "La nuit de la purification du coton.", Line_ContinueAfterTyping);
-
-//	SetValidityOfInput( FALSE );
-//	Wait( 1000 );
-//	SetValidityOfInput( TRUE );
-
-//	OutputLine(NULL, "綿流し。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　もうすぐ、綿流し。",
+		   NULL, "La nuit de la purification du coton.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );
