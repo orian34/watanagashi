@@ -4550,7 +4550,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200233", 256, TRUE);
 	OutputLine(NULL, "「途中退店無効」って〜！」",
-		   NULL, "'Not valid for re-entry,' see?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "“Nul si vous sortez”... vous comprenez maintenant ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -6128,7 +6128,7 @@
 //　そんな男の子みたいな話ばかり、か＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな男の子みたいな話ばかり、か。",
-		   NULL, "'Boyish kind of stories,' huh.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nos 400 coups, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -8260,7 +8260,7 @@
 //　『詩音』はそう言って、かわいらしく頬を膨らませた...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「詩音」はそう言って、かわいらしく頬を膨らませた…。",
-		   NULL, "'Shion,' saying that, pouted cutely...", Line_Normal);
+		   NULL, "Shion eut une petite moue boudeuse, gonflant ses joues dans une mimique adorable.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 3, "sprite/normal/me2_ikari_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );

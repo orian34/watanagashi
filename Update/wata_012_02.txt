@@ -230,21 +230,21 @@
 //「園崎家私有地につき立入厳禁！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「園崎家私有地につき立入厳禁！」",
-		   NULL, "'Private property of the Sonozaki family! Entrance forbidden!'", GetGlobalFlag(GLinemodeSp));
+		   NULL, "«  Propriété privée du clan des Sonozaki. Défense d'entrer. »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「毒ヘビ注意！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「毒ヘビ注意！」",
-		   NULL, "'Beware of venomous snakes!'", GetGlobalFlag(GLinemodeSp));
+		   NULL, "« Attention, serpents venimeux ! »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「監視カメラ作動中＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「監視カメラ作動中。",
-		   NULL, "'Active security cameras.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "« Cet endroit est sous surveillance caméra »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
