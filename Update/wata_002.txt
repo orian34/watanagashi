@@ -101,8 +101,8 @@
 	OutputLine(NULL, "「私さー、クラス委員長じゃなくて、水泳部の部長がいいんだよ。",
 		   NULL, "— Je préfèrerais être non pas déléguée de classe, mais plutôt directrice d'une banque.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300491", 256, TRUE);
-//	OutputLine(NULL, "いっぱい寝れるからー。」",
-//		   NULL, " A REMOVE experimental", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "いっぱい寝れるからー。」",
+		   NULL, " A REMOVE experimental", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -148,7 +148,7 @@
 	ModDrawCharacterWithFiltering(1, 22, "sprite/normal/tie_1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...お後がよろしいようで＠今日はこれくらいにしましょう＠委員長、号令。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s19/22/991400001", 256, TRUE);
 	OutputLine(NULL, "「…お後がよろしいようで。",
 		   NULL, "— Mais tu nous fais de l'humour de compétition, on dirait !", Line_WaitForInput);
@@ -323,7 +323,7 @@
 		   NULL, " Tu as même un fanclub pour te soutenir, maintenant ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200452", 256, TRUE);
 	OutputLine(NULL, "　応援してくれる人がいるんだね！　いるんだね！",
-		   NULL, " … J'aimerais bien que quelqu'un m'encourage aussi...", Line_WaitForInput);
+		   NULL, " ... J'aimerais bien que quelqu'un m'encourage aussi...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200453", 256, TRUE);
 	OutputLine(NULL, "　……レナにも応援してくれる人、いないかな。」",
 		   NULL, " Son expression rêveuse ne m'échappa pas.", GetGlobalFlag(GLinemodeSp));
@@ -1859,8 +1859,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　夏休みを想起させる涼やかなキーワード…。",
 		   NULL, "C'était impressionnant et instructif de voir ce que l'été signifait pour elles.", Line_WaitForInput);
-//	OutputLine(NULL, "実に心を豊かにさせてくれる。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "実に心を豊かにさせてくれる。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　みんなはじき訪れる夏休みに...たくさんの夢を思い描いているようだった...￥
@@ -1962,7 +1962,7 @@
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "………",
-		   NULL, " ...", Line_Continue);
+		   NULL, " …", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -2557,15 +2557,15 @@
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "俺は女…",
-//		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "俺は女…",
+		   NULL, " A REMOVE", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "俺は女……！！！",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "俺は女……！！！",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacterWithFiltering(2, 3, "sprite/normal/me1a_wink_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -4005,10 +4005,10 @@
 
 
 //　家はもうすぐなんだからな＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　家はもうすぐなんだからな。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　家はもうすぐなんだからな。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　......なるほど＠ゆえの死角というわけか￥
@@ -5022,8 +5022,8 @@
 
 //　魅音の頭の回路は恥ずかしさですっかりショートしてしまっているようだった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　魅音の頭の回路は恥ずかしさですっかりショートしてしまっているようだった。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　魅音の頭の回路は恥ずかしさですっかりショートしてしまっているようだった。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -5444,8 +5444,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…え？",
 		   NULL, "— Euh, pardon ?", Line_WaitForInput);
-//	OutputLine(NULL, "　と詩音が聞き直す。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　と詩音が聞き直す。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //「その制服、魅音なんかには絶対に似合わないと思うけど＠...詩音ちゃんにはよく似合ってると思うしさ。＠

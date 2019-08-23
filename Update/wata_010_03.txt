@@ -105,10 +105,10 @@
 		   NULL, "Elle ne décroche pas...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-//　... ... ...出ないッ！￥
+//　............出ないッ！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………出ないッ！！",
-		   NULL, "Elle ne décroche etujours pas !", Line_Normal);
+		   NULL, "Elle ne décroche toujours pas !", Line_Normal);
 	ClearMessage();
 
 //　たまたま聞こえないだけなのかもしれない＠
@@ -148,7 +148,7 @@
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…お手洗いとか…、",
-		   NULL, " Aux etilettes, peut-être…", Line_ContinueAfterTyping);
+		   NULL, " Aux toilettes, peut-être…", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
@@ -189,7 +189,7 @@
 //　そう思っている間にも、何度も何度も梨花ちゃんの家に電話をかけた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう思っている間にも、何度も何度も梨花ちゃんの家に電話をかけた。",
-		   NULL, "Pendant que j'échafaudais etutes ces théories, le téléphone sonnait, encore et encore.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pendant que j'échafaudais toutes ces théories, le téléphone sonnait, encore et encore.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　かけ続けた＠
@@ -238,7 +238,7 @@
 //　.................................￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………………………。",
-		   NULL, "............", Line_Normal);
+		   NULL, "... ... ...", Line_Normal);
 	ClearMessage();
 
 //　もうこんなことをしていてもしょうがない＠
@@ -310,7 +310,7 @@
 //　引き出しの中身を次々にぶちまけて行くが...梨花ちゃんの家の場所を知れる手がかりは見つからなかった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　引き出しの中身を次々にぶちまけて行くが…梨花ちゃんの家の場所を知れる手がかりは見つからなかった。",
-		   NULL, "Je sortis etut des tiroirs, mais je trouvai rien pour m'indiquer où elle habitait.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je sortis tout des tiroirs, mais je trouvai rien pour m'indiquer où elle habitait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　落ち着け前原圭一...＠
@@ -424,7 +424,7 @@
 		   NULL, " Reina ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/renf03005", 256, TRUE);
 	OutputLine(NULL, "友達から電話だぞ。」",
-		   NULL, " Un ami à eti au téléphone.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Un ami à toi au téléphone.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -480,7 +480,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100640", 256, TRUE);
 	OutputLine(NULL, "「…実は、その………梨花ちゃんの家がどこにあるのか知りたいんだ。」",
-		   NULL, "— Eh certain.n... en fait... il faut que je sache où habite Rika.", Line_Normal);
+		   NULL, "— Eh ben... en fait... il faut que je sache où habite Rika.", Line_Normal);
 	ClearMessage();
 
 //　レナは、こんな時間にかけてくる電話だから何かと思えば...とちょっと呆れたようだった＠
@@ -534,7 +534,7 @@
 		   NULL, " Désolé d'avoir appelé si tard.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100644", 256, TRUE);
 	OutputLine(NULL, "親父さんに謝っといてくれ。」",
-		   NULL, " Dis à etn père que je m'excuse.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Dis à ton père que je m'excuse.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -545,7 +545,7 @@
 		   NULL, "— T'en fais pas, c'est rien, Keiichi.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200146", 256, TRUE);
 	OutputLine(NULL, "それより、どうして梨花ちゃんの家を聞くのかな？」",
-		   NULL, " Dis-moi plutôt pourquoi tu as certain.soin de ça maintenant ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Dis-moi plutôt pourquoi tu as besoin de ça maintenant ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -568,7 +568,7 @@
 //　話シタカラ殺サレテシマッタ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　話シタカラ殺サレテシマッタ。",
-		   NULL, "<i>Le maire est mort parce que Shion lui a etut raconté.</i>", Line_Normal);
+		   NULL, "<i>Le maire est mort parce que Shion lui a tout raconté.</i>", Line_Normal);
 	ClearMessage();
 	PlayBGM( 1, "msys07", 56, 0 );
 
@@ -589,7 +589,7 @@
 //　レナはいつもの口調を装っているが、...言葉の裏に非常時を敏感に察した緊迫感がこもっていた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナはいつもの口調を装っているが、…言葉の裏に非常時を敏感に察した緊迫感がこもっていた。",
-		   NULL, "Elle tentait de me parler comme certainus les jours, mais je sentais une pointe de peur dans sa voix.", Line_Normal);
+		   NULL, "Elle tentait de me parler comme tous les jours, mais je sentais une pointe de peur dans sa voix.", Line_Normal);
 	ClearMessage();
 
 //　.........どうする、圭一＠
@@ -608,14 +608,14 @@
 //　知ッタカラ殺サレテシマッタ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　知ッタカラ殺サレテシマッタ。",
-		   NULL, "<i>Le maire est mort parce que Shion lui a etut raconté.</i>", GetGlobalFlag(GLinemodeSp));
+		   NULL, "<i>Le maire est mort parce que Shion lui a tout raconté.</i>", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　打チ明ケタカラ、......殺サレテシマッタ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　打チ明ケタカラ、……殺サレテシマッタ。",
-		   NULL, "<i>Le maire s'est fait tuer parce que Shion lui a sûrut avoué.</i>", Line_Normal);
+		   NULL, "<i>Le maire s'est fait tuer parce que Shion lui a tout avoué.</i>", Line_Normal);
 	ClearMessage();
 
 //「...圭一くん？＠　レナは真剣に聞いてるんだけどな＠答えて欲しいよ！＠
@@ -635,7 +635,7 @@
 //　レナが、普段からは想像もつかないような強い口調で再び聞いてきた＠...その気迫に驚かされる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナが、普段からは想像もつかないような強い口調で再び聞いてきた。",
-		   NULL, "Je fus surpris par le certainn brusque de sa voix.", Line_WaitForInput);
+		   NULL, "Je fus surpris par le ton brusque de sa voix.", Line_WaitForInput);
 	OutputLine(NULL, "…その気迫に驚かされる。",
 		   NULL, " Ce n'était pas du tout le même son de cloche que d'habitude...", Line_Normal);
 	ClearMessage();
@@ -820,7 +820,7 @@
 		   NULL, "— Désolée, question idiote.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200157", 256, TRUE);
 	OutputLine(NULL, "考えたら、確信なんか必要なかった。」",
-		   NULL, " Pas certain.soin de certitudes pour se faire du souci.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Pas besoin de certitudes pour se faire du souci.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -851,7 +851,7 @@
 		   NULL, "— Si tu veux simplement vérifier que tout va bien parce que tu te fais du souci,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200159", 256, TRUE);
 	OutputLine(NULL, "それを確かめるのに理由なんかいらないと思う。",
-		   NULL, " alors je n'ai pas vraiment certain.soin d'en savoir plus.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " alors je n'ai pas vraiment besoin d'en savoir plus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1116,7 +1116,7 @@
 //　...レナに家まで来てもらうことはないよな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…レナに家まで来てもらうことはないよな。",
-		   NULL, "Elle n'a pas certain.soin de venir jusque chez moi, ce serait faire de la route pour rien...", Line_Normal);
+		   NULL, "Elle n'a pas besoin de venir jusque chez moi, ce serait faire de la route pour rien...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/ma2", "left", 0, 0, 300 );
@@ -1569,9 +1569,9 @@
 
 
 //　...そしてそれに続いて、梨花ちゃんと沙都子までもが消えたなんて、冗談でも絶対に言えない￥
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…そしてそれに続いて、梨花ちゃんと沙都子までもが消えたなんて、冗談でも絶対に言えない。",
-//		   NULL, "A REMOVE", Line_Normal);
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そしてそれに続いて、梨花ちゃんと沙都子までもが消えたなんて、冗談でも絶対に言えない。",
+		   NULL, "A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacterWithFiltering(3, 2, "sprite/night/re2b_def_b1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -1840,7 +1840,7 @@
 //　...その背中をいくら見つめても、それらの疑問への答えが浮かぶことは決してなかった...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…その背中をいくら見つめても、それらの疑問への答えが浮かぶことは決してなかった…。",
-		   NULL, "Mais j'eus certain.au l'observer attentivement, son dos ne m'apporta aucune réponse...", Line_Normal);
+		   NULL, "Mais j'eus beau l'observer attentivement, son dos ne m'apporta aucune réponse...", Line_Normal);
 	ClearMessage();
 
 
@@ -2236,7 +2236,7 @@
 //　.........だが、そうはならない＠............まったく何の反応もない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………だが、そうはならない。",
-		   NULL, "Mais nous eûmes certain.au attendre, rien de tout cela n'arriva.", Line_WaitForInput);
+		   NULL, "Mais nous eûmes beau attendre, rien de tout cela n'arriva.", Line_WaitForInput);
 	OutputLine(NULL, "…………まったく何の反応もない。",
 		   NULL, " ... Absolument aucune réaction.", Line_Normal);
 	ClearMessage();
@@ -2802,14 +2802,14 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "な",
-		   NULL, " to", Line_Continue);
+		   NULL, " et", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "い",
-		   NULL, " be", Line_Continue);
+		   NULL, " certain.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -2830,14 +2830,14 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "な",
-		   NULL, " to", Line_Continue);
+		   NULL, " et", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "い",
-		   NULL, " be", Line_Continue);
+		   NULL, " certain.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -2858,14 +2858,14 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "な",
-		   NULL, " to", Line_Continue);
+		   NULL, " et", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "い",
-		   NULL, " be", Line_Continue);
+		   NULL, " certain.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -2886,14 +2886,14 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "な",
-		   NULL, " to", Line_Continue);
+		   NULL, " et", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "い",
-		   NULL, " be", Line_Continue);
+		   NULL, " certain.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -2914,14 +2914,14 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "な",
-		   NULL, " to", Line_Continue);
+		   NULL, " et", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "い",
-		   NULL, " be", Line_Continue);
+		   NULL, " certain.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -2942,14 +2942,14 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "な",
-		   NULL, " to", Line_Continue);
+		   NULL, " et", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "い",
-		   NULL, " be", Line_Continue);
+		   NULL, " certain.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -2970,14 +2970,14 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "な",
-		   NULL, " to", Line_Continue);
+		   NULL, " et", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "い",
-		   NULL, " be", Line_Continue);
+		   NULL, " certain.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -2998,7 +2998,7 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "な",
-		   NULL, " to", Line_Continue);
+		   NULL, " certain", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -3012,7 +3012,7 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "違",
-		   NULL, " to", Line_Continue);
+		   NULL, " et", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -3026,7 +3026,7 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "違",
-		   NULL, " to", Line_Continue);
+		   NULL, " sûr", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );
@@ -3040,7 +3040,7 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "違",
-		   NULL, " to", Line_Continue);
+		   NULL, " certain", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 5 );

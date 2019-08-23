@@ -201,7 +201,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//　... ... ......レナはいいヤツだと思った￥
+//　...............レナはいいヤツだと思った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………レナはいいヤツだと思った。",
 		   NULL, "... Elle est vraiment gentille, cette fille.", Line_Normal);
@@ -2427,10 +2427,10 @@
 
 
 //　詩音は所在不明なことが多いって＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　詩音は所在不明なことが多いって。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　詩音は所在不明なことが多いって。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　大石さんの知らない親類の家で今日まで過ごしてたってのは考えられることじゃないのか￥
@@ -3171,7 +3171,7 @@
 //　....................................￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………………………………。",
-		   NULL, "............", Line_Normal);
+		   NULL, "... ... ...", Line_Normal);
 	ClearMessage();
 
 //　......もしも、...俺が大石さんに何も知らされていなかったなら＠
@@ -3182,10 +3182,10 @@
 
 
 //　......俺はこの、詩音の気遣ってくれる言葉に薄い涙を浮かべることもできたかもしれない＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　……俺はこの、詩音の気遣ってくれる言葉に薄い涙を浮かべることもできたかもしれない。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……俺はこの、詩音の気遣ってくれる言葉に薄い涙を浮かべることもできたかもしれない。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　......だが、今となっては...その言葉をそのまま受け入れることは出来ない......＠
@@ -4278,10 +4278,10 @@
 
 
 //　電話で鷹野さんたちの死を知らされ、夕方の会合の約束をした＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　電話で鷹野さんたちの死を知らされ、夕方の会合の約束をした。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　電話で鷹野さんたちの死を知らされ、夕方の会合の約束をした。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...そして予約した病院に出掛けた＠

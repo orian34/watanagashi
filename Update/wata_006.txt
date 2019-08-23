@@ -555,7 +555,7 @@
 		   NULL, "— Mouais...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei21170", 256, TRUE);
 	OutputLine(NULL, "…梨花ちゃんはお勉強家だからすごい素敵な大人になれそうだな？」",
-		   NULL, " Et toi qui bûches tout le temps, tu deviendras quoi alors, wonder Femme ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Et toi qui bûches tout le temps, tu deviendras quoi alors, wonder woman ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

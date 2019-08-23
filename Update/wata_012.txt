@@ -221,8 +221,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここで見たことは全部忘れるから、ささ！",
 		   NULL, "Je les aurais poussés à repartir vers la cour principale.", Line_WaitForInput);
-//	OutputLine(NULL, "　行こう行こう！！",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　行こう行こう！！",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacterWithFiltering(3, 9, "sprite/night/ta1_human_", "0", "left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -242,8 +242,8 @@
 //詩音は俺のことを、小馬鹿にするように肩をすくめる＠...でもそれでいいんだ￥
 	OutputLine(NULL, "詩音は俺のことを、小馬鹿にするように肩をすくめる。",
 		   NULL, " Mais nous aurions fait le bon choix.", Line_WaitForInput);
-//	OutputLine(NULL, "…でもそれでいいんだ。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…でもそれでいいんだ。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
@@ -290,8 +290,8 @@
 // !s200
 	SetSpeedOfMessage( TRUE, 0, );
 
-//	OutputLine(NULL, "…………………。",
-//		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "…………………。",
+		   NULL, " A REMOVE", Line_ContinueAfterTyping);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -796,8 +796,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…死なずに消えずに済んだんだ……。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…死なずに消えずに済んだんだ……。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("white", 10 );
@@ -1034,16 +1034,16 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…とある。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…とある。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　追伸として、樽で送られてきたので一升瓶などの容器をお持ちになって下さい＠...そう結んでいた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　追伸として、樽で送られてきたので一升瓶などの容器をお持ちになって下さい。",
 		   NULL, "Un post-scriptum stipulait même qu'ils en avaient plusieurs tonneaux et qu'une grande bouteille de 1,8l n'était pas un problème.", Line_WaitForInput);
-//	OutputLine(NULL, "…そう結んでいた。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…そう結んでいた。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -1112,8 +1112,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　村長の失踪した日の会合だって、…大石さんは言ったじゃないか。",
 		   NULL, "Le jour de la disparition du maire, lors de la réunion, les trois chefs de clan avaient été présents, l'inspecteur me l'avait dit.", Line_WaitForInput);
-//	OutputLine(NULL, "御三家が参加したって。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "御三家が参加したって。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...御三家ってのは魅音の園崎家を含む＠
@@ -2008,11 +2008,11 @@
 
 
 //　......大石さんが俺たちの覚悟の程を測る＠...だから、俺は力強く言った￥
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　……大石さんが俺たちの覚悟の程を測る。",
-//		   NULL, "A REMOVE", Line_WaitForInput);
-//	OutputLine(NULL, "…だから、俺は力強く言った。",
-//		   NULL, " A REMOVE", Line_Normal);
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……大石さんが俺たちの覚悟の程を測る。",
+		   NULL, "A REMOVE", Line_WaitForInput);
+	OutputLine(NULL, "…だから、俺は力強く言った。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //「そんなのは...覚悟の上です！＠

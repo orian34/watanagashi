@@ -102,7 +102,7 @@ void dialog005()
 
 void dialog006()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquant</color>", NULL, Line_ContinueAfterTyping); }
 
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50006", 256, TRUE);
 	OutputLine(NULL, "「ンだこの女ぁあぁぁあぁああ！！！",

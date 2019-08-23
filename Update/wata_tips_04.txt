@@ -363,9 +363,9 @@
 
 
 //　慌ててそれを隠すように手で覆う￥
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　慌ててそれを隠すように手で覆う！",
-//		   NULL, "A REMOVE", Line_Normal);
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　慌ててそれを隠すように手で覆う！",
+		   NULL, "A REMOVE", Line_Normal);
 	ClearMessage();
 
 

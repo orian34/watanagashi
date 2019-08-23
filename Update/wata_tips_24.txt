@@ -17,7 +17,7 @@
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「本日は貸切です。〜雀荘「鈴」〜」",
-		   NULL, "'Nous sommes complets aujourd'hui ~Le Rin, club de mahjong~", Line_Normal);
+		   NULL, "'Reserved for the day. ~Suzu Mahjong Parlor~'", Line_Normal);
 	ClearMessage();
 
 

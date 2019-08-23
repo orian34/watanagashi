@@ -226,7 +226,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//「Hmmm... ... ........................。＠
+//「.................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600288", 256, TRUE);
 	OutputLine(NULL, "「……………………………。」",
@@ -1362,7 +1362,7 @@
 //　...............￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………。",
-		   NULL, "............", Line_Normal);
+		   NULL, "Hmmm... ... ...", Line_Normal);
 	ClearMessage();
 //「.........わかった＠...気をつけるようにするよ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1623,8 +1623,8 @@
 
 //　.........詩音に怒られそうな気がする......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　………詩音に怒られそうな気がする……。",
-//		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　………詩音に怒られそうな気がする……。",
+		   NULL, "A REMOVE", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "msys13", 56, 0 );
@@ -1873,8 +1873,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それでもしばらくのとまどいがあった。",
 		   NULL, "Elle resta quand même encore silencieuse un moment avant de passer à table.", Line_WaitForInput);
-//	OutputLine(NULL, "…そして、観念した様子で言った。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…そして、観念した様子で言った。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 
@@ -2385,8 +2385,8 @@
 
 //　...頭の中で、詩音がさっきの薄気味悪い言葉を何度も繰り返す￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…頭の中で、詩音がさっきの薄気味悪い言葉を何度も繰り返す。",
-//		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　…頭の中で、詩音がさっきの薄気味悪い言葉を何度も繰り返す。",
+		   NULL, "A REMOVE", Line_Normal);
 	ClearMessage();
 
 //　話シタカラ殺サレテシマッタ＠
@@ -2648,8 +2648,8 @@
 		   NULL, "Je le sens pas...", Line_WaitForInput);
 	OutputLine(NULL, "本当にまずい。",
 		   NULL, " Je le sens vraiment pas !", Line_WaitForInput);
-//	OutputLine(NULL, "…掛け値なしに…まずいッ！！！",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…掛け値なしに…まずいッ！！！",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //「...くそ...、無事でいてくれ...＠......梨花ちゃんッ！！！￥

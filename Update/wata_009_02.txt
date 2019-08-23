@@ -19,7 +19,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//　A REMOVE...ひぐらしの鳴き声が、寂しげな夕方をさらに引き立てていた＠
+//　.........ひぐらしの鳴き声が、寂しげな夕方をさらに引き立てていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………ひぐらしの鳴き声が、寂しげな夕方をさらに引き立てていた。",
 		   NULL, "Le chant des cigales faisait ressortir la fraîcheur du soir.", GetGlobalFlag(GLinemodeSp));
@@ -47,7 +47,7 @@
 	DrawSceneWithMask("background/m_y2_02", "down", 0, 0, 300 );
 	PlayBGM( 1, "msys17", 56, 0 );
 
-//「... ... .......。＠
+//「................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100345", 256, TRUE);
 	OutputLine(NULL, "「………………………………。」",
@@ -243,8 +243,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうと決まったら、こんなところをもたもたと歩いていても仕方がない。",
 		   NULL, "Ma décision prise, je réenfourchai mon vélo et me mis en route.", Line_WaitForInput);
-//	OutputLine(NULL, "自転車にまたがる。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "自転車にまたがる。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //　ペダルをきつく漕ぐ＠
@@ -336,9 +336,9 @@
 	ClearMessage();
 
 //　...思い出した＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…思い出した。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…思い出した。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -728,10 +728,10 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜ？",
 		   NULL, "Mais pourquoi, bon sang ?", Line_WaitForInput);
-//	OutputLine(NULL, "　どうして？",
-//		   NULL, " A REMOVE", Line_WaitForInput);
-//	OutputLine(NULL, "　何だってんだよ一体？！",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　どうして？",
+		   NULL, " A REMOVE", Line_WaitForInput);
+	OutputLine(NULL, "　何だってんだよ一体？！",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	StopSE( 3 );
 	PlayBGM( 1, "msys07", 56, 0 );
@@ -884,9 +884,9 @@
 	PlayBGM( 1, "msys13", 56, 0 );
 
 //　昨夜の深夜＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　昨夜の深夜。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　昨夜の深夜。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1094,8 +1094,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…興奮が覚めてくるに従い…、",
 		   NULL, "C'est grâce à ce calme relatif que je compris enfin pourquoi Shion tenait tant à m'en parler...", Line_WaitForInput);
-//	OutputLine(NULL, "たった今、詩音から聞かされた話の意味がわかってきた…。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "たった今、詩音から聞かされた話の意味がわかってきた…。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "msys15", 56, 0 );
@@ -1145,18 +1145,18 @@
 
 //　中途半端な好奇心に負けて、一緒に中に入ることに同意したのは!s400......!sd他の誰でもない、自分自身なのだから...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　中途半端な好奇心に負けて、一緒に中に入ることに同意したのは",
-//		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　中途半端な好奇心に負けて、一緒に中に入ることに同意したのは",
+		   NULL, "A REMOVE", Line_ContinueAfterTyping);
 //!s400
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "……",
-		   NULL, "......", Line_ContinueAfterTyping);
+		   NULL, "A REMOVE", Line_ContinueAfterTyping);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
-//	OutputLine(NULL, "他の誰でもない、自分自身なのだから…。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "他の誰でもない、自分自身なのだから…。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //「............詩音＠...お前は昨夜、祭具殿の中に忍び込んだら、こうなるかもしれないと予想はついてたのか...？＠
@@ -1289,9 +1289,9 @@
 
 
 //　...なのに、...自分で言っていて、背筋が凍った￥
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…なのに、…自分で言っていて、背筋が凍った。",
-//		   NULL, "A REMOVE", Line_Normal);
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…なのに、…自分で言っていて、背筋が凍った。",
+		   NULL, "A REMOVE", Line_Normal);
 	ClearMessage();
 
 //「...まだ誰も行方不明になってないと思います＠...多分、２人が失踪するのは、!w1000...これからじゃないかと思うんです...。＠
@@ -1603,9 +1603,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　祟りは連続怪死事件になる＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　祟りは連続怪死事件になる。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　祟りは連続怪死事件になる。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1758,27 +1758,27 @@
 	PlayBGM( 1, "msys13", 56, 0 );
 
 //「なのになぜか、毎年、綿流しの晩に不幸な「偶然」が起こる＠...連続事件にしたくても、連続にならないんです＠/
-//	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-//	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600282", 256, TRUE);
-//	OutputLine(NULL, "「なのになぜか、毎年、綿流しの晩に不幸な「偶然」が起こる。",
-//		   NULL, "A REMOVE DIALOGUE", Line_WaitForInput);
-//	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600283", 256, TRUE);
-//	OutputLine(NULL, "…連続事件にしたくても、連続にならないんです。",
-//		   NULL, " A REMOVE DIALOGUE ", GetGlobalFlag(GLinemodeSp));
-//
-//	PlaySE( 3, "wa_027", 56, 64 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600282", 256, TRUE);
+	OutputLine(NULL, "「なのになぜか、毎年、綿流しの晩に不幸な「偶然」が起こる。",
+		   NULL, "A REMOVE DIALOGUE", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600283", 256, TRUE);
+	OutputLine(NULL, "…連続事件にしたくても、連続にならないんです。",
+		   NULL, " A REMOVE DIALOGUE ", GetGlobalFlag(GLinemodeSp));
+
+	PlaySE( 3, "wa_027", 56, 64 );
 
 //...それでも毎年、必ず誰かが死んで、誰かが消えていく！」!w1500@
-//	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-//	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600284", 256, TRUE);
-//	OutputLine(NULL, "…それでも毎年、必ず誰かが死んで、誰かが消えていく！」",
-//		   NULL, "A REMOVE DIALOGUE", Line_Continue);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600284", 256, TRUE);
+	OutputLine(NULL, "…それでも毎年、必ず誰かが死んで、誰かが消えていく！」",
+		   NULL, "A REMOVE DIALOGUE", Line_Continue);
 
-//	// (backup) SetValidityOfInput( FALSE );
-//	Wait( 1500 );
-//	// (backup) SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1500 );
+	// (backup) SetValidityOfInput( TRUE );
 
-//	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -1883,8 +1883,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　心の奥底の冷めた自分が、無駄な遠吠えだと呆れているのがわかった。",
 		   NULL, "Mais ça me faisait du bien de me lâcher et de me débarrasser un peu de la peur qui m'oppressait.", Line_WaitForInput);
-//	OutputLine(NULL, "……でも、…堰を切った感情は、もう止められなかった。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "……でも、…堰を切った感情は、もう止められなかった。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //「俺は元々、興味なんか全然なかったんだッ！！＠　梨花ちゃんの演舞を見ていたかっただけなんだ！＠　それを詩音が勝手に連れ出したんじゃないか？！？＠　あの２人が泥棒しようが逢引きしようが知ったことじゃないッ！！＠　そうだよ、そもそも詩音が中に入ろうって言い出したんだ！＠
@@ -1983,8 +1983,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "……ことだ。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "……ことだ。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2191,7 +2191,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………………………………………。",
-		   NULL, "............", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... ... ...", GetGlobalFlag(GLinemodeSp));
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 

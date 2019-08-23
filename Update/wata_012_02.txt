@@ -230,21 +230,21 @@
 //「園崎家私有地につき立入厳禁！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「園崎家私有地につき立入厳禁！」",
-		   NULL, "'«  Propriété privée du clan des Sonozaki. Défense d'entrer. »", GetGlobalFlag(GLinemodeSp));
+		   NULL, "'Private property of the Sonozaki family! Entrance forbidden!'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「毒ヘビ注意！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「毒ヘビ注意！」",
-		   NULL, "'« Attention, serpents venimeux ! »", GetGlobalFlag(GLinemodeSp));
+		   NULL, "'Beware of venomous snakes!'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「監視カメラ作動中＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「監視カメラ作動中。",
-		   NULL, "'« Cet endroit est sous surveillance caméra »", GetGlobalFlag(GLinemodeSp));
+		   NULL, "'Active security cameras.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -349,7 +349,7 @@
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
-//「... ...魅ぃちゃんのお父さんが、...いろいろ大変な人みたいでね＠だから一族がみんなで集まる時にはちゃんと機能しているらしいよ。＠
+//「............魅ぃちゃんのお父さんが、...いろいろ大変な人みたいでね＠だから一族がみんなで集まる時にはちゃんと機能しているらしいよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200475", 256, TRUE);
 	OutputLine(NULL, "「…………魅ぃちゃんのお父さんが、…いろいろ大変な人みたいでね。",
@@ -1000,8 +1000,8 @@
 		   NULL, "Qu'il neigeait suffisamment pour qu'il ait de beaux paysages à peindre chaque hiver.", Line_WaitForInput);
 	OutputLine(NULL, "…玄関が埋まって車が見つからなくなる？？",
 		   NULL, " Mais là, il neigeait carrément trop, oh !", Line_WaitForInput);
-//	OutputLine(NULL, "　降り過ぎだー！！！",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　降り過ぎだー！！！",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 3, "sprite/normal/me2_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
@@ -1835,8 +1835,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…その覚悟があってここに来たはずじゃないか…。",
 		   NULL, "J'avais pris ma décision en ce sens avant de venir ici...", Line_WaitForInput);
-//	OutputLine(NULL, "……覚悟を決め、唇を噛んだ。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "……覚悟を決め、唇を噛んだ。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 1000, TRUE );
@@ -2298,8 +2298,8 @@
 
 //　魅音の顔を一言で言い表すならそれだった...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　魅音の顔を一言で言い表すならそれだった…。",
-//		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　魅音の顔を一言で言い表すならそれだった…。",
+		   NULL, "A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
@@ -2543,10 +2543,10 @@
 
 
 //　...今、この瞬間＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…今、この瞬間。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…今、この瞬間。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...魅音は魅音でなく、...園崎本家の当主跡継ぎとしての園崎魅音に変わったのだ＠
@@ -2908,8 +2908,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……古くから残るものは全て忌々しい。",
 		   NULL, "C'était une époque où tout ce qui avait trait au passé était systématiquement dénigré et tourné en ridicule.", Line_WaitForInput);
-//	OutputLine(NULL, "…そういう時代になったのだ…。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…そういう時代になったのだ…。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //「明治になり、古い歴史を持つ鬼ヶ淵村の名称は、一方的に雛見沢村に改められてしまいました＠......古い因習を一掃しようとする、明治政府の思惑が強く働いたのだと聞かされています...。￥
@@ -2938,8 +2938,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　西洋式のものが何でも持てはやされ、…古い伝統的なものが何でも蔑まされる。",
 		   NULL, "Tout ce qui était occidental était bon, tout ce qui était japonais était mauvais, les anciens rites furent méprisés.", Line_WaitForInput);
-//	OutputLine(NULL, "…そんな時代になったのだ。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…そんな時代になったのだ。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 3, "sprite/normal/me2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
@@ -3008,12 +3008,12 @@
 
 
 //　...恐ろしい人食い鬼の村に近付くな近付くな...＠そう教えた＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…恐ろしい人食い鬼の村に近付くな近付くな…。",
-//		   NULL, "A REMOVE", Line_WaitForInput);
-//	OutputLine(NULL, "そう教えた。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…恐ろしい人食い鬼の村に近付くな近付くな…。",
+		   NULL, "A REMOVE", Line_WaitForInput);
+	OutputLine(NULL, "そう教えた。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　ある大人は、...雛見沢の村人は大昔の飢饉の時＠河原に捨てられていた死体を集め、焼いて食べて生き延びたなどという何の根拠もない話を、大真面目に教えた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3449,8 +3449,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…恐ろしい研究がなされていた………。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…恐ろしい研究がなされていた………。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/heya1", "left", 0, 0, 300 );
@@ -3770,8 +3770,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "……悲しい物語だった。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "……悲しい物語だった。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //　......差別したりされたり、したりされたり＠
@@ -4314,7 +4314,7 @@
 //　.............................................￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………………………………………。",
-		   NULL, "............", Line_Normal);
+		   NULL, "... ...", Line_Normal);
 	ClearMessage();
 
 //「......私を捕まえて、それで法治国家の体裁が整うなら＠......それも時代の流れかなぁって＠
@@ -4431,10 +4431,10 @@
 
 
 //　レナの言葉は...これ以上ないくらいに痛烈だった＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　レナの言葉は…これ以上ないくらいに痛烈だった。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　レナの言葉は…これ以上ないくらいに痛烈だった。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 

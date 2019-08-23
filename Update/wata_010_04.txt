@@ -153,8 +153,8 @@
 
 //　...すっかり気落ちした俺には、その気配の主に興味は湧かなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…すっかり気落ちした俺には、その気配の主に興味は湧かなかった。",
-//		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　…すっかり気落ちした俺には、その気配の主に興味は湧かなかった。",
+		   NULL, "A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 3000 );
@@ -446,8 +446,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…消え去ってしまうのだ。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…消え去ってしまうのだ。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //　梨花ちゃんの...西洋人形のような愛くるしい顔が、...消えていく＠
@@ -585,16 +585,16 @@
 
 //　そんなはずないよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　そんなはずないよ。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　そんなはずないよ。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　圭一くんは悪くないよ＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　圭一くんは悪くないよ。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　圭一くんは悪くないよ。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...そうレナが言ってくれるのは嬉しかったが...、それは事情を知らないからだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

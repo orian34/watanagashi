@@ -41,9 +41,9 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本来、綿流しは、一定周期に基づき、オヤシロさまの信託を得て「犠牲者」を選び出し、",
 		   NULL, "Mais si l'on remonte un peu dans le temps, on se rendra compte qu'à l'origine, c'était une cérémonie bien plus sanglante. ", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

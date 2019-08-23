@@ -13,7 +13,7 @@
 	DrawSceneWithMask("black", "m1", 0, 0, 300 );
 	PlayBGM( 1, "msys06", 56, 0 );
 
-//　Je n'arrivai pas à terminer ma phrase....眠れるわけもなかった￥
+//　......眠れるわけもなかった￥
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……眠れるわけもなかった。",
@@ -299,7 +299,7 @@
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
-//「......あれ、!w800......ひょっとして、...村長さんのこと＠　まだ見つかってないの？＠
+//「...............あれ、!w800......ひょっとして、...村長さんのこと＠　まだ見つかってないの？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200107", 256, TRUE);
 	OutputLine(NULL, "「……………あれ、",
@@ -317,7 +317,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//「...うん。＠
+//「.........うん。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300145", 256, TRUE);
 	OutputLine(NULL, "「………うん。」",
@@ -443,7 +443,7 @@
 	PlayBGM( 1, "msys12", 56, 0 );
 
 //「皆さん＠おはようございます。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s02/22/131400008", 256, TRUE);
 	OutputLine(NULL, "「皆さん。",
 		   NULL, "— Bonjour à tous,", Line_WaitForInput);
@@ -472,7 +472,7 @@
 	ModDrawCharacter(1, 22, "sprite/normal/tie_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
 
 //「すでに聞いてる方もいるかもしれませんが...＠...昨日の夜、村長さんが夜遅くになってもお家に帰ってこなかったのだそうです＠皆さんの中で、昨日、村長さんを見た人はいますか？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s02/22/131400010", 256, TRUE);
 	OutputLine(NULL, "「すでに聞いてる方もいるかもしれませんが…。",
 		   NULL, "— Je pense que vous le savez déjà,", Line_WaitForInput);
@@ -498,7 +498,7 @@
 	ClearMessage();
 
 //「もしも村長さんを見かけた人は、大人の人に教えてあげて下さいね＠...それでは授業を始めます。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s02/22/131400013", 256, TRUE);
 	OutputLine(NULL, "「もしも村長さんを見かけた人は、大人の人に教えてあげて下さいね。",
 		   NULL, "— Eh bien si vous voyez le maire, allez le dire à une grande personne, d'accord ?", Line_WaitForInput);
@@ -1222,8 +1222,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……５年連続で起こったオヤシロさまの祟りの、暗い噂話は尽きることはない。",
 		   NULL, "Partout ailleurs, les autres tables étaient occupées à discuter entre elles des histoires glauques et effrayantes de la malédiction...", Line_WaitForInput);
-//	OutputLine(NULL, "教室全体が、薄暗い雰囲気に包まれたままだった…。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "教室全体が、薄暗い雰囲気に包まれたままだった…。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "down", 0, 0, 1300 );
@@ -2380,13 +2380,13 @@
 //　.................................￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………………………………………。",
-		   NULL, "............", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je n'arrivai pas à terminer ma phrase.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………………………。",
-		   NULL, ".........", Line_Normal);
+		   NULL, "...", Line_Normal);
 	ClearMessage();
 //「......り、......梨花ちゃん...！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -3450,8 +3450,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…どうせ梨花ちゃんは全てお見通しなのだ。",
 		   NULL, "De toutes manières, Rika devait être déjà au courant...", Line_WaitForInput);
-//	OutputLine(NULL, "……今さら伏せたって誤魔化しきれるものか…。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "……今さら伏せたって誤魔化しきれるものか…。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 5, "sprite/normal/ri1_niko_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );

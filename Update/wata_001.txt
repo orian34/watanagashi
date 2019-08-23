@@ -1568,7 +1568,7 @@
 
 
 //「「「ファイト、お～～～♪」」＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ギャラリー</color>", NULL, "<color=#f5e6d3>Gallery</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ギャラリー</color>", NULL, "<color=#f5e6d3>Public</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/gallary001", 256, TRUE);
 	OutputLine(NULL, "「「「ファイト、お〜〜〜♪」」」",
 		   NULL, "— Ouais, vas-y !", GetGlobalFlag(GLinemodeSp));
@@ -1861,7 +1861,7 @@
 	DrawSceneWithMask("background/mati_o4", "left", 0, 0, 300 );
 
 //「梨花ちゃんガンバレー！＠　僕たちも応援してるよ～～！！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ギャラリー</color>", NULL, "<color=#f5e6d3>Gallery</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ギャラリー</color>", NULL, "<color=#f5e6d3>Public</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/yaji99001", 256, TRUE);
 	ModPlayVoiceLS(5, 0, "ps3/s19/00/yaji99001_1", 256, TRUE);
 	ModPlayVoiceLS(6, 0, "ps3/s19/00/yaji99001_2", 256, TRUE);

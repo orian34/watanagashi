@@ -305,7 +305,7 @@
 //!sd
 
 //「.........本当に５分だけですからね＠刺激しないようにして下さい。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医者</color>", NULL, "<color=#f5e6d3>Docteur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/doc03001", 256, TRUE);
 	OutputLine(NULL, "「………本当に５分だけですからね。",
 		   NULL, "— ... Je vous donne cinq minutes, et pas une de plus.", Line_WaitForInput);
@@ -621,8 +621,8 @@
 
 	OutputLine(NULL, "のわ？！",
 		   NULL, "Hein ?", Line_WaitForInput);
-//	OutputLine(NULL, "　痛てて、手術跡が突っ張る…。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　痛てて、手術跡が突っ張る…。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -695,8 +695,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "……何か重要な話があるに違いないのだ。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "……何か重要な話があるに違いないのだ。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -730,8 +730,8 @@
 
 //　詩音はベランダから落ちて死んだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　詩音はベランダから落ちて死んだ。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　詩音はベランダから落ちて死んだ。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...警察は事故、自殺、他殺の全ての可能性で調べる、なんて言っていたが、...魅音の仕業以外にはありえないのだ...＠
@@ -756,7 +756,7 @@
 		   NULL, "— ... Ce n'était pas un accident.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101203", 256, TRUE);
 	OutputLine(NULL, "……魅音です。",
-		   NULL, " C'est Mion ?", Line_WaitForInput);
+		   NULL, " C'est Mion.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101204", 256, TRUE);
 	OutputLine(NULL, "…絶対に。」",
 		   NULL, " Sûr et certain.", GetGlobalFlag(GLinemodeSp));
@@ -1091,8 +1091,8 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "………………………………。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "………………………………。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 
@@ -2235,18 +2235,18 @@
 
 //　それをそそのかした!s150....................................!sd鷹野さん＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　それをそそのかした",
-//		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　それをそそのかした",
+		   NULL, "A REMOVE", Line_ContinueAfterTyping);
 //!s150
-//	SetSpeedOfMessage( TRUE, 0, );
+	SetSpeedOfMessage( TRUE, 0, );
 
-//	OutputLine(NULL, "………………………………",
-//		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "………………………………",
+		   NULL, " A REMOVE", Line_ContinueAfterTyping);
 //!sd
-//	SetSpeedOfMessage( FALSE, 0, );
+	SetSpeedOfMessage( FALSE, 0, );
 
-//	OutputLine(NULL, "鷹野さん。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "鷹野さん。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　俺たちを、......祭具殿に誘った時にはもう.........この世の人では、......なかった...￥
@@ -2655,7 +2655,7 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…魅音。",
-		   NULL, " Mion.", Line_WaitForInput);
+		   NULL, " Mion ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101255", 256, TRUE);
 	OutputLine(NULL, "……俺、",
 		   NULL, " Je…", Line_Continue);
@@ -2887,9 +2887,9 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "鼻がぶつかるくらいの…目の前に…。",
-//		   NULL, " A REMOVE", Line_Normal);
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "鼻がぶつかるくらいの…目の前に…。",
+	//	   NULL, " A REMOVE", Line_Normal);
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys11", 56, 0 );

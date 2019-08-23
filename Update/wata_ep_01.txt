@@ -155,7 +155,7 @@
 //　また、ほのめかしたとされる近年の連続怪死事件への関与も捜査が続けられているが、
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、ほのめかしたとされる近年の連続怪死事件への関与も捜査が続けられているが、",
-		   NULL, "De plus, malgré les propos du suspect rapportés par les témoins, sin rapport avec les meurtres des années précédentes paraît incertain.", Line_ContinueAfterTyping);
+		   NULL, "De plus, malgré les propos du suspect rapportés par les témoins, son rapport avec les meurtres des années précédentes paraît incertain.", Line_ContinueAfterTyping);
 
 
 	FadeOutBGM( 2, 10, TRUE );
@@ -252,14 +252,14 @@
 //　................................................あれから、!w1200...ほんの何日かが過ぎた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………………………………………あれから、",
-		   NULL, "... ça… rien... Puis quelques jours ont passé.", Line_ContinueAfterTyping);
+		   NULL, "... ... ... Puis quelques jours ont passé.", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1200 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…ほんの何日かが過ぎた。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…ほんの何日かが過ぎた。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 
@@ -337,10 +337,10 @@
 
 
 //　...きっと大石さんが予想以上に早く駆けつけてくれたので、殺す充分な時間がなかったのだろう＠
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…きっと大石さんが予想以上に早く駆けつけてくれたので、殺す充分な時間がなかったのだろう。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…きっと大石さんが予想以上に早く駆けつけてくれたので、殺す充分な時間がなかったのだろう。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......それだけが...本当に幸運な出来事だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -417,8 +417,8 @@
 	Wait( 1200 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "と言っていたように思う。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "と言っていたように思う。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -647,8 +647,8 @@
 		   NULL, "Elle pourrait alors vivre là-bas, non pas en tant qu'héritière des Sonozaki,", Line_WaitForInput);
 	OutputLine(NULL, "…園崎魅音じゃない、",
 		   NULL, " mais en tant que Mion, une simple jeune femme passionnée par les jeux de plateaux...", Line_WaitForInput);
-//	OutputLine(NULL, "ただの魅音として楽しく過ごせる場所に違いない…。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "ただの魅音として楽しく過ごせる場所に違いない…。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 //　...もう沙都子や梨花ちゃんも合流してるかもしれない＠
@@ -732,15 +732,15 @@
 
 //　...この雛見沢で過ごしたわずか数週間は、!w800...どれだけの印象を残すのだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…この雛見沢で過ごしたわずか数週間は、",
-//		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　…この雛見沢で過ごしたわずか数週間は、",
+		   NULL, "A REMOVE", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…どれだけの印象を残すのだろう。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…どれだけの印象を残すのだろう。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......この数週間の間に、!w600最高の友人たちと出会い、!w800最高の経験をした＠
@@ -759,8 +759,8 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "最高の経験をした。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "最高の経験をした。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -775,8 +775,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…一生忘れない。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…一生忘れない。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 
@@ -886,15 +886,15 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "……その電話がどこから、誰が掛けているのか、",
-//		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "……その電話がどこから、誰が掛けているのか、",
+		   NULL, " A REMOVE", Line_ContinueAfterTyping);
 
-//	SetValidityOfInput( FALSE );
-//	Wait( 800 );
-//	SetValidityOfInput( TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "……恐ろしい。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "……恐ろしい。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 
@@ -977,13 +977,13 @@
 //!s300
 	SetSpeedOfMessage( TRUE, 0, );
 
-//	OutputLine(NULL, "………",
-//		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "………",
+		   NULL, " A REMOVE", Line_ContinueAfterTyping);
 // !sd
-//	SetSpeedOfMessage( FALSE, 0, );
+	SetSpeedOfMessage( FALSE, 0, );
 
-//	OutputLine(NULL, "あの人形。",
-//		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "あの人形。",
+		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　イギリスだかの輸入物で、流行ってるとか何とか言ってたっけ＠
@@ -1350,8 +1350,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "最後の別れになるだろうという悲しい予感もした。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "最後の別れになるだろうという悲しい予感もした。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1658,7 +1658,7 @@
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "……",
-		   NULL, " ...", Line_Continue);
+		   NULL, " ça…", Line_Continue);
 // !sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -1868,8 +1868,8 @@
 	Wait( 1200 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…突き立てて……、",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…突き立てて……、",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1890,8 +1890,8 @@
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…っと…。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "…っと…。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1920,22 +1920,22 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…っと",
-//		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "…っと",
+		   NULL, " A REMOVE", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "…痛い",
-//		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "…痛い",
+		   NULL, " A REMOVE", Line_ContinueAfterTyping);
 
-//	SetValidityOfInput( FALSE );
-//	Wait( 500 );
-//	SetValidityOfInput( TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "………よ……。",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "………よ……。",
+		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 
@@ -1969,7 +1969,7 @@
 	OutputLine(NULL, "…間に合った…！",
 		   NULL, " Je l'ai eu !", Line_WaitForInput);
 	OutputLine(NULL, "　…",
-		   NULL, " ...", Line_ContinueAfterTyping);
+		   NULL, " rien...", Line_ContinueAfterTyping);
 //!s100
 	SetSpeedOfMessage( TRUE, 120, );
 
@@ -2203,8 +2203,8 @@
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "……染められて……………。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "……染められて……………。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 
 
 //	DrawScene( "wata_mion05", 1000 );
@@ -2249,8 +2249,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-//	OutputLine(NULL, "……汚れてしまって………。",
-//		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "……汚れてしまって………。",
+		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2284,15 +2284,15 @@
 //!s200
 	SetSpeedOfMessage( TRUE, 80, );
 
-//	OutputLine(NULL, "しま",
-//		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+	OutputLine(NULL, "しま",
+		   NULL, " A REMOVE", Line_ContinueAfterTyping);
 //!s300
-//	SetSpeedOfMessage( TRUE, 100, );
+	SetSpeedOfMessage( TRUE, 100, );
 
-//	OutputLine(NULL, "……って……………、",
-//		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "……って……………、",
+		   NULL, " A REMOVE", Line_Normal);
 //!sd
-//	SetSpeedOfMessage( FALSE, 0, );
+	SetSpeedOfMessage( FALSE, 0, );
 
 	ClearMessage();
 
@@ -2336,7 +2336,7 @@
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "が",
-		   NULL, " so", Line_ContinueAfterTyping);
+		   NULL, " si", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
