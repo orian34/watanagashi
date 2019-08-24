@@ -33,9 +33,9 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500017", 256, TRUE);
 	OutputLine(NULL, "「……魅ぃに百億兆者ゲームを借りたことをコロリと忘れてしまったら、",
-		   NULL, "— Une fois, je lui ai emprunté le jeu “Destins -- le jeu de la vie” et je l'avais complètement oubliée, et…", Line_Continue);
+		   NULL, "— Une fois, je lui ai emprunté le jeu “Destins -- le jeu de la vie” et je l'avais complètement oublié, et…", Line_Continue);
 	OutputLine(NULL, "リアルで百億兆者ゲームをプレイさせたるどーと凄まれましたのです。」",
-		   NULL, " elle m'a prise à part et m'a menacée de jouer une partie réelle de “Destins -- le jeu de la vie”.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " elle m'a prise à part et m'a menacée de jouer une partie de “Destins -- le jeu de la vie” pour de vrai.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

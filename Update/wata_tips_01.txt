@@ -317,10 +317,8 @@
 //「魅音ってバイトをやってるんだよな＠...あいつ、一体何のバイトをしてるんだ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100049", 256, TRUE);
-	OutputLine(NULL, "「魅音ってバイトをやってるんだよな。",
-		   NULL, "En tout cas, je me demande bien ce que ça peut être comme boulot.", Line_Continue);
-	OutputLine(NULL, "…あいつ、一体何のバイトをしてるんだ？」",
-		   NULL, " C'était le plus souvent la seule raison qui la poussait à rentrer plus tôt.", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「魅音ってバイトをやってるんだよな。…あいつ、一体何のバイトをしてるんだ？」",
+		   NULL, "— En tout cas, je me demande bien ce que ça peut être comme boulot.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -328,14 +326,14 @@
 //　魅音が部活を中止する時は大抵、バイトが理由だ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音が部活を中止する時は大抵、バイトが理由だ。",
-		   NULL, "Mais elle ne travaillait pas tous les jours.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était le plus souvent la seule raison qui la poussait à rentrer plus tôt.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　だが、毎日通っているにようには見えないよな＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、毎日通っているにようには見えないよな。",
-		   NULL, "Elle y allait parfois quelques jours de suite, et ensuite plus rien pendant un moment.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais elle ne travaillait pas tous les jours.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -343,7 +341,7 @@
 //　２～３日、連続で行く時もあれば、全然行かない時もある＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　２〜３日、連続で行く時もあれば、全然行かない時もある。",
-		   NULL, "C'est pas très régulier tout ça, et franchement dit ça fait pas très sérieux.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle y allait parfois quelques jours de suite, et ensuite plus rien pendant un moment.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -351,7 +349,7 @@
 //　...そんないい加減なアルバイトなんてあるんだろうか￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そんないい加減なアルバイトなんてあるんだろうか？",
-		   NULL, "Quel magasin est-ce que ça peut bien être ?", Line_Normal);
+		   NULL, "C'est pas très régulier tout ça, et franchement dit ça fait pas très sérieux. Quel magasin est-ce que ça peut bien être ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 5, "sprite/normal/ri1_niko_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
