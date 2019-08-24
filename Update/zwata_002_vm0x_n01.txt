@@ -26,7 +26,7 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0002", 256, TRUE);
 	OutputLine(NULL, "　……小学校の頃…罰ゲームってのがあったら……うん。",
-		   NULL, "— Quand j'allais encore en primaire, il revenait souvent ce gage… Ouais.", Line_WaitForInput);
+		   NULL, "Quand j'allais encore en primaire, il revenait souvent ce gage… Ouais.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0003", 256, TRUE);
 	OutputLine(NULL, "やっぱりアレだよな。",
 		   NULL, " Ça ne peut être que ÇA.", Line_WaitForInput);
@@ -77,11 +77,11 @@ void dialog004()
 
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11180", 256, TRUE);
 	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名「Ｓａｋｕｒａ」だろおおお！",
-		   NULL, "Sakura ca fait forcément penser a la célèbre marque de rouge à lèvres “Sakura”, non !?!? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sakura ça fait forcément penser a la célèbre marque de rouge à lèvres “Sakura”, non !?!? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11190", 256, TRUE);
 	OutputLine(NULL, "　ほら、新色が出たってＴＶでも言ってたし、ワイドショーでも特集組んでたじゃん！",
-		   NULL, "Vous savez, celui avec la nouvelle couleur dont ils parlent à la TV, ils ont même fait des promos dessus !", Line_Continue);
+		   NULL, "Vous savez, celui avec la nouvelle couleur dont ils parlent à la télé, ils ont même fait des promos dessus !", Line_Continue);
 	OutputLine(NULL, "　女としてはチェック入れるんじゃないのか？",
 		   NULL, " Vous regardez pas ce genre de trucs en tant que femmes ?", Line_Continue);
 	OutputLine(NULL, "　俺だって知ってるぐらいなんだからぁああぁあぁあッ！！！！」",
@@ -97,7 +97,7 @@ void dialog006()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300596", 256, TRUE);
 	OutputLine(NULL, "「……いやそんな、力説しなくてもよく知ってるよ。",
-		   NULL, "— Euh ouais, même sans ton enthousiaste explication je vois ce que c'est.", Line_WaitForInput);
+		   NULL, "— Euh ouais, même sans ton explication forcée je vois ce que c'est.", Line_WaitForInput);
 
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300597", 256, TRUE);
 	OutputLine(NULL, "なんかコーヒー飲んでもカップに付かないってやつでしょ？",
@@ -124,13 +124,13 @@ void dialog007()
 	OutputLine(NULL, "「うんうん。",
 		   NULL, "— Oui, oui.", Line_Continue);
 	OutputLine(NULL, "とってもかぁいい色してるんだよね！",
-		   NULL, " La couleur est trop mignonne, non ?", Line_WaitForInput);
+		   NULL, " La couleur est trop mimi, non ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200497", 256, TRUE);
 	OutputLine(NULL, "　レナも薬局の化粧品売り場で見たよ。",
 		   NULL, " Je l'ai vu au rayon maquillage de la pharmacie.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200498", 256, TRUE);
 	OutputLine(NULL, "　薄いピンク色で、お持ち帰りしようかと思っちゃった〜」",
-		   NULL, " Ce rose me donne envie de le rammener à la maison~.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ce rose me donne envie de le ramener à la maison~.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
@@ -170,22 +170,24 @@ void dialog010()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300599", 256, TRUE);
 	OutputLine(NULL, "「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」",
-		   NULL, "— À part ça, c'est un peu surprenant que la première chose à laquelle tu penses quand on te dit “Sakura”…", Line_Normal);
+		   NULL, "— À part ça, c'est un peu surprenant que ça soit la première chose à laquelle tu penses quand on te dit “Sakura”…", Line_Normal);
+	ClearMessage();
 
 //圭一rvS19/01/HR_KEI11200.「な、なんでだよおおお！kvS19/01/HR_KEI11210.　女の立場になって考えてみただけだろおおおお！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11200", 256, TRUE);
 	OutputLine(NULL, "「な、なんでだよおおお！",
-		   NULL, "— Quewouah ??", Line_WaitForInput);
+		   NULL, "— Kewoua ??", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11210", 256, TRUE);
 	OutputLine(NULL, "　女の立場になって考えてみただけだろおおおお！」",
-		   NULL, " J'étais juste en train d'adopté le point de vue d'une fille !!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " J'étais juste en train d'adopter le point de vue d'une fille !!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS19/01/HR_KEI11220.「女に生まれたからには当然美しく装うのがデフォ！kvS19/01/HR_KEI11230.　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！kvS19/01/HR_KEI11240.　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11220", 256, TRUE);
 	OutputLine(NULL, "「女に生まれたからには当然美しく装うのがデフォ！",
-		   NULL, "— En tant que femme, c'est normal de prendre soin de son image !", Line_WaitForInput);
+		   NULL, "En tant que femme, c'est normal de prendre soin de son image !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11230", 256, TRUE);
 	OutputLine(NULL, "　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！",
 		   NULL, " C'est normal de penser çaaaaaaaa !", Line_WaitForInput);
