@@ -204,6 +204,6 @@ void dialog011()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300641", 256, TRUE);
 	OutputLine(NULL, "　こ〜れで股間にでっかいのが付いてなきゃ本物の女の子なのにな〜〜！！」",
-		NULL, "— Aah, si seulement tu n'avais pas ce truc énorme entre les jambes, mon ami !", GetGlobalFlag(GLinemodeSp));
+		NULL, "Aah, si seulement tu n'avais pas ce truc énorme entre les jambes, mon ami !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
