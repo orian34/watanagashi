@@ -32,7 +32,7 @@
 //　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く。",
-		   NULL, "La cérémonie de la purification du coton est une fête annonçant le début de l'été, ayant lieu depuis une vingtaine d'années tous les ans en juin.", Line_Normal);
+		   NULL, "La cérémonie de la purification du coton est une fête annonçant le début de l'été, ayant lieu depuis une vingtaine d'années tous les ans en juin. Mais si l'on remonte un peu dans le temps, on se rendra compte qu'à l'origine, c'était une cérémonie bien plus sanglante.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -40,22 +40,19 @@
 //　本来、綿流しは、一定周期に基づき、オヤシロさまの信託を得て「犠牲者」を選び出し＠それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本来、綿流しは、一定周期に基づき、オヤシロさまの信託を得て「犠牲者」を選び出し、",
-		   NULL, "Mais si l'on remonte un peu dans le temps, on se rendra compte qu'à l'origine, c'était une cérémonie bien plus sanglante. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il s'avère qu'en fait, la purification était le nom donné à une cérémonie bien particulière. De manière cyclique, la déesse Yashiro choisissait une “victime”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tous les fidèles s'entr'aidaient pour la pourchasser et la capturer -- ce processus était appelé “l'enlèvement des démons” -- puis ils préparaient un festin avec sa chair et la mangeaient.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //（周期の法則には謎が多い＠儀式の間隔が非常に不定期だからだ＠天体を元にした吉凶によって決めているという説もあるが、説得力に乏しい。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "（周期の法則には謎が多い。",
-		   NULL, "Il s'avère qu'en fait, la purification était le nom donné à une cérémonie bien particulière.", Line_WaitForInput);
-	OutputLine(NULL, "儀式の間隔が非常に不定期だからだ。",
-		   NULL, " De manière cyclique, la déesse Yashiro choisissait une “victime”. Tous les fidèles s'entr'aidaient pour la pourchasser et la capturer -- ce processus était appelé “l'enlèvement des démons” -- puis ils préparaient un festin avec sa chair et la mangeaient. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（周期の法則には謎が多い。儀式の間隔が非常に不定期だからだ。",
+		   NULL, "Personne n'a découvert quels critères poussaient périodiquement la déesse Yashiro à désigner une victime.", Line_WaitForInput);
 	OutputLine(NULL, "天体を元にした吉凶によって決めているという説もあるが、説得力に乏しい。）",
-		   NULL, "Personne n'a découvert quels critères poussaient périodiquement la déesse Yashiro à désigner une victime. Certains anthropologues pensent trouver un rapport dans l'astronomie, mais cela me paraît peu vraisemblable.", Line_Normal);
+		   NULL, " Certains anthropologues pensent trouver un rapport dans l'astronomie, mais cela me paraît peu vraisemblable.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
