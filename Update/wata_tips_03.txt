@@ -16,7 +16,7 @@
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　闘撮必勝ガイド４月号「征服徹底解析（ファミレス編）」より転載",
-		   NULL, "Article tiré du « Guide des photos interdites » n°4", Line_Normal);
+		   NULL, "Article tiré du « Guide des photos interdites » n°4 : Tout ce qu'il faut savoir sur les uniformes (dans les restaurants)", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -25,14 +25,14 @@
 //　そしていよいよ、激アツの３日目＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしていよいよ、激アツの３日目。",
-		   NULL, "Tout ce qu'il faut savoir sur les uniformes (dans les restaurants)", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Enfin, nous arrivons au 3e jour, et là l'ambiance promet d'être chaud-bouillante.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　××県鹿骨市という辺境にありながら、マニア垂涎の超有名店がこのエンジェルモートだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　××県鹿骨市という辺境にありながら、マニア垂涎の超有名店がこのエンジェルモートだ。",
-		   NULL, "Enfin, nous arrivons au 3e jour, et là l'ambiance promet d'être chaud-bouillante.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous nous rendons à l'Angel Mort, un restaurant qui fait baver d'envie tous les connaisseurs, et qui pourtant se trouve en pleine pampa, dans le district de Shishibone de la préfecture de ****.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -40,9 +40,9 @@
 //　なぜにも名店はこうも人里を嫌うものなのか...＠闘撮の神の試練としか思えない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜにも名店はこうも人里を嫌うものなのか…。",
-		   NULL, "Nous nous rendons à l'Angel Mort, un restaurant qui fait baver d'envie tous les connaisseurs, et qui pourtant se trouve en pleine pampa, dans le district de Shishibone de la préfecture de ****.", Line_WaitForInput);
+		   NULL, "Pourquoi se trouve-t-il si loin de toute civilisation ? D'ailleurs, pourquoi tant de grands restaurants sont-ils si loin des grands centres commerciaux ? Cela reste un mystère.", Line_WaitForInput);
 	OutputLine(NULL, "闘撮の神の試練としか思えない。",
-		   NULL, " Pourquoi se trouve-t-il si loin de toute civilisation ? D'ailleurs, pourquoi tant de grands restaurants sont-ils si loin des grands centres commerciaux ? Cela reste un mystère.", Line_Normal);
+		   NULL, " C'est peut-être une épreuve que nous infligent les dieux de la photo.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -50,7 +50,7 @@
 //　地元では美味しいデザートで知られるレストランだが、我々には知ったことじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地元では美味しいデザートで知られるレストランだが、我々には知ったことじゃない！",
-		   NULL, "C'est peut-être une épreuve que nous infligent les dieux de la photo.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quoi qu'il en soit, ce restaurant est connu là-bas pour avoir la meilleure carte des desserts des environs -- mais bien évidemment, ce n'est pas cela qui nous amène là-bas aujourd'hui !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -58,14 +58,14 @@
 //　高いデザートが食いたければ不○家系にでも行けばいい＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　高いデザートが食いたければ不○家系にでも行けばいい！",
-		   NULL, "Quoi qu'il en soit, ce restaurant est connu là-bas pour avoir la meilleure carte des desserts des environs -- mais bien évidemment, ce n'est pas cela qui nous amène là-bas aujourd'hui !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si nous avions simplement eu envie de payer cher nos desserts, nous serions allés dans un des restaurants cinq étoiles de Ginza !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　我々の目指す甘いデザートは食べるものではなく......制服の方なのだー！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　我々の目指す甘いデザートは食べるものではなく……制服の方なのだー！！",
-		   NULL, "Si nous avions simplement eu envie de payer cher nos desserts, nous serions allés dans un des restaurants cinq étoiles de Ginza !", Line_Normal);
+		   NULL, "Une et une seule raison nous pousse à visiter ce restaurant précisément et pas un autre... son uniforme !", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -73,7 +73,7 @@
 //　芳しき汗の芳香を漂わせ、その着用を強要されたウェイトレスの制服は、もはや公然の拘束具と言ってもいい＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　芳しき汗の芳香を漂わせ、その着用を強要されたウェイトレスの制服は、もはや公然の拘束具と言ってもいい！",
-		   NULL, "Une et une seule raison nous pousse à visiter ce restaurant précisément et pas un autre... son uniforme !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Toutes les jeunes filles forcées à le porter sont comme paralysées par des entraves en cuir, et la transpiration que la honte et l'embarras leur font suer se répand alors en un doux arôme dans l'air ambiant !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -81,20 +81,20 @@
 //　こんな羞恥プレーが全国の制服のかわいいお店で堂々と行なわれているなんて？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんな羞恥プレーが全国の制服のかわいいお店で堂々と行なわれているなんて？！",
-		   NULL, "Toutes les jeunes filles forcées à le porter sont comme paralysées par des entraves en cuir, et la transpiration que la honte et l'embarras leur font suer se répand alors en un doux arôme dans l'air ambiant !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Qui eût cru qu'un lieu public appartenant à une chaîne de restaurant pourrait proposer un uniforme aux relents aussi douteux pour appâter la galerie ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　出撃せよ＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　出撃せよ！",
-		   NULL, "Qui eût cru qu'un lieu public appartenant à une chaîne de restaurant pourrait proposer un uniforme aux relents aussi douteux pour appâter la galerie ?", Line_WaitForInput);
+		   NULL, "C'est une aubaine ! C'est le lieu parfait pour...", Line_WaitForInput);
 
 	PlaySE( 3, "wa_006", 56, 64 );
 
 //　闘撮ハンタァアァアァアー！￥
 	OutputLine(NULL, "　闘撮ハンタァアァアァアー！！",
-		   NULL, " C'est une aubaine ! C'est le lieu parfait pour... les chasseurs de photos !", Line_Normal);
+		   NULL, " les chasseurs de photos !", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 1000, TRUE );
@@ -127,7 +127,7 @@
 //　一般にヲタクは禁煙席が圧倒的に多いんですよ＠ですから喫煙席の方がゆとりを持って射界が取れるんです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一般にヲタクは禁煙席が圧倒的に多いんですよ。",
-		   NULL, "L'immense majorité des wotakus préfère les places non-fumeurs.", Line_WaitForInput);
+		   NULL, "L'immense majorité des otakus préfère les places non-fumeurs.", Line_WaitForInput);
 	OutputLine(NULL, "ですから喫煙席の方がゆとりを持って射界が取れるんです。」",
 		   NULL, " C'est pourquoi le côté fumeur est meilleur, il n'y a quasiment pas de compétition et l'on peut prendre son temps pour obtenir la meilleure photo possible. »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
