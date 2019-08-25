@@ -38,9 +38,9 @@
 //　詩音という双子の妹は実在するのかなと思い＠...好奇心に負け、こっそり沙都子に聞いてみた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音という双子の妹は実在するのかなと思い、",
-		   NULL, "J'avais passé un fameux moment à me demander si elle avait vraiment une sœur jumelle du nom de Shion, et, la curiosité ayant pris le dessus, j'avais demandé en secret à Satoko de me renseigner là-dessus.", Line_WaitForInput);
+		   NULL, "J'avais passé un fameux moment à me demander si elle avait vraiment une sœur jumelle du nom de Shion, et,", Line_WaitForInput);
 	OutputLine(NULL, "…好奇心に負け、こっそり沙都子に聞いてみた。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " la curiosité ayant pris le dessus, j'avais demandé en secret à Satoko de me renseigner là-dessus.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
