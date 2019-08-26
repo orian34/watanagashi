@@ -1159,7 +1159,7 @@
 	SetSpeedOfMessage( FALSE, 0, );
 
 	OutputLine(NULL, "うん。",
-		   NULL, " dans nos jambes, quoi.", Line_WaitForInput);
+		   NULL, " Dans nos jambes, quoi.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200109", 256, TRUE);
 	OutputLine(NULL, "えへへへ…沙都子ちゃんには内緒ね☆」",
 		   NULL, " Lui dis pas que je te l'ai raconté, hein !", GetGlobalFlag(GLinemodeSp));
@@ -1972,7 +1972,7 @@
 //　俺の知っている竜宮レナという少女は...ときどき悪ふざけが過ぎるけど、基本的におしとやかで親切でやさしい...理想的な女の子だ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺の知っている竜宮レナという少女は…ときどき悪ふざけが過ぎるけど、基本的におしとやかで親切でやさしい…理想的な女の子だ。",
-		   NULL, "— La Rena Ryûgû que je connais aime faire des blagues, mais rien de bien méchant. À la base, c'est une fille gentille, attentionnée, polie... Elle est presque parfaite, quoi.", Line_Normal);
+		   NULL, "La Rena Ryûgû que je connais aime faire des blagues, mais rien de bien méchant. À la base, c'est une fille gentille, attentionnée, polie... Elle est presque parfaite, quoi.", Line_Normal);
 	ClearMessage();
 
 //「ホントに？　ホントに...＠　だったら......うれうれ......うれしいかな...。＠
@@ -2875,7 +2875,7 @@
 //　それでも飽き足りないのか、空き缶入れをひっくり返し、中身を往来にぶちまけていた...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それでも飽き足りないのか、空き缶入れをひっくり返し、中身を往来にぶちまけていた…。",
-		   NULL, "Mais apparemment, cela n'était toujours pas assez pour le calmer. Il défonça la poubelle près du distributeur de boissons et renversa son contenu sur le trottoir, donnant de grands coups de pied dans les canettes pour les envoyer sur la chaussée.\", Line_Normal);
+		   NULL, "Mais apparemment, cela n'était toujours pas assez pour le calmer. Il défonça la poubelle près du distributeur de boissons et renversa son contenu sur le trottoir, donnant de grands coups de pied dans les canettes pour les envoyer sur la chaussée.", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "msys16", 56, 0 );
@@ -4122,9 +4122,9 @@
 //　...何から何まで、本当に申し訳ない...＠でもせっかくなので頂くことにする＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…何から何まで、本当に申し訳ない…。",
-		   NULL, "Franchement, je m'en voulais qu'elle fît tant pour moi, mais je décidai d'accepter de bon cœur.", Line_WaitForInput);
+		   NULL, "Franchement, je m'en voulais qu'elle fît tant pour moi,", Line_WaitForInput);
 	OutputLine(NULL, "でもせっかくなので頂くことにする。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " mais je décidai d'accepter de bon cœur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -5209,10 +5209,10 @@
 	OutputLine(NULL, "　支援の輪は次第に雛見沢から広がっていき……………、",
 		   NULL, "Le cercle de leurs soutiens s'élargit bien au delà de Hinamizawa...", Line_WaitForInput);
 	OutputLine(NULL, "それらが実ったのか、それともこれも国の都合によるものなのか。",
-		   NULL, " A REMOVE ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il était difficile de savoir si l'abandon du projet était dû à leur action ou bien à une raison que l'État voulait tenir secrète, mais en tout cas, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ダム計画を無期限に凍結すると発表したのが、つい数年前であった。",
-		   NULL, "Il était difficile de savoir si l'abandon du projet était dû à leur action ou bien à une raison que l'État voulait tenir secrète, mais en tout cas, cela s'était finalement produit, il y avait désormais quelques années de cela.", Line_Normal);
+		   NULL, "cela s'était finalement produit, il y avait désormais quelques années de cela.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 6, "sprite/normal/si2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -5299,10 +5299,8 @@
 
 //　自分たちの故郷を決死の覚悟で守りぬいた村人たち＠そこで培われた連帯感＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　自分たちの故郷を決死の覚悟で守りぬいた村人たち。",
-		   NULL, "L'adversité et le danger les avaient soudés comme nul autre village.", Line_WaitForInput);
-	OutputLine(NULL, "そこで培われた連帯感。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　自分たちの故郷を決死の覚悟で守りぬいた村人たち。そこで培われた連帯感。",
+		   NULL, "L'adversité et le danger les avaient soudés comme nul autre village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
