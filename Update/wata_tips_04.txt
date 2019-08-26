@@ -36,7 +36,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300060", 256, TRUE);
 	OutputLine(NULL, "「わ、な、何よ圭ちゃん…！」",
-		   NULL, "Je tins la boîte à repas qu'elle m'avait donnée la veille juste devant son nez.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Hein, quoi, qu'est-ce qu'il y a, Kei ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -44,7 +44,7 @@
 //　魅音の鼻先に、昨日、差し入れてもらった弁当箱を突き出す￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音の鼻先に、昨日、差し入れてもらった弁当箱を突き出す。",
-		   NULL, "— Hein, quoi, qu'est-ce qu'il y a, Kei ?", Line_Normal);
+		   NULL, "Je tins la boîte à repas qu'elle m'avait donnée la veille juste devant son nez.", Line_Normal);
 	ClearMessage();
 
 //「昨日、差し入れてもらった弁当箱だよ＠ごちそうさま＠うまかったぜ。＠
@@ -356,16 +356,8 @@
 
 //　その中身はちょっと恥ずかしいので、ここでは開けてほしくなかった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　その中身はちょっと恥ずかしいので、ここでは開けてほしくなかった。",
-		   NULL, "Je me dépêchai de placer mes mains sur la boîte pour cacher le contenu.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-
-//　慌ててそれを隠すように手で覆う￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　慌ててそれを隠すように手で覆う！",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　その中身はちょっと恥ずかしいので、ここでは開けてほしくなかった。　慌ててそれを隠すように手で覆う！",
+		   NULL, "Je me dépêchai de placer mes mains sur la boîte pour cacher le contenu.", Line_Normal);
 	ClearMessage();
 
 
