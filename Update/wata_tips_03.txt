@@ -127,7 +127,7 @@
 //　一般にヲタクは禁煙席が圧倒的に多いんですよ＠ですから喫煙席の方がゆとりを持って射界が取れるんです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一般にヲタクは禁煙席が圧倒的に多いんですよ。",
-		   NULL, "L'immense majorité des otakus préfère les places non-fumeurs.", Line_WaitForInput);
+		   NULL, "L'immense majorité des wotakus préfère les places non-fumeurs.", Line_WaitForInput);
 	OutputLine(NULL, "ですから喫煙席の方がゆとりを持って射界が取れるんです。」",
 		   NULL, " C'est pourquoi le côté fumeur est meilleur, il n'y a quasiment pas de compétition et l'on peut prendre son temps pour obtenir la meilleure photo possible. »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
