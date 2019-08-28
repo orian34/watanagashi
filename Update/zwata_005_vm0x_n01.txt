@@ -22,7 +22,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaf50001", 256, TRUE);
 	OutputLine(NULL, "「そうそう、今度あの大手フィギュアメーカーが商品化を決めたそうであります！",
-		   NULL, "En parlant de cela, ce fabricant a décidé de faire la différence!", Line_WaitForInput);
+		   NULL, "— En parlant de cela, ce fabricant a décidé de faire la différence!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaf50002", 256, TRUE);
 	OutputLine(NULL, "　発売日は要チェックなのであります…！」",
 		   NULL, " Nous devons confirmer la date de sortie !", Line_Normal);
@@ -32,7 +32,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otag50001", 256, TRUE);
 	OutputLine(NULL, "「しかし大人買いするには種類が多すぎるのでごわすな……。",
-		   NULL, "Le problème, c'est qu'il y a trop de variantes pour les acheter en masse… ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Le problème, c'est qu'il y a trop de variantes pour les acheter en masse… ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otag50002", 256, TRUE);
 	OutputLine(NULL, "　普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！",
@@ -44,7 +44,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otah50001", 256, TRUE);
 	OutputLine(NULL, "「ダブった時は誰かトレードしてもらいたいでおじゃる〜。",
-		   NULL, "Que quelqu'un échange avec moi quand j'aurais un doublon~☆", Line_WaitForInput);
+		   NULL, "— Que quelqu'un échange avec moi quand j'aurais un doublon~☆", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otah50002", 256, TRUE);
 	OutputLine(NULL, "　ファンとしては即日コンプは義務！",
 		   NULL, " C'est mon devoir en tant que fan de completer la collection aussi vite que possible !", Line_Continue);
