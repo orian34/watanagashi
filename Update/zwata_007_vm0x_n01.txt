@@ -11,7 +11,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34750", 256, TRUE);
 	OutputLine(NULL, "「プロポーション最上級。",
-		   NULL, "— Une Rena avec des courbes de mannequins,", Line_Continue);
+		   NULL, "— Une Rena avec des courbes de mannequin,", Line_Continue);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34760", 256, TRUE);
 	OutputLine(NULL, "アイドル真っ青のルックスと、俺の言うことなんでも確実に聞く器量よしで頼む。」",
 		   NULL, " le regard innocent d'une jeune idole et la patience de combler tous mes caprices.", GetGlobalFlag(GLinemodeSp));
@@ -51,7 +51,7 @@ void dialog004()
 		   NULL, " Je viens tous les ans, après tout.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800041", 256, TRUE);
 	OutputLine(NULL, "といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」",
-		   NULL, " Enfin, si elles avaient changées leur coiffures, j'aurai été incapable de les différencier.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Enfin, si elles avaient changé leur coiffures, j'aurai été incapable de les différencier.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
