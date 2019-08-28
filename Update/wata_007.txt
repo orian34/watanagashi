@@ -2140,16 +2140,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//　富竹さんが、祟りなんて物騒なことを言い出す＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　富竹さんが、祟りなんて物騒なことを言い出す。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
 //　その時、突然、俺の手が引かれた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　その時、突然、俺の手が引かれた。",
+	OutputLine(NULL, "　富竹さんが、祟りなんて物騒なことを言い出す。　その時、突然、俺の手が引かれた。",
 		   NULL, "À peine avait-il lâché le mot que quelqu'un me tira par la main.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -2306,10 +2299,8 @@
 
 //　状況がよくわからないから何の話か教えてくれ＠......という俺の発言は、結果として魅音の意には沿わないようだった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　状況がよくわからないから何の話か教えてくれ。",
-		   NULL, "Apparemment, mon envie d'être mis au parfum n'était pas du goût de Mion.", Line_WaitForInput);
-	OutputLine(NULL, "……という俺の発言は、結果として魅音の意には沿わないようだった。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　状況がよくわからないから何の話か教えてくれ。……という俺の発言は、結果として魅音の意には沿わないようだった。",
+		   NULL, "Apparemment, mon envie d'être mis au parfum n'était pas du goût de Mion.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2877,14 +2868,14 @@
 //　...オヤシロさまの、!w1000祟り￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…オヤシロさまの、",
-		   NULL, "C'est cela que l'on a appelé la malédiction.", Line_ContinueAfterTyping);
+		   NULL, "C'est cela que l'on a appelé", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "祟り。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " la malédiction.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 6, "sprite/sunset/si1a_majime_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -3486,14 +3477,14 @@
 //　......その様々な方法の中に、!w1000...ひょっとして......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……その様々な方法の中に、",
-		   NULL, "Attendez une seconde. Tous les moyens possibles et imaginables?", Line_ContinueAfterTyping);
+		   NULL, "Attendez une seconde.", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…ひょっとして……。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " Tous les moyens possibles et imaginables?", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_022", 56, 64 );
@@ -3829,21 +3820,21 @@
 //　そうだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうだ。",
-		   NULL, "— Yep", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Yep.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　一番最初に詩音は確かに言った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一番最初に詩音は確かに言った。",
-		   NULL, "Shion l'avait dit tout au début : « Qui va qui va se faire tuer et qui va se faire enlever, cette fois ? »", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Shion l'avait dit tout au début : ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　誰が死んで、誰が消えるんでしょうね、と￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誰が死んで、誰が消えるんでしょうね、と。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "« Qui va qui va se faire tuer et qui va se faire enlever, cette fois ? »", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 8, "sprite/sunset/tomi1_komaru_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -4272,15 +4263,13 @@
 //　もっともな意見だ＠......では鷹野さんは＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もっともな意見だ。",
-		   NULL, "Je pense que tout le monde ferait pareil...", Line_WaitForInput);
-	OutputLine(NULL, "……では鷹野さんは？",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pense que tout le monde ferait pareil...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　詩音がしたように、やはり苦笑いをしてから口を開いた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　詩音がしたように、やはり苦笑いをしてから口を開いた。",
+	OutputLine(NULL, "……では鷹野さんは？　詩音がしたように、やはり苦笑いをしてから口を開いた。",
 		   NULL, "Lorsque je portai mon regard interrogateur sur madame Takano, elle eut un petit rire gêné puis finit par parler.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -4734,7 +4723,7 @@
 //　富竹さんが、明日のお祭りで会おうね～っと明るい声をかけてくるのが聞こえた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹さんが、明日のお祭りで会おうね〜っと明るい声をかけてくるのが聞こえた。",
-		   NULL, "Dans mon dos, Tomitake cria encore :", Line_Normal);
+		   NULL, "Dans mon dos, Tomitake cria encore : — On se voit demain soir, à la fête ! Bonne nuit !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 1300 );
@@ -4742,14 +4731,14 @@
 //　魅音と待ち合わせたテントに行ったが...魅音の姿はなかった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音と待ち合わせたテントに行ったが…魅音の姿はなかった。",
-		   NULL, "— On se voit demain soir, à la fête ! Bonne nuit !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'allai aussitôt à la buvette, mais Mion n'était nulle part en vue.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　あれだけ待たせたから...怒って帰っちゃったのだろうか...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あれだけ待たせたから…怒って帰っちゃったのだろうか…。",
-		   NULL, "J'allai aussitôt à la buvette, mais Mion n'était nulle part en vue. Elle était sûrement déjà rentrée... j'avais discuté longtemps avec les autres.", Line_Normal);
+		   NULL, "Elle était sûrement déjà rentrée... j'avais discuté longtemps avec les autres.", Line_Normal);
 	ClearMessage();
 
 //　通りすがりの大人に聞いたら、親族と話しながら帰るところを見たと言われた＠
@@ -4819,10 +4808,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…どの薄気味悪い話も俺と無関係なのなら。",
 		   NULL, "J'avais un peu honte de moi.", Line_WaitForInput);
-	OutputLine(NULL, "…魅音に手を引かれて、一緒にあの場を去るべきだった。",
-		   NULL, " J'aurais dû suivre Mion quand elle m'avait tiré par la main, au lieu de succomber à ma curiosité malsaine...", Line_WaitForInput);
-	OutputLine(NULL, "自分の安っぽい好奇心が少し情けなかった……。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…魅音に手を引かれて、一緒にあの場を去るべきだった。自分の安っぽい好奇心が少し情けなかった……。",
+		   NULL, " J'aurais dû suivre Mion quand elle m'avait tiré par la main, au lieu de succomber à ma curiosité malsaine...", Line_Normal);
 	ClearMessage();
 
 //■７日目幕間
