@@ -110,7 +110,7 @@ void dialog009()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "鷹野さんはそこで言葉を区切って、にやりと笑う。……つまり、「鍬」といっても鋭利な「刃物」としての道具とでもいいたいのだろうか……。",
-		   NULL, " Madame Takano s'interrompit avec un sourire narquois ... Voulait-elle dire que, bien que ce soit une houe, ca sert également de lame tranchante?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Madame Takano s'interrompit avec un sourire narquois ... Voulait-elle dire que, bien que ce soit une houe, ça serve également de lame tranchante?", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
