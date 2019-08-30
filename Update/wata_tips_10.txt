@@ -176,7 +176,7 @@
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44004", 256, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100012", 256, TRUE);
 	OutputLine(NULL, "「「「お疲れさまです！！」」」",
-		   NULL, "« Merci, chef ! »", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Merci, chef !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　普段威張っている先輩たちも、大石さんには頭が上がらない＠
@@ -260,7 +260,7 @@
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44005", 256, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100013", 256, TRUE);
 	OutputLine(NULL, "「「「ぅおっす！」」」",
-		   NULL, "« À vos ordres, chef ! »", Line_Normal);
+		   NULL, "— À vos ordres, chef !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -331,7 +331,7 @@
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44006", 256, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100014", 256, TRUE);
 	OutputLine(NULL, "「「「うおぉぉおおぉおぉすッッ！！！」」」",
-		   NULL, "« OUAIS ! »", Line_Normal);
+		   NULL, "— OUAIS !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );
