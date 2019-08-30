@@ -280,10 +280,10 @@ void dialog017()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900148", 256, TRUE);
 	OutputLine(NULL, "「ところがね。",
-		   NULL, "— ", Line_WaitForInput);
+		   NULL, "— Mais dans certains écrits de la Rome antique,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps2/09/130900149", 256, TRUE);
 	OutputLine(NULL, "ローマの時代の処刑方法にね、網焼きというものがあったの。",
-		   NULL, " Mais dans certains écrits de la Rome antique, on trouve des descriptions de tortures aussi. Par exemple, le grill, une simple grille en fer posée sur un feu,", Line_WaitForInput);
+		   NULL, " on trouve des descriptions de tortures aussi. Par exemple, le grill, une simple grille en fer posée sur un feu,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps2/09/130900150", 256, TRUE);
 	OutputLine(NULL, "バーベキューと同じにね。",
 		   NULL, " une sorte d'ancêtre du barbecue, donc.", Line_WaitForInput);
@@ -362,7 +362,7 @@ void dialog017()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900157", 256, TRUE);
 	OutputLine(NULL, "「臓物を引っ張り出すなんて、聞いただけでもすぐに死んじゃいそうでしょう？",
-		   NULL, "— On pourrait croire que lorsqu'on tire les intestins hors du ventre, la personne meure tout de suite,", Line_WaitForInput);
+		   NULL, "— On pourrait croire que lorsqu'on tire les intestins hors du ventre, la personne meurt tout de suite,", Line_WaitForInput);
 
 	DisableWindow();
 	ModDrawCharacter(1, 9, "sprite/night/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
