@@ -17,7 +17,7 @@ void dialog001()
 		   NULL, " Pardonnez-moi de vous déranger à cette heure si tardive,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900003", 256, TRUE);
 	OutputLine(NULL, "公由と申します。",
-		   NULL, " c'est monsieur Kimiyoshi.", Line_WaitForInput);
+		   NULL, " c'est Kimiyoshi.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900004", 256, TRUE);
 	OutputLine(NULL, "ご主人でいらっしゃいますか？」",
 		   NULL, " Est-ce que par hasard votre père est là ?", GetGlobalFlag(GLinemodeSp));
@@ -27,7 +27,7 @@ void dialog001()
 //　中年の男性の声＠......一気に失望する￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音とは明らかに違う女の子の声。",
-		   NULL, "C'était un homme à l'autre bout du fil.", Line_WaitForInput);
+		   NULL, "C'était la voix d'une fille qui n'était clairement pas Shion.", Line_WaitForInput);
 	OutputLine(NULL, "……一気に失望する。",
 		   NULL, " J'étais dévasté.", Line_Normal);
 }
