@@ -848,7 +848,7 @@
 //　......今日は昨日みたいに興奮しないで聞いてくださいよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……今日は昨日みたいに興奮しないで聞いてくださいよ。",
-		   NULL, "— Oui, oh, t'excite pas, hein, tu as promis.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Oui, oh, t'excite pas, hein, tu as promis.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1617,14 +1617,14 @@
 //　......まずくないだろうか...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……まずくないだろうか…？",
-		   NULL, "C'est pas bon... je suis sûr qu'elle va m'engueuler...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pas bon...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　.........詩音に怒られそうな気がする......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………詩音に怒られそうな気がする……。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "Je suis sûr qu'elle va m'engueuler...", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "msys13", 56, 0 );
@@ -1871,10 +1871,8 @@
 
 //　...それでもしばらくのとまどいがあった＠...そして、観念した様子で言った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…それでもしばらくのとまどいがあった。",
-		   NULL, "Elle resta quand même encore silencieuse un moment avant de passer à table.", Line_WaitForInput);
-	OutputLine(NULL, "…そして、観念した様子で言った。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　…それでもしばらくのとまどいがあった。…そして、観念した様子で言った。",
+		   NULL, "Elle resta quand même encore silencieuse un moment avant de passer à table.", Line_Normal);
 	ClearMessage();
 
 
@@ -2184,7 +2182,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600434", 256, TRUE);
 	OutputLine(NULL, "　打ち明けて、…大丈夫って言ってくれたその晩に消えてしまった！！！」",
-		   NULL, "Mais enfin réfléchi, c'était JUSTE pile le jour où je lui ai avoué ! Il venait de me dire que tout irait bien... et le soir-même, il a disparu !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais enfin réfléchis, c'était JUSTE pile le jour où je lui ai avoué ! Il venait de me dire que tout irait bien... et le soir-même, il a disparu !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　知ッテシマッタラ、/
@@ -2378,15 +2376,8 @@
 
 //　......詩音のことを同情しながらも、どこか対岸の火事だと思っている甘えた自分...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……詩音のことを同情しながらも、どこか対岸の火事だと思っている甘えた自分…。",
-		   NULL, "Quelque part dans ma tête, une partie de moi-même prenait pitié de Shion, une autre me disait de la laisser se débrouiller seule, et une autre répétait sans cesse ce qu'elle venait de dire, cherchant un indice.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　...頭の中で、詩音がさっきの薄気味悪い言葉を何度も繰り返す￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…頭の中で、詩音がさっきの薄気味悪い言葉を何度も繰り返す。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　……詩音のことを同情しながらも、どこか対岸の火事だと思っている甘えた自分…。　…頭の中で、詩音がさっきの薄気味悪い言葉を何度も繰り返す。",
+		   NULL, "Quelque part dans ma tête, une partie de moi-même prenait pitié de Shion, une autre me disait de la laisser se débrouiller seule, et une autre répétait sans cesse ce qu'elle venait de dire, cherchant un indice.", Line_Normal);
 	ClearMessage();
 
 //　話シタカラ殺サレテシマッタ＠
@@ -2475,7 +2466,7 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…う、",
-		   NULL, " oh non…", Line_Continue);
+		   NULL, " Oh non…", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
@@ -2646,10 +2637,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……この感覚はまずい。",
 		   NULL, "Je le sens pas...", Line_WaitForInput);
-	OutputLine(NULL, "本当にまずい。",
-		   NULL, " Je le sens vraiment pas !", Line_WaitForInput);
-	OutputLine(NULL, "…掛け値なしに…まずいッ！！！",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "本当にまずい。…掛け値なしに…まずいッ！！！",
+		   NULL, " Je le sens vraiment pas !", Line_Normal);
 	ClearMessage();
 
 //「...くそ...、無事でいてくれ...＠......梨花ちゃんッ！！！￥
