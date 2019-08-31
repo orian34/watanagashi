@@ -22,7 +22,7 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…昨日、徹夜明けで早退した魅音だが、今朝も具合は優れないのだろうか。",
-		   NULL, "Hier elle était bourrée, mais aujourd'hui non plus elle n'avait pas l'air en forme.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Hier elle était fatiguée, mais aujourd'hui non plus elle n'avait pas l'air en forme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -31,7 +31,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100434", 256, TRUE);
 	OutputLine(NULL, "「さ、３時ぃ？！　昨日に続いてか？！",
-		   NULL, "— 3h du matin ?", Line_WaitForInput);
+		   NULL, "— 3h du matin ? Après la nuit d'hier?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100435", 256, TRUE);
 	OutputLine(NULL, "　おいおい、…夜更かしにも限度ってもんがあるぞ？！",
 		   NULL, " Qu'est-ce que tu foutais debout à cette heure-là ?", Line_WaitForInput);
@@ -54,7 +54,7 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200130", 256, TRUE);
 	OutputLine(NULL, "「りりり梨花ちゃんのだけじゃなく、沙都子ちゃんのもかぁいいと思うぉ〜！！",
-		   NULL, "— Oh, mais je suis sûre que ta luette est toute mimii aussi, Satoko !", Line_WaitForInput);
+		   NULL, "— Oh, mais je suis sûre que tu es toute mimii aussi, Satoko !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200131", 256, TRUE);
 	OutputLine(NULL, "　お〜お〜あ〜く〜び〜！！！」",
 		   NULL, " Bâillement géant !", GetGlobalFlag(GLinemodeSp));
@@ -78,6 +78,6 @@ void dialog006()
 //　...レナが沙都子の首根っこを締め上げて、喉の奥を覗き込もうとしている...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…レナが沙都子の首根っこを締め上げる。それはもうあくびとは言えないと思うが…。",
-		   NULL, "Rena enlaça Satoko par le cou et fit son possible pour lui ouvrir la bouche et regarder au fond de sa gorge.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rena enlaça Satoko par le cou et fit son possible pour lui ouvrir la bouche, mais je ne suis pas sûr que ça compte comme un bâillement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
