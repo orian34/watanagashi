@@ -90,7 +90,7 @@
 //　もっとも対抗馬が出ないため、戦後の公選制導入後も公由家が村長に就くことは変わっていない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もっとも対抗馬が出ないため、戦後の公選制導入後も公由家が村長に就くことは変わっていない。",
-		   NULL, "Mais à vrai dire, même avec le système actuel, l'absence chronique de candidat assure dans les faits aux Kimiyoshi leur place à la tête du village.", Line_Normal);
+		   NULL, "Mais à vrai dire, même avec le système actuel, l'absence chronique de candidats assure dans les faits aux Kimiyoshi leur place à la tête du village.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -165,7 +165,7 @@
 //　今や雛見沢を牛耳っているとまで言えるだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今や雛見沢を牛耳っているとまで言えるだろう。",
-		   NULL, "La réussite financière du clan permet aux Sonazaki de diriger les affaires du village comme ils l'entendent.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La réussite financière du clan permet aux Sonozaki de diriger les affaires du village comme ils l'entendent.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
