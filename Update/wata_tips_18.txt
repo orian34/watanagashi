@@ -178,16 +178,16 @@
 	OutputLine(NULL, "「それはもう、おっかないくらいに厳重に施錠してありましてね。",
 		   NULL, "— C'était un truc énorme, avec une barre au milieu pour retenir le tout, très solide.", Line_Continue);
 	OutputLine(NULL, "重そうなカンヌキでどっかりと塞がれていて。",
-		   NULL, " On aurait dit la serrure d'un coffre-fort ancien, il devait peser un sacré poids.", Line_WaitForInput);
+		   NULL, " On aurait dit la serrure d'un coffre-fort ancien,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700150", 256, TRUE);
 	OutputLine(NULL, "まるで大金庫みたいに厳重な蔵だったんですよ。」",
-		   NULL, " Mais depuis cette année, il avait été remplacé par un bête cadenas.", Line_Normal);
+		   NULL, " il devait peser un sacré poids.", Line_Normal);
 	ClearMessage();
 
 //　それが今年から、本当に簡単な、安っぽい南京錠ひとつだけになった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それが今年から、本当に簡単な、安っぽい南京錠ひとつだけになった。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais depuis cette année, il avait été remplacé par un bête cadenas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
