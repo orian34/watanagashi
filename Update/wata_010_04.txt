@@ -45,7 +45,7 @@
 //　...鷹野さんたちに続き、村長に続き、...今度は梨花ちゃんと沙都子までが犠牲になったことが...村中に伝わっていくのがよくわかる...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…鷹野さんたちに続き、村長に続き、…今度は梨花ちゃんと沙都子までが犠牲になったことが…村中に伝わっていくのがよくわかる…。",
-		   NULL, "Après Takano, après le maire, c'étaient maintenant les nouvelles de Rika et de Satoko qui faisaient le tour du village.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Après Takano, après le maire, c'était maintenant les nouvelles de Rika et de Satoko qui faisaient le tour du village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -147,14 +147,14 @@
 //　ジャリ、と音がした＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ジャリ、と音がした。",
-		   NULL, "J'entendis un bruit de pas sur le gravier, derrière moi, mais peu m'importait de savoir qui c'était.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'entendis un bruit de pas sur le gravier, derrière moi,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...すっかり気落ちした俺には、その気配の主に興味は湧かなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…すっかり気落ちした俺には、その気配の主に興味は湧かなかった。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, " mais peu m'importait de savoir qui c'était.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 3000 );
@@ -440,14 +440,14 @@
 	OutputLine(NULL, "未解決に、",
 		   NULL, " L'affaire sera étouffée.", Line_WaitForInput);
 	OutputLine(NULL, "…そして謎に包まれたまま……終わって、",
-		   NULL, " Il n'y aura aucune trace.", Line_ContinueAfterTyping);
+		   NULL, " Il n'y aura", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…消え去ってしまうのだ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " aucune trace.", Line_Normal);
 	ClearMessage();
 
 //　梨花ちゃんの...西洋人形のような愛くるしい顔が、...消えていく＠
@@ -582,23 +582,9 @@
 		   NULL, " Tu as une raison en particulier ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-//　そんなはずないよ＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そんなはずないよ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　圭一くんは悪くないよ＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　圭一くんは悪くないよ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
 //　...そうレナが言ってくれるのは嬉しかったが...、それは事情を知らないからだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…そうレナが言ってくれるのは嬉しかったが…、それは事情を知らないからだ。",
+	OutputLine(NULL, "　そんなはずないよ。　圭一くんは悪くないよ。　…そうレナが言ってくれるのは嬉しかったが…、それは事情を知らないからだ。",
 		   NULL, "Je sentais bien qu'elle voulait me rassurer, me dire que ce n'était pas possible, que je n'avais rien à me reprocher, sauf que Rena ne savait pas ce qu'il s'était passé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
