@@ -14,7 +14,7 @@ void dialog001()
 		   NULL, "— Oh, mais nous aussi, nous payons des impôts, vous savez.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700106", 256, TRUE);
 	OutputLine(NULL, "…ソバ屋さんが自分のつくったソバ食ってるみたいな気分ですよ。なっはっはっは…！」",
-		   NULL, " C'est un peu comme si on buvait notre propre pisse, par moments... Éhhéhhéhhéhhé !", GetGlobalFlag(GLinemodeSp));
+		   NULL, " C'est un peu comme si on se faisait servir nos propres nouilles, par moments... Éhhéhhéhhéhhé !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -34,10 +34,10 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100732", 256, TRUE);
 	OutputLine(NULL, "「見ていません。",
-		   NULL, "Vous les avez vus ?", Line_WaitForInput);
+		   NULL, "— Non,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100733", 256, TRUE);
 	OutputLine(NULL, "……祭りには…途中から来たから…よくは…。」",
-		   NULL, " — Non, je suis allé à la fête un peu plus tard, le soir.", Line_Normal);
+		   NULL, " je suis allé à la fête un peu plus tard, le soir.", Line_Normal);
 }
 
 void dialog003()
