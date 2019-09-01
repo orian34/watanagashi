@@ -33,13 +33,13 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Maman de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/132700023", 256, TRUE);
 	OutputLine(NULL, "「圭一…。",
-		   NULL, "— Keiichi, tu téléphones à cette heure-ci ?", Line_WaitForInput);
+		   NULL, "— Keiichi,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/132700024", 256, TRUE);
 	OutputLine(NULL, "こんな時間に電話？",
-		   NULL, " Mais voyons, ça ne se fait pas de déranger les gens aussi tard !", Line_WaitForInput);
+		   NULL, " tu téléphones à cette heure-ci ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/132700025", 256, TRUE);
 	OutputLine(NULL, "　夜遅くは先方に失礼だからよしなさい…。」",
-		   NULL, " — Rah, lâche-moi, c'est pas le moment !", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais voyons, ça ne se fait pas de déranger les gens aussi tard !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -47,16 +47,16 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100634", 256, TRUE);
 	OutputLine(NULL, "「い、今はそれどころじゃないんだよッ！！」",
-		   NULL, "Je gardai l'appareil à l'oreille, envoyant promener ma mère.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Rah, lâche-moi, c'est pas le moment !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　お袋を怒鳴りつけ、コール音に耳を傾ける＠......出ろ...、...出てくれ...！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お袋を怒鳴りつけ、コール音に耳を傾ける。",
-		   NULL, "Allez, décroche !", Line_WaitForInput);
+		   NULL, "Je gardai l'appareil à l'oreille, envoyant promener ma mère.", Line_WaitForInput);
 	OutputLine(NULL, "……出ろ…、…出てくれ…！！",
-		   NULL, " Mais décroche !", Line_Normal);
+		   NULL, "Allez, décroche ! Mais décroche !", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 2, "lsys17", 56, 0 );
@@ -1166,7 +1166,7 @@
 //　２人が同居していることの意味が、一気に最悪の想像に転化する＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　２人が同居していることの意味が、一気に最悪の想像に転化する。",
-		   NULL, "Le pire des scénarii me passa par la tête.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le pire des scénarios me passa par la tête.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　そんな......沙都子は、!w1000......本当に無関係だぞ？＠
@@ -1563,15 +1563,8 @@
 
 //　一昨日の綿流し以降、夜毎に人が死んだり消えたりする＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　一昨日の綿流し以降、夜毎に人が死んだり消えたりする。",
-		   NULL, "Vu le passif du village ces derniers jours, c'était pas très malin de venir raconter que Rika et Satoko avaient disparu à leur tour.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　...そしてそれに続いて、梨花ちゃんと沙都子までもが消えたなんて、冗談でも絶対に言えない￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…そしてそれに続いて、梨花ちゃんと沙都子までもが消えたなんて、冗談でも絶対に言えない。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　一昨日の綿流し以降、夜毎に人が死んだり消えたりする。　…そしてそれに続いて、梨花ちゃんと沙都子までもが消えたなんて、冗談でも絶対に言えない。",
+		   NULL, "Vu le passif du village ces derniers jours, c'était pas très malin de venir raconter que Rika et Satoko avaient disparu à leur tour.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacterWithFiltering(3, 2, "sprite/night/re2b_def_b1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -1586,7 +1579,7 @@
 		   NULL, " s'il s'avère que c'est une blague, il vaut mieux en rire.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200200", 256, TRUE);
 	OutputLine(NULL, "だって冗談なんだから。",
-		   NULL, " Ca ne sera qu'une blague après tout.", Line_WaitForInput);
+		   NULL, " Ça ne sera qu'une blague après tout.", Line_WaitForInput);
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/night/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
@@ -2141,7 +2134,7 @@
 //　レナと魅音が、とても人の住まいには見えなかったそのプレハブ小屋に近付いていった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナと魅音が、とても人の住まいには見えなかったそのプレハブ小屋に近付いていった。",
-		   NULL, "Mion et Rena s'approchèrent des murs en préfabriqués. J'aurais jamais pensé que des gens pussent vivre là-dedans.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion et Rena s'approchèrent des murs en préfabriqué. J'aurais jamais pensé que des gens pussent vivre là-dedans.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......こんな立派な神社を持ってるくらいなんだから...もっと立派な家に住んでいると思っていた＠......すごく意外だった￥
@@ -2369,7 +2362,7 @@
 	OutputLine(NULL, "　レナが駆け出して行った。",
 		   NULL, "Elle partit en courant.", Line_WaitForInput);
 	OutputLine(NULL, "……本宅って何だ？",
-		   NULL, " — La demeure principale ? De quoi elle parle ?", Line_Normal);
+		   NULL, " La demeure principale ? De quoi elle parle ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
