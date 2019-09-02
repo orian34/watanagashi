@@ -71,7 +71,7 @@
 //　後を継げなかったお魎の実の娘で、魅音の実母である園崎茜（あかね）も＠勘当前は「蒐（あかね）」という名であったことが知られている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　後を継げなかったお魎の実の娘で、魅音の実母である園崎茜（あかね）も、",
-		   NULL, "L'héritière du clan, Mion, présente ce même idéogramme dans son prénom. En effet, l'idéogramme 魅se décompose en 鬼 et en 未. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'héritière du clan, Mion, présente ce même idéogramme dans son prénom. En effet, l'idéogramme 魅 se décompose en 鬼 et en 未. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "勘当前は「蒐（あかね）」という名であったことが知られている。",
 		   NULL, "Il est intéressant de noter que la mère de Mion, Akane Sonozaki, dut changer l'idéogramme de son prénom lorsqu'elle fut déshéritée. S'il s'écrit aujourd'hui 茜, il était bel et bien écrit 蒐 avant son mariage.", GetGlobalFlag(GLinemodeSp));
