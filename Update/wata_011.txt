@@ -99,16 +99,10 @@
 		   NULL, " Rika et Satoko.", Line_Normal);
 	ClearMessage();
 
-//　シャク＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　シャク。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //　............味気なくトーストを噛む＠...本当に味なんかしなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…………味気なくトーストを噛む。",
+	OutputLine(NULL, "　シャク。　…………味気なくトーストを噛む。",
 		   NULL, "Je mordis dans un toast, sans grand appétit.", Line_WaitForInput);
 	OutputLine(NULL, "…本当に味なんかしなかった。",
 		   NULL, " Il n'avait aucun goût.", Line_Normal);
@@ -175,10 +169,8 @@
 
 //　レナもやはり寝不足のようだ＠...いつもの元気が、少し足りなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　レナもやはり寝不足のようだ。",
-		   NULL, "Rena aussi avait l'air très fatiguée.", Line_WaitForInput);
-	OutputLine(NULL, "…いつもの元気が、少し足りなかった。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　レナもやはり寝不足のようだ。…いつもの元気が、少し足りなかった。",
+		   NULL, "Rena aussi avait l'air très fatiguée.", Line_Normal);
 	ClearMessage();
 
 //「......学校、...行くか？＠
@@ -440,14 +432,14 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>校長</color>", NULL, "<color=#f5e6d3>Directeur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/133200001", 256, TRUE);
 	OutputLine(NULL, "「おはようございます。」",
-		   NULL, "— Bonjour Monsieur.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Bonjour Madame.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //保護者「おはようございます。」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>保護者</color>", NULL, "<color=#f5e6d3>Gardien</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/spar0300001", 256, TRUE);
 	OutputLine(NULL, "「おはようございます。」",
-		   NULL, "Bonjour Madame.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Bonjour Monsieur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -501,10 +493,8 @@
 
 //　.........夜だけの狂気が、ついに日の下にも滲み出してきた...＠...そんな感じだった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………夜だけの狂気が、ついに日の下にも滲み出してきた…。",
-		   NULL, "La folie de la nuit d'hier avait désormais contaminé le monde normal.", Line_WaitForInput);
-	OutputLine(NULL, "…そんな感じだった。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　………夜だけの狂気が、ついに日の下にも滲み出してきた…。…そんな感じだった。",
+		   NULL, "La folie de la nuit d'hier avait désormais contaminé le monde normal.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
@@ -812,10 +802,8 @@
 
 //　...弁当の下準備をする時間なんかなかったのだろう＠朝、早く起きられたわけでもなかったろうし...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…弁当の下準備をする時間なんかなかったのだろう。",
-		   NULL, "Elle n'avait certainement pas eu la force de se lever aussi tôt que d'habitude et de préparer tout ce qu'il lui fallait...", Line_WaitForInput);
-	OutputLine(NULL, "朝、早く起きられたわけでもなかったろうし…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　…弁当の下準備をする時間なんかなかったのだろう。朝、早く起きられたわけでもなかったろうし…。",
+		   NULL, "Elle n'avait certainement pas eu la force de se lever aussi tôt que d'habitude et de préparer tout ce qu'il lui fallait...", Line_Normal);
 	ClearMessage();
 
 //「...遠慮なく突っつけよ＠今日は素直に俺の弁当の方が立派なのを認めろ。＠
@@ -915,10 +903,8 @@
 
 //　俺たちの笑い声が...小さくなる＠...先につまづいたのは俺だった...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　俺たちの笑い声が…小さくなる。",
-		   NULL, "Je n'arrivais même plus à me forcer à rire...", Line_WaitForInput);
-	OutputLine(NULL, "…先につまづいたのは俺だった…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　俺たちの笑い声が…小さくなる。…先につまづいたのは俺だった…。",
+		   NULL, "Je n'arrivais même plus à me forcer à rire...", Line_Normal);
 	ClearMessage();
 
 //「ごめん＠......その、......悪かった。＠
@@ -972,16 +958,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//　あまりに惨い言葉だったかもしれない＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　あまりに惨い言葉だったかもしれない。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
 //　...誰もが思いつつも、遠回しに言っていた言葉を...あまりに直接に言ってしまった＠レナが息を呑むのがわかる...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…誰もが思いつつも、遠回しに言っていた言葉を…あまりに直接に言ってしまった。",
+	OutputLine(NULL, "　あまりに惨い言葉だったかもしれない。　…誰もが思いつつも、遠回しに言っていた言葉を…あまりに直接に言ってしまった。",
 		   NULL, "Personne n'osait en parler, alors le fait de le dire, comme ça, cash, c'était assez perturbant.", Line_WaitForInput);
 	OutputLine(NULL, "レナが息を呑むのがわかる…。",
 		   NULL, " J'entendis Rena avaler de travers et essayer de calmer sa respiration.", Line_Normal);
@@ -1119,9 +1098,9 @@
 //　...梨花ちゃんはそれに対して、自分に任せろと言った＠...それから...えぇと、何て言ったっけ...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…梨花ちゃんはそれに対して、自分に任せろと言った。",
-		   NULL, "Et elle m'avait dit de ne pas m'en faire, elle avait dit qu'elle s'en chargerait.", Line_WaitForInput);
+		   NULL, "Et elle m'avait dit de ne pas m'en faire,", Line_WaitForInput);
 	OutputLine(NULL, "…それから…えぇと、何て言ったっけ…。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " elle avait dit qu'elle s'en chargerait.", Line_Normal);
 	ClearMessage();
 
 //　そうそう、自分が頑張らないと、犬さんも大変なことになってしまうと言ったような気がする＠
@@ -1736,7 +1715,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100793", 256, TRUE);
 	OutputLine(NULL, "「………そんな時間に、食事もせずに２人はどこへ行ったんだ…。」",
-		   NULL, "— ... Où peuvent-elles bien être allées sans manger à cette-heure-là ?", Line_Normal);
+		   NULL, "— ... Où peuvent-elles bien être allées sans manger à cette heure-là ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -2060,15 +2039,8 @@
 
 //　...だがその説得力は...あまりにも力強かった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…だがその説得力は…あまりにも力強かった。",
-		   NULL, "J'étais très impressionné de ce qu'elle avait pu déduire sans avoir d'indice vraiment concret.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　今の、手がかりが一切ないこの状況を打破できる唯一の光明だったからだ￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　今の、手がかりが一切ないこの状況を打破できる唯一の光明だったからだ。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　…だがその説得力は…あまりにも力強かった。　今の、手がかりが一切ないこの状況を打破できる唯一の光明だったからだ。",
+		   NULL, "J'étais très impressionné de ce qu'elle avait pu déduire sans avoir d'indice vraiment concret.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_026", 56, 64 );
@@ -2207,14 +2179,14 @@
 //　...あれしか情報のないレナが、あれだけの推理をしてみせたのだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…あれしか情報のないレナが、あれだけの推理をしてみせたのだ。",
-		   NULL, "Si Rena a réussi à déduire tout ça sans avoir aucune information, alors moi je devrais réussir à découvrir encore plus de choses...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si Rena a réussi à déduire tout ça sans avoir aucune information,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　......なら、レナよりもはるかに多くのことを知る俺にしかできない推理があるはずだ...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……なら、レナよりもはるかに多くのことを知る俺にしかできない推理があるはずだ…。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "alors moi je devrais réussir à découvrir encore plus de choses...", Line_Normal);
 	ClearMessage();
 
 //　昨夜、大石さんも言っていたが、この事件は間違いなく雛見沢の内側で起こっていることだ＠
