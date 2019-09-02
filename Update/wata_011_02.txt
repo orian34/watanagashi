@@ -2421,15 +2421,8 @@
 
 //　...大石さんも自分で認めたじゃないか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…大石さんも自分で認めたじゃないか。",
+	OutputLine(NULL, "　…大石さんも自分で認めたじゃないか。　詩音は所在不明なことが多いって。",
 		   NULL, "L'inspecteur t'avait dit pourtant que Shion avait l'habitude de disparaître.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　詩音は所在不明なことが多いって＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　詩音は所在不明なことが多いって。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3176,15 +3169,8 @@
 
 //　......もしも、...俺が大石さんに何も知らされていなかったなら＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……もしも、…俺が大石さんに何も知らされていなかったなら。",
+	OutputLine(NULL, "　……もしも、…俺が大石さんに何も知らされていなかったなら。　……俺はこの、詩音の気遣ってくれる言葉に薄い涙を浮かべることもできたかもしれない。",
 		   NULL, "Si l'inspecteur ne m'avait pas prévenu, je serais sûrement en train de la remercier avec les larmes aux yeux.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　......俺はこの、詩音の気遣ってくれる言葉に薄い涙を浮かべることもできたかもしれない＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……俺はこの、詩音の気遣ってくれる言葉に薄い涙を浮かべることもできたかもしれない。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4272,15 +4258,8 @@
 
 //　......村長は、綿流しの次の朝＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……村長は、綿流しの次の朝。",
+	OutputLine(NULL, "　……村長は、綿流しの次の朝。　電話で鷹野さんたちの死を知らされ、夕方の会合の約束をした。",
 		   NULL, "Le maire a appris la mort de Mme Takano dans la nuit et a promis d'aller à la réunion du conseil municipal le soir-là.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　電話で鷹野さんたちの死を知らされ、夕方の会合の約束をした＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　電話で鷹野さんたちの死を知らされ、夕方の会合の約束をした。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4329,7 +4308,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600527", 256, TRUE);
 	OutputLine(NULL, "「……ぅっく……、",
-		   NULL, "— sniff", Line_Continue);
+		   NULL, "— *sniff*", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -5025,7 +5004,7 @@
 //　......ツー、!w600ツー、!w600というトーン音＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……ツー、",
-		   NULL, "tuuuut,", Line_ContinueAfterTyping);
+		   NULL, "Tuuuut,", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
