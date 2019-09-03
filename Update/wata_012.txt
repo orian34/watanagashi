@@ -18,7 +18,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Maman de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/132700029", 256, TRUE);
 	OutputLine(NULL, "「…………………圭一。",
-		   NULL, "—  Keiichi ?", Line_WaitForInput);
+		   NULL, "— Keiichi ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s02/00/132700030", 256, TRUE);
 	OutputLine(NULL, "………圭一…？」",
 		   NULL, " ... Keiichi !", GetGlobalFlag(GLinemodeSp));
@@ -219,10 +219,8 @@
 
 //　ここで見たことは全部忘れるから、ささ＠　行こう行こう！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ここで見たことは全部忘れるから、ささ！",
-		   NULL, "Je les aurais poussés à repartir vers la cour principale.", Line_WaitForInput);
-	OutputLine(NULL, "　行こう行こう！！",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　ここで見たことは全部忘れるから、ささ！　行こう行こう！！",
+		   NULL, "Je les aurais poussés à repartir vers la cour principale.", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacterWithFiltering(3, 9, "sprite/night/ta1_human_", "0", "left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -231,19 +229,17 @@
 
 //　...ぐずる鷹野さんを無理やり押して＠富竹さんは苦笑い＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…ぐずる鷹野さんを無理やり押して。",
+	OutputLine(NULL, "　…ぐずる鷹野さんを無理やり押して。富竹さんは苦笑い。",
 		   NULL, "Mme Takano aurait été entraînée de force, sur l'épaule de Tomitake, le bras tendu vers le temple, la larme à l'œil.", Line_WaitForInput);
-	OutputLine(NULL, "富竹さんは苦笑い。",
-		   NULL, " Shion se serait moquée de moi toute la soirée, accrochée à mon bras.", Line_WaitForInput);
 
 	DisableWindow();
 	ModDrawCharacter(2, 6, "sprite/night/si1a_akuwarai_a1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //詩音は俺のことを、小馬鹿にするように肩をすくめる＠...でもそれでいいんだ￥
 	OutputLine(NULL, "詩音は俺のことを、小馬鹿にするように肩をすくめる。",
-		   NULL, " Mais nous aurions fait le bon choix.", Line_WaitForInput);
+		   NULL, "Shion se serait moquée de moi toute la soirée, accrochée à mon bras.", Line_WaitForInput);
 	OutputLine(NULL, "…でもそれでいいんだ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " Mais nous aurions fait le bon choix.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
@@ -286,12 +282,12 @@
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……拍手して",
-		   NULL, " encore et encore.", Line_ContinueAfterTyping);
+		   NULL, " encore", Line_ContinueAfterTyping);
 // !s200
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "…………………。",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " et encore.", Line_ContinueAfterTyping);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -790,14 +786,14 @@
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……梨花ちゃんも沙都子も………、",
-		   NULL, " Rika et Satoko seraient encore en vie maintenant...", Line_ContinueAfterTyping);
+		   NULL, " Rika et Satoko seraient", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…死なずに消えずに済んだんだ……。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " encore en vie maintenant...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("white", 10 );
@@ -1028,22 +1024,20 @@
 //　...とても使い切れないので、お裾分けを希望する人はお気軽にお越し下さい、!w1000...とある＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…とても使い切れないので、お裾分けを希望する人はお気軽にお越し下さい、",
-		   NULL, "Et comme ils savaient qu'ils ne pourraient jamais tout utiliser à eux seuls, ils invitaient le voisinage à venir se servir.", Line_ContinueAfterTyping);
+		   NULL, "Et comme ils savaient qu'ils ne pourraient jamais tout utiliser à eux seuls,", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…とある。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ils invitaient le voisinage à venir se servir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　追伸として、樽で送られてきたので一升瓶などの容器をお持ちになって下さい＠...そう結んでいた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　追伸として、樽で送られてきたので一升瓶などの容器をお持ちになって下さい。",
-		   NULL, "Un post-scriptum stipulait même qu'ils en avaient plusieurs tonneaux et qu'une grande bouteille de 1,8l n'était pas un problème.", Line_WaitForInput);
-	OutputLine(NULL, "…そう結んでいた。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　追伸として、樽で送られてきたので一升瓶などの容器をお持ちになって下さい。…そう結んでいた。",
+		   NULL, "Un post-scriptum stipulait même qu'ils en avaient plusieurs tonneaux et qu'une grande bouteille de 1,8l n'était pas un problème.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -1111,9 +1105,9 @@
 //　村長の失踪した日の会合だって、...大石さんは言ったじゃないか＠御三家が参加したって＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　村長の失踪した日の会合だって、…大石さんは言ったじゃないか。",
-		   NULL, "Le jour de la disparition du maire, lors de la réunion, les trois chefs de clan avaient été présents, l'inspecteur me l'avait dit.", Line_WaitForInput);
+		   NULL, "Le jour de la disparition du maire, lors de la réunion,", Line_WaitForInput);
 	OutputLine(NULL, "御三家が参加したって。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " les trois chefs de clan avaient été présents, l'inspecteur me l'avait dit.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...御三家ってのは魅音の園崎家を含む＠
@@ -1601,7 +1595,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100003", 256, TRUE);
 	OutputLine(NULL, "「…ザ、ザ、熊谷です。",
-		   NULL, "— tchh Ici Kumadani.", Line_WaitForInput);
+		   NULL, "— Ici Kumadani.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100004", 256, TRUE);
 	OutputLine(NULL, "大石さんどーぞー！」",
 		   NULL, " Ôishi, à vous !", GetGlobalFlag(GLinemodeSp));
@@ -1673,7 +1667,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100012", 256, TRUE);
 	OutputLine(NULL, "「了解っす。」",
-		   NULL, "— Compris, chef. tchh", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Compris, chef.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1901,7 +1895,7 @@
 //　レナは敵意を込めて、静かにそう言った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナは敵意を込めて、静かにそう言った。",
-		   NULL, "Rena lui répondit calmement, mais je sentais bien qu'elle y mettait tout le venin donc elle était capable.", Line_Normal);
+		   NULL, "Rena lui répondit calmement, mais je sentais bien qu'elle y mettait tout le venin dont elle était capable.", Line_Normal);
 	ClearMessage();
 
 //「......私もいろーんな悪口を言われたもんですが、若いお嬢さんの短い一言が、一番こたえますよ。＠
@@ -2007,14 +2001,6 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//　......大石さんが俺たちの覚悟の程を測る＠...だから、俺は力強く言った￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……大石さんが俺たちの覚悟の程を測る。",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "…だから、俺は力強く言った。",
-		   NULL, " A REMOVE", Line_Normal);
-	ClearMessage();
-
 //「そんなのは...覚悟の上です！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100988", 256, TRUE);
@@ -2106,7 +2092,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100013", 256, TRUE);
 	OutputLine(NULL, "「ザザ、…ザ、熊谷です。",
-		   NULL, "— tchh Ici Kumadani,", Line_WaitForInput);
+		   NULL, "— Ici Kumadani,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100014", 256, TRUE);
 	OutputLine(NULL, "どうぞー。」",
 		   NULL, " à vous.", GetGlobalFlag(GLinemodeSp));
@@ -2128,7 +2114,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100015", 256, TRUE);
 	OutputLine(NULL, "「了解っす！　ザザ！」",
-		   NULL, "— Compris, chef. tchhh", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Compris, chef.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...あまりに短い会話が、...俺たちの訪問がすでに組み込まれたシナリオであることをうかがわせる￥
