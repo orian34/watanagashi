@@ -244,7 +244,7 @@
 //「監視カメラ作動中＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「監視カメラ作動中。",
-		   NULL, "« Cet endroit est sous surveillance caméra »", GetGlobalFlag(GLinemodeSp));
+		   NULL, "« Cet endroit est sous surveillance caméra. »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -660,7 +660,7 @@
 //　そう言って、魅音は高級ホテルの従業員のようにうやうやしく一礼すると、踵を返し歩き始めた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言って、魅音は高級ホテルの従業員のようにうやうやしく一礼すると、踵を返し歩き始めた。",
-		   NULL, "Mion nous fit une courbette très basse, un peu comme les employées des hôtels de luxe, puis elle tourna les talons et repartit.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion nous fit une courbette très basse, un peu comme les employés des hôtels de luxe, puis elle tourna les talons et repartit.", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
@@ -959,7 +959,7 @@
 		   NULL, " Il neige beaucoup à Hinamizawa.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200486", 256, TRUE);
 	OutputLine(NULL, "大雪が降ると、みーんな埋まっちゃうの。",
-		   NULL, " Les années de fortes chutes de neiges, on ne voit plus rien du tout !", Line_WaitForInput);
+		   NULL, " Les années de fortes chutes de neige, on ne voit plus rien du tout !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200487", 256, TRUE);
 	OutputLine(NULL, "玄関なんか埋まっちゃう時もあるんだよ。」",
 		   NULL, " Parfois, on n'arrive même plus à sortir par la porte !", GetGlobalFlag(GLinemodeSp));
@@ -998,10 +998,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雪がちゃんと降るところだから、冬場はかまくらとかが作れて楽しいぞー…なんて言ってたけど。",
 		   NULL, "Qu'il neigeait suffisamment pour qu'il ait de beaux paysages à peindre chaque hiver.", Line_WaitForInput);
-	OutputLine(NULL, "…玄関が埋まって車が見つからなくなる？？",
-		   NULL, " Mais là, il neigeait carrément trop, oh !", Line_WaitForInput);
-	OutputLine(NULL, "　降り過ぎだー！！！",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "…玄関が埋まって車が見つからなくなる？？　降り過ぎだー！！！",
+		   NULL, " Mais là, il neigeait carrément trop, oh !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 3, "sprite/normal/me2_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
@@ -1833,10 +1831,8 @@
 
 //　...その覚悟があってここに来たはずじゃないか...＠......覚悟を決め、唇を噛んだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…その覚悟があってここに来たはずじゃないか…。",
-		   NULL, "J'avais pris ma décision en ce sens avant de venir ici...", Line_WaitForInput);
-	OutputLine(NULL, "……覚悟を決め、唇を噛んだ。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　…その覚悟があってここに来たはずじゃないか…。……覚悟を決め、唇を噛んだ。",
+		   NULL, "J'avais pris ma décision en ce sens avant de venir ici...", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 1000, TRUE );
@@ -2291,15 +2287,8 @@
 
 //　開いた口が塞がらない...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　開いた口が塞がらない…。",
-		   NULL, "Mion resta bouche bée.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　魅音の顔を一言で言い表すならそれだった...￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　魅音の顔を一言で言い表すならそれだった…。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　開いた口が塞がらない…。　魅音の顔を一言で言い表すならそれだった…。",
+		   NULL, "Mion resta bouche bée.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
@@ -2537,15 +2526,8 @@
 
 //　......直感する＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……直感する。",
+	OutputLine(NULL, "　……直感する。　…今、この瞬間。",
 		   NULL, "Instinctivement, je sus.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　...今、この瞬間＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…今、この瞬間。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2906,10 +2888,8 @@
 
 //　......古くから残るものは全て忌々しい＠...そういう時代になったのだ...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……古くから残るものは全て忌々しい。",
-		   NULL, "C'était une époque où tout ce qui avait trait au passé était systématiquement dénigré et tourné en ridicule.", Line_WaitForInput);
-	OutputLine(NULL, "…そういう時代になったのだ…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　……古くから残るものは全て忌々しい。…そういう時代になったのだ…。",
+		   NULL, "C'était une époque où tout ce qui avait trait au passé était systématiquement dénigré et tourné en ridicule.", Line_Normal);
 	ClearMessage();
 
 //「明治になり、古い歴史を持つ鬼ヶ淵村の名称は、一方的に雛見沢村に改められてしまいました＠......古い因習を一掃しようとする、明治政府の思惑が強く働いたのだと聞かされています...。￥
@@ -2936,10 +2916,8 @@
 
 //　西洋式のものが何でも持てはやされ、...古い伝統的なものが何でも蔑まされる＠...そんな時代になったのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　西洋式のものが何でも持てはやされ、…古い伝統的なものが何でも蔑まされる。",
-		   NULL, "Tout ce qui était occidental était bon, tout ce qui était japonais était mauvais, les anciens rites furent méprisés.", Line_WaitForInput);
-	OutputLine(NULL, "…そんな時代になったのだ。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　西洋式のものが何でも持てはやされ、…古い伝統的なものが何でも蔑まされる。…そんな時代になったのだ。",
+		   NULL, "Tout ce qui était occidental était bon, tout ce qui était japonais était mauvais, les anciens rites furent méprisés.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 3, "sprite/normal/me2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
@@ -3004,15 +2982,6 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ある大人は子供に、…雛見沢に迷い込めば鬼隠しにされ、バラバラにされて肉を食われてしまう。",
 		   NULL, "Et puis un jour, un adulte a dit aux enfants que s'ils allaient au village, ils seraient pourchassés et enlevés par les démons, puis découpés en morceaux et mangés tout cru.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　...恐ろしい人食い鬼の村に近付くな近付くな...＠そう教えた＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…恐ろしい人食い鬼の村に近付くな近付くな…。",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "そう教えた。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　ある大人は、...雛見沢の村人は大昔の飢饉の時＠河原に捨てられていた死体を集め、焼いて食べて生き延びたなどという何の根拠もない話を、大真面目に教えた￥
@@ -3443,14 +3412,14 @@
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…彼らが卑しいと蔑む鬼ヶ淵村の陰鬱な風習よりもさらに劣る、",
-		   NULL, " ce qu'il dut faire au sein de cette unité fut bien plus terrible que ce qu'il avait dû faire jusqu'à lors...", Line_ContinueAfterTyping);
+		   NULL, " ce qu'il dut faire au sein de cette unité fut", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…恐ろしい研究がなされていた………。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " bien plus terrible que ce qu'il avait dû faire jusqu'à lors...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/heya1", "left", 0, 0, 300 );
@@ -3764,14 +3733,14 @@
 //　...本当にどこまでも救いようのない、!w1000......悲しい物語だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…本当にどこまでも救いようのない、",
-		   NULL, "C'était vraiment une histoire terriblement triste.", Line_ContinueAfterTyping);
+		   NULL, "C'était vraiment une histoire", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……悲しい物語だった。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " terriblement triste.", Line_Normal);
 	ClearMessage();
 
 //　......差別したりされたり、したりされたり＠
@@ -4430,14 +4399,6 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//　レナの言葉は...これ以上ないくらいに痛烈だった＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　レナの言葉は…これ以上ないくらいに痛烈だった。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-
 //　......魅音の肩に圧し掛かるあまりに重い歴史を全て知った上で、......仲間殺しを批判したのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……魅音の肩に圧し掛かるあまりに重い歴史を全て知った上で、……仲間殺しを批判したのだ。",
@@ -4488,7 +4449,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500099", 256, TRUE);
 	OutputLine(NULL, "　…ボクがちゃんと番をしますですから、もっと軽いカギに替えてほしいなのです。",
-		   NULL, "— « Ne vous en faites pas, je vous promets de monter la garde. Mais s'il vous plaît, permettez-moi de changer la serrure pour avoir simplement un cadenas ou quelque chose de plus facile à manipuler. »", Line_Normal);
+		   NULL, "« Ne vous en faites pas, je vous promets de monter la garde. Mais s'il vous plaît, permettez-moi de changer la serrure pour avoir simplement un cadenas ou quelque chose de plus facile à manipuler. »", Line_Normal);
 	ClearMessage();
 
 //　私は園崎家の当主代行として言った＠
