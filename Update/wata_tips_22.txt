@@ -64,13 +64,13 @@
 	OutputLine(NULL, "「課長。",
 		   NULL, "— Chef, laissez-les dormir un peu, à tour de rôle, les plus jeunes d'abord.", Line_Continue);
 	OutputLine(NULL, "若い子から交替で仮眠取らせてあげて下さい。",
-		   NULL, " Il leur faudra des forces pour la suite des opérations, c'est maintenant que les choses sérieuses commencent.", Line_WaitForInput);
+		   NULL, " Il leur faudra des forces pour la suite des opérations,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700162", 256, TRUE);
 	OutputLine(NULL, "ここからは長丁場になりますからねぇ。",
-		   NULL, " Je préfère ne pas les brusquer, ils doivent être en forme pour la suite.", Line_WaitForInput);
+		   NULL, " c'est maintenant que les choses sérieuses commencent.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700163", 256, TRUE);
 	OutputLine(NULL, "無理せず、体を休めながらのんびり行きましょ。」",
-		   NULL, " — C'est ce que je leur dis de faire depuis avant-hier, figure-toi.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je préfère ne pas les brusquer, ils doivent être en forme pour la suite.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -78,12 +78,12 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442700020", 256, TRUE);
 	OutputLine(NULL, "「みんなには交代で休めって言ってるんだけどね。",
-		   NULL, "Mais ils ne veulent pas se rendre inutiles, alors forcément, ils ne dorment pas.", Line_Continue);
+		   NULL, "— C'est ce que je leur dis de faire depuis avant-hier, figure-toi.", Line_Continue);
 	OutputLine(NULL, "みんな遠慮してなかなか休んでくれないんだよ。",
-		   NULL, " Tu ne veux pas leur en toucher un mot ?", Line_WaitForInput);
+		   NULL, " Mais ils ne veulent pas se rendre inutiles, alors forcément, ils ne dorment pas.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442700021", 256, TRUE);
 	OutputLine(NULL, "…大石さんからも言ってくれないか。」",
-		   NULL, " — Comment ça ?", Line_Normal);
+		   NULL, " Tu ne veux pas leur en toucher un mot ?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -93,7 +93,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700164", 256, TRUE);
 	OutputLine(NULL, "「ありゃありゃ。",
-		   NULL, "Oh, les enfants !", Line_Continue);
+		   NULL, "— Comment ça ? Oh, les enfants !", Line_Continue);
 	OutputLine(NULL, "みんな、遠慮しないでいいんですよ？",
 		   NULL, " Ne vous en faites pas, vous pouvez faire une sieste quelques heures.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700165", 256, TRUE);
