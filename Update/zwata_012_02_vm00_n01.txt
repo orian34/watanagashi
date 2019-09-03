@@ -55,7 +55,7 @@ void dialog003()
 		   NULL, "— Pendant la guerre du Pacifique, le slogan national, c'était “Tous ensemble, ne faisons qu'un”, mais les habitants d'ici subissaient quand même encore des brimades.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300361_6", 256, TRUE);
 	OutputLine(NULL, "……数えだしたらキリがないくらい。",
-		   NULL, " Bien trop pour qu'on puisse les dénombrées. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Bien trop pour qu'on puisse les dénombrer. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog004()
