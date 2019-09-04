@@ -447,7 +447,7 @@
 		   NULL, " Ma vieille mère n'y a jamais droit, vous savez.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700401", 256, TRUE);
 	OutputLine(NULL, "　そりゃーもう賑やかなことで。",
-		   NULL, " Après, ca a l'avantage d'être assez vivant.", Line_WaitForInput);
+		   NULL, " Après, ça a l'avantage d'être assez vivant.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700402", 256, TRUE);
 	OutputLine(NULL, "ああいうところじゃ、病気の重さがひとつのステータスになるらしいんですよ。",
 		   NULL, " Vous êtes bien vu, dites-donc. ", GetGlobalFlag(GLinemodeSp));
@@ -619,10 +619,8 @@
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
-	OutputLine(NULL, "のわ？！",
-		   NULL, "Hein ?", Line_WaitForInput);
-	OutputLine(NULL, "　痛てて、手術跡が突っ張る…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "のわ？！　痛てて、手術跡が突っ張る…。",
+		   NULL, "Hein ?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -689,14 +687,14 @@
 //　大石さんが、こんな切り出し方をするということは、!w1000......何か重要な話があるに違いないのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石さんが、こんな切り出し方をするということは、",
-		   NULL, "Il voulait me dire quelque chose d'important, je pense.", Line_ContinueAfterTyping);
+		   NULL, "Il voulait me dire", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……何か重要な話があるに違いないのだ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " quelque chose d'important, je pense.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -723,7 +721,7 @@
 //　俺が魅音に刺されたあの夜＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺が魅音に刺されたあの夜。",
-		   NULL, "La nuit où Mion m'a mis ce coup de couteau, Shion est tombée du balcon du septième étage.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La nuit où Mion m'a mis ce coup de couteau,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -731,7 +729,7 @@
 //　詩音はベランダから落ちて死んだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音はベランダから落ちて死んだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Shion est tombée du balcon du septième étage.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...警察は事故、自殺、他殺の全ての可能性で調べる、なんて言っていたが、...魅音の仕業以外にはありえないのだ...＠
@@ -863,7 +861,7 @@
 		   NULL, " Dans le temple souterrain des Sonozaki.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700434", 256, TRUE);
 	OutputLine(NULL, "…隠し井戸も見つかったんですよ。",
-		   NULL, " Nous avons aussi trouvé le fameux puits", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Nous avons aussi trouvé le fameux puits.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -1085,14 +1083,14 @@
 //　.........魅音。!w2000....................................￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………魅音。",
-		   NULL, "Mion...", Line_ContinueAfterTyping);
+		   NULL, "Mion", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………………………………。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, "...", Line_Normal);
 	ClearMessage();
 
 
@@ -2221,32 +2219,25 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　事の発端。",
 		   NULL, "L'entrée par effraction dans le temple avait été le premier élément,", Line_WaitForInput);
-	OutputLine(NULL, "全ての始まり。",
+	OutputLine(NULL, "全ての始まり。　…何度も後悔することになった、…祭具殿への侵入。",
 		   NULL, " celui qui avait mis le feu aux poudres.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-//　...何度も後悔することになった、...祭具殿への侵入＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…何度も後悔することになった、…祭具殿への侵入。",
-		   NULL, "C'était Mme Takano qui nous avait convaincus d'y entrer.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 
 //　それをそそのかした!s150....................................!sd鷹野さん＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それをそそのかした",
-		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+		   NULL, "C'était Mme Takano", Line_ContinueAfterTyping);
 //!s150
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "………………………………",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " qui nous avait convaincus", Line_ContinueAfterTyping);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
 	OutputLine(NULL, "鷹野さん。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " d'y entrer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　俺たちを、......祭具殿に誘った時にはもう.........この世の人では、......なかった...￥
@@ -2881,15 +2872,14 @@
 //　...額を割った魅音が...血をこびり付かせた顔で...にやりと笑いながら...、!w1000鼻がぶつかるくらいの...目の前に...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…額を割った魅音が…血をこびり付かせた顔で…にやりと笑いながら…、",
-		   NULL, "Mion approcha son visage tout près du mien, l'haleine fétide, le visage ensanglanté, le front écharné.", Line_ContinueAfterTyping);
+		   NULL, "Mion approcha son visage tout près du mien,", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "鼻がぶつかるくらいの…目の前に…。",
-	//	   NULL, " A REMOVE", Line_Normal);
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " l'haleine fétide, le visage ensanglanté, le front écharné.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys11", 56, 0 );
