@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 //８■スクラップ帳よりⅣ
@@ -23,7 +23,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "＜綿流しについて＞",
-		   NULL, "<Watanagashi>", Line_Normal);
+		   NULL, "La purification du coton", Line_Normal);
 	ClearMessage();
 
 	SetStyleOfMessageSwinging( 0 );
@@ -32,7 +32,7 @@ void main()
 //　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く。",
-		   NULL, "The rite of Watanagashi is performed during a village festival every June even now, but reading back to its origin turns up a seriously sanguine ceremony.", Line_Normal);
+		   NULL, "La cérémonie de la purification du coton est une fête annonçant le début de l'été, ayant lieu depuis une vingtaine d'années tous les ans en juin. Mais si l'on remonte un peu dans le temps, on se rendra compte qu'à l'origine, c'était une cérémonie bien plus sanglante.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -40,22 +40,19 @@ void main()
 //　本来、綿流しは、一定周期に基づき、オヤシロさまの信託を得て「犠牲者」を選び出し＠それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本来、綿流しは、一定周期に基づき、オヤシロさまの信託を得て「犠牲者」を選び出し、",
-		   NULL, "Originally, Watanagashi would happen at fixed intervals, and after receiving Oyashiro-sama's trust, they chose a sacrifice. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il s'avère qu'en fait, la purification était le nom donné à une cérémonie bien particulière. De manière cyclique, la déesse Yashiro choisissait une “victime”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった。",
-		   NULL, "Then, the entire village would kidnap (demon away) the person and ceremonially dissect and devour them in a feast.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tous les fidèles s'entr'aidaient pour la pourchasser et la capturer -- ce processus était appelé “l'enlèvement des démons” -- puis ils préparaient un festin avec sa chair et la mangeaient.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //（周期の法則には謎が多い＠儀式の間隔が非常に不定期だからだ＠天体を元にした吉凶によって決めているという説もあるが、説得力に乏しい。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "（周期の法則には謎が多い。",
-		   NULL, "(The rules that determined the intervals are shrouded in mystery.", Line_WaitForInput);
-	OutputLine(NULL, "儀式の間隔が非常に不定期だからだ。",
-		   NULL, " This is because the ceremonies occurred extremely irregularly. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（周期の法則には謎が多い。儀式の間隔が非常に不定期だからだ。",
+		   NULL, "Personne n'a découvert quels critères poussaient périodiquement la déesse Yashiro à désigner une victime.", Line_WaitForInput);
 	OutputLine(NULL, "天体を元にした吉凶によって決めているという説もあるが、説得力に乏しい。）",
-		   NULL, "There's a theory that it was determined based on astrological fortune-telling, but it isn't too convincing.)", Line_Normal);
+		   NULL, " Certains anthropologues pensent trouver un rapport dans l'astronomie, mais cela me paraît peu vraisemblable.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -64,13 +61,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　古代の鬼ヶ淵村の住人たちは自分たちが半人半鬼の仙人で、人間よりも高貴な存在であると固く信じ、それを内外に認めさせていた。",
-		   NULL, "The residents of ancient Onigafuchi Village firmly believed that they were half-man, half-demon transcendants, and that they were more valuable than humans were—and they forced people within and without to accept that.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans les temps anciens, les habitants du village d'Onigafuchi étaient persuadés d'êtres des ermites mi-hommes et mi-démons, ce qui les rendaient supérieurs par essence aux autres êtres humains, et ils utilisaient tous les moyens nécessaires pour faire respecter ce point de vue.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　人間をさらい、それを食す行為は、食物連鎖における優位を示すために行なわれたのではないだろうか￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人間をさらい、それを食す行為は、食物連鎖における優位を示すために行なわれたのではないだろうか。",
-		   NULL, "Perhaps the act of kidnapping and eating people was done to prove that they were higher up on the food chain.", Line_Normal);
+		   NULL, "Il est fort probable qu'ils utilisaient ces festins cannibales pour inclure l'homme dans leur propre chaîne alimentaire, c'est-à-dire à une place inférieure à la leur.", Line_Normal);
 	ClearMessage();
 
 
@@ -78,17 +75,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　以下は仮説だが、綿流しの儀は、閉鎖環境である鬼ヶ淵村の内側に何らかの不満が募った場合のはけ口や、目を逸らすための目的で開かれた、",
-		   NULL, "This is just a hypothesis, but maybe the rite of Watanagashi was a political event for the purpose of being an outlet for (or outright diverting the attention of) the villagers of the isolated Onigafuchi Village, ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce n'est qu'une supposition de ma part, mais je pense que la cérémonie de la purification du coton n'avait lieu que lorsqu'un changement menaçait l'équilibre de la société fermée et recluse que formait le village. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "政治的なイベントとも考えられないだろうか。",
-		   NULL, "in case any of their complaints or dissatisfactions grew serious.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On pourrait considérer cela comme un événement politique destiné à détourner l'attention des villageois de leurs vrais problèmes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　こうした目的で主に開催されていたとするならば、儀式の不定期性にも説明が付き易い￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こうした目的で主に開催されていたとするならば、儀式の不定期性にも説明が付き易い。",
-		   NULL, "If that was the main reason these ceremonies were held, then it's easy to explain how erratic they were.", Line_Normal);
+		   NULL, "Ce qui expliquerait la nature erratique du cycle des enlèvements.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );

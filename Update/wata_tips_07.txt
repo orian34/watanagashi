@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 //７■スクラップ帳よりⅠ
@@ -25,7 +25,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "＜オヤシロさまの祟りについて＞",
-		   NULL, "<Oyashiro-sama's Curse>", Line_Normal);
+		   NULL, "La malédiction de la déesse Yashiro", Line_Normal);
 	ClearMessage();
 	SetStyleOfMessageSwinging( 0 );
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -33,7 +33,7 @@ void main()
 //　古代鬼ヶ淵村では、オヤシロさまの怒り（祟り）は何よりも恐れられていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古代鬼ヶ淵村では、オヤシロさまの怒り（祟り）は何よりも恐れられていた。",
-		   NULL, "In the ancient Onigafuchi Village, the anger of Oyashiro-sama (his curse) was feared above all.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans le village ancestral d'Onigafuchi, les gens craignaient la colère (la malédiction) de la déesse Yashiro plus que tout au monde.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -41,7 +41,7 @@ void main()
 //　だが、オヤシロさまが怒ると最終的にどのような神罰（祟り）が下されるのかは記述が少ない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、オヤシロさまが怒ると最終的にどのような神罰（祟り）が下されるのかは記述が少ない。",
-		   NULL, "However, it is seldom stated anywhere what eventually happens, and what sort of divine judgement (curse) befalls them when Oyashiro-sama is angry.", Line_Normal);
+		   NULL, "Mais seuls quelques rares écrits font état des punitions divines qu'elle abattait sur les villageois.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -49,16 +49,16 @@ void main()
 //　伝聞から調べる限りでは＠「地獄の釜が開く＠「鬼が溢れ出す＠「地獄の瘴気が溢れ出し、村人たちことごとく逃れることも叶わず、息絶えるなり＠といった、村の全滅を想起させる物騒なものが目立つ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　伝聞から調べる限りでは、",
-		   NULL, "From various reports...", Line_WaitForInput);
+		   NULL, "Pour autant que l'on sache d'après la tradition orale locale,", Line_WaitForInput);
 	OutputLine(NULL, "「地獄の釜が開く」",
-		   NULL, " \"All hell will break loose\"", Line_WaitForInput);
+		   NULL, " elle pouvait « transformer le sol en un lac bouillant comme dans les enfers »,", Line_WaitForInput);
 	OutputLine(NULL, "「鬼が溢れ出す」",
-		   NULL, " \"Demons will come flooding out\"", Line_WaitForInput);
+		   NULL, " « faire émerger des ogres depuis le marais »,", Line_WaitForInput);
 	OutputLine(NULL, "「地獄の瘴気が溢れ出し、村人たちことごとく逃れることも叶わず、息絶えるなり」",
-		   NULL, " \"The miasma from Hell will flood outward and kill every villager, letting not a single one escape\" ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " voire même « répandre le miasme des enfers sur la population et les tuer tous jusqu'au dernier ». ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "といった、村の全滅を想起させる物騒なものが目立つ。",
-		   NULL, "The ones evoking images of the village being annihilated stand out the most.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce dernier exemple, particulièrement extrême, est frappant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -66,7 +66,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる。",
-		   NULL, "These terrifying ideas of divine punishment are in alignment with many other religious beliefs regarding the apocalypse (Hell), and it's easy to imagine that they are just ways of convincing people to obey the teachings in order to prevent such an end.", Line_Normal);
+		   NULL, "Ce genre de punitions divines effroyables est un moyen souvent utilisé dans les descriptions de la fin du monde dans de nombreuses autres religions, et elles ne servent qu'à faire en sorte que les croyants respectent bien scrupuleusement certains principes religieux.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -74,15 +74,15 @@ void main()
 //　オヤシロさまの怒りに触れる条件が、イコール鬼ヶ淵村における禁忌（タブー）と言えるだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまの怒りに触れる条件が、イコール鬼ヶ淵村における禁忌（タブー）と言えるだろう。",
-		   NULL, "The conditions for inciting Oyashiro-sama's wrath are likely the same as the taboos in Onigafuchi Village.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les conditions qui peuvent déclencher la colère de la déesse Yashiro peuvent donc être considérées comme les tabous de la société à cette époque.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　この禁忌を犯す行為が行なわれた時、オヤシロさまは「怒った」と称され＠その怒りを鎮めるために、前述の「生贄の儀式」が行なわれたと考えられる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この禁忌を犯す行為が行なわれた時、オヤシロさまは「怒った」と称され、",
-		   NULL, "I believe that when an act was performed that violates one of these taboos, Oyashiro-sama was termed 'angry,'", Line_WaitForInput);
+		   NULL, "Et lorsqu'une conduite considérée comme taboue était constatée, alors soi-disant la déesse montrait sa colère,", Line_WaitForInput);
 	OutputLine(NULL, "その怒りを鎮めるために、前述の「生贄の儀式」が行なわれたと考えられる。",
-		   NULL, " and in order to quell his anger, they would perform the aforementioned sacrificial ritual.", Line_Normal);
+		   NULL, " et pour l'apaiser, on lui faisait un sacrifice rituel, comme décrit précédemment.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );

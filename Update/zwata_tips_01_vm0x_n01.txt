@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -11,9 +11,9 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500016", 256, TRUE);
 	OutputLine(NULL, "「……他にも、金融業とか、不動産業とか、アパレル産業とか、アミューズメント産業とか。",
-		   NULL, "\"...There are others, like a financial business, a real estate agent, an apparel business, and in the amusement industry.", Line_Continue);
+		   NULL, "— Oh, mais il y a aussi des usuriers, des voleurs immobiliers, des maqueraux...", Line_Continue);
 	OutputLine(NULL, "いろいろやってると言ってますです。」",
-		   NULL, " I heard they do lots of things.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Vous avez le choix.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -22,9 +22,9 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100056", 256, TRUE);
 	OutputLine(NULL, "「あいつに物を借りると、妙に返却期限にうるさいのは、金融業者さんの血が流れてるからかー。",
-		   NULL, "\"So the reason she's so fussy about the return date of things she lends out is because the blood of a financier runs through her veins, huh?", Line_WaitForInput);
+		   NULL, "— Je comprends mieux pourquoi elle fait tout un foin quand on lui emprunte de quoi s'acheter une boisson, c'est le côté usurier qui court dans la famille qui ressort !", Line_WaitForInput);
 	OutputLine(NULL, "納得納得！」",
-		   NULL, " That explains that!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je comprends mieux !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -33,21 +33,21 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500017", 256, TRUE);
 	OutputLine(NULL, "「……魅ぃに百億兆者ゲームを借りたことをコロリと忘れてしまったら、",
-		   NULL, "\"......Once, I completely forgot to give Mii back the Billionaire game I borrowed from her,", Line_Continue);
+		   NULL, "— Une fois, je lui ai emprunté le jeu “Destins -- le jeu de la vie” et je l'avais complètement oublié, et…", Line_Continue);
 	OutputLine(NULL, "リアルで百億兆者ゲームをプレイさせたるどーと凄まれましたのです。」",
-		   NULL, " and she threatened to force me to play a real-life Billionaire game.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " elle m'a prise à part et m'a menacée de jouer une partie de “Destins -- le jeu de la vie” pour de vrai.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………梨花ちゃんがリアル百億兆者ゲームをプレイ…。",
-		   NULL, "...Rika-chan playing a real-life Billionaire game...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'eus une image mentale de Rika en pleine partie…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……したたかにＩＴ長者にでもなっていそうな気がするけど……。",
-		   NULL, "...I get the feeling she'd claw her way up to a position as an IT billionaire...", Line_Normal);
+		   NULL, "J'ai le sentiment qu'elle se frayerait un chemin jusqu’à devenir milliardaire dans l'informatique…", Line_Normal);
 }
 
 void dialog004()
@@ -55,24 +55,24 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400025", 256, TRUE);
 	OutputLine(NULL, "「リアルに百億兆者ゲームをプレイなんて、なかなかに愉快そうですわね〜！」",
-		   NULL, "\"Getting to play Billionaire for real does sound rather thrilling~!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Devoir jouer réellement à “Destins -- le jeu de la vie” me semble être tout à fait palpitant~ !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……もっとも。",
-		   NULL, "...Satoko, huh?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "… Satoko, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…こいつの場合、人から恨みつらみを重ねてとんでもねー目にあいそうだけど。",
-		   NULL, "...She'd probably end up amassing grudges and bitterness from people before meeting her demise.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle finirait probablement par accumuler la rancune et l'amertume de tous les participants avant de perdre lamentablement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まぁ、それはそれで沙都子らしくていいかもな。",
-		   NULL, "Well, that would seem fitting for her.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ouais, rien de plus approprié donc.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

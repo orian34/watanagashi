@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -11,10 +11,10 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50001", 256, TRUE);
 	OutputLine(NULL, "「エンジェルモートのフィギュアが今度発売されるらしいでござるな。",
-		   NULL, "\"I heard they're planning on selling Angel Mort figures.", Line_WaitForInput);
+		   NULL, "— Il paraît qu'un éditeur va sortir les figurines des serveuses en 16e,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50002", 256, TRUE);
 	OutputLine(NULL, "次のイベントは要注意でござる…！！」",
-		   NULL, " We'll have to pay heed at the next event...!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " il va falloir faire attention au prochain évènement...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -22,21 +22,21 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaf50001", 256, TRUE);
 	OutputLine(NULL, "「そうそう、今度あの大手フィギュアメーカーが商品化を決めたそうであります！",
-		   NULL, "\"Speaking of which, that major figure maker decided to bring out the line!", Line_WaitForInput);
+		   NULL, "— En parlant de cela, ce fabricant a décidé de faire la différence!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaf50002", 256, TRUE);
 	OutputLine(NULL, "　発売日は要チェックなのであります…！」",
-		   NULL, " We must confirm the release date ...!\"", Line_Normal);
+		   NULL, " Nous devons confirmer la date de sortie !", Line_Normal);
 	ClearMessage();
 
 //オタク「しかし大人買いするには種類が多すぎるのでごわすな……。普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otag50001", 256, TRUE);
 	OutputLine(NULL, "「しかし大人買いするには種類が多すぎるのでごわすな……。",
-		   NULL, "\"'The problem is, there's too many variations to bulk buy them ... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Le problème, c'est qu'il y a trop de variantes pour les acheter en masse… ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otag50002", 256, TRUE);
 	OutputLine(NULL, "　普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！",
-		   NULL, "If it were just a normal set of family restaurant uniforms, there'd only be around ten types... But, including the secret set with different poses that are planned, there's 100 or so!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si c'était juste une collection d'uniformes de restaurants familiaux, il y en aurait juste une dizaine… Mais, en ajoutant la collection secrète contenant différentes poses qui a été annoncée, on est à plus de 100 !!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -44,12 +44,12 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otah50001", 256, TRUE);
 	OutputLine(NULL, "「ダブった時は誰かトレードしてもらいたいでおじゃる〜。",
-		   NULL, "\"Someone, trade with me when I get a double~☆", Line_WaitForInput);
+		   NULL, "— Que quelqu'un échange avec moi quand j'aurais un doublon~☆", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otah50002", 256, TRUE);
 	OutputLine(NULL, "　ファンとしては即日コンプは義務！",
-		   NULL, " It's my duty as a fan to complete the collection right away!", Line_Continue);
+		   NULL, " C'est mon devoir en tant que fan de completer la collection aussi vite que possible !", Line_Continue);
 	OutputLine(NULL, "　いや君とボクとのデスティニーでおじゃるよ〜！！」",
-		   NULL, " No, this is destiny between us~!!\"", Line_Normal);
+		   NULL, " Non, c'est le destin qui nous réunit !!", Line_Normal);
 }
 
 void dialog002()
@@ -57,10 +57,10 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18070", 256, TRUE);
 	OutputLine(NULL, "「やかましいぞ重量オーバー！",
-		   NULL, "\"Shut up, you greasy fatass!", Line_WaitForInput);
+		   NULL, "— Ta gueule, gros con.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18080", 256, TRUE);
 	OutputLine(NULL, "　俺の目が黒い内に出て失せろ。」",
-		   NULL, " Get out of here before I get angry.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Barre-toi avant que je m'énerve.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -69,7 +69,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50008", 256, TRUE);
 	OutputLine(NULL, "そのスタッフが余のおズボンに粗相をしたのでござるよ？",
-		   NULL, " Yonder waitress was the one who wet mine pants!", Line_WaitForInput);
+		   NULL, " Cette serveuse a sali le pantalon d'un client, son maître et roi !", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -78,7 +78,7 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18350", 256, TRUE);
 	OutputLine(NULL, "「…それについては返す言葉がない。」",
-		   NULL, "\"...There's nothing I can say to that.\"", Line_Normal);
+		   NULL, "— Je n'ai aucune excuse, et je ne ferai pas de commentaire là-dessus.", Line_Normal);
 }
 
 void dialog005()
@@ -86,14 +86,14 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50006", 256, TRUE);
 	OutputLine(NULL, "「僕もにゃりんよ。",
-		   NULL, "\"Mew too.", Line_WaitForInput);
+		   NULL, "— Cela tombe bien, la Nature m'appelle moi aussi.", Line_WaitForInput);
 
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50007", 256, TRUE);
 	OutputLine(NULL, "オープンでなくクローズドの方でござる！",
-		   NULL, " Not a nyamber one, but a nyamber two!", Line_WaitForInput);
+		   NULL, " Et pour la grosse !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50008", 256, TRUE);
 	OutputLine(NULL, "　要リプレイ外しにゃりん！」",
-		   NULL, " I need to cash out meow!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Croupier, bloquez la roulette et faites en sorte qu'elle ne s'arrête pas !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -102,13 +102,13 @@ void dialog006()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50019", 256, TRUE);
 	OutputLine(NULL, "「おトイレはどこにゃー？！",
-		   NULL, "\"Where's da toilet!?", Line_WaitForInput);
+		   NULL, "— Vite, vite, le petit coin, où il est ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50020", 256, TRUE);
 	OutputLine(NULL, "　見つけたにゃー！",
-		   NULL, " I found eeeet!", Line_WaitForInput);
+		   NULL, " Ah, le voilà !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50021", 256, TRUE);
 	OutputLine(NULL, "　緊急発進スクランブルにょ〜！！！」",
-		   NULL, " Urine for it now!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Vite, j'ai la taupe au guichet !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -117,7 +117,7 @@ void dialog007()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50023", 256, TRUE);
 	OutputLine(NULL, "「はぁはぁ…背に腹は代えられぬ〜〜！！！！！」",
-		   NULL, "\"*pant pant*... Women's toilets are the best~~!!!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Rah oui, les toilettes des filles, oh oui, oui, OUIIIIIII !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -126,13 +126,13 @@ void dialog008()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50012", 256, TRUE);
 	OutputLine(NULL, "「それは助かるにゃりん！！",
-		   NULL, "\"That would be purrfect!!", Line_WaitForInput);
+		   NULL, "— Alors là, ce serait vraiment magnifique, mademoiselle !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50013", 256, TRUE);
 	OutputLine(NULL, "　さぁさぁ！！",
-		   NULL, " Purrease, purrease!!", Line_WaitForInput);
+		   NULL, " Allons, le temps et l'envie pressent !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50014", 256, TRUE);
 	OutputLine(NULL, "　このままじゃ集団デフコン１状態にゃりん〜！！」",
-		   NULL, " At this rate it'll end up becoming group enema purray~~!!\"", Line_Normal);
+		   NULL, " Si nous ne trouvons pas rapidement des toilettes, nous allons débloquer la scène cachée scato !", Line_Normal);
 }
 
 void dialog009()
@@ -140,10 +140,10 @@ void dialog009()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18710", 256, TRUE);
 	OutputLine(NULL, "「悪人ども…！！",
-		   NULL, "\"Listen up, you tubs of lard!!", Line_WaitForInput);
+		   NULL, "— Question à un million de yens :", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18720", 256, TRUE);
 	OutputLine(NULL, "　この扉から一歩外へ出ることがどういうことになるか、わかってるんだろうな？！」",
-		   NULL, " You know what happens if you even set one foot outside this door, right!?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Savez-vous ce qu'il se passe si vous sortez de ce restaurant ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -152,7 +152,7 @@ void dialog010()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200241", 256, TRUE);
 	OutputLine(NULL, "「け、圭一くん……はぅ。」",
-		   NULL, "\"Ke-Keiichi-kun... Hau...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Roh, Keiichi, Hau…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -161,7 +161,7 @@ void dialog011()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300188", 256, TRUE);
 	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日からアレな趣味の人扱いだね。うん！」",
-		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Si tu la ramènes demain à l'école, tu passeras pour un détraqué, c'est clair !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -170,7 +170,7 @@ void dialog012()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaa50004", 256, TRUE);
 	OutputLine(NULL, "「ぎゃッ？！」",
-		   NULL, "\"Gya!?\"", Line_Continue);
+		   NULL, "— Ouille !", Line_Continue);
 
 	PlaySE( 3, "wa_002", 56, 64 );
 	// (backup) SetValidityOfInput( FALSE );
@@ -194,7 +194,7 @@ void dialog014()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otac50006", 256, TRUE);
 	OutputLine(NULL, "「む…。」",
-		   NULL, "\"Hrngh...\"", Line_Continue);
+		   NULL, "— Quewouah ?", Line_Continue);
 	PlaySE( 3, "wa_011", 56, 64 );
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -213,6 +213,6 @@ void dialog015()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaa50002", 256, TRUE);
 	OutputLine(NULL, "「今度はミーのおズボンにぶっかけさせて、一層念入りにフキフキしてもらうニョリ！！」",
-			 NULL, "\"This time we'll have her spill everything on my pants, and have her give an especially thorough wipey-wipey!!\"", GetGlobalFlag(GLinemodeSp));
+			 NULL, "— À mon tour ! Je ferais en sorte d'avoir de la crème même dans le pantalon !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }

@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 //８■スクラップ帳よりⅤ
 
@@ -24,7 +24,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "＜なぜ祭具はこれほどまでに必要なのか＞",
-		   NULL, "<The Alleged Importance of the Implements>", Line_Normal);
+		   NULL, "L'importance des reliques sacrées", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -32,7 +32,7 @@ void main()
 //　「祭具」の具体的な形状についての記述はほとんど見つからない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「祭具」の具体的な形状についての記述はほとんど見つからない。",
-		   NULL, "I can't find anything that gives a concrete description on what the ritual implements were like.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il est quasiment impossible de trouver des descriptions écrites des “reliques sacrées”, ces objets utlisés pendant les rites religieux du culte.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -40,21 +40,21 @@ void main()
 //　だが実在し、それも多種多様のさまざまな種類が存在していたことは間違いない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが実在し、それも多種多様のさまざまな種類が存在していたことは間違いない。",
-		   NULL, "They were, however, real, and there definitely existed a multitude of different kinds.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais je suis sûre que ces objets existent et qu'ils ont des formes diverses et variées.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　一部の文献では、綿流しの儀に用いた祭具だけでも二百を数えると記されている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一部の文献では、綿流しの儀に用いた祭具だけでも二百を数えると記されている。",
-		   NULL, "One source states that the implements used in the Watanagashi rite alone numbered two hundred.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'une des rares sources écrites qui en parle indique qu'il existait plus de deux cents objets pour la seule cérémonie de la purification du coton.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　ここでぶつかる疑問は、なぜ多種多様なものが必要だったかという点だ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここでぶつかる疑問は、なぜ多種多様なものが必要だったかという点だ。",
-		   NULL, "The obvious question, then, is why they required such a myriad of them.", Line_Normal);
+		   NULL, "La première question qui se pose est : pourquoi un si grand nombre ?", Line_Normal);
 	ClearMessage();
 
 
@@ -63,14 +63,14 @@ void main()
 //　綿流しの儀は、鬼隠しによって誘拐した人間を解体して食すものだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　綿流しの儀は、鬼隠しによって誘拐した人間を解体して食すものだ。",
-		   NULL, "The rite of Watanagashi was to kidnap people through the 'demoning away,' dissect them, and eat them.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La purification du coton servait à disséquer la victime de l'enlèvement des démons pour pouvoir la manger.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　そのための解体道具や拘束道具が考えられるが、それでも二百を超えるとは多過ぎる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのための解体道具や拘束道具が考えられるが、それでも二百を超えるとは多過ぎる。",
-		   NULL, "I believe the tools were for dissection and restraining, but two hundred of them is far too many.", Line_Normal);
+		   NULL, "On peut imaginer qu'une partie des reliques sacrées servait à maintenir la victime en place et qu'une autre servait à la découper en morceaux, mais ces deux fonctions sont-elles suffisantes pour justifier un si grand nombre ? Je ne le pense pas.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -78,21 +78,21 @@ void main()
 //　基本的に道具の進化は、ある到達点への模索である＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　基本的に道具の進化は、ある到達点への模索である。",
-		   NULL, "Generally, tools evolve in such a way as to reach a solution for a certain problem.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'évolution des objets est dictée par la recherche constante jusqu'à l'obtention d'un résultat ou d'un état désirable.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　一定以上の効率に行き着いたなら、それ以上の進化は求められないのが普通だ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一定以上の効率に行き着いたなら、それ以上の進化は求められないのが普通だ。",
-		   NULL, "Once you've reached the ultimate goal—that is, attained a certain level of efficiency—the tool's evolution normally stops there.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Une fois ce niveau atteint, l'objet n'a plus de raison d'évoluer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　にも関わらず、これほどまで多くの種が生み出されるのはなぜなのか￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　にも関わらず、これほどまで多くの種が生み出されるのはなぜなのか。",
-		   NULL, "Regardless, why would they have created so many different kinds?", Line_Normal);
+		   NULL, "Et pourtant, nous sommes là en face d'un nombre qui connut une croissance phénoménale.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -100,21 +100,21 @@ void main()
 //　時代と共に多様化する文化のひとつに娯楽がある＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　時代と共に多様化する文化のひとつに娯楽がある。",
-		   NULL, "One of the cultural elements responsible for diversification over time is that of entertainment.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Lorsqu'une société évolue, de nombreux aspects se mettent à changer avec elle. J'aimerais attirer l'attention en particulier sur le loisir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　娯楽に使用する道具は時間と共に進化し、多様化する＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　娯楽に使用する道具は時間と共に進化し、多様化する。",
-		   NULL, "Tools used for entertainment would evolve over time and branch out.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les objets dédiés au loisir dans une société donnée sont en constante évolution dans le temps.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　一般的な道具と違い、到達点に至ることはすなわち行き詰まり（マンネリ）であり、次なる到達点を求め、いくつもの亜種にも分裂する￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一般的な道具と違い、到達点に至ることはすなわち行き詰まり（マンネリ）であり、次なる到達点を求め、いくつもの亜種にも分裂する。",
-		   NULL, "Unlike normal tools, reaching the ultimate goal would be more of a dead end, and in searching for the next goal, they would split into many different subtypes.", Line_Normal);
+		   NULL, "À la différence des autres objets de la vie courante, l'arrêt de leur évolution signifie un manque d'intérêt en leur endroit -- et lorsque l'ennui gagne l'homme, il se met à la recherche de nouveaux plaisirs, ce qui provoque de nouvelles évolutions, de nouvelles utilisations, bref de nouveaux objets dédiés au loisir.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -122,23 +122,23 @@ void main()
 //　では二百を超えると伝えられる「祭具」にも、娯楽性が宿っているとは考えられないか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　では二百を超えると伝えられる「祭具」にも、娯楽性が宿っているとは考えられないか。",
-		   NULL, "So then, perhaps it's not a stretch to suggest that these two hundred-plus implements had some entertainment value.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Serait-il alors possible de considérer que ces reliques sacrées, si nombreuses, aient été considérées comme des objets de loisir ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　もちろんこれも仮説だが、人間を解体する過程が一種の娯楽（見世物）として扱われていたのではないだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろんこれも仮説だが、人間を解体する過程が一種の娯楽（見世物）として扱われていたのではないだろうか。",
-		   NULL, "This is just a hypothesis, of course, but maybe the human dissection process was viewed as a type of entertainment.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce n'est qu'une supposition, mais on pourrait considérer que la mise à mort et la dissection d'un être humain étaient une sorte de spectacle, d'attraction.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　観客を飽きさせないため、様々な、斬新で興味を惹く「祭具（解体道具）」が歴代の御三家当主たちによって、次々開発されていった...＠そう考えられなくもない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　観客を飽きさせないため、様々な、斬新で興味を惹く「祭具（解体道具）」が歴代の御三家当主たちによって、次々開発されていった…。",
-		   NULL, "The Three Families of old would develop one new implement (dissection tool) after another, and each was varied, novel, and attracted spectators to keep them from growing bored...", Line_WaitForInput);
+		   NULL, "Pour que les spectateurs ne s'ennuient pas, il fallait donc constamment rechercher de nouvelles reliques -- de nouveaux objets pour disséquer la victime -- qui assureraient un intérêt constamment renouvelé.", Line_WaitForInput);
 	OutputLine(NULL, "そう考えられなくもない。",
-		   NULL, " It's not unimaginable.", Line_Normal);
+		   NULL, " Cette tâche incombait certainement aux trois clans fondateurs.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -146,28 +146,28 @@ void main()
 //　あの祭具殿の中に、それらが全て祀られているのは間違いない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あの祭具殿の中に、それらが全て祀られているのは間違いない。",
-		   NULL, "All of them have to be enshrined within that storehouse.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je suis presque certaine que ces instruments de torture se trouvent tous dans le temple des reliques sacrées.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　綿流しの夜まであと少し＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　綿流しの夜まであと少し。",
-		   NULL, "There isn't much longer until the night of Watanagashi.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il ne reste plus que quelques semaines avant la purification du coton.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　本来の意味が失われたとは言え、古式ゆかしい儀式の夜に祭具殿の神秘を解き明かせるのだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本来の意味が失われたとは言え、古式ゆかしい儀式の夜に祭具殿の神秘を解き明かせるのだ。",
-		   NULL, "Though its original intent has been lost, I will reveal the secrets of the traditional ceremonial night within the ritual storehouse.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je serai bientôt capable de percer les mystères des objets rituels de cette cérémonie ancestrale, même si elle a aujourd'hui changé de nature.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...胸の高まりが押えられない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…胸の高まりが押えられない。",
-		   NULL, "...I can't restrain my excitement.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il m'est difficile de garder mon calme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -175,7 +175,7 @@ void main()
 //　綿流しが、待ち遠しい￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　綿流しが、待ち遠しい。",
-		   NULL, "Watanagashi cannot come soon enough.", Line_Normal);
+		   NULL, "Vivement le soir de la purification du coton.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );

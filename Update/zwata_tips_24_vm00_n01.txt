@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -8,22 +8,22 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700188", 256, TRUE);
 	OutputLine(NULL, "「いつもそうですが、事件と車のキーの閉じ込めはよく似てます。",
-		   NULL, "\"This always happens, but incidents are a lot like locking your keys in the car.", Line_Continue);
+		   NULL, "— Je le dis souvent, mais les enquêtes, c'est comme les voitures fermées avec la clef à l'intérieur.", Line_Continue);
 	OutputLine(NULL, "開けるためのカギはいつもその中に閉じ込められているんです。",
-		   NULL, " The keys you need to unlock the door are always locked inside.", Line_WaitForInput);
+		   NULL, " Pour ouvrir la voiture, vous avez besoin de la clef qui se trouve dedans.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700189", 256, TRUE);
 	OutputLine(NULL, "車ならＪＡＦを呼んで扉をこじ開ける。",
-		   NULL, " For cars, you call the JAF and they'll pry open your door. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Alors, vous pouvez péter un carreau ou bien appeler votre assurance. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700183", 256, TRUE);
 	OutputLine(NULL, "　近日中に鷹野殺しは岐阜県警に譲り、村長たちの失踪は行方不明扱いで生活課に委ねるようです。」",
-		   NULL, "In the coming days, we'll hand off Takano's murder to the Gifu Police, and give the missing persons case of the disappearance of the mayor and the others to the community division.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dans les prochains jours, l'enquête sur Takano sera laissée à nos collègues de Gifu, et les disparus des derniers jours seront laissés aux services sociaux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }

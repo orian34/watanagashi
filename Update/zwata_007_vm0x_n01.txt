@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -11,10 +11,10 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34750", 256, TRUE);
 	OutputLine(NULL, "「プロポーション最上級。",
-		   NULL, "\"One with a model class body line,", Line_Continue);
+		   NULL, "— Une Rena avec des courbes de mannequin,", Line_Continue);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34760", 256, TRUE);
 	OutputLine(NULL, "アイドル真っ青のルックスと、俺の言うことなんでも確実に聞く器量よしで頼む。」",
-		   NULL, " the looks of an innocent young idol, and the patience to see to my every whim.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " le regard innocent d'une jeune idole et la patience de combler tous mes caprices.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -23,10 +23,10 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800037", 256, TRUE);
 	OutputLine(NULL, "「やあ、圭一くん。",
-		   NULL, "\"Hey there, Keiichi-kun.", Line_WaitForInput);
+		   NULL, "— Salut Keiichi.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800038", 256, TRUE);
 	OutputLine(NULL, "　今日は張り切って仕事してたね！　感心したよ。」",
-		   NULL, " You really did a bang-up job today! I'm impressed.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tu as travaillé comme un brave aujourd'hui, tu m'as épaté !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 }
@@ -36,7 +36,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei35230", 256, TRUE);
 	OutputLine(NULL, "「いえ、それほどでも……詩音とも知り合いなんですか？」",
-		   NULL, "\"It was nothing... Do you know Shion, too?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— C'est rien… Vous connaissez aussi Shion ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -45,13 +45,13 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800039", 256, TRUE);
 	OutputLine(NULL, "「あっははは、まあね。",
-		   NULL, "\"Ha ha ha! Indeed I do.", Line_WaitForInput);
+		   NULL, "— Ha ha ha! En effet.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800040", 256, TRUE);
 	OutputLine(NULL, "毎年ここに来てるからね。",
-		   NULL, " I come every year, after all.", Line_WaitForInput);
+		   NULL, " Je viens tous les ans, après tout.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800041", 256, TRUE);
 	OutputLine(NULL, "といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」",
-		   NULL, " Still, if they changed hair styles, I still wouldn't be able to tell them apart.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Enfin, si elles avaient changé leur coiffures, j'aurai été incapable de les différencier.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -62,22 +62,22 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300801", 256, TRUE);
 	OutputLine(NULL, "「一緒にしないでください、こんなやつと。」",
-		   NULL, "\"Don't lump me in with someone like her.\"", Line_Normal);
+		   NULL, "— Ne me comparez pas avec quelqu'un comme elle.", Line_Normal);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei35240", 256, TRUE);
 	OutputLine(NULL, "「あ、えっと……」",
-		   NULL, "\"Ah, err...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Ah, err…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog005()
 {
 //「じゃあ私はわかるかしら...？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Femme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900004", 256, TRUE);
 	OutputLine(NULL, "「こんばんは。私はわかるかしら…？」",
-		   NULL, "\"Good evening. Do you recognize me...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Bonsoir. Mais alors, peut-être que tu sais qui je suis ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -86,10 +86,10 @@ void dialog006()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800042", 256, TRUE);
 	OutputLine(NULL, "「いやあ、一卵性双生児とは聞いてたけど、並んで見ると壮観だね。",
-		   NULL, "\"Wow, I'd heard you two were identical twins, but it really is quite something to see you side-by-side.", Line_WaitForInput);
+		   NULL, "— J'en avais entendu parler, mais je n'avais jamais vu de vrais jumeaux monozygotes,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800043", 256, TRUE);
 	OutputLine(NULL, "本当にそっくりなんだなぁ！」",
-		   NULL, " You really do look exactly alike!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " la ressemblance est vraiment stupéfiante !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -98,7 +98,7 @@ void dialog007()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900031", 256, TRUE);
 	OutputLine(NULL, "下界との交流を「格が落ちる」として忌み嫌ったそうなの。",
-		   NULL, "They believed that interaction with the lower world would sully their souls.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ils détestaient le contact avec “le monde vulgaire d'en bas”, c'était une souillure, un tabou.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -106,7 +106,7 @@ void dialog007()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900032", 256, TRUE);
 	OutputLine(NULL, "　……だから、村に下界の人間が来ると不純が混じってオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。」",
-		   NULL, "......So everyone believed that if one from the lower world came to the village, they would be sullied and suffer the wrath of Oyashiro-sama. Apparently that kept everyone away.\"", Line_Normal);
+		   NULL, "C'est pourquoi, lorsqu'un humain du monde d'en bas venait par ici, ils pensaient que la déesse Yashiro les punirait pour avoir souillé le sol sacré de ses terres, et donc ils faisaient tout pour n'avoir aucun contact avec l'extérieur.", Line_Normal);
 }
 
 void dialog008()
@@ -114,10 +114,10 @@ void dialog008()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800072", 256, TRUE);
 	OutputLine(NULL, "「よそ者を嫌う村、ってよく推理小説に出てくるだろ。",
-		   NULL, "\"Villages that hate outsiders come up all the time in mystery novels.", Line_WaitForInput);
+		   NULL, "— C'est un grand cliché dans les romans de Kinda'ichi, mais je ne sais pas si tu les as lus.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800073", 256, TRUE);
 	OutputLine(NULL, "典型的なそういう村だったらしいんだよ。」",
-		   NULL, " This was once a classic example of a xenophobic village.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Il y a souvent des villages qui n'aiment pas les étrangers dans ces histoires.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -130,7 +130,7 @@ void dialog010()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800078", 256, TRUE);
 	OutputLine(NULL, "「バラバラ殺人だよ。」",
-		   NULL, "\"The construction manager was murdered and dismembered.\"", Line_Normal);
+		   NULL, "— Le contremaître du barrage a été tué puis démembré.", Line_Normal);
 }
 
 void dialog011()
@@ -138,14 +138,14 @@ void dialog011()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800106", 256, TRUE);
 	OutputLine(NULL, "「その翌年には…何だっけ、ダム推進派の男の弟夫婦の奥さんだっけ？",
-		   NULL, "\"And the next year... what was it, the dam proponent's sister-in-law?", Line_WaitForInput);
+		   NULL, "— Et l'année dernière alors ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800107", 256, TRUE);
 	OutputLine(NULL, "　が殺されたんだよな。」",
-		   NULL, " She was killed.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La belle-sœur du chef des partisans du barrage est morte, c'est ça ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "じゃあ、……その時にも誰かが、……「消えた」？",
-		   NULL, " So... at that time, someone else... 'vanished'?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais y a pas eu de disparition, là ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

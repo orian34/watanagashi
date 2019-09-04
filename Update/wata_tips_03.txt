@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 //２■エンジェルモート紹介記事
@@ -16,7 +16,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　闘撮必勝ガイド４月号「征服徹底解析（ファミレス編）」より転載",
-		   NULL, "Reprinted from <i>The Victorious War Photographer's Guide</i>, April issue, \"Complete Conquest Analysis (Family Restaurant Chapter).\"", Line_Normal);
+		   NULL, "Article tiré du « Guide des photos interdites » n°4 : Tout ce qu'il faut savoir sur les uniformes (dans les restaurants)", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -25,14 +25,14 @@ void main()
 //　そしていよいよ、激アツの３日目＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしていよいよ、激アツの３日目。",
-		   NULL, "Now, at last, we come to the blazing-hot third day.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Enfin, nous arrivons au 3e jour, et là l'ambiance promet d'être chaud-bouillante.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　××県鹿骨市という辺境にありながら、マニア垂涎の超有名店がこのエンジェルモートだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　××県鹿骨市という辺境にありながら、マニア垂涎の超有名店がこのエンジェルモートだ。",
-		   NULL, "To Angel Mort, a super-famous restaurant and the envy of all enthusiasts, despite being located in the remote Shishibone City of ×× Prefecture.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous nous rendons à l'Angel Mort, un restaurant qui fait baver d'envie tous les connaisseurs, et qui pourtant se trouve en pleine pampa, dans le district de Shishibone de la préfecture de ****.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -40,9 +40,9 @@ void main()
 //　なぜにも名店はこうも人里を嫌うものなのか...＠闘撮の神の試練としか思えない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜにも名店はこうも人里を嫌うものなのか…。",
-		   NULL, "Why, exactly, do the most famous stores avoid the centers of human habitation?", Line_WaitForInput);
+		   NULL, "Pourquoi se trouve-t-il si loin de toute civilisation ? D'ailleurs, pourquoi tant de grands restaurants sont-ils si loin des grands centres commerciaux ? Cela reste un mystère.", Line_WaitForInput);
 	OutputLine(NULL, "闘撮の神の試練としか思えない。",
-		   NULL, " It can only be because it is a trial given to us by the God of War Photography.", Line_Normal);
+		   NULL, " C'est peut-être une épreuve que nous infligent les dieux de la photo.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -50,7 +50,7 @@ void main()
 //　地元では美味しいデザートで知られるレストランだが、我々には知ったことじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地元では美味しいデザートで知られるレストランだが、我々には知ったことじゃない！",
-		   NULL, "It's famous locally for having the best desserts in town, but that matters not to us!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quoi qu'il en soit, ce restaurant est connu là-bas pour avoir la meilleure carte des desserts des environs -- mais bien évidemment, ce n'est pas cela qui nous amène là-bas aujourd'hui !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -58,14 +58,14 @@ void main()
 //　高いデザートが食いたければ不○家系にでも行けばいい＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　高いデザートが食いたければ不○家系にでも行けばいい！",
-		   NULL, "If you want expensive desserts, then you can just go to a [censored] place or something!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si nous avions simplement eu envie de payer cher nos desserts, nous serions allés dans un des restaurants cinq étoiles de Ginza !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　我々の目指す甘いデザートは食べるものではなく......制服の方なのだー！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　我々の目指す甘いデザートは食べるものではなく……制服の方なのだー！！",
-		   NULL, "We aim not for sweet treats... but for sweet uniforms!!", Line_Normal);
+		   NULL, "Une et une seule raison nous pousse à visiter ce restaurant précisément et pas un autre... son uniforme !", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -73,7 +73,7 @@ void main()
 //　芳しき汗の芳香を漂わせ、その着用を強要されたウェイトレスの制服は、もはや公然の拘束具と言ってもいい＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　芳しき汗の芳香を漂わせ、その着用を強要されたウェイトレスの制服は、もはや公然の拘束具と言ってもいい！",
-		   NULL, "The fragrant aroma of sweat wafts from these obligatory waitress uniforms, creating no less than a public torture device!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Toutes les jeunes filles forcées à le porter sont comme paralysées par des entraves en cuir, et la transpiration que la honte et l'embarras leur font suer se répand alors en un doux arôme dans l'air ambiant !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -81,20 +81,20 @@ void main()
 //　こんな羞恥プレーが全国の制服のかわいいお店で堂々と行なわれているなんて？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんな羞恥プレーが全国の制服のかわいいお店で堂々と行なわれているなんて？！",
-		   NULL, "How can their bashful flirtation be on par with all the other restaurants with cute uniforms all across the country!?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Qui eût cru qu'un lieu public appartenant à une chaîne de restaurant pourrait proposer un uniforme aux relents aussi douteux pour appâter la galerie ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　出撃せよ＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　出撃せよ！",
-		   NULL, "War Photography Hunter...", Line_WaitForInput);
+		   NULL, "C'est une aubaine ! C'est le lieu parfait pour...", Line_WaitForInput);
 
 	PlaySE( 3, "wa_006", 56, 64 );
 
 //　闘撮ハンタァアァアァアー！￥
 	OutputLine(NULL, "　闘撮ハンタァアァアァアー！！",
-		   NULL, " Awaaaay!!", Line_Normal);
+		   NULL, " les chasseurs de photos !", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 1000, TRUE );
@@ -105,13 +105,13 @@ void main()
 //★喫煙席こそＭＡＸポジション？　タコ粘りでチャンスを狙え￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "★喫煙席こそＭＡＸポジション？　タコ粘りでチャンスを狙え！",
-		   NULL, "★The smoking areas are the real super positions? Aim for your chance at them with the tenacity of an octopus!", Line_Normal);
+		   NULL, "★ Les places fumeurs sont les meilleures ? Restez collés à vos sièges et soyez patients !", Line_Normal);
 	ClearMessage();
 
 //竜「昨日は席取りで失敗しましたからね＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "竜「昨日は席取りで失敗しましたからね。",
-		   NULL, "Ryuu: \"Yesterday, I failed to get seating.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ryû « Hier, je n'ai pas réussi à m'asseoir à une place avec une bonne vue stratégique, alors aujourd'hui j'ai envie d'obtenir la meilleure place !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -119,7 +119,7 @@ void main()
 //　今日こそ究極の黄金席、喫煙席の角ボックスを狙います＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日こそ究極の黄金席、喫煙席の角ボックスを狙います！",
-		   NULL, "Today, I will aim for the ultimate, golden seat—the corner box in the smoking area!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il me faut la table en coin dans le côté fumeur !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -127,16 +127,16 @@ void main()
 //　一般にヲタクは禁煙席が圧倒的に多いんですよ＠ですから喫煙席の方がゆとりを持って射界が取れるんです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一般にヲタクは禁煙席が圧倒的に多いんですよ。",
-		   NULL, "Otaku are overwhelmingly non-smokers.", Line_WaitForInput);
+		   NULL, "L'immense majorité des wotakus préfère les places non-fumeurs.", Line_WaitForInput);
 	OutputLine(NULL, "ですから喫煙席の方がゆとりを持って射界が取れるんです。」",
-		   NULL, " So I'll procure a spot in the smoking area and set up camp there.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " C'est pourquoi le côté fumeur est meilleur, il n'y a quasiment pas de compétition et l'on peut prendre son temps pour obtenir la meilleure photo possible. »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　さすがはハンター竜＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さすがはハンター竜。",
-		   NULL, "As expected of Ryuu, the Hunter.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On reconnaît bien là toute l'expérience du chasseur Ryû.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -144,7 +144,7 @@ void main()
 //　勝負は座る席の時点で決するとでも言わんばかりだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　勝負は座る席の時点で決するとでも言わんばかりだ。",
-		   NULL, "He's saying his victory was decided the moment he chose his seat.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pour lui, la place assise obtenue est l'élément crucial qui influe le plus sur l'issue de la compétition.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -152,7 +152,7 @@ void main()
 //　実際に竜は、初日の秋葉原の××××××でも同様の戦略で高設定席のゲットに成功している￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　実際に竜は、初日の秋葉原の××××××でも同様の戦略で高設定席のゲットに成功している。",
-		   NULL, "In actuality, Ryuu used the same tactic during the grand opening of Akihabara's ×××××× and succeeded in getting the best seats in the house.", Line_Normal);
+		   NULL, "D'ailleurs, concrètement, c'est en obtenant une bonne place assise dans le ****** à Akihabara qu'il a remporté la manche du premier jour !", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -160,14 +160,14 @@ void main()
 //　この日もランチタイムを外した昼下がりに、狙い席の空きを確認の上、楽々ゲット＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この日もランチタイムを外した昼下がりに、狙い席の空きを確認の上、楽々ゲット。",
-		   NULL, "Back then, he also went early in the afternoon, just after the lunch rush, and not only did he find his target seat empty, he also obtained it with ease.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce jour-là donc, juste après la fin de la pause midi, il s'assure du dehors que la place convoitée est bien libre et parvient à l'obtenir sans difficulté.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　メニューを小出しに頼むなどの小技で確実にエンゲージの機会を増やしながら闘撮のチャンスを伺う...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　メニューを小出しに頼むなどの小技で確実にエンゲージの機会を増やしながら闘撮のチャンスを伺う…。",
-		   NULL, "By utilizing tricks such as ordering a little at a time, he effectively increased the number of opportunities for engagement, carefully scoping out his chance for a picture...", Line_Normal);
+		   NULL, "Par petites touches, commande par commande, il s'assure d'obtenir plusieurs occasions de commencer la conversation et attend le moment opportun pour déclencher l'obturateur...", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -175,21 +175,21 @@ void main()
 //　だが...やはり前日のアレ（※１）がたたったのか、闘撮の神は微笑まない！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが…やはり前日のアレ（※１）がたたったのか、闘撮の神は微笑まない！！",
-		   NULL, "But... as if cursed by that* from the day before, the God of War Photography did not smile upon him!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Seulement voilà... Contre toute attente, les dieux de la photo ne lui seront pas propices ! Peut-être était-ce dû à l'accident de la veille ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　３時に一度、手堅い連チャンを取りこぼして以降、チャンスはまるで訪れない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　３時に一度、手堅い連チャンを取りこぼして以降、チャンスはまるで訪れない。",
-		   NULL, "After suffering successive, firm defeats until 3 PM, he finds no chances coming his way.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Vers 15h, il a une chance de toucher le jackpot mais la laisse filer, et par la suite la chance semble le fuir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　４時過ぎからはオーダーも男が取りに来るようになり、完全に見抜かれた様子...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　４時過ぎからはオーダーも男が取りに来るようになり、完全に見抜かれた様子…。",
-		   NULL, "And after 4 PM, a man began to take his orders—it looks as though he has been seen through...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Après 16h30, c'est un homme qui vient prendre ses commandes, ce qui signifie sans doute que le personnel a compris son stratagème.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -197,7 +197,7 @@ void main()
 //　マークされたら潔く撤退が暗黙のハンタールール......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　マークされたら潔く撤退が暗黙のハンタールール……。",
-		   NULL, "It is the rule of a Hunter to withdraw with grace once marked......", Line_Normal);
+		   NULL, "Il doit reconnaître sa défaite et sortir, c'est une règle tacite dans le code d'honneur des chasseurs de photos lorsque ceux-ci sont démasqués...", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -205,7 +205,7 @@ void main()
 //竜「狙いは完璧だったんですが...、あの２時半にやったフォーク技が裏目ったようです＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "竜「狙いは完璧だったんですが…、あの２時半にやったフォーク技が裏目ったようです。",
-		   NULL, "Ryuu: \"My aim was perfect... but the fork technique I used at 2:30 seemed to have backfired.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ryû « Tout était réglé comme du papier à musique, mais je pense que c'est le coup de la fourchette vers 14h30 qui a tout fait capoter.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -213,9 +213,9 @@ void main()
 //　...ボックスシートでバッグ床置きはやはり警戒されたかなー...＠もうボストンバッグに隠しカメラは化石技かも...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ボックスシートでバッグ床置きはやはり警戒されたかなー…。",
-		   NULL, "...Maybe they were wary, since I sat in a booth and left my bag on the floor...", Line_WaitForInput);
+		   NULL, "Mon sac posé par terre leur a peut-être mis la puce à l'oreille, ce n'est pas logique lorsque l'on a toute une table et une banquette pour soi tout seul.", Line_WaitForInput);
 	OutputLine(NULL, "もうボストンバッグに隠しカメラは化石技かも…。",
-		   NULL, " My camera was already hidden in my travel bag, and might fossilize in there...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " L'appareil photo caché dans le sac en toile, c'est devenu trop vieux, trop connu...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -223,16 +223,16 @@ void main()
 //　半日粘って２桁ＥＧなら充分な高遭遇率なんですが＠...無念です。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　半日粘って２桁ＥＧなら充分な高遭遇率なんですが。",
-		   NULL, "If there were 2-digit EGs involved for sticking here half the day, I'd have a high encounter rate.", Line_WaitForInput);
+		   NULL, "Ceci dit, j'ai quelques dizaines de bonnes photos en une seule demi-journée, c'est un beau résultat.", Line_WaitForInput);
 	OutputLine(NULL, "…無念です。」",
-		   NULL, " ...I am mortified.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais je dois avouer que je suis déçu, j'aurais pu faire mieux. »", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　それでも何とかお宝ショットを数枚ゲット＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それでも何とかお宝ショットを数枚ゲット。",
-		   NULL, "Even so, he still got a few pieces of gold.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Oui, ce jour-là il repartira avec plusieurs photos exceptionnelles, et pourtant il se considère en petite forme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -240,7 +240,7 @@ void main()
 //　...さすがはハンター＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…さすがはハンター。",
-		   NULL, "...As to be expected from the Hunter.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il n'a pas volé son titre de chasseur, mais il possède aussi la fierté qui va avec.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -248,27 +248,27 @@ void main()
 //　不調をぼやきながらもこのナイスアングル＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　不調をぼやきながらもこのナイスアングル。",
-		   NULL, "He attained this nice angle, despite lamenting his failure.", Line_WaitForInput);
+		   NULL, "En tout cas, les angles de vue des photos, eux, sont magnifiques.", Line_WaitForInput);
 
 
 	PlaySE( 3, "wa_010", 56, 64 );
 
 //職人である￥
 	OutputLine(NULL, "職人である。",
-		   NULL, " He is an artisan.", Line_Normal);
+		   NULL, " Un vrai travail de pro.", Line_Normal);
 	ClearMessage();
 
 //　しかし驚くべきは、今回の制服大征服日本縦断（ファミレス編）、何とまだ検挙者なし＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかし驚くべきは、今回の制服大征服日本縦断（ファミレス編）、何とまだ検挙者なし！",
-		   NULL, "More surprising, though, is that this Uniform Conquest Across Japan has yielded not a single arrested person!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le plus surprenant pour l'instant dans notre compétition pour prendre en secret en photo tous les uniformes de tout le Japon, c'est qu'aucun des participants n'ait encore été arrêté !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　全国の都道府県警の約半分にお世話になったと豪語するハンターには幸先のいいスタート？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全国の都道府県警の約半分にお世話になったと豪語するハンターには幸先のいいスタート？！",
-		   NULL, "What an amazing start for the hunter who brags about having been to approximately half of the total prefectural police stations in the country!", Line_Normal);
+		   NULL, "Certains d'entre eux connaissent pourtant près de la moitié des geôles du pays à force d'être appréhendé pour atteinte aux bonnes mœurs. Il faut croire que la chance leur sourit !", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -276,7 +276,7 @@ void main()
 //１　前日のア＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "※１　前日のアレ",
-		   NULL, "* 'That' thing the day before.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "À propos de l'accident de la veille.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -284,14 +284,14 @@ void main()
 //　前日にハンターが挑んだ、名古屋の巫女割烹××＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前日にハンターが挑んだ、名古屋の巫女割烹××。",
-		   NULL, "The day before, our Hunter took on the Shrine Maiden Cuisine ×× in Nagoya.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Notre chasseur d'images s'était attaqué la veille au fameux restaurant de cuisine traditionnelle ******, situé à Nagoya, qui n'emploie que des femmes en robes de prêtresses Shintoïstes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　なんとハンターは意気込み過ぎて入店と同時に店側に看破され、初めからボックス配置の宮司待遇＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なんとハンターは意気込み過ぎて入店と同時に店側に看破され、初めからボックス配置の宮司待遇。",
-		   NULL, "His Hunter spirit showed through too zealously, and as soon as he entered the store, he was seen through, placed in a booth, and waited on by the head priest.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Trop sûr de son coup, le personnel de l'établissement l'avait démasqué dès son arrivée. Il n'eut l'occasion de parler à une jeune prêtresse que lors de sa première commande !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -299,14 +299,14 @@ void main()
 //　半日粘るも、とうとう巫女さんは１ｓｔオーダー時にしか現れなかったのである...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　半日粘るも、とうとう巫女さんは１ｓｔオーダー時にしか現れなかったのである…！",
-		   NULL, "Despite waiting half a day, the much-anticipated shrine maidens appeared only at the time of his first order...!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pendant toute la demi-journée passée là-bas, la chef du personnel, seule employée à ne pas porter l'uniforme, s'occupa systématiquement de lui !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　ハンターにあるまじき大ポカ！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ハンターにあるまじき大ポカ！！",
-		   NULL, "A seriously huge blunder for a Hunter!!", Line_Normal);
+		   NULL, "C'est une erreur indigne d'un chasseur de son rang !", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -315,7 +315,7 @@ void main()
 //　というわけで毎度激好評のハンター生写真のプレゼントコーナー！！/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　というわけで毎度激好評のハンター生写真のプレゼントコーナー！！",
-		   NULL, "Now then, here we have the giveaway of the Hunter's original photographs that always receive such high praise!!", Line_ContinueAfterTyping);
+		   NULL, "Et maintenant, passons à notre rubrique la plus appréciée, celle des photos-cadeaux !", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_006", 56, 64 );
 
@@ -327,14 +327,14 @@ void main()
 //　ハンター直選の、エンジェルモート制服をローアングルから食べ放題生写真３枚セットを、熱い読者１名にプレゼントだ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ハンター直選の、エンジェルモート制服をローアングルから食べ放題生写真３枚セットを、熱い読者１名にプレゼントだ！！",
-		   NULL, "We'll present one passionate reader with three all-you-can-eat low-angle pictures of the Angel Mort uniforms, chosen by the Hunter himself!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Cette fois-ci, c'est un lot de 3 (trois) photos de l'uniforme de l'Angel Mort qui seront offertes !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　激アツ写真で君も今日から闘撮者！！/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　激アツ写真で君も今日から闘撮者！！",
-		   NULL, "With such blazing hot pictures, you, too, can become a war photographer today!!", Line_WaitForInput);
+		   NULL, "Chaque photo est prise en contre-plongée et offre une vue parfaite, totale, et imprenable ! Il y a fort à parier qu'elles vous rendront chaud-bouillant et qu'elles susciteront des vocations !", Line_WaitForInput);
 
 	DisableWindow();
 	DrawScene("white", 200 );

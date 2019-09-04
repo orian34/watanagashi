@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -11,7 +11,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600585", 256, TRUE);
 	OutputLine(NULL, "「……園崎詩音は………魅音姉さまの足元にも及ばない、醜く情け知らずな愚か者でございます…。",
-		   NULL, "\"...Shion Sonozaki...... is a lowly, worthless sow not fit to even lick her big sister Mion's feet... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Moi, Shion Sonozaki, ne suis qu'une sale truie hideuse et dégénérée qui ne mériterait même pas d'être comparée en rêve à ma grande sœur Mion. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog002()
@@ -19,10 +19,10 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300673", 256, TRUE);
 	OutputLine(NULL, "「……じゃあそろそろいい？",
-		   NULL, "\"...Can I start now, then?", Line_WaitForInput);
+		   NULL, "— … C'est bon, je peux commencer maintenant ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300674", 256, TRUE);
 	OutputLine(NULL, "　この拷問はね、とてもシンプル。",
-		   NULL, " This method of torture is very simple.", Line_Normal);
+		   NULL, " C'est une méthode de torture très basique.", Line_Normal);
 }
 
 void dialog003()
@@ -30,10 +30,10 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300682_1", 256, TRUE);
 	OutputLine(NULL, "「…………他の人を相手にする時にはなんのためらいもなかったけど。",
-		   NULL, "\"............I didn't hesitate at all when I was torturing the others.", Line_WaitForInput);
+		   NULL, "— ... Tu sais, pour les autres, j'ai pas hésité une seule seconde,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300683", 256, TRUE);
 	OutputLine(NULL, "……なぜかあんたにはためらいがあるよ。」",
-		   NULL, " ...Why do I hesitate now?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " mais pour toi, c'est dur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -42,12 +42,12 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300712", 256, TRUE);
 	OutputLine(NULL, "「…………見たことないでしょ。",
-		   NULL, "\"......You've probably never seen one before, right?", Line_WaitForInput);
+		   NULL, "— Je parie que c'est la première fois que tu en vois un ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300713", 256, TRUE);
 	OutputLine(NULL, "本物のスタンガンだよ。",
-		   NULL, " It's a real stun gun.", Line_WaitForInput);
+		   NULL, " C'est un taz, enfin, un “pistolet incapacitant” pour parler correctement.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300714", 256, TRUE);
 	OutputLine(NULL, "…かなり出力が上げられるようになってるけどね。」",
-		   NULL, " ...It's illegal, and its output has been increased quite a bit.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je ne l'ai pas acheté au supermarché, tu t'en doutes, alors il est beaucoup plus puissant que les vrais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
