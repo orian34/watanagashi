@@ -23,34 +23,34 @@ void dialog002()
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300674", 256, TRUE);
 	OutputLine(NULL, "　この拷問はね、とてもシンプル。",
 		   NULL, " Tu verras, c'est tout simple.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300675", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300675", 540, TRUE);
 	OutputLine(NULL, "左手の小指の先端の節に釘を打つ。",
 		   NULL, " Je vais te planter un clou dans l'extrémité de l'auriculaire de ta main gauche. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300676", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300676", 540, TRUE);
 	OutputLine(NULL, "順に親指まで打ったらまた小指に戻って、今度は真ん中の節に釘を打つ。",
 		   NULL, "Ensuite, je passe aux autres doigts. Quand j'aurais cloué ton pouce, je reviendrai à ton petit doigt, et là, je te planterai un clou dans la deuxième phalange.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300677", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300677", 540, TRUE);
 	OutputLine(NULL, "…この調子で１５本の釘で左手を打ちつける。",
 		   NULL, " Je continue comme ça jusqu'à ce que tu aies quinze clous plantés dans les doigts, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300678", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300678", 540, TRUE);
 	OutputLine(NULL, "それが終わったら次は右手。",
 		   NULL, "puis je passe à ta main droite.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300679", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300679", 540, TRUE);
 	OutputLine(NULL, "……それが終わったら次は、…………まだ意識があったら教えるね。",
 		   NULL, " Et après, je... bah, ce sera une surprise, enfin, si tu es encore conscient. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300680", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300680", 540, TRUE);
 	OutputLine(NULL, "指先って、たくさんの神経が集まってるから、圭ちゃんが想像するよりもはるかに痛いよ。",
 		   NULL, "Les doigts contiennent beaucoup de terminaisons nerveuses, tu vas déguster, p'tit gars.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300681", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300681", 540, TRUE);
 	OutputLine(NULL, "…両手３０本を打ち終える前に、失神しちゃう人もいるそうだから…。」",
 		   NULL, " La plupart des gens perdent connaissance avant la fin des trente clous, il paraît...", Line_Normal);
 }
@@ -58,7 +58,7 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300682", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300682", 540, TRUE);
 	OutputLine(NULL, "「…………他の人を拷問する時にはなんのためらいもなかったけど。",
 		   NULL, "— ... Tu sais, pour les autres, j'ai pas hésité une seule seconde,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300683", 256, TRUE);
@@ -76,7 +76,7 @@ void dialog004()
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300713", 256, TRUE);
 	OutputLine(NULL, "本物のスタンガンだよ。",
 		   NULL, " C'est un taz, enfin, un “pistolet incapacitant” pour parler correctement.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300714", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300714", 540, TRUE);
 	OutputLine(NULL, "…違法品なんでかなり出力が上げられるようになってるけどね。」",
 		   NULL, " Je ne l'ai pas acheté au supermarché, tu t'en doutes, alors il est beaucoup plus puissant que les vrais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

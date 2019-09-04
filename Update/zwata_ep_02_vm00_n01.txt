@@ -36,7 +36,7 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/130700467", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700467", 540, TRUE);
 	OutputLine(NULL, "「園崎家は本業の方、",
 		   NULL, "— Les Sonozaki…", Line_Continue);
 
@@ -46,17 +46,17 @@ void dialog002()
 
 	OutputLine(NULL, "…あぁ、ヤクザ屋さんのことです。",
 		   NULL, " je veux dire, les Yakuzas, pas les autres.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700468", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700468", 540, TRUE);
 	OutputLine(NULL, "…で、覚醒剤を扱ってるとの噂がありましてね。",
 		   NULL, " Ils vendent de la drogue, enfin, selon la rumeur.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700469", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700469", 540, TRUE);
 	OutputLine(NULL, "…その可能性もあるかなんて思ってたのですが。」",
 		   NULL, " Je me suis dit que c'était une possibilité.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //「.........梨花ちゃんが、...覚醒剤の常用者だって言うのか...？！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/130101215", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "ps2/01/130101215", 540, TRUE);
 	OutputLine(NULL, "「………梨花ちゃんが、…覚醒剤の常用者だって言うのか…？！」",
 		   NULL, "— Pardon ? Rika, une droguée ? Non mais ça va pas la tête ?", Line_Normal);
 }

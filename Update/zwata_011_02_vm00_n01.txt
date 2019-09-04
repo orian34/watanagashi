@@ -17,7 +17,7 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/130700241", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700241", 540, TRUE);
 	OutputLine(NULL, "……鷹野さんの方はちょっとあやふやですが、富竹さんとほぼ同じ時刻に殺害され、岐阜の山中に遺棄されたと考えるのが妥当でしょうなぁ。」",
 		   NULL, "Pour Mme Takano, l'autopsie n'est pas très concluante, mais celle de Tomitake indique clairement l'heure du décès. Ils ont sûrement été tués ensemble, et elle a été transportée jusque dans la province d'à-côté.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -29,13 +29,13 @@ void dialog003()
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700281", 256, TRUE);
 	OutputLine(NULL, "「口封じをされるような、とんでもない物が隠してあったんじゃないですか？",
 		   NULL, "— Il n'y avait rien de plus terrible, de plus important ? Quelque chose qu'il faudrait passer sous silence, sous peine de mort ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700282", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700282", 540, TRUE);
 	OutputLine(NULL, "　…例えば、覚醒剤の山とか。",
 		   NULL, " Je sais pas moi, de la drogue, par exemple.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700283", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700283", 540, TRUE);
 	OutputLine(NULL, "ケシの秘密工場があったとか。",
 		   NULL, " De la cocaïne, ou du pavot, ou...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700284", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700284", 540, TRUE);
 	OutputLine(NULL, "あるいはソ連か中国辺りの拳銃が山ほど積まれていたと。",
 		   NULL, " des armes à feu en provenance de Russie ou de Chine. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
