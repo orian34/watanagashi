@@ -44,5 +44,5 @@ void dialog002()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……だとしたら梨花ちゃんも、それに関わっている疑いがある、とでも言いたいのか……？！",
-		   NULL, "Ôishi a-t-il voulu dire que Rika est également soupçonné d'être impliqué là-dedans ?!", Line_Normal);
+		   NULL, "Ôishi a-t-il voulu dire que Rika est également soupçonnée d'être impliquée là-dedans ?!", Line_Normal);
 }
