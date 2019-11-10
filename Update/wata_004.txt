@@ -530,7 +530,7 @@
 		   NULL, "— Je pense pas qu'il faille chercher bien loin, en fait.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300124", 256, TRUE);
 	OutputLine(NULL, "この辺って冬の寒さはかなり厳しいからね、布団とか半纏とかの防寒具を特に大切にしたからじゃないかな。」",
-		   NULL, " Il fait super froid en hiver par ici, alors les gens étaient rudement contents d'avoir des vestes et des futons en coton, je pense.\", Line_Normal);
+		   NULL, " Il fait super froid en hiver par ici, alors les gens étaient rudement contents d'avoir des vestes et des futons en coton, je pense.", Line_Normal);
 	ClearMessage();
 
 //「あー...なるほどなぁ＠つまり、冬の間お世話になった布団に感謝しようってわけだ＠で、巫女さんが供養をして最後に川に流すわけか＠それが綿流しってわけだろ？＠
