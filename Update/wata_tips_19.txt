@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //１０深■スクラップ帳よりⅨ

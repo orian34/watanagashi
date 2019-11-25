@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //７■スクラップ帳よりⅢ
