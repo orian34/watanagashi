@@ -113,7 +113,7 @@ void Game()
 {
 	SetValidityOfSaving( TRUE );
 
-	StoreValueToLocalWork( ChapterNumber, 0 );
+	StoreValueToLocalWork( ChapterNumber, 1 );
 	CallSection( "SetDay" );
 
 	//DrawSceneWithMask( "black", "2", 0, 0, 1000 );
@@ -132,7 +132,7 @@ void Day1()
 
 	GetAchievement("HIGURASHI_STORY_EP02_01");
 
-	StoreValueToLocalWork( ChapterNumber, 1 );
+	StoreValueToLocalWork( ChapterNumber, 2 );
 	SavePoint("Ch.1 終わり", "Fin du chapitre 1");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -146,7 +146,7 @@ void Day2()
 
 	GetAchievement("HIGURASHI_STORY_EP02_02");
 
-	StoreValueToLocalWork( ChapterNumber, 2 );
+	StoreValueToLocalWork( ChapterNumber, 3 );
 	SavePoint("Ch.2 終わり", "Fin du chapitre 2");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -160,7 +160,7 @@ void Day3()
 
 	GetAchievement("HIGURASHI_STORY_EP02_03");
 
-	StoreValueToLocalWork( ChapterNumber, 3 );
+	StoreValueToLocalWork( ChapterNumber, 4 );
 	SavePoint("Ch.3 終わり", "Fin du chapitre 3");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -174,7 +174,7 @@ void Day4()
 
 	GetAchievement("HIGURASHI_STORY_EP02_04");
 
-	StoreValueToLocalWork( ChapterNumber, 4 );
+	StoreValueToLocalWork( ChapterNumber, 5 );
 	SavePoint("Ch.4 終わり", "Fin du chapitre 4");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -188,7 +188,7 @@ void Day5()
 
 	GetAchievement("HIGURASHI_STORY_EP02_05");
 
-	StoreValueToLocalWork( ChapterNumber, 5 );
+	StoreValueToLocalWork( ChapterNumber, 6 );
 	SavePoint("Ch.5 終わり", "Fin du chapitre 5");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -200,7 +200,8 @@ void Day6()
 {
 	CallScript( "wata_006" );
 
-	StoreValueToLocalWork( ChapterNumber, 6 );
+	StoreValueToLocalWork( ChapterNumber, 7 );
+	CallSection( "SetDay" );
 
 	JumpSection("Day7");
 }
@@ -211,7 +212,7 @@ void Day7()
 
 	GetAchievement("HIGURASHI_STORY_EP02_06");
 
-	StoreValueToLocalWork( ChapterNumber, 7 );
+	StoreValueToLocalWork( ChapterNumber, 8 );
 	SavePoint("Ch.6 終わり", "Fin du chapitre 6");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -225,7 +226,7 @@ void Day8()
 
 	GetAchievement("HIGURASHI_STORY_EP02_07");
 
-	StoreValueToLocalWork( ChapterNumber, 8 );
+	StoreValueToLocalWork( ChapterNumber, 9 );
 	SavePoint("Ch.7 終わり", "Fin du chapitre 7");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -237,7 +238,8 @@ void Day9()
 {
 	CallScript( "wata_009" );
 
-	StoreValueToLocalWork( ChapterNumber, 9 );
+	StoreValueToLocalWork( ChapterNumber, 10 );
+	CallSection( "SetDay" );
 
 	JumpSection("Day9_2");
 }
@@ -248,7 +250,7 @@ void Day9_2()
 
 	GetAchievement("HIGURASHI_STORY_EP02_08");
 
-	StoreValueToLocalWork( ChapterNumber, 10 );
+	StoreValueToLocalWork( ChapterNumber, 11 );
 	SavePoint("Ch.8 終わり", "Fin du chapitre 8");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -260,7 +262,8 @@ void Day10()
 {
 	CallScript( "wata_010" );
 
-	StoreValueToLocalWork( ChapterNumber, 11 );
+	StoreValueToLocalWork( ChapterNumber, 12 );
+	CallSection( "SetDay" );
 
 	JumpSection("Day10_2");
 }
@@ -269,7 +272,7 @@ void Day10_2()
 {
 	CallScript( "wata_010_02" );
 
-	StoreValueToLocalWork( ChapterNumber, 12 );
+	StoreValueToLocalWork( ChapterNumber, 13 );
 	SavePoint("Ch.9 終わり", "Fin du chapitre 9");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -282,7 +285,8 @@ void Day10_3()
 	CallScript( "wata_010_03" );
 
 
-	StoreValueToLocalWork( ChapterNumber, 13 );
+	StoreValueToLocalWork( ChapterNumber, 14 );
+	CallSection( "SetDay" );
 
 	JumpSection("Day10_4");
 }
@@ -293,7 +297,7 @@ void Day10_4()
 
 	GetAchievement("HIGURASHI_STORY_EP02_09");
 
-	StoreValueToLocalWork( ChapterNumber, 14 );
+	StoreValueToLocalWork( ChapterNumber, 15 );
 	SavePoint("Ch.10 終わり", "Fin du chapitre 10");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -307,7 +311,8 @@ void Day11()
 
 //	GetAchievement("HIGURASHI_STORY_EP01_07");
 
-	StoreValueToLocalWork( ChapterNumber, 15 );
+	StoreValueToLocalWork( ChapterNumber, 16 );
+	CallSection( "SetDay" );
 
 	JumpSection("Day11_2");
 }
@@ -318,7 +323,7 @@ void Day11_2()
 
 	GetAchievement("HIGURASHI_STORY_EP02_10");
 
-	StoreValueToLocalWork( ChapterNumber, 16 );
+	StoreValueToLocalWork( ChapterNumber, 17 );
 	SavePoint("Ch.11 終わり", "Fin du chapitre 11");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
@@ -332,7 +337,8 @@ void Day12()
 
 //	GetAchievement("HIGURASHI_STORY_EP01_09");
 
-	StoreValueToLocalWork( ChapterNumber, 17 );
+	StoreValueToLocalWork( ChapterNumber, 18 );
+	CallSection( "SetDay" );
 
 	JumpSection("Day12_2");
 }
@@ -343,7 +349,8 @@ void Day12_2()
 
 	GetAchievement("HIGURASHI_STORY_EP02_11");
 
-	StoreValueToLocalWork( ChapterNumber, 18 );
+	StoreValueToLocalWork( ChapterNumber, 19 );
+	CallSection( "SetDay" );
 
 	JumpSection("Day12_3");
 }
@@ -354,7 +361,8 @@ void Day12_3()
 
 	GetAchievement("HIGURASHI_STORY_EP02_12");
 
-	StoreValueToLocalWork( ChapterNumber, 19 );
+	StoreValueToLocalWork( ChapterNumber, 20 );
+	CallSection( "SetDay" );
 
 	JumpSection("Epilogue_01");
 }
@@ -363,7 +371,8 @@ void Epilogue_01()
 {
 	CallScript( "wata_ep_01" );
 
-	StoreValueToLocalWork( ChapterNumber, 20 );
+	StoreValueToLocalWork( ChapterNumber, 21 );
+	CallSection( "SetDay" );
 
 	JumpSection("Epilogue_02");
 }
