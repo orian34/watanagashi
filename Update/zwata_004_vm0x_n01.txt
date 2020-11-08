@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -19,7 +19,8 @@ void dialog002()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re3a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 2, "sprite/re3a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -55,21 +56,23 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 256, TRUE);
 	OutputLine(NULL, "「祭壇にもお布団を積み上げているし。",
-		   NULL, "— Tu verrais, on empile les futons juste devant l'autel du temple, il y a en a un paquet...", Line_WaitForInput);
+		   NULL, "— Tu verrais, on empile les futons juste devant l'autel du temple, il y a en a un paquet...", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog005()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200083", 256, TRUE);
 	OutputLine(NULL, "綿流しはね、毎年６月の日曜日に神社でやるお祭りなの。",
-		   NULL, "La purification du coton, c'est une fête qui a lieu tous les ans pendant l'un des dimanche de juin, au sanctuaire.", Line_WaitForInput);
+		   NULL, "La purification du coton, c'est une fête qui a lieu tous les ans pendant l'un des dimanche de juin, au sanctuaire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200084", 256, TRUE);
 	OutputLine(NULL, "とってもにぎわうんだよ！」",
-		   NULL, " Il y a plein de monde !", Line_Normal);
+		   NULL, "Il y a plein de monde !", Line_Normal);
 //	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/normal/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -88,7 +91,7 @@ void dialog005()
 		   NULL, " Mais ça aurait bloqué la rivière, c'est pas pratique du tout.", Line_Normal);
 
 //圭一「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。布団の供養っては初耳だな。どんな謂れがあるんだ？」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_03", 256, TRUE);
 	OutputLine(NULL, "「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
 		   NULL, "— J'ai déjà entendu parler de cérémonies à la mémoire des ancêtres, ou celles des combattants morts à la guerre. J'ai vu des reportages sur des cérémonies pour les vieux couteaux ou les aiguilles,", Line_Continue);

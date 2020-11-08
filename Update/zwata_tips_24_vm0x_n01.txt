@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -13,10 +13,11 @@ void dialog001()
 	OutputLine(NULL, "「いつもそうですが、事件と車のキーの閉じ込めはよく似てます。",
 		   NULL, "— Je le dis souvent, mais les enquêtes, c'est comme les voitures fermées avec la clef à l'intérieur.", Line_Continue);
 	OutputLine(NULL, "開けるためのカギはいつもその中に閉じ込められているんです。",
-		   NULL, " Pour ouvrir la voiture, vous avez besoin de la clef qui se trouve dedans.", Line_WaitForInput);
+		   NULL, " Pour ouvrir la voiture, vous avez besoin de la clef qui se trouve dedans.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700189", 256, TRUE);
 	OutputLine(NULL, "車なら修理業者を呼んで扉をこじ開ける。",
-		   NULL, " Alors, vous pouvez péter un carreau ou bien appeler votre assurance. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors, vous pouvez péter un carreau ou bien appeler votre assurance. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog002()

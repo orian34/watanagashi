@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -121,25 +121,22 @@ void dialog007()
 void dialog008()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11830", 256, TRUE);
 	OutputLine(NULL, "「魅音って結構、胸があるから今にもこぼれそうだよなー。",
-		   NULL, "— Tu sais, tu as une sacrée paire de... euh, de poumons, il y en a clairement trop pour cet uniforme, on dirait que ça va déborder d'une seconde à l'autre.", Line_WaitForInput);
-
+		   NULL, "— Tu sais, tu as une sacrée paire de... euh, de poumons, il y en a clairement trop pour cet uniforme, on dirait que ça va déborder d'une seconde à l'autre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11840", 256, TRUE);
 	OutputLine(NULL, "お客さんみんな見てるぞきっと〜！」",
-		   NULL, " Je parie que tous les autres clients n'en perdent pas une miette !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je parie que tous les autres clients n'en perdent pas une miette !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog009()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei12100", 256, TRUE);
 	OutputLine(NULL, "「詩音はウェイトレスの仕事、初めてなのか？",
 		   NULL, "— Et alors donc, Shion, c'est la première fois que tu travailles comme serveuse ?", Line_WaitForInput);
-
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei12110", 256, TRUE);
 	OutputLine(NULL, "　慣れてなさそうだったからさ。」",
 		   NULL, " Tu n'avais pas l'air très à l'aise.", GetGlobalFlag(GLinemodeSp));

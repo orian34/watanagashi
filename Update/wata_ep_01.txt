@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 ////*Watanagasi_Ep1
@@ -49,7 +49,6 @@
 	PlayBGM( 2, "lsys24", 56, 0 );
 //　容疑者は６月１９日から２１日までの間に雛見沢村住民５人（園崎お魎・園崎詩音・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　容疑者は６月１９日から２１日までの間に雛見沢村住民５人（園崎お魎・園崎詩音・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。",
 		   NULL, "On pense que le suspect a enlevé, séquestré, torturé puis assassiné cinq habitants du village -- Oryô Sonozaki, Shion Sonozaki, Kiichirô Kimiyoshi, Rika Furude et Satoko Hôjô -- entre le 19 et le 21 juin.", Line_ContinueAfterTyping);
 
@@ -108,8 +107,7 @@
 
 	PlayBGM( 2, "lsys24", 56, 0 );
 //　失踪者たちを殺害したと思われる園崎邸内の離れ地下奥、拷問室からは、失踪者４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）の毛髪、皮膚片、血液などを発見。
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-5>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　失踪者たちを殺害したと思われる園崎邸内の離れ地下奥、拷問室からは、失踪者４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）の毛髪、皮膚片、血液などを発見。",
 		   NULL, "La police est entrée dans une salle construite à l'écart de la propriété principale. C'est dans cet endroit que les victimes auraient été mises à mort. Dans une salle spécialement aménagée pour la torture, la police a pu retrouver des échantillons de tissus, de sang et de poils appartenant à quatre des personnes disparues -- Oryô Sonozaki, Kiichirô Kimiyoshi, Rika Furude et Satoko Hôjô.", Line_ContinueAfterTyping);
 
@@ -142,8 +140,7 @@
 
 	PlayBGM( 2, "lsys24", 56, 0 );
 //　監禁されていたクラスメートの証言から、監禁現場となった、園崎邸内の離れ地下にあるものと見て捜索を続けているが、容疑者の逃亡ルート共々、発見には未だ至っていない。
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　監禁されていたクラスメートの証言から、監禁現場となった、園崎邸内の離れ地下にあるものと見て捜索を続けているが、容疑者の逃亡ルート共々、発見には未だ至っていない。",
 		   NULL, "D'après les témoignages des camarades de classe du suspect, la police a conclu qu'ils devaient se trouver dans cet endroit spécialement aménagé et a poursuivit les recherches, mais n'a trouvé ni les corps, ni par où le suspect s'est enfui.", Line_ContinueAfterTyping);
 
@@ -176,7 +173,6 @@
 	PlayBGM( 2, "lsys24", 56, 0 );
 //　事件の動機には今もなお不明な点が多く、また、園崎家、雛見沢村住民の極度の非協力もあり、その解明には膨大な時間を要することが予想される。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　事件の動機には今もなお不明な点が多く、また、園崎家、雛見沢村住民の極度の非協力もあり、その解明には膨大な時間を要することが予想される。",
 		   NULL, "Le mobile du suspect est encore très incertain, et le manque de coopération de la part des villageois préfigure de nombreuses difficultés pour le découvrir.", Line_ContinueAfterTyping);
 
@@ -366,9 +362,10 @@
 	OutputLine(NULL, "　聞いた話では、見る影見る影がみんな魅音に見えてしまうらしく、",
 		   NULL, "Il paraissait qu'elle prenait chaque ombre, chaque meuble, chaque personne pour Mion.", Line_WaitForInput);
 	OutputLine(NULL, "病院は愚か、自宅すらも嫌がり、",
-		   NULL, " Elle ne voulait pas rester à l'hôpital, mais pas non plus à la maison.", Line_WaitForInput);
+		   NULL, " Elle ne voulait pas rester à l'hôpital, mais pas non plus à la maison.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "住所を伏せ、鹿骨市内の某所に引き篭もっているという…。",
-		   NULL, " On m'a simplement dit qu'elle se terrait dans un appartement quelque part dans le centre de Shishibone.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On m'a simplement dit qu'elle se terrait dans un appartement quelque part dans le centre de Shishibone.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......また、魅音がやって来ると恐れて日々、所在を転々と変えているらしく、その正確な所在は実家ですら知りかねていた＠
@@ -472,7 +469,7 @@
 	DrawScene("background/ma3", 400 );
 
 //　自宅には連日、興宮の園崎家、つまりヤクザの大幹部でもある魅音と詩音の両親が、大勢の子分を連れて謝罪にやって来た￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自宅には連日、興宮の園崎家、つまりヤクザの大幹部でもある魅音と詩音の両親が、大勢の子分を連れて謝罪にやって来た。",
 		   NULL, "Pendant plusieurs jours, les parents de Shion sont venus chez nous pour nous faire des excuses officielles. Imaginez que chaque jour, devant la porte, les centaines d'hommes de main de la pègre locale vous demandent à genoux d'accepter des liasses d'un million.", Line_Normal);
 	ClearMessage();
@@ -514,7 +511,8 @@
 	DisableWindow();
 	DrawScene("black", 3000 );
 	PlayBGM( 1, "msys11", 56, 0 );
-	ModDrawCharacter(2, 2, "sprite/sunset/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "sunset");
+	ModDrawCharacter(2, 2, "sprite/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/hi5_01", "left", 0, 0, 3000 );
 
 //「......そっか＠......引っ越しちゃうんだね＠......いつ？＠
@@ -543,7 +541,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 2, "sprite/sunset/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 2, "sprite/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「!s200.............................................!sd寂しくなるね＠...私一人しか、!w1000...残らない。＠
 //!s200
@@ -1012,7 +1010,7 @@
 
 
 //　...展示品は売らないと一度は断られたのだが、...俺が、例の事件の生存者Ａだとわかると、すぐに承諾してくれた￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…展示品は売らないと一度は断られたのだが、…俺が、例の事件の生存者Ａだとわかると、すぐに承諾してくれた。",
 		   NULL, "Il m'avait dit d'abord qu'il ne me la vendrait pas, parce qu'il ne vendait jamais les modèles d'exposition, mais lorsqu'il a compris que j'étais le “survivant A” dont parlaient tous les journaux, il s'est montré compréhensif.", Line_Normal);
 	ClearMessage();
@@ -1258,7 +1256,8 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　み...見間違いなんかじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1435,7 +1434,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「あはははは、お久しぶり～＠...どう＠　元気にしてた？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1484,7 +1483,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「............本当はいけないよ＠...えへへへ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1533,7 +1532,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...最後にお話したかったから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2037,7 +2036,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 //「......今日を境に魅音が戻ってくることはもうない。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2079,7 +2078,7 @@
 		   NULL, " Ce n'est pas elle ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1300, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1300, FALSE );
 	DrawSceneWithMask("background/ma2", "up", 0, 0, 1300 );
 //print 6
 

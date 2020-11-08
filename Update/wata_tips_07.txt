@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //７■スクラップ帳よりⅠ
@@ -53,9 +53,10 @@
 	OutputLine(NULL, "「地獄の釜が開く」",
 		   NULL, " elle pouvait « transformer le sol en un lac bouillant comme dans les enfers »,", Line_WaitForInput);
 	OutputLine(NULL, "「鬼が溢れ出す」",
-		   NULL, " « faire émerger des ogres depuis le marais »,", Line_WaitForInput);
+		   NULL, " « faire émerger des ogres depuis le marais »,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「地獄の瘴気が溢れ出し、村人たちことごとく逃れることも叶わず、息絶えるなり」",
-		   NULL, " voire même « répandre le miasme des enfers sur la population et les tuer tous jusqu'au dernier ». ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "voire même « répandre le miasme des enfers sur la population et les tuer tous jusqu'au dernier ». ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "といった、村の全滅を想起させる物騒なものが目立つ。",
 		   NULL, "Ce dernier exemple, particulièrement extrême, est frappant.", GetGlobalFlag(GLinemodeSp));
@@ -63,8 +64,7 @@
 
 
 //　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる。",
 		   NULL, "Ce genre de punitions divines effroyables est un moyen souvent utilisé dans les descriptions de la fin du monde dans de nombreuses autres religions, et elles ne servent qu'à faire en sorte que les croyants respectent bien scrupuleusement certains principes religieux.", Line_Normal);
 	ClearMessage();

@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 //８■スクラップ帳よりⅤ
 
@@ -68,7 +68,7 @@
 
 
 //　そのための解体道具や拘束道具が考えられるが、それでも二百を超えるとは多過ぎる￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのための解体道具や拘束道具が考えられるが、それでも二百を超えるとは多過ぎる。",
 		   NULL, "On peut imaginer qu'une partie des reliques sacrées servait à maintenir la victime en place et qu'une autre servait à la découper en morceaux, mais ces deux fonctions sont-elles suffisantes pour justifier un si grand nombre ? Je ne le pense pas.", Line_Normal);
 	ClearMessage();
@@ -112,7 +112,7 @@
 
 
 //　一般的な道具と違い、到達点に至ることはすなわち行き詰まり（マンネリ）であり、次なる到達点を求め、いくつもの亜種にも分裂する￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一般的な道具と違い、到達点に至ることはすなわち行き詰まり（マンネリ）であり、次なる到達点を求め、いくつもの亜種にも分裂する。",
 		   NULL, "À la différence des autres objets de la vie courante, l'arrêt de leur évolution signifie un manque d'intérêt en leur endroit -- et lorsque l'ennui gagne l'homme, il se met à la recherche de nouveaux plaisirs, ce qui provoque de nouvelles évolutions, de nouvelles utilisations, bref de nouveaux objets dédiés au loisir.", Line_Normal);
 	ClearMessage();
@@ -136,9 +136,10 @@
 //　観客を飽きさせないため、様々な、斬新で興味を惹く「祭具（解体道具）」が歴代の御三家当主たちによって、次々開発されていった...＠そう考えられなくもない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　観客を飽きさせないため、様々な、斬新で興味を惹く「祭具（解体道具）」が歴代の御三家当主たちによって、次々開発されていった…。",
-		   NULL, "Pour que les spectateurs ne s'ennuient pas, il fallait donc constamment rechercher de nouvelles reliques -- de nouveaux objets pour disséquer la victime -- qui assureraient un intérêt constamment renouvelé.", Line_WaitForInput);
+		   NULL, "Pour que les spectateurs ne s'ennuient pas, il fallait donc constamment rechercher de nouvelles reliques -- de nouveaux objets pour disséquer la victime -- qui assureraient un intérêt constamment renouvelé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そう考えられなくもない。",
-		   NULL, " Cette tâche incombait certainement aux trois clans fondateurs.", Line_Normal);
+		   NULL, "Cette tâche incombait certainement aux trois clans fondateurs.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );

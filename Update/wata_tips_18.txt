@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //１０■４人だけの罪に終わらない？
@@ -22,13 +22,15 @@
 	OutputLine(NULL, "「いえいえ、気にしないで下さいよ。",
 		   NULL, "— Allons, ne fais pas ton timide.", Line_Continue);
 	OutputLine(NULL, "この店でおでんを食べるとですね。",
-		   NULL, " Tu sais, quand je mange de la soupe aux légumes ici, je sais pas pourquoi, la facture se transforme en facture d'essence.", Line_WaitForInput);
+		   NULL, " Tu sais, quand je mange de la soupe aux légumes ici, je sais pas pourquoi, la facture se transforme en facture d'essence.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700141", 256, TRUE);
 	OutputLine(NULL, "なぜか、年契のガソリンスタンドの請求書に化けちゃうんですよ。",
-		   NULL, " C'est fou, hein ?", Line_WaitForInput);
+		   NULL, "C'est fou, hein ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700142", 256, TRUE);
 	OutputLine(NULL, "だから遠慮しないでもう一杯飲んでいけばいいのに。」",
-		   NULL, " Du coup, je peux manger ici autant que je veux, alors vas-y, sers-toi, c'est pour moi.", Line_Normal);
+		   NULL, "Du coup, je peux manger ici autant que je veux, alors vas-y, sers-toi, c'est pour moi.", Line_Normal);
 	ClearMessage();
 
 //　男は、これでもう充分と赤ら顔で手を振り、駅前の華やかなネオンの中に消えていった￥
@@ -79,13 +81,15 @@
 	OutputLine(NULL, "「熊ちゃん、いつも言ってるでしょ。",
 		   NULL, "— Nounours, qu'est-ce que je n'arrête pas de te dire ?", Line_Continue);
 	OutputLine(NULL, "動機ってのは、その本人に充分でありさえすれば足りるんです。",
-		   NULL, " Un mobile n'a de valeur que dans les yeux du coupable.", Line_WaitForInput);
+		   NULL, " Un mobile n'a de valeur que dans les yeux du coupable.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700146", 256, TRUE);
 	OutputLine(NULL, "価値観の違いをよく考えなくちゃ。",
-		   NULL, " Te casse pas la tête avec des questions de valeur ou d'argent ou d'importance.", Line_WaitForInput);
+		   NULL, "Te casse pas la tête avec des questions de valeur ou d'argent ou d'importance.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700147", 256, TRUE);
 	OutputLine(NULL, "…お母さん、",
-		   NULL, " Ah, patron !", Line_Continue);
+		   NULL, "Ah, patron !", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
@@ -137,7 +141,7 @@
 
 
 //　昨年までは厳重な施錠だったのだが、今年からは簡単な施錠になったため、簡単に賊の侵入を許してしまったのではないか＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昨年までは厳重な施錠だったのだが、今年からは簡単な施錠になったため、簡単に賊の侵入を許してしまったのではないか。",
 		   NULL, "Le lourd mécanisme de serrure qui protégeait le temple depuis toujours avait été changé par un tout petit cadenas cette année, et les gens pensaient que c'était ce changement qui avait donné des idées aux petits curieux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

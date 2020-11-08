@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //１０深■園崎家の老当主は？
@@ -17,7 +17,7 @@
 
 //「はい。郵便局員も目撃してないそうです＠...園崎本家は、郵便受けにハンコが吊るしてあるそうで、書留も宅急便も勝手にハンコを押して投函していい事になってるんだそうっす。＠
 	ClearMessage();
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100030", 256, TRUE);
 	OutputLine(NULL, "「はい。郵便局員も目撃してないそうです。",
 		   NULL, "— C'est exact, l'employé de la poste ne l'a pas vue non plus.", Line_Continue);

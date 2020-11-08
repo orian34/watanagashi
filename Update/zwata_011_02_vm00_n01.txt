@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -28,16 +28,19 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700281", 256, TRUE);
 	OutputLine(NULL, "「口封じをされるような、とんでもない物が隠してあったんじゃないですか？",
-		   NULL, "— Il n'y avait rien de plus terrible, de plus important ? Quelque chose qu'il faudrait passer sous silence, sous peine de mort ?", Line_WaitForInput);
+		   NULL, "— Il n'y avait rien de plus terrible, de plus important ? Quelque chose qu'il faudrait passer sous silence, sous peine de mort ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps2/11/130700282", 540, TRUE);
 	OutputLine(NULL, "　…例えば、覚醒剤の山とか。",
-		   NULL, " Je sais pas moi, de la drogue, par exemple.", Line_WaitForInput);
+		   NULL, "Je sais pas moi, de la drogue, par exemple.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps2/11/130700283", 540, TRUE);
 	OutputLine(NULL, "ケシの秘密工場があったとか。",
-		   NULL, " De la cocaïne, ou du pavot, ou...", Line_WaitForInput);
+		   NULL, "De la cocaïne, ou du pavot, ou...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps2/11/130700284", 540, TRUE);
 	OutputLine(NULL, "あるいはソ連か中国辺りの拳銃が山ほど積まれていたと。",
-		   NULL, " des armes à feu en provenance de Russie ou de Chine. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "des armes à feu en provenance de Russie ou de Chine. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700285", 256, TRUE);
 	OutputLine(NULL, "不審な木箱やコンテナが山積みされてませんでしたか？」",

@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -56,7 +56,8 @@ void dialog004()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(3, 3, "sprite/sunset/me2_tohoho_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "sunset");
+	ModDrawCharacterWithFiltering(3, 3, "sprite/me2_tohoho_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //魅音「一緒にしないでください、こんなやつと」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -103,7 +104,7 @@ void dialog007()
 
 
 //　......だから、村に下界の人間が来ると穢れてオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900032", 256, TRUE);
 	OutputLine(NULL, "　……だから、村に下界の人間が来ると不純が混じってオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。」",
 		   NULL, "C'est pourquoi, lorsqu'un humain du monde d'en bas venait par ici, ils pensaient que la déesse Yashiro les punirait pour avoir souillé le sol sacré de ses terres, et donc ils faisaient tout pour n'avoir aucun contact avec l'extérieur.", Line_Normal);

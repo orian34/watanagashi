@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -42,12 +42,14 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300712", 256, TRUE);
 	OutputLine(NULL, "「…………見たことないでしょ。",
-		   NULL, "— Je parie que c'est la première fois que tu en vois un ?", Line_WaitForInput);
+		   NULL, "— Je parie que c'est la première fois que tu en vois un ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300713", 256, TRUE);
 	OutputLine(NULL, "本物のスタンガンだよ。",
-		   NULL, " C'est un taz, enfin, un “pistolet incapacitant” pour parler correctement.", Line_WaitForInput);
+		   NULL, "C'est un taz, enfin, un “pistolet incapacitant” pour parler correctement.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300714", 256, TRUE);
 	OutputLine(NULL, "…かなり出力が上げられるようになってるけどね。」",
-		   NULL, " Je ne l'ai pas acheté au supermarché, tu t'en doutes, alors il est beaucoup plus puissant que les vrais.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je ne l'ai pas acheté au supermarché, tu t'en doutes, alors il est beaucoup plus puissant que les vrais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

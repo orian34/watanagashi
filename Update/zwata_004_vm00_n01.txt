@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -9,7 +9,8 @@ void dialog000()
 void dialog001()
 {
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re3a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 2, "sprite/re3a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -74,10 +75,11 @@ void dialog004()
 	OutputLine(NULL, "「綿ってのはね、お布団や半纏なんかの綿のことなの。",
 		   NULL, "— Mais attention, on parle uniquement du coton des futons, des couettes, ou des vestes d'intérieur.", Line_WaitForInput);
 	OutputLine(NULL, "だから、お布団の供養になるのかな？",
-		   NULL, " C'est un peu comme une prière pour les accompagner dans l'au-delà ?", Line_WaitForInput);
+		   NULL, " C'est un peu comme une prière pour les accompagner dans l'au-delà ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 256, TRUE);
 	OutputLine(NULL, "　…祭壇にもお布団を積み上げているし。」",
-		   NULL, " Tu verrais, on empile les futons juste devant l'autel du temple, il y a en a un paquet...", Line_Normal);
+		   NULL, "Tu verrais, on empile les futons juste devant l'autel du temple, il y a en a un paquet...", Line_Normal);
 	ClearMessage();
 }
 
@@ -86,16 +88,17 @@ void dialog005()
 //「ご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど＠布団の供養っては初耳だな＠どんな謂れがあるんだ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
-		   NULL, "— J'ai déjà entendu parler de cérémonies à la mémoire des ancêtres, ou celles des combattants morts à la guerre. J'ai vu des reportages sur des cérémonies pour les vieux couteaux ou les aiguilles,", Line_WaitForInput);
+		   NULL, "— J'ai déjà entendu parler de cérémonies à la mémoire des ancêtres, ou celles des combattants morts à la guerre. J'ai vu des reportages sur des cérémonies pour les vieux couteaux ou les aiguilles,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "布団の供養っては初耳だな。",
-		   NULL, " mais une prière pour du coton ?", Line_WaitForInput);
+		   NULL, "mais une prière pour du coton ?", Line_WaitForInput);
 	OutputLine(NULL, "どんな謂れがあるんだ？」",
 		   NULL, " Il y a une légende particulière par ici, pourquoi tant de ferveur religieuse ?", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/normal/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 }
 

@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 
@@ -49,9 +49,10 @@
 //　犠牲者を沈めて「殺す」ことよりも＠「沈める（鎮める）」行為に重きが置かれていたと考えられる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　犠牲者を沈めて「殺す」ことよりも、",
-		   NULL, "On pense que le point important de cette cérémonie n'était pas d'offrir une victime en sacrifice, mais de “plonger” (沈める) la victime pour “apaiser” (鎮める) la colère de la déesse,", Line_WaitForInput);
+		   NULL, "On pense que le point important de cette cérémonie n'était pas d'offrir une victime en sacrifice, mais de “plonger” (沈める) la victime pour “apaiser” (鎮める) la colère de la déesse,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「沈める（鎮める）」行為に重きが置かれていたと考えられる。",
-		   NULL, " à cause de la prononciation exactement semblable des deux idéogrammes correspondants -- les croyants pensaient sûrement obtenir l'un en faisant l'autre.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "à cause de la prononciation exactement semblable des deux idéogrammes correspondants -- les croyants pensaient sûrement obtenir l'un en faisant l'autre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -73,9 +74,10 @@
 //　私の想像では、丸太等で巨大なイカダを組み＠そこに処刑台を設え、縄で犠牲者を吊り上げ、時の刻みに合わせて少しずつ沼へ沈めていったのではないかと思う＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の想像では、丸太等で巨大なイカダを組み、",
-		   NULL, "On peut imaginer que les villageois construisaient un radeau géant sur lequel ils plaçaient un échafaud,", Line_WaitForInput);
+		   NULL, "On peut imaginer que les villageois construisaient un radeau géant sur lequel ils plaçaient un échafaud,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そこに処刑台を設え、縄で犠牲者を吊り上げ、時の刻みに合わせて少しずつ沼へ沈めていったのではないかと思う。",
-		   NULL, " et qu'ils attachaient la victime dans un bassin flottant qui s'enfonçait peu à peu dans l'eau, avec un système de clepsydre.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "et qu'ils attachaient la victime dans un bassin flottant qui s'enfonçait peu à peu dans l'eau, avec un système de clepsydre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　だがそうだとするのならば、その儀式に使った「祭具」は神聖なものとして崇められ、どこかに祀られていてもおかしくない￥

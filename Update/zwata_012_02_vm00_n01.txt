@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -60,9 +60,8 @@ void dialog003()
 
 void dialog004()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps2/03/130300381", 540, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「宗平は中国大陸に出兵し、ハルピンで食料倉庫の管理をしていたと言い、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした。",
 		   NULL, "— Shûhei était un volontaire engagé pour administrer les réserves alimentaires dans la province annexée de Harbin, en Chine. Juste avant le retrait des troupes, il soudoya ses supérieurs et put emporter une quantité immense de boîtes de nourriture en conserves. ", GetGlobalFlag(GLinemodeSp));
 }
@@ -121,13 +120,15 @@ void dialog008()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300397", 256, TRUE);
 	OutputLine(NULL, "…彼らは、時には敵の、時には戦友の血肉を食んででも戦い抜くことが、国に報いる究極の奉仕になる。",
-		   NULL, "C'est pourquoi son unité étudiait la meilleure façon de préparer de l'humain en cuisine.", Line_WaitForInput);
+		   NULL, "C'est pourquoi son unité étudiait la meilleure façon de préparer de l'humain en cuisine.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300398", 256, TRUE);
 	OutputLine(NULL, "…そういう教義を大真面目に組み上げて行ったのです。",
-		   NULL, " Manger leurs ennemis ou même les cadavres de leurs amis fraîchement tombés au combat devint pour eux une activité grassement payée par la mère patrie.", Line_WaitForInput);
+		   NULL, "Manger leurs ennemis ou même les cadavres de leurs amis fraîchement tombés au combat devint pour eux une activité grassement payée par la mère patrie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300399", 256, TRUE);
 	OutputLine(NULL, "……滑稽な話ですね。",
-		   NULL, " ... Quelle ironie du sort. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Quelle ironie du sort. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300400", 256, TRUE);
 	OutputLine(NULL, "祖父を人肉食いと蔑んでおきながら、自分たちはさらにその上を行っていたのですから。",

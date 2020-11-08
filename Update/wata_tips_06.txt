@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //５■初めましてじゃないです
@@ -81,13 +81,15 @@
 	OutputLine(NULL, "「さぁ。",
 		   NULL, "— Ah, qui sait ?", Line_Continue);
 	OutputLine(NULL, "試せばそうなるんじゃないですか？",
-		   NULL, " Je pourrais essayer, et je pense que c'est ce qu'il se passerait.", Line_WaitForInput);
+		   NULL, " Je pourrais essayer, et je pense que c'est ce qu'il se passerait.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600003", 256, TRUE);
 	OutputLine(NULL, "　私たち、筋金入りの一卵性ですから。",
-		   NULL, " Nous sommes de vraies jumelles monozygotes.", Line_WaitForInput);
+		   NULL, "Nous sommes de vraies jumelles monozygotes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600004", 256, TRUE);
 	OutputLine(NULL, "昔は服を取替えっこしただけで、誰も見破れなかったものです。",
-		   NULL, " Quand nous étions plus petites, on s'échangeait nos habits, et personne n'arrivait à faire la différence. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quand nous étions plus petites, on s'échangeait nos habits, et personne n'arrivait à faire la différence. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600005", 256, TRUE);
 	OutputLine(NULL, "お姉と一緒にことあるごとに入れ替わって、いろいろと騙したりしましたっけ。あははは！」",
@@ -187,7 +189,8 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "sprite/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 15, "sprite/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 //「圭一さんでしたか＠お名前。＠
@@ -209,7 +212,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "sprite/night/kasa_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/kasa_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 
@@ -235,7 +238,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "sprite/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 //「ですが、魅音さんと同じで、根はやさしい方なんですよ。＠
@@ -264,7 +267,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 500, TRUE );
-	ModDrawCharacter(2, 6, "sprite/night/si1a_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 6, "sprite/si1a_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「じゃあね圭ちゃん！　また会いましょうね＠姉にもよろしくお伝え下さい＠私も明日から雛見沢の学校に通おうかな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -291,7 +294,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 6, "sprite/night/si1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 6, "sprite/si1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「わ、それはすごくひどいことですよ、圭ちゃん...！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -326,7 +329,7 @@
 
 
 //　...俺が詩音といるところにばったり出くわした魅音の、豆鉄砲を食らったハトのような顔が、今さらだが何だか印象深かった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…俺が詩音といるところにばったり出くわした魅音の、豆鉄砲を食らったハトのような顔が、今さらだが何だか印象深かった。",
 		   NULL, "Dans un éclair, j'eus le souvenir vivace du regard vide qu'avait eu Mion lorsqu'elle nous avait vus ensemble. On aurait dit un animal mort debout, comme foudroyé par l'aiguille empoisonnée d'une sarbacane… J'eus beaucoup de mal à l'oublier.", Line_Normal);
 	ClearMessage();

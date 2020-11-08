@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 }
 
@@ -188,19 +188,23 @@ void dialog021()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900201", 256, TRUE);
 	OutputLine(NULL, "「たったよ。",
-		   NULL, "— C'est tout.", Line_WaitForInput);
+		   NULL, "— C'est tout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900202", 256, TRUE);
 	OutputLine(NULL, "…たった百年前のことよ。",
-		   NULL, " Tu trouves que c'est beaucoup, 100 ans ? Moi pas.", Line_WaitForInput);
+		   NULL, "Tu trouves que c'est beaucoup, 100 ans ? Moi pas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900203", 256, TRUE);
 	OutputLine(NULL, "それにね。",
-		   NULL, " Et puis", Line_WaitForInput);
+		   NULL, "Et puis", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900204", 256, TRUE);
 	OutputLine(NULL, "昭和に入ってからだって、あるんだから。",
-		   NULL, " ça a continué même après le début de l'ère Shôwa,", Line_WaitForInput);
+		   NULL, "ça a continué même après le début de l'ère Shôwa,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900205", 256, TRUE);
 	OutputLine(NULL, "…終戦直後に騒ぎになった",
-		   NULL, " juste après la fin de la 2e guerre mondiale, il y a eu l'histoire des", Line_Continue);
+		   NULL, "juste après la fin de la 2e guerre mondiale, il y a eu l'histoire des", Line_Continue);
 
 	FadeOutBGM( 1, 1000, TRUE );
 

@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //１０■スクラップ帳よりⅧ
@@ -67,7 +67,7 @@
 
 
 //　数年前のダム闘争では、反対同盟の会長職に公由家が就いたが、これはあくまでも名目上で、実際には園崎家が影のリーダーとして君臨していた￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　数年前のダム闘争では、反対同盟の会長職に公由家が就いたが、これはあくまでも名目上で、実際には園崎家が影のリーダーとして君臨していた。",
 		   NULL, "Lors de la guerre du barrage, il y a quelques années, le doyen des Kimiyoshi fut nommé chef de l'association de défense, mais le titre n'était que révérentiel. Il apparaît évident que les Sonozaki étaient les vrais maîtres à bord.", Line_Normal);
 	ClearMessage();
@@ -83,7 +83,6 @@
 
 //　ダム騒動中に報じられた不穏な事件の数々（有名な建設省幹部の子息誘拐事件他）も園崎家が行なったと、雛見沢ですら囁かれているくらいだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　ダム騒動中に報じられた不穏な事件の数々（有名な建設省幹部の子息誘拐事件他）も園崎家が行なったと、雛見沢ですら囁かれているくらいだ。",
 		   NULL, "À Hinamizawa-même, personne ne doute un seul instant que les véritables coupables de l'enlèvement du petit-fils du Ministre des Travaux Publics de l'époque sont les Sonozaki.", Line_Normal);
 	ClearMessage();
@@ -106,7 +105,7 @@
 	PlaySE( 3, "wa_021", 56, 64 );
 
 //　本来の「綿流し」を、ただの村祭りに落ちぶれた「綿流し」の当日に行なうことで、村人たちに、鬼ヶ淵村の戒律を思い出させようとでもしているに違いない￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本来の「綿流し」を、ただの村祭りに落ちぶれた「綿流し」の当日に行なうことで、村人たちに、鬼ヶ淵村の戒律を思い出させようとでもしているに違いない。",
 		   NULL, "En organisant de cette manière une véritable purification du coton le jour-même de son incarnation plus édulcorée, ils pensent certainement rappeler aux villageois les règles qui régissaient le village des abysses des démons.", Line_Normal);
 	ClearMessage();

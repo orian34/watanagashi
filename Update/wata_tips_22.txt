@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //１０深■請求却下
@@ -24,7 +24,8 @@
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 11, "sprite/normal/oisi1_1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 11, "sprite/oisi1_1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「どうです＠　何か手掛かりはありました？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -64,13 +65,15 @@
 	OutputLine(NULL, "「課長。",
 		   NULL, "— Chef, laissez-les dormir un peu, à tour de rôle, les plus jeunes d'abord.", Line_Continue);
 	OutputLine(NULL, "若い子から交替で仮眠取らせてあげて下さい。",
-		   NULL, " Il leur faudra des forces pour la suite des opérations,", Line_WaitForInput);
+		   NULL, " Il leur faudra des forces pour la suite des opérations,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700162", 256, TRUE);
 	OutputLine(NULL, "ここからは長丁場になりますからねぇ。",
-		   NULL, " c'est maintenant que les choses sérieuses commencent.", Line_WaitForInput);
+		   NULL, "c'est maintenant que les choses sérieuses commencent.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700163", 256, TRUE);
 	OutputLine(NULL, "無理せず、体を休めながらのんびり行きましょ。」",
-		   NULL, " Je préfère ne pas les brusquer, ils doivent être en forme pour la suite.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je préfère ne pas les brusquer, ils doivent être en forme pour la suite.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -87,7 +90,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「ありゃありゃ＠みんな、遠慮しないでいいんですよ＠　小宮山くん＠若い子から順に交代で休ませてあげて下さい。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -122,7 +125,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「で、課長＠例の請求なんですけど、まだ駄目そうです？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -160,7 +163,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「課長～＠ナゾナゾやってるんじゃないですよ＠　死んだ２人を含む４人が綿流しの晩に祭具殿と呼ばれる禁断の蔵に無断で入り込み、それを何者かが見ていた＠　ここまでは信頼できる情報なんです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -168,10 +171,11 @@
 	OutputLine(NULL, "「課長〜。",
 		   NULL, "— Allez, chef, soyez sympa...", Line_Continue);
 	OutputLine(NULL, "ナゾナゾやってるんじゃないですよ？",
-		   NULL, " On ne joue pas aux devinettes, vous savez ?", Line_WaitForInput);
+		   NULL, " On ne joue pas aux devinettes, vous savez ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700170", 256, TRUE);
 	OutputLine(NULL, "　死んだ２人を含む４人が綿流しの晩に祭具殿と呼ばれる禁断の蔵に無断で入り込み、それを何者かが見ていた！",
-		   NULL, " Les deux victimes ont été vues le soir de la cérémonie entrer par effraction dans un bâtiment appelé le temple des reliques sacrées, accompagnées par deux autres personnes encore ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les deux victimes ont été vues le soir de la cérémonie entrer par effraction dans un bâtiment appelé le temple des reliques sacrées, accompagnées par deux autres personnes encore ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700171", 256, TRUE);
 	OutputLine(NULL, "　ここまでは信頼できる情報なんです。」",
@@ -193,7 +197,7 @@
 		   NULL, "— Ben, non, je n'ai pas de photo de ces quatre personnes entrant dans le bâtiment. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //とにかく、４人は祭具殿の中で何かを見たんです＠　消されるくらいの何かを！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -265,7 +269,8 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 11, "sprite/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ＠　四課長はシゲちゃんでしょ＠　暴対は山海さん＠隣の雀荘で話した方が早そうな面子ですねぇ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -384,13 +389,12 @@
 	DrawSceneWithMask("background/ke2", "left", 0, 0, 300 );
 
 //「良いかッ？！　古手神社はそもそも皇暦２６００年に継ぐ２５００年の歴史を有する、神聖にして侵すべからずの聖地なのじゃ！＠　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで＠月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ＠それを土足で踏みにじろうという馬鹿がいるッッ！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/saburo44007", 256, TRUE);
 	OutputLine(NULL, "「良いかッ？！　古手神社はそもそも皇暦２６００年に継ぐ２５００年の歴史を有する、神聖にして侵すべからずの聖地なのじゃ！！",
 		   NULL, "— Non mais vous vous rendez compte ? Le temple des Furude existe depuis plus de 2500 ans, on en trouve des traces dès les tous premiers instants de l'histoire du Japon, c'est l'un des lieux les plus sacrés du pays, personne n'a le droit d'y entrer comme un vulgaire touriste ! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/saburo44008", 256, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
 		   NULL, "Ce temple est dédié aux ancêtres, à la déesse Yashiro et aux myriades de dieux nés lors de la création du monde, qui veillent tous d'une manière ou d'une autre sur Hinamizawa, du lever au coucher du soleil, et lors de la course astrale de la lune dans le ciel !", Line_Continue);
 	OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
@@ -403,7 +407,7 @@
 
 
 //　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！＠　それを自らの捜査の怠慢を口実に汚そうという魂胆ッ！！＠　こんなものは断じて許せんぞッ！！＠　聞いておるのか大虚けがッ！！＠　わしを怒らせてただで済むと思わん方がいいぞぉおおぉッ！！！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/saburo44010", 256, TRUE);
 	OutputLine(NULL, "　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！！",
 		   NULL, "Et puis d'abord, la foi est l'un des droits les plus fondamentaux accordés dans la constitution japonaise !", Line_Continue);

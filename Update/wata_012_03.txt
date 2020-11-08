@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //////*Watanagasi_day12_3
@@ -9,7 +9,8 @@
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	PlayBGM( 2, "lsys12", 56, 0 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 3, "sprite/me2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/so_g1", 1000 );
 
 
@@ -49,7 +50,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "portrait/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "portrait/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　......俺の許可が出ると、まるで玩具を買ってもらえた子供のようなほくほく顔で、俺の腕を取った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -165,7 +166,8 @@
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 3, "portrait/normal/me2_sinmyou_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 3, "portrait/me2_sinmyou_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「さぁ、............どうかな＠...圭ちゃんは、自分の右手と左手は仲が良いと思う？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -216,13 +218,14 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300508", 256, TRUE);
 	OutputLine(NULL, "「例えば利き腕というものがあるように、右手と左手には間違いなく優劣の違いがある。",
-		   NULL, "— Pour prendre un exemple, disons que si tu es droitier, tu utilises mieux ta main droite que ta main gauche, mais c'est la seule différence, non ?", Line_WaitForInput);
+		   NULL, "— Pour prendre un exemple, disons que si tu es droitier, tu utilises mieux ta main droite que ta main gauche, mais c'est la seule différence, non ?", GetGlobalFlag(GLinemodeSp));
 
 
 //......もしも鍋掴みが片方しかなかったら、迷うことなく利き腕にするでしょ＠　そういう差はあったんじゃないかと思う。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300509", 256, TRUE);
 	OutputLine(NULL, "……もしも鍋掴みが片方しかなかったら、迷うことなく利き腕にするでしょ？",
-		   NULL, " Imagine, tu dois soulever quelque chose à une main, ben tu utiliseras ta main droite si tu es droitier, simplement par habitude. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Imagine, tu dois soulever quelque chose à une main, ben tu utiliseras ta main droite si tu es droitier, simplement par habitude. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300510", 256, TRUE);
 	OutputLine(NULL, "　そういう差はあったんじゃないかと思う。」",
@@ -237,7 +240,7 @@
 		   NULL, "— ...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/normal/me2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "portrait/me2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「だからと言って、左手がなくなったっていいなんて思う人は誰もいないはず＠......そんな、よくわからない関係だね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -267,7 +270,7 @@
 		   NULL, "quand je vous ai vues vous chamailler, j'ai été très jaloux, je dois dire.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/normal/me2_sinmyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "portrait/me2_sinmyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「.....................ないものねだりじゃないの＠　双子なんて、昔は人をからかったりしてそこそこに面白かったけど＠...こうして互いがはっきりと異なる個性を持った今では、かえって邪魔なだけ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -332,7 +335,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "portrait/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "portrait/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「................................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -407,7 +410,7 @@
 		   NULL, "Mion s'arrêta et regarda dans une autre direction.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "portrait/normal/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "portrait/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「........................詩音は、!w800まだ生きてる。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -438,7 +441,7 @@
 		   NULL, "Mion me regarda droit dans les yeux un petit moment, puis acquiesça.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "portrait/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "portrait/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.....................うん＠......誰よりも惨たらしい死に方をさせてやろうと、ずっと考えて閉じ込めておいたけど＠.........今日まで、その方法はとうとう思いつかなかった。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -484,7 +487,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "portrait/normal/me2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "portrait/me2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　魅音は俺に撫でられるままに、...うっとりと目を細めていた＠......そして、組んでいた腕をほどく＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -504,7 +507,7 @@
 		   NULL, "Puis elle continua.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「............来て＠...私の罪の全てを、見て欲しいから＠......でもそれは圭ちゃんにとって、...この上なく辛い光景かもしれない。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -729,7 +732,7 @@
 		   NULL, "Et l'odeur pestilentielle qui m'assaillait les narines venait certainement de l'intérieur.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 3, "sprite/normal/me2_majime_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacterWithFiltering(3, 3, "sprite/me2_majime_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/mo3", "left", 0, 0, 300 );
 
 //「.................................引き返すなら今だよ＠圭ちゃんの中の園崎魅音がどんな人かは知らないけれど＠......中に入れば、......その魅音はきっと.........、!w1500..........................................。＠
@@ -796,7 +799,7 @@
 		   NULL, " Elle doit rester ma meilleure amie.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/normal/me2_sinmyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_sinmyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「..................私はただの鬼だから、!w1000...もう人間の気持ちはわからないけれど＠......魅音があんたを好きになったの、!w700...よくわかる気がする。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1018,7 +1021,8 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys21", 56, 0 );
-	ModDrawCharacter(2, 3, "sprite/night/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/saiguden_02", "up", 0, 0, 1300 );
 
 //「...いろいろ、......あるでしょ＠一部のものは実際に祭具殿から運び込まれたものなんだよ。＠
@@ -1069,7 +1073,8 @@
 		   NULL, "Vu les tuyaux d'arrosage attachés au mur, je dirais que tout était fait pour pouvoir nettoyer le sang sans problème...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacterWithFiltering(2, 3, "sprite/normal/me2_def_a1_", "0", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacterWithFiltering(2, 3, "sprite/me2_def_a1_", "0", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/saiguden_02", 500 );
 
 //「...大昔の当主の書き物によるとね＠...血の飛沫ってのは、犠牲者に負担をかけない割にはインパクトがあるんだってさ＠......綿流しは見せしめのショーだったから＠私のご先祖さまたちは様々なショーを考案してたんだよ。＠
@@ -1138,7 +1143,7 @@
 		   NULL, "Je décidai de serrer les dents en attendant la fin -- je savais que Mion et moi irions mieux après ça.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	StopSE( 3 );
 
@@ -1175,7 +1180,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......私＠私という鬼が、魅音の執り行う綿流しをずっと見てたから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1188,7 +1193,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_akuwarai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_akuwarai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　魅音は自嘲気味にケタケタと笑う＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1203,7 +1208,7 @@
 		   NULL, "Ce n'était vraiment pas un rire sympathique.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「向こうが牢屋。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1293,7 +1298,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/so_chikafuroa", 3000 );
 
 //「...死体？＠
@@ -1505,7 +1510,8 @@
 		   NULL, "Shion continua de hurler de peur, encore et encore...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/night/me2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 3, "sprite/me2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/so_chikafuroa", 300 );
 
 //「詩音＠...ご機嫌はいかがだった...？＠
@@ -1523,25 +1529,31 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600550", 256, TRUE);
 	OutputLine(NULL, "「もう嫌…、嫌…！",
-		   NULL, "— Arrête ! J'en ai marre, ça suffit !", Line_WaitForInput);
+		   NULL, "— Arrête ! J'en ai marre, ça suffit !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600551", 256, TRUE);
 	OutputLine(NULL, "　嫌ぁ！！",
-		   NULL, " Je ne veux plus les entendre...", Line_WaitForInput);
+		   NULL, "Je ne veux plus les entendre...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600552", 256, TRUE);
 	OutputLine(NULL, "　もう誰の死を見るのも嫌！！！",
-		   NULL, " Je ne veux plus les voir mourir !", Line_WaitForInput);
+		   NULL, "Je ne veux plus les voir mourir !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600553", 256, TRUE);
 	OutputLine(NULL, "　私が憎いなら……早く私を殺してよッ！！！",
-		   NULL, " Si tu me détestes tellement que ça, tue-moi maintenant !", Line_WaitForInput);
+		   NULL, "Si tu me détestes tellement que ça, tue-moi maintenant !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600554", 256, TRUE);
 	OutputLine(NULL, "　憎いのは私なんでしょう！？",
-		   NULL, " C'est moi que tu hais, non ?", Line_WaitForInput);
+		   NULL, "C'est moi que tu hais, non ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600555", 256, TRUE);
 	OutputLine(NULL, "　早く殺して、殺して！！",
-		   NULL, " Alors tue-moi ! Tue-moi ici et tout de suite !", Line_WaitForInput);
+		   NULL, "Alors tue-moi ! Tue-moi ici et tout de suite !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600556", 256, TRUE);
 	OutputLine(NULL, "　お姉ぇえぇッ！！！！」",
-		   NULL, " Miiioooonnnnn !!!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Miiioooonnnnn !!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1587,7 +1599,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	ModDrawCharacter(3, 3, "sprite/night/me2_huteki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_huteki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「安心しなよ＠あんたは殺さない＠...まだまだ殺さないんだから＠......くっくっくっくっくっくっくっくっくっくっくっく...！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1639,7 +1651,7 @@
 		   NULL, " J'en ai assez, je veux plus les enteeeeeeeendre !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/night/me2_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あっはははははははははははははははははははははッ！！＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1648,7 +1660,7 @@
 		   NULL, "— AHHAHAHAHAHAHAHA, HAHAHAHAHAHAHAHAHA !", Line_WaitForInput);
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/night/me2_huteki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_huteki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　そんなに死にたければ、この男を殺した後に、ゆっくりとひき肉にしてやるよ＠...古式に則り、四肢の先端から少しずつ＠ガリゴリと削ってミンチにしてやる＠...あの肉挽き機はあんたのためにとっておいてあるんだからね＠/
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300569", 256, TRUE);
@@ -1657,16 +1669,18 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300570", 256, TRUE);
 	OutputLine(NULL, "…古式に則り、四肢の先端から少しずつ。",
-		   NULL, "Mais attention, je ferai ça bien comme il faut, petit à petit.", Line_WaitForInput);
+		   NULL, "Mais attention, je ferai ça bien comme il faut, petit à petit.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300571", 256, TRUE);
 	OutputLine(NULL, "ガリゴリと削ってミンチにしてやる。",
-		   NULL, " D'abord je t'écartèlerai, et puis je prendrai le billot et je ferai des tranches fines en commençant par les extrémités. Je ferai attention aux cartilages.", Line_WaitForInput);
+		   NULL, "D'abord je t'écartèlerai, et puis je prendrai le billot et je ferai des tranches fines en commençant par les extrémités. Je ferai attention aux cartilages.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300572", 256, TRUE);
 	OutputLine(NULL, "…あの肉挽き機はあんたのためにとっておいてあるんだからね。",
-		   NULL, " Et ensuite je te passerai au hachoir, je l'ai nettoyé et aiguisé exprès pour toi. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et ensuite je te passerai au hachoir, je l'ai nettoyé et aiguisé exprès pour toi. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/night/me2_akuwarai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_akuwarai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...それとも、それで圭ちゃんをミンチにして見せた方が、あんたには面白いかなぁ？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1962,13 +1976,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300581", 256, TRUE);
 	OutputLine(NULL, "「…あんたの希望なんか聞くつもりは全然なかったんだけど。",
-		   NULL, "— Je n'ai aucune intention d'écouter ce que tu veux, mais je dois dire que là, tu as su trouver un ton qui me convient tout à fait.", Line_WaitForInput);
+		   NULL, "— Je n'ai aucune intention d'écouter ce que tu veux, mais je dois dire que là, tu as su trouver un ton qui me convient tout à fait.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300582", 256, TRUE);
 	OutputLine(NULL, "あんたがあまりにも面白い声で泣くものだから。…",
-		   NULL, " J'aime les gens qui savent reconnaître leur place.", Line_WaitForInput);
+		   NULL, "J'aime les gens qui savent reconnaître leur place.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300583", 256, TRUE);
 	OutputLine(NULL, "何だか聞いててやってもいいような気がしてきたかな。",
-		   NULL, " Je pourrais peut-être t'accorder un souhait, pourquoi pas ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pourrais peut-être t'accorder un souhait, pourquoi pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1998,16 +2014,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300585", 256, TRUE);
 	OutputLine(NULL, "「じゃあさ。",
-		   NULL, "— Hmmm, bon.", Line_WaitForInput);
+		   NULL, "— Hmmm, bon.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300586", 256, TRUE);
 	OutputLine(NULL, "これまでのことを謝ってみせてよ。",
-		   NULL, "  Alors excuse-toi. Excuse-toi pour tout ce que tu m'as fait dans ta vie.", Line_WaitForInput);
+		   NULL, " Alors excuse-toi. Excuse-toi pour tout ce que tu m'as fait dans ta vie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300587", 256, TRUE);
 	OutputLine(NULL, "そうしたら私も、これまでのことをすっかり水に流してあげてもいいかな。",
-		   NULL, " Alors peut-être, je tirerais un trait sur le passé.", Line_WaitForInput);
+		   NULL, "Alors peut-être, je tirerais un trait sur le passé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300588", 256, TRUE);
 	OutputLine(NULL, "…そうしたら圭ちゃんだけは見逃してあげなくもないよ。」",
-		   NULL, " Et peut-être même bien que j'irais même jusqu'à épargner sa vie, mais juste la sienne, attention...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et peut-être même bien que j'irais même jusqu'à épargner sa vie, mais juste la sienne, attention...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......俺を見逃さないこともないとは言うが、...詩音を見逃すとは一言も言わない￥
@@ -2024,7 +2043,7 @@
 
 
 //　......それはか細く聞き取ることはできないが、...その意思だけは伝わってくる＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……それはか細く聞き取ることはできないが、…その意思だけは伝わってくる。",
 		   NULL, "Puis j'entendis des murmures plaintifs : elle était sûrement en train de s'excuser en utilisant les formules les plus humbles et polies qu'elle connaissait. Je ne réussis pas à saisir ce qu'elle disait au juste, mais je voyais bien ce qu'elle voulait faire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -2039,15 +2058,17 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300589", 256, TRUE);
 	OutputLine(NULL, "「…そんなので私の積年の怨み辛みが償えると思ってるわけ？",
-		   NULL, "— Et tu crois qu'avec ça, tu pourras te faire pardonner les années de haine et de souffrance que j'ai subies ?", Line_WaitForInput);
+		   NULL, "— Et tu crois qu'avec ça, tu pourras te faire pardonner les années de haine et de souffrance que j'ai subies ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300590", 256, TRUE);
 	OutputLine(NULL, "　こんなんじゃ駄目だね。",
-		   NULL, " Mais tu crois au Père Noël, ma grande ?", Line_WaitForInput);
+		   NULL, "Mais tu crois au Père Noël, ma grande ?", GetGlobalFlag(GLinemodeSp));
 
 //......やっぱり圭ちゃんから挽き肉だぁあぁ！！！！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300591", 256, TRUE);
 	OutputLine(NULL, "……やっぱり圭ちゃんから挽き肉だぁあぁ！！！！」",
-		   NULL, " Je crois que je vais me faire un hamburger, j'ai justement une belle pièce de viande sous la main !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je crois que je vais me faire un hamburger, j'ai justement une belle pièce de viande sous la main !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2085,10 +2106,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300592", 256, TRUE);
 	OutputLine(NULL, "「……ろくろく満足に謝れないあんただからね。",
-		   NULL, "— Rha là là là là... Je sais même pas pourquoi je fais ça, moi. C'est vrai que tu n'as jamais appris la politesse, toi.", Line_WaitForInput);
+		   NULL, "— Rha là là là là... Je sais même pas pourquoi je fais ça, moi. C'est vrai que tu n'as jamais appris la politesse, toi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300593", 256, TRUE);
 	OutputLine(NULL, "…特別にお姉が心に届く謝罪の仕方ってのを教えてあげるよ。",
-		   NULL, " Allez, je suis ta grande sœur, il faut bien que je montre l'exemple… Je vais t'expliquer comment on demande pardon quand on est vraiment, mais vraiment désolée. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Allez, je suis ta grande sœur, il faut bien que je montre l'exemple… Je vais t'expliquer comment on demande pardon quand on est vraiment, mais vraiment désolée. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300594", 256, TRUE);
 	OutputLine(NULL, "……一度しか教えないし、一言一句でも間違えたらアウト。",
@@ -2528,7 +2550,8 @@
 		   NULL, "Lorsque je pus enfin reprendre le contrôle de mon corps, je ne pouvais plus faire grand'chose, à part parler.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_huteki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 3, "sprite/me2_huteki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/saiguden_02", "up", 0, 0, 1000 );
 
 //「ようやくお目覚め＠　私、さっき嘘をついたね＠...詩音を、一番惨たらしく殺してやろうと思って閉じ込めておいたけど、まだ思いつかないって言ったヤツ＠あれが嘘。＠
@@ -2589,7 +2612,7 @@
 		   NULL, " t'es qui au juste, toi ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_akuwarai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_akuwarai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「はぁ＠　魅音でしょ＠園崎魅音＠...恐怖で頭が変になっちゃった？　くっくっく！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2625,7 +2648,7 @@
 		   NULL, "Mion, avec un sourire incrédule, continua les préparatifs de la torture.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_huteki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_huteki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.........へぇ＠じゃあ私が魅音じゃなかったら、私ゃ誰なわけぇ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2647,7 +2670,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「へ？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2668,7 +2691,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_huteki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_huteki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......圭ちゃん、本当に頭は大丈夫＠　恐怖で頭がどうかなっちゃった？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2721,9 +2744,10 @@
 	OutputLine(NULL, "でも……でも…！",
 		   NULL, " Mais d'un autre côté...", Line_WaitForInput);
 	OutputLine(NULL, "　目の前の今のこいつは…断じて魅音ではありえないッ！！！",
-		   NULL, " C'était impossible ! La fille qui se tenait devant moi ne pouvait pas être Mion !", Line_WaitForInput);
+		   NULL, " C'était impossible ! La fille qui se tenait devant moi ne pouvait pas être Mion !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　認めるわけには…いかないのだ…！！",
-		   NULL, " Je ne pouvais pas accepter une chose pareille !", Line_Normal);
+		   NULL, "Je ne pouvais pas accepter une chose pareille !", Line_Normal);
 	ClearMessage();
 
 //　だから...俺は思った＠
@@ -2752,7 +2776,7 @@
 		   NULL, "Ça ne peut être que lui !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_akuwarai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_akuwarai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「あーっはっはっはっはっはっはっはっはっはっはっは！！！　あーっはっはっはっはっはっはっはっはっはっはっはっはっは！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2799,7 +2823,7 @@
 		   NULL, " Vade retro, satanas !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_huteki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_huteki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「わーっはっはっはっはっはっはっはっはっはっはっは！！＠　...圭ちゃん、...私を笑い涙で溺れ殺すつもり...＠　わーっはっはっはっはっはっはっはっはっは！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2947,7 +2971,7 @@
 		   NULL, " Haaaaaa, la vache, j'ai mal au ventre, maintenant, c'est malin.", Line_WaitForInput);
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_akuwarai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_akuwarai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/saiguden_02", 300 );
 
 //.........もういい＠　そろそろ始めるよ＠　いい声を出してね＠これは圭ちゃんへの拷問である以上に、詩音への拷問なんだからさ。￥
@@ -3036,7 +3060,7 @@
 
 //	PlayBGM( 1, "msys18", 56, 0 );
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/saiguden_02", 300 );
 
 //「...............圭ちゃん＠...冥土の土産、...なんて気の利いたものじゃないけれど＠............どうしても知りたがっているようだから、ひとつだけ教えてあげるよ。＠
@@ -3194,13 +3218,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300663", 256, TRUE);
 	OutputLine(NULL, "「………圭ちゃんには理解できないだろうね。",
-		   NULL, "— Je parie que tu comprends pas ce que c'est.", Line_WaitForInput);
+		   NULL, "— Je parie que tu comprends pas ce que c'est.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300664", 256, TRUE);
 	OutputLine(NULL, "理解できなくて当然。",
-		   NULL, " Bah, c'est normal, après tout.", Line_WaitForInput);
+		   NULL, "Bah, c'est normal, après tout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300665", 256, TRUE);
 	OutputLine(NULL, "………だけどね、そこからドミノ倒しみたいにパタパタパタといろんなものが倒れ始めて、…収拾がつかなくなってしまった。",
-		   NULL, " Mais tu sais, ça a été le truc qui a tout déclenché. Un peu comme une série de dominos, tu sais. Toutes mes défenses sont tombées les unes après les autres… ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais tu sais, ça a été le truc qui a tout déclenché. Un peu comme une série de dominos, tu sais. Toutes mes défenses sont tombées les unes après les autres… ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300666", 256, TRUE);
 	OutputLine(NULL, "……初めの小さなひとつを倒したあなたに自覚がないのは当然だろうけど、………あなたが元凶なの。」",
@@ -3222,7 +3248,7 @@
 		   NULL, "— ... Si tu n'avais pas fait pleurer “Mion”, je ne me serais jamais réveillé.", Line_WaitForInput);
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_huteki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_huteki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //...........................これで充分＠　冥土の土産は...。＠
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300668", 256, TRUE);
@@ -3408,7 +3434,8 @@
 		   NULL, "Si après ça, tu redeviens normale, alors vas-y, fais-le autant que tu voudras.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 3, "sprite/me2_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/saiguden_02", 1000 );
 
 //「...............あんた、!w900......本気で言ってるの...？＠
@@ -3453,7 +3480,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　魅音は無言＠...だが、...俺の言葉を待ってくれた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3475,7 +3502,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「あんた、!w1000.........この期に及んで...自分より詩音の心配ができるわけ...？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3502,20 +3529,22 @@
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……気が済んだら、…もうお前は消えろ。",
-		   NULL, " c'est que quand tu en auras fini, tu disparaîtras.", Line_WaitForInput);
+		   NULL, " c'est que quand tu en auras fini, tu disparaîtras.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101156", 256, TRUE);
 	OutputLine(NULL, "………その体を、",
-		   NULL, " Je veux que tu te rendormes à tout jamais.", Line_Continue);
+		   NULL, "Je veux que tu te rendormes à tout jamais.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……魅音に返してやってくれ。",
-		   NULL, " Redonne à Mion le contrôle de son corps.", Line_WaitForInput);
+		   NULL, " Redonne à Mion le contrôle de son corps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101157", 256, TRUE);
 	OutputLine(NULL, "…………………それだけだ。」",
-		   NULL, " ... Je t'en supplie, c'est tout ce que je te demande.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Je t'en supplie, c'est tout ce que je te demande.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3541,7 +3570,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...あははははは＠最初に二つって言ったでしょ＠...だからもう駄目。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3571,7 +3600,7 @@
 		   NULL, "Malgré la situation si absurde, nous trouvions encore le moyen de faire de l'humour et d'en rire...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......多分、私は約束を守らないよ＠　鬼だから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3647,7 +3676,8 @@
 		   NULL, "Mion posa la masse par terre... puis me caressa gentiment le front.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 3, "portrait/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/saiguden_02", 1000 );
 
 //「......圭ちゃん＠今の、......三つ目の願いだけは、聞いてもいいよ。＠
@@ -3681,28 +3711,33 @@
 		   NULL, "Elle veut me laisser la vie sauve ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "portrait/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「一つ目の願い＠詩音を救うこと＠...これはもう無理＠......詩音は鬼が殺してしまう＠...それはもう決められたことだから止められない＠だから諦めて。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300696", 256, TRUE);
 	OutputLine(NULL, "「一つ目の願い。",
-		   NULL, "— Ton premier souhait,", Line_WaitForInput);
+		   NULL, "— Ton premier souhait,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300697", 256, TRUE);
 	OutputLine(NULL, "詩音を救うこと。",
-		   NULL, " c'est de sauver Shion.", Line_WaitForInput);
+		   NULL, "c'est de sauver Shion.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300698", 256, TRUE);
 	OutputLine(NULL, "…これはもう無理。",
-		   NULL, " Je ne peux pas te l'accorder, ce n'est plus possible.", Line_WaitForInput);
+		   NULL, "Je ne peux pas te l'accorder, ce n'est plus possible.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300699", 256, TRUE);
 	OutputLine(NULL, "……詩音は鬼が殺してしまう。",
-		   NULL, " Le démon se chargera d'elle.", Line_WaitForInput);
+		   NULL, "Le démon se chargera d'elle.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300700", 256, TRUE);
 	OutputLine(NULL, "…それはもう決められたことだから止められない。",
-		   NULL, " Je l'ai décidé il y a longtemps, je ne peux plus revenir en arrière là-dessus.", Line_WaitForInput);
+		   NULL, "Je l'ai décidé il y a longtemps, je ne peux plus revenir en arrière là-dessus.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300701", 256, TRUE);
 	OutputLine(NULL, "だから諦めて。」",
-		   NULL, " Abandonne cette idée.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Abandonne cette idée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3716,19 +3751,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300702", 256, TRUE);
 	OutputLine(NULL, "「そして二つ目の願い。",
-		   NULL, "— Quant à ton deuxième souhait...", Line_WaitForInput);
+		   NULL, "— Quant à ton deuxième souhait...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300703", 256, TRUE);
 	OutputLine(NULL, "この体を魅音に返すこと。",
-		   NULL, " Rendre son corps à Mion.", Line_WaitForInput);
+		   NULL, "Rendre son corps à Mion.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300704", 256, TRUE);
 	OutputLine(NULL, "…これももう無理。",
-		   NULL, " Je ne peux pas te l'accorder non plus.", Line_WaitForInput);
+		   NULL, "Je ne peux pas te l'accorder non plus.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300705", 256, TRUE);
 	OutputLine(NULL, "……今日を境に魅音が戻ってくることはもうない。",
-		   NULL, " Je pense que Mion ne reprendra plus jamais le contrôle de son corps.", Line_WaitForInput);
+		   NULL, "Je pense que Mion ne reprendra plus jamais le contrôle de son corps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300706", 256, TRUE);
 	OutputLine(NULL, "……今日以降、もし私の姿があったとしても、それは姿だけ。",
-		   NULL, " Si jamais tu devais me revoir un jour, sache que ce ne sera pas moi, ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si jamais tu devais me revoir un jour, sache que ce ne sera pas moi, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300707", 256, TRUE);
 	OutputLine(NULL, "…私の姿をした鬼だから。」",
@@ -3749,7 +3788,7 @@
 		   NULL, " Ce serait trop triste !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "portrait/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「!s300..................................................................!sd聞こえる＠　あの音。＠
 //!s300
@@ -3809,7 +3848,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_sinmyou_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 3, "portrait/me2_sinmyou_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/saiguden_02", 300 );
 
 //「帰りが遅いから、レナが大石を呼んだんでしょ＠.........あのぼやーっとした感じの子が、こんなに頭が回るのだけは計算外だったな。＠
@@ -3862,7 +3901,8 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 3, "portrait/me2_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「くっくっく＠...そうだね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3907,7 +3947,7 @@
 		   NULL, "Le chemin était encombré là-haut, mais à part la distance, plus grand'chose ne séparait la police et cette salle.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "portrait/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......殺さないけど、しばらく圭ちゃんにはお休みしててもらうね＠すぐに大石が来てくれるから＠ちょっとの我慢。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3951,7 +3991,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_yowaki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 3, "portrait/me2_yowaki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/saiguden_02", "up", 0, 0, 200 );
 
 //「..........................................ごめんね＠......魅音を汚して。＠

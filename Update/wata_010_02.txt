@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //////*Watanagasi_day10_2
@@ -1153,7 +1153,8 @@
 	DisableWindow();
 	DrawSceneWithMask("black", "down", 0, 0, 300 );
 	PlayBGM( 1, "msys16", 56, 0 );
-	ModDrawCharacter(2, 3, "sprite/normal/me1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 3, "sprite/me1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「そういった、違法な抵抗運動の中心として、年少ながら活躍したのがお姉でした。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1465,13 +1466,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600388", 256, TRUE);
 	OutputLine(NULL, "　特に大石は、園崎家がまるごと連続事件の黒幕だと決めてかかってますからね。",
-		   NULL, "Surtout Ôishi, il a vraiment une dent contre nous. Il est persuadé que nous sommes les coupables derrière tous les meurtres.", Line_WaitForInput);
+		   NULL, "Surtout Ôishi, il a vraiment une dent contre nous. Il est persuadé que nous sommes les coupables derrière tous les meurtres.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600389", 256, TRUE);
 	OutputLine(NULL, "…それはもちろん私も含めてです。",
-		   NULL, " Donc il me soupçonne aussi, quelque part.", Line_WaitForInput);
+		   NULL, "Donc il me soupçonne aussi, quelque part.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600390", 256, TRUE);
 	OutputLine(NULL, "……ですから、…私はあまり大石には関わりたくないんです。」",
-		   NULL, " J'aimerais ne pas avoir trop souvent affaire à lui, si possible.", Line_Normal);
+		   NULL, "J'aimerais ne pas avoir trop souvent affaire à lui, si possible.", Line_Normal);
 	ClearMessage();
 
 //　......そうだな＠
@@ -1529,19 +1532,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100578", 256, TRUE);
 	OutputLine(NULL, "「あぁ、もちろんだ。",
-		   NULL, "— Ouais, bien sûr.", Line_WaitForInput);
+		   NULL, "— Ouais, bien sûr.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100579", 256, TRUE);
 	OutputLine(NULL, "情報は互いに交換し、研究し合おう。",
-		   NULL, " Il vaut mieux mettre nos infos en commun et les analyser ensemble.", Line_WaitForInput);
+		   NULL, "Il vaut mieux mettre nos infos en commun et les analyser ensemble.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100580", 256, TRUE);
 	OutputLine(NULL, "………鷹野さんたちを殺したのは誰なのか。",
-		   NULL, " Il faut trouver qui a tué Mme Takano.", Line_WaitForInput);
+		   NULL, "Il faut trouver qui a tué Mme Takano.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100581", 256, TRUE);
 	OutputLine(NULL, "……そして俺たちを狙うのは誰なのか。",
-		   NULL, " Et aussi qui nous en veut à ce point.", Line_WaitForInput);
+		   NULL, "Et aussi qui nous en veut à ce point.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100582", 256, TRUE);
 	OutputLine(NULL, "……それが分かるまで…俺たちは自衛しなくてはならない…。」",
-		   NULL, " Tant qu'on ne le saura pas, il faudra nous défendre par nous-même !", Line_Normal);
+		   NULL, "Tant qu'on ne le saura pas, il faudra nous défendre par nous-même !", Line_Normal);
 	ClearMessage();
 
 //「...あとはありますか＠　大石に聞かれたこと以外は＠......身に起こったことは、どんな些細なことでも教えてください。￥
@@ -2237,16 +2244,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100607", 256, TRUE);
 	OutputLine(NULL, "「おい待てよ！！",
-		   NULL, "— Oh, attends une seconde !", Line_WaitForInput);
+		   NULL, "— Oh, attends une seconde !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100608", 256, TRUE);
 	OutputLine(NULL, "　そんなヤツなら、…打ち明けた村長を殺す前に、お前からさきに殺すに決まってるじゃないか！",
-		   NULL, " Avant de tuer le maire, le ou les meurtriers auraient dû nous tuer nous, tu ne crois pas ?", Line_WaitForInput);
+		   NULL, "Avant de tuer le maire, le ou les meurtriers auraient dû nous tuer nous, tu ne crois pas ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100609", 256, TRUE);
 	OutputLine(NULL, "　順番が違うよ！！",
-		   NULL, " L'ordre est complètement inversé !", Line_WaitForInput);
+		   NULL, "L'ordre est complètement inversé !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100610", 256, TRUE);
 	OutputLine(NULL, "　殺されるなら俺か詩音が先！！",
-		   NULL, " S'il faut absolument tuer quelqu'un ce serait d'abord toi ou moi ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "S'il faut absolument tuer quelqu'un ce serait d'abord toi ou moi ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100611", 256, TRUE);
 	OutputLine(NULL, "　他のヤツらが先に死んだりするものか！！！」",
@@ -2520,7 +2530,8 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 5, "sprite/normal/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 5, "sprite/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　......猫さんの心配し過ぎなのです＠ボクがきっと、何とかしてあげますですよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2530,7 +2541,7 @@
 		   NULL, " Mais je saurai le protéger, vous verrez. Je me débrouillerai. »", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	ModDrawCharacter(2, 5, "sprite/normal/ri1_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/ri1_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
