@@ -419,7 +419,7 @@ void dialog017()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "そんな恐ろしい刑もあったんじゃないかって充分に考えられない？",
-		   NULL, " Ca ne semble pas inimaginable, n'est-ce pas ? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ça ne semble pas inimaginable, n'est-ce pas ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900163", 540, TRUE);
 	OutputLine(NULL, "　でも処刑者には意識があるの。",
