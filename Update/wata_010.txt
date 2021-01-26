@@ -422,9 +422,10 @@ void main()
 //　...迷子ってのは、梨花ちゃんみたいな子がやるからかぁいいんだぞ＠...ヨレヨレのジジイが迷子になっても萌えにはならん＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…迷子ってのは、梨花ちゃんみたいな子がやるからかぁいいんだぞ。",
-		   NULL, "Il n'y a qu'une seule catégorie de gens qui sont mimis au point de devoir obligatoirement les ramener à la maison si elles sont perdues, ce sont les petites filles.", Line_WaitForInput);
+		   NULL, "Il n'y a qu'une seule catégorie de gens qui sont mimis au point de devoir obligatoirement les ramener à la maison si elles sont perdues, ce sont les petites filles.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…ヨレヨレのジジイが迷子になっても萌えにはならん！",
-		   NULL, " Les séniles grabataires qui bavent de partout ne déclenchent pas la PASSION en nos âmes.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les séniles grabataires qui bavent de partout ne déclenchent pas la PASSION en nos âmes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 4, "wa_020", 56, 64 );
@@ -1181,16 +1182,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100447", 256, TRUE);
 	OutputLine(NULL, "「嘘だよ。",
-		   NULL, "— Mais je plaisante, voyons.", Line_WaitForInput);
+		   NULL, "— Mais je plaisante, voyons.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100448", 256, TRUE);
 	OutputLine(NULL, "…そんなにうまいものを譲るほど大人にゃなれないよ。",
-		   NULL, " Je ne suis pas assez responsable pour te laisser manger les meilleurs morceaux sans faire une crise de jalousie.", Line_WaitForInput);
+		   NULL, "Je ne suis pas assez responsable pour te laisser manger les meilleurs morceaux sans faire une crise de jalousie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100449", 256, TRUE);
 	OutputLine(NULL, "レナも食え。",
-		   NULL, " Rena, sers-toi.", Line_WaitForInput);
+		   NULL, "Rena, sers-toi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100450", 256, TRUE);
 	OutputLine(NULL, "俺のは昨夜のおでんの残りものだが、おでんは一晩経ってからがうまいんだぜ。」",
-		   NULL, " C'est la soupe d'hier avec les légumes des champs, mais c'est encore meilleur quand ça a reposé toute la nuit.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est la soupe d'hier avec les légumes des champs, mais c'est encore meilleur quand ça a reposé toute la nuit.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

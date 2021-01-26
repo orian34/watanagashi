@@ -29,8 +29,7 @@ void main()
 	PlaySE( 3, "wa_021", 56, 64 );
 
 //　古代の宗教儀式に用いられた儀式道具は「祭具」と呼ばれ、その一部が今日も古手神社や御三家の蔵に祀られている＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古代の宗教儀式に用いられた儀式道具は「祭具」と呼ばれ、その一部が今日も古手神社や御三家の蔵に祀られている。",
 		   NULL, "Les objets utilisés lors des rituels sacrés sont communément appelés “reliques”, et une partie de ces objets est aujourd'hui vénérée au temple Furude, ou conservée précieusement dans les maisons des trois clans fondateurs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -85,9 +84,10 @@ void main()
 //　これまでは堅牢だった施錠が、今年からどういうわけか低廉な安っぽい南京錠に変わったのだ＠あの程度の錠前なら、彼なら何とかできるかもしれない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これまでは堅牢だった施錠が、今年からどういうわけか低廉な安っぽい南京錠に変わったのだ。",
-		   NULL, "La porte du bâtiment était fermée par un mécanisme de serrure très lourd, mais pour une raison qui m'échappe, il a été remplacé par un vulgaire cadenas.", Line_WaitForInput);
+		   NULL, "La porte du bâtiment était fermée par un mécanisme de serrure très lourd, mais pour une raison qui m'échappe, il a été remplacé par un vulgaire cadenas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あの程度の錠前なら、彼なら何とかできるかもしれない。",
-		   NULL, " Il devrait pouvoir le forcer et me faire pénétrer dans ce bâtiment sans problème.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il devrait pouvoir le forcer et me faire pénétrer dans ce bâtiment sans problème.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

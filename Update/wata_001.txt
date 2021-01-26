@@ -400,13 +400,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300375", 256, TRUE);
 	OutputLine(NULL, "「そこまで分かってるなら断れないよね〜！",
-		   NULL, "— Si tu le sais, pourquoi tu n'acceptes pas tout de suite au lieu de tourner autour du pot ?", Line_WaitForInput);
+		   NULL, "— Si tu le sais, pourquoi tu n'acceptes pas tout de suite au lieu de tourner autour du pot ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300376", 256, TRUE);
 	OutputLine(NULL, "　もしＯＫなら、いつもの待ち合わせ場所に１時集合！",
-		   NULL, " Bon, tu nous rejoins là où tu sais, comme d'habitude, à 13h tapantes.", Line_WaitForInput);
+		   NULL, "Bon, tu nous rejoins là où tu sais, comme d'habitude, à 13h tapantes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300377", 256, TRUE);
 	OutputLine(NULL, "　町へ行くから自転車で来てね。」",
-		   NULL, " Nous irons en ville, alors n'oublie pas ton vélo !", Line_Normal);
+		   NULL, "Nous irons en ville, alors n'oublie pas ton vélo !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "down", 0, 0, 1300 );
@@ -2476,13 +2478,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300422", 256, TRUE);
 	OutputLine(NULL, "「我が部の最精鋭が、どう間違ったらこんなヒヨコ共相手に負けるってーの？",
-		   NULL, "— Comment peux-tu penser une seule seconde que l'élite de nos rangs pourrait perdre contre ces pauvres bras-cassés ?", Line_WaitForInput);
+		   NULL, "— Comment peux-tu penser une seule seconde que l'élite de nos rangs pourrait perdre contre ces pauvres bras-cassés ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300423", 256, TRUE);
 	OutputLine(NULL, "　……圭ちゃん。",
-		   NULL, " ... Je te préviens tout de suite, mon p'tit gars,", Line_WaitForInput);
+		   NULL, "... Je te préviens tout de suite, mon p'tit gars,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300424", 256, TRUE);
 	OutputLine(NULL, "緒戦で消えて、私に恥かかさないでよ…？」",
-		   NULL, " ne t'avise pas de me faire perdre la face en te prenant une pile pendant les éliminatoires, capice ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "ne t'avise pas de me faire perdre la face en te prenant une pile pendant les éliminatoires, capice ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -4359,14 +4363,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09760", 256, TRUE);
 	OutputLine(NULL, "「ロリ！",
-		   NULL, "— De jeunes lolitas,", Line_Continue);
+		   NULL, "— De jeunes lolitas,", GetGlobalFlag(GLinemodeSp));
 	PlaySE( 3, "wa_010", 56, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //!w800萌え！/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09770", 256, TRUE);
 	OutputLine(NULL, "萌え！",
-		   NULL, " toutes mignonnes,", Line_Continue);
+		   NULL, "toutes mignonnes,", GetGlobalFlag(GLinemodeSp));
 	Wait( 200 );
 	PlaySE( 3, "wa_014", 56, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -4379,9 +4384,10 @@ void main()
 
 
 //!w800男の垂涎、/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09780", 256, TRUE);
 	OutputLine(NULL, "男の垂涎、",
-		   NULL, " Pour nous autres hommes, elles représentent le Saint Graal !", Line_Continue);
+		   NULL, "Pour nous autres hommes, elles représentent le Saint Graal !", Line_Continue);
 
 	PlaySE( 3, "wa_012", 56, 64 );
 	// (backup) SetValidityOfInput( FALSE );
@@ -4391,16 +4397,17 @@ void main()
 
 //!w800男の浪漫！！/
 	OutputLine(NULL, "男の浪漫！！",
-		   NULL, " L'incarnation de nos rêves !", Line_Continue);
+		   NULL, " L'incarnation de nos rêves !", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 3, "wa_016", 56, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 
 //!w800例えるなら永遠にたどり着けないエデンの園ッ！！/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09790", 256, TRUE);
 	OutputLine(NULL, "例えるなら永遠にたどり着けないエデンの園ッ！！",
-		   NULL, " Si l'on devait les décrire par métaphore, elles seraient comme le jardin d'Éden, inatteignables, inaccessibles !", Line_Continue);
+		   NULL, "Si l'on devait les décrire par métaphore, elles seraient comme le jardin d'Éden, inatteignables, inaccessibles !", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 3, "wa_011", 56, 64 );
 	// (backup) SetValidityOfInput( FALSE );
@@ -4410,9 +4417,10 @@ void main()
 
 
 //　だけど目指すんだろ？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09800", 256, TRUE);
 	OutputLine(NULL, "　だけど目指すんだろ？！",
-		   NULL, " Mais c'est pas ça qui nous empêchera d'essayer, non ?", Line_Continue);
+		   NULL, "Mais c'est pas ça qui nous empêchera d'essayer, non ?", Line_Continue);
 	PlaySE( 3, "wa_029", 56, 64 );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5017,13 +5025,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300442", 256, TRUE);
 	OutputLine(NULL, "「今日の勝負を、部長、園崎魅音が預からせてもらうよ。",
-		   NULL, "— En tant que chef du club, moi, Mion Sonozaki, déclare la finale ajournée.", Line_WaitForInput);
+		   NULL, "— En tant que chef du club, moi, Mion Sonozaki, déclare la finale ajournée.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300443", 256, TRUE);
 	OutputLine(NULL, "勝負方法と日時は未定。",
-		   NULL, " Le moyen de départager les finalistes ainsi que la date de la finale ne sont pas encore décidés.", Line_WaitForInput);
+		   NULL, "Le moyen de départager les finalistes ainsi que la date de la finale ne sont pas encore décidés.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300444", 256, TRUE);
 	OutputLine(NULL, "…ギャラリーは多い方がいいね。",
-		   NULL, " Je préfèrerais qu'il y ait beaucoup de spectateurs pour assister à la manche décisive... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je préfèrerais qu'il y ait beaucoup de spectateurs pour assister à la manche décisive... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300445", 256, TRUE);
 	OutputLine(NULL, "雛見沢も興宮も、全ての人間の目の前で。",
@@ -5307,10 +5317,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300452", 256, TRUE);
 	OutputLine(NULL, "「せっかく熱くなってきたのに…ツイてないよ。",
-		   NULL, "— Ouais, surtout quand je pense que là, on était tous vraiment chauds. C'est franchement pas de bol !", Line_WaitForInput);
+		   NULL, "— Ouais, surtout quand je pense que là, on était tous vraiment chauds. C'est franchement pas de bol !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300453", 256, TRUE);
 	OutputLine(NULL, "…叔父さんの店でさ、特売にお客が殺到してるらしくてさ、レジが足りないから助けてーって電話があったんだよ。」",
-		   NULL, " J'ai un oncle qui fait une promo exceptionnelle aujourd'hui, et du coup il y a tellement de clientes qu'il lui faudrait quelqu'un en plus à la caisse...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'ai un oncle qui fait une promo exceptionnelle aujourd'hui, et du coup il y a tellement de clientes qu'il lui faudrait quelqu'un en plus à la caisse...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -5342,7 +5353,7 @@ void main()
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300456", 256, TRUE);
 	OutputLine(NULL, "　……特売やれば主婦が殺到するの、常識で読めないのかねぇー！！",
 		   NULL, "Enfin, moi, ce qui m'étonne surtout, c'est qu'il devrait savoir qu'une promo exceptionnelle, ça attire les clients ! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300457", 256, TRUE);
 	OutputLine(NULL, "　店員足りないのにタマゴ１パックお一人様１点限り１０円なんてやるなー！！！！」",
 		   NULL, "Alors si déjà comme ça il a pas assez d'employés, pourquoi il fait en plus une promo à 10 yens la boîte de 6 œufs, tu peux me le dire ? Même si c'est limité à une boîte par personne, toutes les femmes au foyer des alentours vont se ramener, c'est prévisible, pourtant !", Line_Normal);

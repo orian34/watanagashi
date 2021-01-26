@@ -81,13 +81,15 @@ void main()
 	OutputLine(NULL, "「さぁ。",
 		   NULL, "— Ah, qui sait ?", Line_Continue);
 	OutputLine(NULL, "試せばそうなるんじゃないですか？",
-		   NULL, " Je pourrais essayer, et je pense que c'est ce qu'il se passerait.", Line_WaitForInput);
+		   NULL, " Je pourrais essayer, et je pense que c'est ce qu'il se passerait.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600003", 256, TRUE);
 	OutputLine(NULL, "　私たち、筋金入りの一卵性ですから。",
-		   NULL, " Nous sommes de vraies jumelles monozygotes.", Line_WaitForInput);
+		   NULL, "Nous sommes de vraies jumelles monozygotes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600004", 256, TRUE);
 	OutputLine(NULL, "昔は服を取替えっこしただけで、誰も見破れなかったものです。",
-		   NULL, " Quand nous étions plus petites, on s'échangeait nos habits, et personne n'arrivait à faire la différence. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quand nous étions plus petites, on s'échangeait nos habits, et personne n'arrivait à faire la différence. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600005", 256, TRUE);
 	OutputLine(NULL, "お姉と一緒にことあるごとに入れ替わって、いろいろと騙したりしましたっけ。あははは！」",
@@ -327,7 +329,7 @@ void main()
 
 
 //　...俺が詩音といるところにばったり出くわした魅音の、豆鉄砲を食らったハトのような顔が、今さらだが何だか印象深かった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…俺が詩音といるところにばったり出くわした魅音の、豆鉄砲を食らったハトのような顔が、今さらだが何だか印象深かった。",
 		   NULL, "Dans un éclair, j'eus le souvenir vivace du regard vide qu'avait eu Mion lorsqu'elle nous avait vus ensemble. On aurait dit un animal mort debout, comme foudroyé par l'aiguille empoisonnée d'une sarbacane… J'eus beaucoup de mal à l'oublier.", Line_Normal);
 	ClearMessage();

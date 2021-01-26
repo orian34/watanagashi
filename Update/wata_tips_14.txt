@@ -74,7 +74,7 @@ void main()
 
 
 //　女子供は蒼白になりながら震え、血に弱い者は嘔吐しながらも、それでもなお、宴（解体作業）を見ることを強要されたのだと言う￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　女子供は蒼白になりながら震え、血に弱い者は嘔吐しながらも、それでもなお、宴（解体作業）を見ることを強要されたのだと言う。",
 		   NULL, "En particulier les enfants, mais aussi certains adultes, étaient apeurés, tremblants, vomissaient parfois pendant la cérémonie, mais ils étaient contraints par la force de la regarder -- c'est-à-dire de voir la victime se faire disséquer et découper vivante.", Line_Normal);
 	ClearMessage();

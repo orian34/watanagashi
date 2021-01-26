@@ -40,13 +40,15 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900105", 540, TRUE);
 	OutputLine(NULL, "「人食い鬼だから。",
-		   NULL, "— De temps en temps, tous les dix, quinze, vingt ans, ce n'est pas documenté,", Line_WaitForInput);
+		   NULL, "— De temps en temps, tous les dix, quinze, vingt ans, ce n'est pas documenté,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900106", 540, TRUE);
 	OutputLine(NULL, "何十年かに一度、どうしても人肉が食べたくて仕方がなくなる周期があるんですって。",
-		   NULL, " les descendants des ogres mangeurs d'hommes avaient besoin de chair humaine.", Line_WaitForInput);
+		   NULL, "les descendants des ogres mangeurs d'hommes avaient besoin de chair humaine.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900107", 540, TRUE);
 	OutputLine(NULL, "だからって村人同士で共食いするわけにはいかない。",
-		   NULL, " Mais évidemment, ils ne pouvaient pas se permettre de se manger entre eux. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais évidemment, ils ne pouvaient pas se permettre de se manger entre eux. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900108", 540, TRUE);
 	OutputLine(NULL, "……だから彼らはその度に人里へ降り、「鬼隠し」をしたと伝えられてるわ。」",
@@ -153,15 +155,17 @@ void dialog009()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900124", 256, TRUE);
 	OutputLine(NULL, "「梨花ちゃんが持っていた祭事用の鍬。",
-		   NULL, "— Tu vois le râteau de cérémonie qu'elle portait ?", Line_WaitForInput);
+		   NULL, "— Tu vois le râteau de cérémonie qu'elle portait ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900125", 256, TRUE);
 	OutputLine(NULL, "…もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて。",
-		   NULL, " Tu t'es quand même rendu compte que ce n'était pas un râteau pour travailler dans les champs, j'espère ?", Line_WaitForInput);
+		   NULL, "Tu t'es quand même rendu compte que ce n'était pas un râteau pour travailler dans les champs, j'espère ?", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 3, "wa_023", 56, 64 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900126", 540, TRUE);
 	OutputLine(NULL, "…人間の腹をこじ開けるための解剖道具なのよ。」",
-		   NULL, " ... Il servait très probablement à ouvrir le ventre de la victime.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Il servait très probablement à ouvrir le ventre de la victime.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
@@ -281,16 +285,19 @@ void dialog017()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900148", 540, TRUE);
 	OutputLine(NULL, "「ところがね。",
-		   NULL, "— Mais dans certains écrits de la Rome antique,", Line_WaitForInput);
+		   NULL, "— Mais dans certains écrits de la Rome antique,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900149", 540, TRUE);
 	OutputLine(NULL, "ローマの時代の処刑方法にね、網焼きというものがあったの。",
-		   NULL, " on trouve des descriptions de tortures aussi. Par exemple, le grill, une simple grille en fer posée sur un feu,", Line_WaitForInput);
+		   NULL, "on trouve des descriptions de tortures aussi. Par exemple, le grill, une simple grille en fer posée sur un feu,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900150", 540, TRUE);
 	OutputLine(NULL, "バーベキューと同じにね。",
-		   NULL, " une sorte d'ancêtre du barbecue, donc.", Line_WaitForInput);
+		   NULL, "une sorte d'ancêtre du barbecue, donc.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900151", 540, TRUE);
 	OutputLine(NULL, "金網で挟みつけて、炭火でじっくりと焼いたんですって。」",
-		   NULL, " Ils faisaient griller les gens lentement en les plaçant entre deux grilles placées au contact des cendres chaudes.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ils faisaient griller les gens lentement en les plaçant entre deux grilles placées au contact des cendres chaudes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -637,19 +644,23 @@ void dialog021()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900201", 256, TRUE);
 	OutputLine(NULL, "「たったよ。",
-		   NULL, "— C'est tout.", Line_WaitForInput);
+		   NULL, "— C'est tout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900202", 256, TRUE);
 	OutputLine(NULL, "…たった百年前のことよ。",
-		   NULL, " Tu trouves que c'est beaucoup, 100 ans ? Moi pas.", Line_WaitForInput);
+		   NULL, "Tu trouves que c'est beaucoup, 100 ans ? Moi pas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900203", 256, TRUE);
 	OutputLine(NULL, "それにね。",
-		   NULL, " Et puis", Line_WaitForInput);
+		   NULL, "Et puis", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900204", 256, TRUE);
 	OutputLine(NULL, "昭和に入ってからだって、あるんだから。",
-		   NULL, " ça a continué même après le début de l'ère Shôwa,", Line_WaitForInput);
+		   NULL, "ça a continué même après le début de l'ère Shôwa,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900205", 256, TRUE);
 	OutputLine(NULL, "…終戦直後に騒ぎになった",
-		   NULL, " juste après la fin de la 2e guerre mondiale, il y a eu l'histoire des", Line_Continue);
+		   NULL, "juste après la fin de la 2e guerre mondiale, il y a eu l'histoire des", Line_Continue);
 
 	FadeOutBGM( 1, 1000, TRUE );
 

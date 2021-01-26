@@ -648,11 +648,13 @@ void main()
 	OutputLine(NULL, "　どったんばったん！！",
 		   NULL, "Je lui chopai les joues et tirai légèrement dessus,", Line_WaitForInput);
 	OutputLine(NULL, "　つねったりひっかいたり…！！",
-		   NULL, " lui mettant parfois de petites baffes rapides et indolores de tous les côtés de la tête.", Line_WaitForInput);
+		   NULL, " lui mettant parfois de petites baffes rapides et indolores de tous les côtés de la tête.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 //　仲間のありがたみを噛み締める一日だった￥
 	OutputLine(NULL, "　仲間のありがたみを噛み締める一日だった。",
-		   NULL, " Finalement, ce jour-là, la vie m'apprit une grande leçon : c'était très important d'avoir des amis.", Line_Normal);
+		   NULL, "Finalement, ce jour-là, la vie m'apprit une grande leçon : c'était très important d'avoir des amis.", Line_Normal);
 	ClearMessage();
 
 //■６日目アイキャッチ（あっという間なので幕間じゃなくてアイキャッチでいいでしょ）

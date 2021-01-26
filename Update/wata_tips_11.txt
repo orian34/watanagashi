@@ -30,7 +30,7 @@ void main()
 	PlaySE( 3, "wa_021", 56, 64 );
 
 //　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く。",
 		   NULL, "La cérémonie de la purification du coton est une fête annonçant le début de l'été, ayant lieu depuis une vingtaine d'années tous les ans en juin. Mais si l'on remonte un peu dans le temps, on se rendra compte qu'à l'origine, c'était une cérémonie bien plus sanglante.", Line_Normal);
 	ClearMessage();
@@ -58,8 +58,7 @@ void main()
 	PlaySE( 3, "wa_021", 56, 64 );
 
 //　古代の鬼ヶ淵村の住人たちは自分たちが半人半鬼の仙人で、人間よりも高貴な存在であると固く信じ、それを内外に認めさせていた＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古代の鬼ヶ淵村の住人たちは自分たちが半人半鬼の仙人で、人間よりも高貴な存在であると固く信じ、それを内外に認めさせていた。",
 		   NULL, "Dans les temps anciens, les habitants du village d'Onigafuchi étaient persuadés d'êtres des ermites mi-hommes et mi-démons, ce qui les rendaient supérieurs par essence aux autres êtres humains, et ils utilisaient tous les moyens nécessaires pour faire respecter ce point de vue.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -73,7 +72,6 @@ void main()
 
 //　以下は仮説だが、綿流しの儀は、閉鎖環境である鬼ヶ淵村の内側に何らかの不満が募った場合のはけ口や、目を逸らすための目的で開かれた＠政治的なイベントとも考えられないだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　以下は仮説だが、綿流しの儀は、閉鎖環境である鬼ヶ淵村の内側に何らかの不満が募った場合のはけ口や、目を逸らすための目的で開かれた、",
 		   NULL, "Ce n'est qu'une supposition de ma part, mais je pense que la cérémonie de la purification du coton n'avait lieu que lorsqu'un changement menaçait l'équilibre de la société fermée et recluse que formait le village. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

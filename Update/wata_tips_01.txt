@@ -460,13 +460,15 @@ void main()
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "— Parfaitement.", Line_Continue);
 	OutputLine(NULL, "パン屋さんとか八百屋さんとかラーメン屋さんとか。",
-		   NULL, " Il y a une boulangerie Sonozaki, un maraîcher, un restaurant de nouilles chinoises aussi...", Line_WaitForInput);
+		   NULL, " Il y a une boulangerie Sonozaki, un maraîcher, un restaurant de nouilles chinoises aussi...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400023", 256, TRUE);
 	OutputLine(NULL, "他にもまだまだ。",
-		   NULL, " et de nombreux autres, en fait.", Line_WaitForInput);
+		   NULL, "et de nombreux autres, en fait.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400024", 256, TRUE);
 	OutputLine(NULL, "あの部活をやったおもちゃ屋さんもそうなんですのよ。」",
-		   NULL, " D'ailleurs, le magasin de jouets où nous étions ce dimanche appartient aussi à l'un de ses oncles.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "D'ailleurs, le magasin de jouets où nous étions ce dimanche appartient aussi à l'un de ses oncles.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

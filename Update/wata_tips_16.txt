@@ -23,21 +23,25 @@ void main()
 	OutputLine(NULL, "「夜分遅くに失礼いたします…。",
 		   NULL, "— Désolé de vous appeler aussi tard,", Line_Continue);
 	OutputLine(NULL, "公由と申しますが、ご主人でいらっしゃいますか？",
-		   NULL, " c'est M. Kimiyoshi. Vous êtes bien le maître de maison ?", Line_WaitForInput);
+		   NULL, " c'est M. Kimiyoshi. Vous êtes bien le maître de maison ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44002", 256, TRUE);
 	OutputLine(NULL, "　……はい！",
-		   NULL, " Oh, oui !", Line_WaitForInput);
+		   NULL, "Oh, oui !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44003", 256, TRUE);
 	OutputLine(NULL, "　いえいえ、その節は本当にありがとうございます。",
-		   NULL, " Non, je vous en prie, c'était très gentil à vous.", Line_WaitForInput);
+		   NULL, "Non, je vous en prie, c'était très gentil à vous.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44004", 256, TRUE);
 	OutputLine(NULL, "えぇ。",
-		   NULL, " Oui.", Line_Continue);
+		   NULL, "Oui.", Line_Continue);
 	OutputLine(NULL, "…………それでですね、",
-		   NULL, " ... En fait, je vous appelle car je me disais que peut-être, mon père se trouvait-il chez vous.", Line_WaitForInput);
+		   NULL, " ... En fait, je vous appelle car je me disais que peut-être, mon père se trouvait-il chez vous.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44005", 256, TRUE);
 	OutputLine(NULL, "…こんな時間に大変恐縮なのですが、",
-		   NULL, " Oui, bien sûr, il est si tard, ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Oui, bien sûr, il est si tard, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44006", 256, TRUE);
 	OutputLine(NULL, "…ウチのお爺ちゃんがお邪魔してないかと思いまして。",

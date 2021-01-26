@@ -30,7 +30,7 @@ void main()
 	PlaySE( 3, "wa_021", 56, 64 );
 
 //　自らに鬼の血が流れると信じている雛見沢において、「鬼」という字はとても神聖に扱われている￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自らに鬼の血が流れると信じている雛見沢において、「鬼」という字はとても神聖に扱われている。",
 		   NULL, "Il est évident que dans un village où les habitants pensent que le sang des démons coulent dans leurs veines, le mot démon et son incarnation écrite, l'idéogramme 鬼, jouissent d'une importance fondamentale et d'un respect quasiment religieux.", Line_Normal);
 	ClearMessage();
@@ -134,7 +134,7 @@ void main()
 	PlaySE( 3, "wa_021", 56, 64 );
 
 //　「崎」は「裂き」の読み替えで、「園」は、その形状から複雑な内容（内臓）を四角で包んだもの、「人体」の暗示であろう＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-5>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「崎」は「裂き」の読み替えで、「園」は、その形状から複雑な内容（内臓）を四角で包んだもの、「人体」の暗示であろう。",
 		   NULL, "Zaki peut être écrit indifféremment avec l'idéogramme du col de montagne, 崎, ou celui de l'équarissage, 裂. Quant à l'idéogramme de Sono, qui est 園, il se décompose d'un carré qui entoure (dans ce cas précis, qui retient prisonnier) quelque chose qui sort en gerbe depuis la terre (je suppose que lorsque l'on tirait les entrailles du ventre, ça devait ressembler à cela. Le second idéogramme serait donc une allégorie d'un corps humain).", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

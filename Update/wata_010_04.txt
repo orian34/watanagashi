@@ -467,9 +467,10 @@ void main()
 //　......それらが、思い出そうとすれば思い出そうとするほど、よくわからなくなり......＠馬鹿を七つ重ねても言い足りぬ、自分の脳みその愚かさに、涙せずにはいられなかった.........￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……それらが、思い出そうとすれば思い出そうとするほど、よくわからなくなり……、",
-		   NULL, "Plus j'essayais de m'en souvenir, et plus ma vision se troublait.", Line_WaitForInput);
+		   NULL, "Plus j'essayais de m'en souvenir, et plus ma vision se troublait.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "馬鹿を七つ重ねても言い足りぬ、自分の脳みその愚かさに、涙せずにはいられなかった………。",
-		   NULL, " Le proverbe dit que répéter sept fois la même chose à un idiot n'est pas suffisant, mais c'était vrai. Ma cervelle était une vraie passoire. Les larmes me montèrent aux yeux.", Line_Normal);
+		   NULL, "Le proverbe dit que répéter sept fois la même chose à un idiot n'est pas suffisant, mais c'était vrai. Ma cervelle était une vraie passoire. Les larmes me montèrent aux yeux.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 2, "portrait/re2a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -868,16 +869,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200263", 256, TRUE);
 	OutputLine(NULL, "「……ほぉら、圭一くんに涙なんか似合わないよ。",
-		   NULL, "— Roh, allons, Keiichi. Il faut pas pleurer, tu as l'air bête quand tu pleures.", Line_WaitForInput);
+		   NULL, "— Roh, allons, Keiichi. Il faut pas pleurer, tu as l'air bête quand tu pleures.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200264", 256, TRUE);
 	OutputLine(NULL, "みんなのところに行こ。",
-		   NULL, " Allez, allons voir les autres.", Line_WaitForInput);
+		   NULL, "Allez, allons voir les autres.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200265", 256, TRUE);
 	OutputLine(NULL, "…婦人会の人たちがね、お味噌汁の炊き出しをしてくれてるの。",
-		   NULL, " Le club des femmes au foyer a fait de la soupe, ça va te faire du bien, tu verras.", Line_WaitForInput);
+		   NULL, "Le club des femmes au foyer a fait de la soupe, ça va te faire du bien, tu verras.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200266", 256, TRUE);
 	OutputLine(NULL, "飲むと暖まって落ち着くよ。」",
-		   NULL, " Avec ça, tu devrais te calmer.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Avec ça, tu devrais te calmer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2154,10 +2158,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700145", 256, TRUE);
 	OutputLine(NULL, "「祭具殿って言いましたっけ。",
-		   NULL, "— Il s'appelait comment encore ce bâtiment ? Je sais plus.", Line_WaitForInput);
+		   NULL, "— Il s'appelait comment encore ce bâtiment ? Je sais plus.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700146", 256, TRUE);
 	OutputLine(NULL, "…あそこの鍵を簡易なものに付け替えたから賊に入られたんだって言うケチがついてるらしいんですよ。」",
-		   NULL, " Bref, il semble que les gens leur en veuillent d'avoir été trop pingres sur la serrure, ils disent que c'est à cause de ça que des voleurs ont pu souiller le lieu sacré.", Line_Continue);
+		   NULL, "Bref, il semble que les gens leur en veuillent d'avoir été trop pingres sur la serrure, ils disent que c'est à cause de ça que des voleurs ont pu souiller le lieu sacré.", Line_Continue);
 
 	PlaySE( 3, "wa_022", 56, 64 );
 
@@ -2244,10 +2249,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700153", 256, TRUE);
 	OutputLine(NULL, "「つまりですね。",
-		   NULL, "— Eh bien en fait, la serrure avant, c'était un truc énorme, et personne n'avait pu pénétrer par effraction dans le temple.", Line_WaitForInput);
+		   NULL, "— Eh bien en fait, la serrure avant, c'était un truc énorme, et personne n'avait pu pénétrer par effraction dans le temple.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700154", 256, TRUE);
 	OutputLine(NULL, "…前の厳重な錠前なら賊には忍び込まれなかった、…村長さんと梨花さんが、勝手に安っぽいカギに替えたから賊に破られたんだ、",
-		   NULL, " Mais l'année où Rika et le maire se concertent pour changer la serrure et rendre l'accès plus facile, pan, des voleurs réussissent à y pénétrer. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais l'année où Rika et le maire se concertent pour changer la serrure et rendre l'accès plus facile, pan, des voleurs réussissent à y pénétrer. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700155", 256, TRUE);
 	OutputLine(NULL, "と……こういう話らしいんですよ。」",

@@ -94,7 +94,7 @@ void dialog007()
 
 
 //　......だから、村に下界の人間が来ると穢れてオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900032", 256, TRUE);
 	OutputLine(NULL, "　……だから、村に下界の人間が来ると穢れてオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。」",
 		   NULL, "C'est pourquoi, lorsqu'un humain du monde d'en bas venait par ici, ils pensaient que la déesse Yashiro les punirait pour avoir souillé le sol sacré de ses terres, et donc ils faisaient tout pour n'avoir aucun contact avec l'extérieur.", Line_Normal);

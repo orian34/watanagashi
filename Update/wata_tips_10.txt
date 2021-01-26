@@ -88,7 +88,7 @@ void main()
 
 
 //　前者に必要なのは心の準備だけだが、後者の場合は、心と体だけでなく、入念な打ち合わせや下準備が必要になる＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前者に必要なのは心の準備だけだが、後者の場合は、心と体だけでなく、入念な打ち合わせや下準備が必要になる。",
 		   NULL, "Les premiers doivent simplement être de bonne humeur, mais les derniers doivent non seulement s'y préparer physiquement et mentalement, mais en plus régler tous les problèmes d'organisation, de logistique, se réunir des semaines à l'avance pour que tout se passe bien.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -245,7 +245,7 @@ void main()
 
 
 //「昨年発生したように、連続事件を期待する愉快犯の出現が濃厚に危惧されます＠各員、一層気を引き締め、犯罪の抑止のために任務を全うして下さい。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700112", 256, TRUE);
 	OutputLine(NULL, "「昨年発生したように、連続事件を期待する愉快犯の出現が濃厚に危惧されます。",
 		   NULL, "— Nous avons de grandes raisons de croire que cette année encore, des petits malins tenteront de profiter de la peur panique de nouveaux incidents pour commettre de menus larcins en toute impunité.", Line_Continue);

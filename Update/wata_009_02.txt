@@ -1015,8 +1015,7 @@ void main()
 
 
 //　身元確認は困難かに思われたが、その直後に××県警興宮署から歯型照合の依頼があり、照合の結果、鷹野三四と確認された＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　身元確認は困難かに思われたが、その直後に××県警興宮署から歯型照合の依頼があり、照合の結果、鷹野三四と確認された。",
 		   NULL, "Les policiers n'arrivaient pas à l'identifier, mais ils ont eu un appel de la brigade d'Okinomiya qui leur a filé un dossier médical, et les empreintes dentaires correspondaient, c'est comme ça qu'on a su que c'était elle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1429,9 +1428,10 @@ void main()
 //　...だから反論した＠...逃避と知りつつ反論した￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だから反論した。",
-		   NULL, "Et pourtant, je n'avais aucune envie d'accepter les faits.", Line_WaitForInput);
+		   NULL, "Et pourtant, je n'avais aucune envie d'accepter les faits.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…逃避と知りつつ反論した。",
-		   NULL, " Si je les acceptais, alors je devais reconnaître que j'étais en danger et me préparer à subir des choses horribles. Je devais nier les faits. Même si je savais que je me berçais d'illusions.", Line_Normal);
+		   NULL, "Si je les acceptais, alors je devais reconnaître que j'étais en danger et me préparer à subir des choses horribles. Je devais nier les faits. Même si je savais que je me berçais d'illusions.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	StopSE( 3 );
@@ -1503,13 +1503,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600267", 256, TRUE);
 	OutputLine(NULL, "「そういうことです。",
-		   NULL, "— Oui, probablement.", Line_WaitForInput);
+		   NULL, "— Oui, probablement.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600268", 256, TRUE);
 	OutputLine(NULL, "…もちろん、警察は捜査をしてますよ？",
-		   NULL, " Oh, la police mènera une enquête, ne t'en fais pas.", Line_WaitForInput);
+		   NULL, "Oh, la police mènera une enquête, ne t'en fais pas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600269", 256, TRUE);
 	OutputLine(NULL, "　でも、秘匿捜査ということなので、捜査活動にはかなりの制限が加えられているそうです。",
-		   NULL, " Mais bon, les enquêtes secrètes n'ont pas les mêmes droits et les mêmes prérogatives, la police sera très limitée dans ses possibilités de recherche. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais bon, les enquêtes secrètes n'ont pas les mêmes droits et les mêmes prérogatives, la police sera très limitée dans ses possibilités de recherche. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600270", 256, TRUE);
 	OutputLine(NULL, "これは、事実上の捜査妨害と言えるでしょうね。」",
@@ -1617,13 +1619,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600278", 256, TRUE);
 	OutputLine(NULL, "　何しろ、毎年の事件は個別に解決してますので。",
-		   NULL, "Mais en fait, les affaires sont toujours plus ou moins résolues.", Line_WaitForInput);
+		   NULL, "Mais en fait, les affaires sont toujours plus ou moins résolues.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600279", 256, TRUE);
 	OutputLine(NULL, "…「連続事件」という形にならないんですよ。",
-		   NULL, " Et donc les événements sont considérés comme indépendants les uns des autres.", Line_WaitForInput);
+		   NULL, "Et donc les événements sont considérés comme indépendants les uns des autres.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600280", 256, TRUE);
 	OutputLine(NULL, "たまたま毎年、綿流しの晩に不幸なことが起こる。",
-		   NULL, " Chaque année, comme par hasard après la fête, il se passe des trucs louches, ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Chaque année, comme par hasard après la fête, il se passe des trucs louches, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600281", 256, TRUE);
 	OutputLine(NULL, "…それだけのことに。」",

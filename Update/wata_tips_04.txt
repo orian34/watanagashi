@@ -309,9 +309,10 @@ void main()
 //　...こいつも、こんな見てるだけでこっちも気持ちよくなれるような笑い方ができるんだな＠そんな嫌みが口を突いたが、そのまま飲み込むことにする＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…こいつも、こんな見てるだけでこっちも気持ちよくなれるような笑い方ができるんだな。",
-		   NULL, "Le bonheur était si facile à lire sur ses lèvres que son sourire menaçait de m'entraîner moi aussi à sourire.", Line_WaitForInput);
+		   NULL, "Le bonheur était si facile à lire sur ses lèvres que son sourire menaçait de m'entraîner moi aussi à sourire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そんな嫌みが口を突いたが、そのまま飲み込むことにする。",
-		   NULL, " Je me suis demandé si je ne devais pas dire quelque chose de méchant pour faire retomber l'atmosphère, mais je décidai de me taire.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je me suis demandé si je ne devais pas dire quelque chose de méchant pour faire retomber l'atmosphère, mais je décidai de me taire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

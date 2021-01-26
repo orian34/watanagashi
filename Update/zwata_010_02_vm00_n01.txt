@@ -27,10 +27,11 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/130600370", 540, TRUE);
 	OutputLine(NULL, "「…今は何だかのんびりした雰囲気だから想像も付かないでしょうが。",
-		   NULL, "— Oui, on ne dirait pas, hein ? Elle est beaucoup plus calme et maître de soi maintenant, mais à l'époque, hou là…", Line_WaitForInput);
+		   NULL, "— Oui, on ne dirait pas, hein ? Elle est beaucoup plus calme et maître de soi maintenant, mais à l'époque, hou là…", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/130600371", 540, TRUE);
 	OutputLine(NULL, "器物破損から脅迫、暴行まで一通りこなして、何度も補導されたんですよ。",
-		   NULL, " Destructions, violences, insultes, obstruction aux forces de l'ordre, elle s'est fait pincer une paire de fois. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Destructions, violences, insultes, obstruction aux forces de l'ordre, elle s'est fait pincer une paire de fois. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600372", 256, TRUE);
 	OutputLine(NULL, "…子供ですから、すぐに釈放してもらえたみたいですけどね。",

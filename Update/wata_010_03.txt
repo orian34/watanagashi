@@ -2679,9 +2679,8 @@ void main()
 
 
 //　...引き取り先で、あの子を虐めた叔母は、綿流しの夜に異常者に、脳みそがぐっちゃぐちゃに飛び散って、頭が原形を留めないくらいに滅多打ちにされて殺された＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300172", 256, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　…引き取り先で、あの子を虐めた叔母は、綿流しの夜に異常者に、脳みそがぐっちゃぐちゃに飛び散って、頭が原形を留めないくらいに滅多打ちにされて殺された。",
 		   NULL, "Sa tante l'a recueillie, mais elle la battait régulièrement. Elle s'est fait tuer l'année dernière. Un fou l'a frappée au visage jusqu'à ce qu'on ne puisse plus la reconnaître. Il y avait de la cervelle partout, il paraît.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2773,7 +2772,7 @@ void main()
 
 	OutputLine(NULL, "あの子に安らぎなんてあるものか。",
 		   NULL, " Oh non, elle ne connaîtra jamais le repos... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300186", 256, TRUE);
 	OutputLine(NULL, "……梨花ちゃんが消えたのもきっと沙都子のせいだよ",
 		   NULL, "C'est sûrement de sa faute si Rika a disparu !", Line_Continue);
@@ -3545,10 +3544,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300197", 256, TRUE);
 	OutputLine(NULL, "「例えば…ご近所に行って、お茶でもご馳走になって眠っちゃって。",
-		   NULL, "— On peut encore imaginer qu'elles sont allées chez des gens dans le coin, que finalement elles ont bu un thé, discuté, puis une chose en entraînant une autre, elles sont restées manger, et elles se sont endormies sur place.", Line_WaitForInput);
+		   NULL, "— On peut encore imaginer qu'elles sont allées chez des gens dans le coin, que finalement elles ont bu un thé, discuté, puis une chose en entraînant une autre, elles sont restées manger, et elles se sont endormies sur place.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300198", 256, TRUE);
 	OutputLine(NULL, "起こすに起こせなくなってるなんて可能性ももちろんあるよね。",
-		   NULL, " Ils n'ont peut être tout simplement pas réussi à les réveiller. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ils n'ont peut être tout simplement pas réussi à les réveiller. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300199", 256, TRUE);
 	OutputLine(NULL, "……その可能性をまず潰そう。",

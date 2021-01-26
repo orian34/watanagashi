@@ -40,9 +40,10 @@ void main()
 //　なぜにも名店はこうも人里を嫌うものなのか...＠闘撮の神の試練としか思えない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜにも名店はこうも人里を嫌うものなのか…。",
-		   NULL, "Pourquoi se trouve-t-il si loin de toute civilisation ? D'ailleurs, pourquoi tant de grands restaurants sont-ils si loin des grands centres commerciaux ? Cela reste un mystère.", Line_WaitForInput);
+		   NULL, "Pourquoi se trouve-t-il si loin de toute civilisation ? D'ailleurs, pourquoi tant de grands restaurants sont-ils si loin des grands centres commerciaux ? Cela reste un mystère.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "闘撮の神の試練としか思えない。",
-		   NULL, " C'est peut-être une épreuve que nous infligent les dieux de la photo.", Line_Normal);
+		   NULL, "C'est peut-être une épreuve que nous infligent les dieux de la photo.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -213,9 +214,10 @@ void main()
 //　...ボックスシートでバッグ床置きはやはり警戒されたかなー...＠もうボストンバッグに隠しカメラは化石技かも...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ボックスシートでバッグ床置きはやはり警戒されたかなー…。",
-		   NULL, "Mon sac posé par terre leur a peut-être mis la puce à l'oreille, ce n'est pas logique lorsque l'on a toute une table et une banquette pour soi tout seul.", Line_WaitForInput);
+		   NULL, "Mon sac posé par terre leur a peut-être mis la puce à l'oreille, ce n'est pas logique lorsque l'on a toute une table et une banquette pour soi tout seul.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "もうボストンバッグに隠しカメラは化石技かも…。",
-		   NULL, " L'appareil photo caché dans le sac en toile, c'est devenu trop vieux, trop connu...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'appareil photo caché dans le sac en toile, c'est devenu trop vieux, trop connu...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

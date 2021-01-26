@@ -29,18 +29,20 @@ void dialog001()
 //「凄まじいレートでござるな＠　アンミュラで８万、閉店後のブロバで１２万が相場でござるのに...！！（使用済みの場合でござるよ。コピー品は半額以下でござる！）＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「凄まじいレートでござるな！",
-		   NULL, "— C'est un prix exceptionnel, ma foi !", Line_WaitForInput);
+		   NULL, "— C'est un prix exceptionnel, ma foi !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　アンミュラで８万、閉店後のブロバで１２万が相場でござるのに…！！（使用済みの場合でござるよ。コピー品は半額以下でござる！）」",
-		   NULL, " Un Anna Miller's ne fait que 8 plaques, un Broba 12 tout au plus. Et encore, je vous parle de modèles portés en service. Les neufs ou les copies ne valent pas tout à fait la moitié…", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Un Anna Miller's ne fait que 8 plaques, un Broba 12 tout au plus. Et encore, je vous parle de modèles portés en service. Les neufs ou les copies ne valent pas tout à fait la moitié…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「×××でコピー品でいいから衣装販売してくれないか尿～＠　そしたら我輩が××××××××でン十万で買った等身大フィギュアに着せ着せするです尿～＠　毎朝毎朝、エンジェルの制服を見上げて目を覚ますでおじゃるよ～！！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「×××でコピー品でいいから衣装販売してくれないか尿〜☆",
-		   NULL, "— Si seulement ils pouvaient faire des copies en vente à *** !", Line_WaitForInput);
+		   NULL, "— Si seulement ils pouvaient faire des copies en vente à *** !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしたら我輩が××××××××でン十万で買った等身大フィギュアに着せ着せするです尿〜☆",
-		   NULL, " Je pourrais en prendre une pour pas trop cher et l'enfiler à ma Real Doll Naomi taille petite, résine et silicone, teint blanc de chez Ori***. Oh, elle m'a coûté presque rien, 14 briques, ils ont baissé leur prix, vous savez. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pourrais en prendre une pour pas trop cher et l'enfiler à ma Real Doll Naomi taille petite, résine et silicone, teint blanc de chez Ori***. Oh, elle m'a coûté presque rien, 14 briques, ils ont baissé leur prix, vous savez. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　毎朝毎朝、エンジェルの制服を見上げて目を覚ますでおじゃるよ〜！！！」",
 		   NULL, "Mais avec un uniforme, je pourrais la laisser debout contre un mur, prenant bien la pose, et la contempler tous les matins en me réveillant !", Line_Normal);

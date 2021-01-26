@@ -155,19 +155,23 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200464", 256, TRUE);
 	OutputLine(NULL, "「うん。",
-		   NULL, "— Oui,", Line_WaitForInput);
+		   NULL, "— Oui,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200465", 256, TRUE);
 	OutputLine(NULL, "何度もあるよ。",
-		   NULL, " plusieurs fois.", Line_WaitForInput);
+		   NULL, "plusieurs fois.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200466", 256, TRUE);
 	OutputLine(NULL, "……とても大きな家でね。",
-		   NULL, " C'est très grand.", Line_WaitForInput);
+		   NULL, "C'est très grand.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200467", 256, TRUE);
 	OutputLine(NULL, "お庭なんか、山がまるごと入るくらいあるんだよ。",
-		   NULL, " Le terrain derrière la maison est immense. En fait, c'est simple, toute la montagne fait partie de leur jardin.", Line_WaitForInput);
+		   NULL, "Le terrain derrière la maison est immense. En fait, c'est simple, toute la montagne fait partie de leur jardin.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200468", 256, TRUE);
 	OutputLine(NULL, "…松茸が取れるとか何とかで、いつもは柵がしてあるんだけどね。」",
-		   NULL, " Mais ils mettent une barrière pour bloquer l'entrée des chemins de montagnes d'habitude. Il paraît qu'ils ont beaucoup de champignons des pins, alors il faut bien repousser les pillards...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais ils mettent une barrière pour bloquer l'entrée des chemins de montagnes d'habitude. Il paraît qu'ils ont beaucoup de champignons des pins, alors il faut bien repousser les pillards...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -274,13 +278,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200469", 256, TRUE);
 	OutputLine(NULL, "「庭というか…領地だね。",
-		   NULL, "— Oui, cela fait partie de leur domaine.", Line_WaitForInput);
+		   NULL, "— Oui, cela fait partie de leur domaine.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200470", 256, TRUE);
 	OutputLine(NULL, "見ての通り、私有地ではあるけど、手入れも何もしてないから。",
-		   NULL, " J'ai dit “leur terrain” tout à l'heure, mais comme tu peux le constater, ce n'est pas entretenu par ici.", Line_WaitForInput);
+		   NULL, "J'ai dit “leur terrain” tout à l'heure, mais comme tu peux le constater, ce n'est pas entretenu par ici.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200471", 256, TRUE);
 	OutputLine(NULL, "散策ができるような気持ちいい森というわけでもないし…。」",
-		   NULL, " Et puis, ce n'est pas une forêt agréable pour la promenade, ils ne peuvent pas en faire un parc...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et puis, ce n'est pas une forêt agréable pour la promenade, ils ne peuvent pas en faire un parc...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -603,13 +609,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300252", 256, TRUE);
 	OutputLine(NULL, "「今どき合掌造りなんて流行らないよ。",
-		   NULL, "— Ouais, mais c'est trop vieux comme construction.", Line_WaitForInput);
+		   NULL, "— Ouais, mais c'est trop vieux comme construction.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300253", 256, TRUE);
 	OutputLine(NULL, "観光資源にはなるかもしれないけどね。",
-		   NULL, " Elle pourrait devenir une attraction pour touristes, cette baraque.", Line_WaitForInput);
+		   NULL, "Elle pourrait devenir une attraction pour touristes, cette baraque.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300254", 256, TRUE);
 	OutputLine(NULL, "私は早く、ごくごく平均的な鉄筋コンクリートに建て替えて欲しいと思ってるよ。」",
-		   NULL, " Personnellement, j'aimerais bien la transformer vite fait en une maison normale, avec du ciment, un truc solide, quoi.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Personnellement, j'aimerais bien la transformer vite fait en une maison normale, avec du ciment, un truc solide, quoi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -828,13 +836,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300263", 256, TRUE);
 	OutputLine(NULL, "「人様の家なのに、ツバメが勝手に入ってきて巣を作ってるってわけ。",
-		   NULL, "— Je ne sais pas pourquoi, mais elles ont l'air de se plaire ici.", Line_WaitForInput);
+		   NULL, "— Je ne sais pas pourquoi, mais elles ont l'air de se plaire ici.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300264", 256, TRUE);
 	OutputLine(NULL, "代々語り継いでるのか、季節になると決まってここに巣を作るんだよ。",
-		   NULL, " Je ne sais pas si elles se passent le mot de générations en générations, mais à la nouvelle saison, c'est ici qu'elles viennent.", Line_WaitForInput);
+		   NULL, "Je ne sais pas si elles se passent le mot de générations en générations, mais à la nouvelle saison, c'est ici qu'elles viennent.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300265", 256, TRUE);
 	OutputLine(NULL, "迷惑してるんだけどねぇ。」",
-		   NULL, " J'en suis pas très heureuse, mais bon.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'en suis pas très heureuse, mais bon.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2884,9 +2894,10 @@ void main()
 	OutputLine(NULL, "武士の時代が終わり、",
 		   NULL, " Le système des castes de samuraï fut aboli.", Line_WaitForInput);
 	OutputLine(NULL, "鎖国の時代が終わり、",
-		   NULL, " Le Japon s'ouvrit au monde extérieur.", Line_WaitForInput);
+		   NULL, " Le Japon s'ouvrit au monde extérieur.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…そして鬼ヶ淵村を崇める風潮も急になくなっていった。",
-		   NULL, " Et le culte voué au village des abysses des démons disparut du jour au lendemain.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et le culte voué au village des abysses des démons disparut du jour au lendemain.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......古くから残るものは全て忌々しい＠...そういう時代になったのだ...￥
@@ -2899,10 +2910,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300358", 256, TRUE);
 	OutputLine(NULL, "「明治になり、古い歴史を持つ鬼ヶ淵村の名称は、一方的に雛見沢村に改められてしまいました。",
-		   NULL, "— Puis ce fut l'ère de Meiji, et à cette occasion, le village vit son nom changer pour Hinamizawa. C'était une décision qui avait évidemment été prise sans demander leur avis aux habitants.", Line_WaitForInput);
+		   NULL, "— Puis ce fut l'ère de Meiji, et à cette occasion, le village vit son nom changer pour Hinamizawa. C'était une décision qui avait évidemment été prise sans demander leur avis aux habitants.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300359", 256, TRUE);
 	OutputLine(NULL, "……古い因習を一掃しようとする、明治政府の思惑が強く働いたのだと聞かされています…。」",
-		   NULL, " À cette époque, l'administration de Meiji voulait en finir avec tout ce qui pourrait rebuter les étrangers.", Line_Normal);
+		   NULL, "À cette époque, l'administration de Meiji voulait en finir avec tout ce qui pourrait rebuter les étrangers.", Line_Normal);
 	ClearMessage();
 
 //　廃藩置県＠
@@ -2945,9 +2957,10 @@ void main()
 //　兵役が始まり、日清、日露、と戦争と勝利を重ね、...太平洋戦争が勃発するまで＠...ただがむしゃらに近代化の階段を上り続けた......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　兵役が始まり、日清、日露、と戦争と勝利を重ね、…太平洋戦争が勃発するまで、",
-		   NULL, "Il y eut la première guerre sino-japonaise, puis la guerre contre la Russie, qui prouvèrent la force et l'efficacité de nos armées.", Line_WaitForInput);
+		   NULL, "Il y eut la première guerre sino-japonaise, puis la guerre contre la Russie, qui prouvèrent la force et l'efficacité de nos armées.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…ただがむしゃらに近代化の階段を上り続けた……。",
-		   NULL, " Jusqu'à la guerre du Pacifique, le Japon ne fit que courir de l'avant et gravir les marches de la modernisation.", Line_Normal);
+		   NULL, "Jusqu'à la guerre du Pacifique, le Japon ne fit que courir de l'avant et gravir les marches de la modernisation.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 3, "sprite/me2_sinmyou_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -3118,7 +3131,7 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_012_02_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300361_7", 256, TRUE);
 	OutputLine(NULL, "……夫や息子を戦場に送り出し、…銃後の女たちも心が荒んでいたのでしょうね…。",
 		   NULL, "Je pourrais en parler pendant longtemps, mais pour donner un exemple, même dans les familles où plusieurs hommes s'étaient engagés comme soldats, les femmes devaient travailler dans les usines en arrière-ligne, alors que normalement elles auraient dû en être exemptées.", GetGlobalFlag(GLinemodeSp));
@@ -3358,9 +3371,10 @@ void main()
 //　...雛見沢復興の大きな礎となった、旧日本軍からの略奪食料の缶詰...＠それは...人の肉の缶詰だった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…雛見沢復興の大きな礎となった、旧日本軍からの略奪食料の缶詰…。",
-		   NULL, "L'histoire de l'ancien supérieur de Shûhei était terrible.", Line_WaitForInput);
+		   NULL, "L'histoire de l'ancien supérieur de Shûhei était terrible.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それは…人の肉の缶詰だった。",
-		   NULL, " Elle disait que les conserves qui avaient fait la richesse de Hinamizawa, celles qui avaient été volées à l'armée impériale, contenaient en fait de la viande humaine.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle disait que les conserves qui avaient fait la richesse de Hinamizawa, celles qui avaient été volées à l'armée impériale, contenaient en fait de la viande humaine.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3997,10 +4011,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300422", 256, TRUE);
 	OutputLine(NULL, "「……おとぎ話です。",
-		   NULL, "— C'est une légende, c'est du flan, une simple histoire à raconter aux enfants.", Line_WaitForInput);
+		   NULL, "— C'est une légende, c'est du flan, une simple histoire à raconter aux enfants.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300423", 256, TRUE);
 	OutputLine(NULL, "…人と鬼は実在しても、それを調停するオヤシロさまは実在しなかった、…ということです。」",
-		   NULL, " Même en considérant que les hommes et les démons ont existé, il n'y a jamais eu de déesse Yashiro pour les pacifier... Ce n'est pas plus difficile que ça.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Même en considérant que les hommes et les démons ont existé, il n'y a jamais eu de déesse Yashiro pour les pacifier... Ce n'est pas plus difficile que ça.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4425,10 +4440,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300441", 256, TRUE);
 	OutputLine(NULL, "「…………………私が園崎家の役目を負うように、梨花ちゃんだって古手家の役目を負っていた。",
-		   NULL, "— ... Tout comme j'ai accompli mon devoir en tant que dirigeante des Sonozaki, Rika avait aussi des obligations à respecter en tant que dernière descendante de la lignée des Furude.", Line_WaitForInput);
+		   NULL, "— ... Tout comme j'ai accompli mon devoir en tant que dirigeante des Sonozaki, Rika avait aussi des obligations à respecter en tant que dernière descendante de la lignée des Furude.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300442", 256, TRUE);
 	OutputLine(NULL, "…その役目が、……祭具殿を守ることだった。」",
-		   NULL, " Son rôle était de protéger le temple des reliques sacrées.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Son rôle était de protéger le temple des reliques sacrées.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......心臓がぎゅっと締め付けられる￥
@@ -4773,20 +4789,23 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300458", 256, TRUE);
 	OutputLine(NULL, "「私は園崎家の当主として、手を下さなければならなかったけど…。",
-		   NULL, "— J'ai dû prendre une part active à leur châtiment, en tant que chef du clan.", Line_WaitForInput);
+		   NULL, "— J'ai dû prendre une part active à leur châtiment, en tant que chef du clan.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300459", 256, TRUE);
 	OutputLine(NULL, "園崎家の歴史なんか、…今にして思えば、大したものじゃない。",
-		   NULL, " Mais tu sais, maintenant qu'il est trop tard pour y changer quoi que ce soit, je me dis que finalement, l'histoire du clan est bien peu de choses. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais tu sais, maintenant qu'il est trop tard pour y changer quoi que ce soit, je me dis que finalement, l'histoire du clan est bien peu de choses. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300460", 256, TRUE);
 	OutputLine(NULL, "……そんなもの全部投げ出しても、…私は仲間を救うべきだったのかもしれない。",
-		   NULL, "J'aurais peut-être dû renoncer à mes fonctions pour sauver mes amis.", Line_WaitForInput);
+		   NULL, "J'aurais peut-être dû renoncer à mes fonctions pour sauver mes amis.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300461", 256, TRUE);
 	OutputLine(NULL, "……私がそんなものに屈したから、…あの２人を殺してしまった。",
-		   NULL, " J'ai été faible, j'ai obéi à mes obligations, et c'est pour cela que Rika et Satoko sont mortes.", Line_WaitForInput);
+		   NULL, "J'ai été faible, j'ai obéi à mes obligations, et c'est pour cela que Rika et Satoko sont mortes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300462", 256, TRUE);
 	OutputLine(NULL, "……それは他でもない、私、園崎魅音が殺したということ。",
-		   NULL, " C'est ma faute à moi et à moi seule si elles sont mortes. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est ma faute à moi et à moi seule si elles sont mortes. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300463", 256, TRUE);
 	OutputLine(NULL, "…私には踏みとどまる百億の瞬間があった。",

@@ -622,13 +622,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s02/22/131400018", 256, TRUE);
 	OutputLine(NULL, "「はい、皆さん、注目注目！",
-		   NULL, "— Allons, les enfants, un peu d'attention. s'il vous plaît !", Line_WaitForInput);
+		   NULL, "— Allons, les enfants, un peu d'attention. s'il vous plaît !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s02/22/131400019", 256, TRUE);
 	OutputLine(NULL, "　今日から当分の間、登下校は保護者の方と一緒に行ないます。",
-		   NULL, " À partir d'aujourd'hui, vous viendrez et vous repartirez d'ici avec quelqu'un pour vous accompagner.", Line_WaitForInput);
+		   NULL, "À partir d'aujourd'hui, vous viendrez et vous repartirez d'ici avec quelqu'un pour vous accompagner.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s02/22/131400020", 256, TRUE);
 	OutputLine(NULL, "保護者の方の都合が付き難い生徒は集団での登下校とします。",
-		   NULL, " Les élèves qui n'ont personne pour les emmener peuvent se rassembler en un grand groupe et venir tous ensemble. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les élèves qui n'ont personne pour les emmener peuvent se rassembler en un grand groupe et venir tous ensemble. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s02/22/131400021", 256, TRUE);
 	OutputLine(NULL, "プリントを作りましたのでよく読み、保護者の方にも必ず見せて下さい。",
@@ -660,7 +662,7 @@ void main()
 
 
 //　だがレナに言わせると、学校は両親が共働きしている生徒の託児所のような一面もあるので、休校を望まない保護者もいるとのことだった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だがレナに言わせると、学校は両親が共働きしている生徒の託児所のような一面もあるので、休校を望まない保護者もいるとのことだった。",
 		   NULL, "Mais Rena me rappela à la réalité : certains parents travaillaient tous les deux et étaient bien contents d'envoyer leurs enfants à l'école la majeure partie de la journée, pour les savoir en sécurité. L'école ne pouvait pas s'arrêter.", Line_Normal);
 	ClearMessage();
@@ -1053,10 +1055,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200307", 256, TRUE);
 	OutputLine(NULL, "　……だから、興宮の町でいなくなったんじゃないかって結論になってるみたい。",
-		   NULL, "C'est pour ça que tout le monde est à peu près d'accord pour dire qu'elles sont allées en ville et que c'est là-bas qu'elles ont disparu.", Line_WaitForInput);
+		   NULL, "C'est pour ça que tout le monde est à peu près d'accord pour dire qu'elles sont allées en ville et que c'est là-bas qu'elles ont disparu.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200308", 256, TRUE);
 	OutputLine(NULL, "警察は明るくなってから捜査範囲を興宮にも広げるって言ってた。」",
-		   NULL, " La police parlait de comment ils allaient étendre leur recherche jusqu’à Okinomiya ce matin.", Line_Normal);
+		   NULL, "La police parlait de comment ils allaient étendre leur recherche jusqu’à Okinomiya ce matin.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
@@ -1486,13 +1489,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200328", 256, TRUE);
 	OutputLine(NULL, "「三角コーナーのゴミを見たら、すごくぶきっちょだった。",
-		   NULL, "— J'ai regardé dans la poubelle, il y avait pas mal de chutes.", Line_WaitForInput);
+		   NULL, "— J'ai regardé dans la poubelle, il y avait pas mal de chutes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200329", 256, TRUE);
 	OutputLine(NULL, "…食事やお弁当はほとんど梨花ちゃんが作ってるんだけど、たまにね、沙都子ちゃんがすることもあるの。",
-		   NULL, " D'habitude, c'est Rika qui prépare tout, mais parfois c'est Satoko qui se dévoue pour préparer à manger.", Line_WaitForInput);
+		   NULL, "D'habitude, c'est Rika qui prépare tout, mais parfois c'est Satoko qui se dévoue pour préparer à manger.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200330", 256, TRUE);
 	OutputLine(NULL, "だからその晩は沙都子ちゃんがお料理したんだね。」",
-		   NULL, " Vu les épluchures dans la poubelle, je dirais que c'est Satoko qui faisait la cuisine hier soir.", Line_Normal);
+		   NULL, "Vu les épluchures dans la poubelle, je dirais que c'est Satoko qui faisait la cuisine hier soir.", Line_Normal);
 	ClearMessage();
 
 //「......それってつまり、!w1000......沙都子に関しては、遊びに行かず、!w800...夕食の準備をしてたってことなのか...？！」/
@@ -1526,7 +1531,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200331", 256, TRUE);
 	OutputLine(NULL, "「うん。",
-		   NULL, "— Exact.", Line_WaitForInput);
+		   NULL, "— Exact.", GetGlobalFlag(GLinemodeSp));
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200332", 256, TRUE);
 	OutputLine(NULL, "それで私、炊飯釜も見てみたの。",
 		   NULL, " Alors j'ai ouvert l'autocuiseur.", Line_WaitForInput);
@@ -1592,12 +1597,14 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200338", 256, TRUE);
 	OutputLine(NULL, "「そう。",
 		   NULL, "— Exact.", Line_WaitForInput);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200339", 256, TRUE);
 	OutputLine(NULL, "ラップって、食べ残しとかを取っておくためにするものだよね。",
-		   NULL, " C'est ce qu'on fait quand on veut garder les restes ou mettre de côté les aliments pour plus tard.", Line_WaitForInput);
+		   NULL, "C'est ce qu'on fait quand on veut garder les restes ou mettre de côté les aliments pour plus tard.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200340", 256, TRUE);
 	OutputLine(NULL, "……冷蔵庫に入れたということは、少なくともその晩の内には食べないつもりだったということ。」",
-		   NULL, " Et si les assiettes étaient dans le frigo, cela voulait dire que Satoko savait qu'elle ne les mangerait pas ce soir.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et si les assiettes étaient dans le frigo, cela voulait dire que Satoko savait qu'elle ne les mangerait pas ce soir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1752,19 +1759,23 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200355", 256, TRUE);
 	OutputLine(NULL, "「お醤油の小瓶ね。",
-		   NULL, "— La bouteille de soja était vide.", Line_WaitForInput);
+		   NULL, "— La bouteille de soja était vide.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200356", 256, TRUE);
 	OutputLine(NULL, "空っぽだったの。",
-		   NULL, " Complètement vide,", Line_WaitForInput);
+		   NULL, "Complètement vide,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200357", 256, TRUE);
 	OutputLine(NULL, "もう一滴も入ってなかった。",
-		   NULL, " pas une seule goutte.", Line_WaitForInput);
+		   NULL, "pas une seule goutte.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200358", 256, TRUE);
 	OutputLine(NULL, "これじゃあ冷やっこは美味しくないよね。",
-		   NULL, " Mais dans ces conditions, l'assaisonnement des légumes serait pas bon !", Line_WaitForInput);
+		   NULL, "Mais dans ces conditions, l'assaisonnement des légumes serait pas bon !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200359", 256, TRUE);
 	OutputLine(NULL, "だから私、流しの下にある醤油の大瓶を探してみたの。」",
-		   NULL, " Alors j'ai ouvert le placard sous l'évier pour voir la grande bouteille de sauce de soja.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors j'ai ouvert le placard sous l'évier pour voir la grande bouteille de sauce de soja.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1997,7 +2008,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　百戦錬磨の主婦が、２人分も余るくらいに食事を作りすぎるなんて、普通じゃ考えられない￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　百戦錬磨の主婦が、２人分も余るくらいに食事を作りすぎるなんて、普通じゃ考えられない。",
 		   NULL, "Une femme au foyer qui fait la cuisine tous les jours sait exactement combien faire à manger pour sa famille, je ne pense pas qu'elle puisse se tromper tellement dans les proportions qu'il en resterait pour deux personnes.", Line_Normal);
 	ClearMessage();
@@ -2128,13 +2139,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200375", 256, TRUE);
 	OutputLine(NULL, "「圭一くん。",
-		   NULL, "— Keiichi...", Line_WaitForInput);
+		   NULL, "— Keiichi...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200376", 256, TRUE);
 	OutputLine(NULL, "……これって雛見沢の人を疑うって意味だよ。",
-		   NULL, " C'est une piste qui revient à dire que c'est une personne de Hinamizawa qui a fait le coup, une personne que nous connaissons tous très bien.", Line_WaitForInput);
+		   NULL, "C'est une piste qui revient à dire que c'est une personne de Hinamizawa qui a fait le coup, une personne que nous connaissons tous très bien.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200377", 256, TRUE);
 	OutputLine(NULL, "…確信もないのに村の人を疑えない。」",
-		   NULL, " Je ne veux pas me mettre à soupçonner des gens que je connais sans avoir de preuve.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je ne veux pas me mettre à soupçonner des gens que je connais sans avoir de preuve.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
