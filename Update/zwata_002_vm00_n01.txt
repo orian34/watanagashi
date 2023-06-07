@@ -105,7 +105,7 @@ void dialog006()
 		   NULL, "— Ouais, oh, c'est bon, pas la peine de t'exciter...", Line_WaitForInput);
 
 	OutputLine(NULL, "あの毎週、違うコスチュームで戦うヤツでしょ？",
-		   NULL, " C'est la gamine qui met un costume différent chaque semaine avant d'allez punir les méchants, hein ?", Line_WaitForInput);
+		   NULL, " C'est la gamine qui met un costume différent chaque semaine avant d'aller punir les méchants, hein ?", Line_WaitForInput);
 
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300598", 256, TRUE);
 	OutputLine(NULL, "　うん。",
