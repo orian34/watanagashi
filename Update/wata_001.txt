@@ -3064,10 +3064,10 @@ void main()
 		   NULL, "— Vous êtes prêts ? Je lis :", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/mas99002", 256, TRUE);
 	OutputLine(NULL, "…「犬も歩けばくたびれる」〜。」",
-		   NULL, " “Un chien qui court cinq-cents courses cesse de courir pour claudiquer cahin-cahan.”", Line_Continue);
+		   NULL, " “Un chien qui court cinq-cents courses cesse de courir pour claudiquer cahin-cahan.”", Line_ContinueAfterTyping);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1500 );
+	Wait( 500 );
 	// (backup) SetValidityOfInput( TRUE );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
@@ -4561,7 +4561,7 @@ void main()
 	PlaySE( 3, "wa_007", 56, 64 );
 
 //そんな時間を過ごして欲しくないんだよッ！！！！＠
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09900_02", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi1003", 256, TRUE);
 	OutputLine(NULL, "そんな時間を過ごして欲しくないんだよッ！！！！！",
 		   NULL, " J'ai pas envie de vous voir finir comme moi !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4569,10 +4569,29 @@ void main()
 
 //　自分に素直になれッ！！＠夢を追え！＠そしてかなえろ！！＠俺がかなえてやるッ！！＠俺がだぁああぁあぁあッ！！！！」/
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_001_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_001_vm00_n01","dialog003");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi1004", 256, TRUE);
+	OutputLine(NULL, "　自分に素直になれッ！！！",
+		   NULL, "Soyez honnête avec vous-même !!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1005", 256, TRUE);
+	OutputLine(NULL, "夢を追え！！",
+		   NULL, " Alors n'ayez pas peur de poursuivre vos rêves !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1006", 256, TRUE);
+	OutputLine(NULL, "そしてかなえろ！！！",
+		   NULL, " Et faites en sorte de les réaliser !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1007", 256, TRUE);
+	OutputLine(NULL, "俺がかなえてやるッ！！！",
+		   NULL, " Je peux vous aider à le faire !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1008", 256, TRUE);
+	OutputLine(NULL, "俺がだぁああぁあぁあッ！！！！」",
+		   NULL, " Ici et aujourd'hui !", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_006", 56, 64 );
+	ShakeScreen( 1, 50, 20, 4, 0, );
+
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......男たちが世代を超えて価値観を共有した...瞬間だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -5691,6 +5710,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("scene/006", "m1", 0, 0, 300 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 2, "sprite/re2a_warai_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );}
 
 //「えッ？！？＠　くれるの？＠　レナに？＠　ありがと～～～！！！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }

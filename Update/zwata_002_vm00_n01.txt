@@ -18,7 +18,6 @@ void dialog001()
 	OutputLine(NULL, "　ルールを説明するよ〜！！」",
 		   NULL, " Je vais vous expliquer les règles.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 }
 
 void dialog002()

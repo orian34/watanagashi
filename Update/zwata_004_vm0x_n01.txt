@@ -12,95 +12,18 @@ void dialog001()
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_01", 256, TRUE);
-	OutputLine(NULL, "「いや、お祭りの話は前に魅音たちからも聞いたけどさ。……確か梨花ちゃん、お祭りの実行委員なんだよな。それと関係あるのか？」",
-		   NULL, "— Vous m'avez déjà parlé du festival avant. C'est vrai, Rika fait partie du comité d'organisation, non ? Ça a un rapport avec ça ?", Line_Normal);
-
-
-	DisableWindow();
-	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacterWithFiltering(3, 2, "sprite/re3a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
-
-//「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200081", 256, TRUE);
-	OutputLine(NULL, "「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね。",
-		   NULL, "— Rika est la prêtresse lors de la cérémonie de la purification du coton, alors elle doit faire une danse rituelle. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200082", 256, TRUE);
-	OutputLine(NULL, "その練習なの。」",
-		   NULL, "Elle s'entraîne à ça.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そう言えば…お袋が夕飯の時、そんな話をしていたような気がする。",
-		   NULL, "Quoique ! Maintenant qu'elle le dit... Je crois que ma mère en a parlé à table hier soir.", Line_Normal);
-	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "つまり梨花ちゃんがその巫女役をつとめるってことか。",
-		   NULL, " Donc, Rika joue le rôle d'une prêtresse ?", Line_Normal);
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_02", 256, TRUE);
-	OutputLine(NULL, "「なるほどな。確か、布団とかどてらの供養だって言ってたよな。…じゃあ、あれか？　演舞か何かで、中に入ってる綿を取り出したりするのか？」",
-		   NULL, "— Je vois, ma mère disait que des futons et tout le reste sont offerts en guise d'offrandes. Alors, ca veut dire qu'on retire le coton lors d'une danse ou un truc du genre ?", Line_Normal);
 }
 
 void dialog004()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 256, TRUE);
-	OutputLine(NULL, "「祭壇にもお布団を積み上げているし。",
-		   NULL, "— Tu verrais, on empile les futons juste devant l'autel du temple, il y a en a un paquet...", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog005()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200083", 256, TRUE);
-	OutputLine(NULL, "綿流しはね、毎年６月の日曜日に神社でやるお祭りなの。",
-		   NULL, "La purification du coton, c'est une fête qui a lieu tous les ans pendant l'un des dimanche de juin, au sanctuaire.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200084", 256, TRUE);
-	OutputLine(NULL, "とってもにぎわうんだよ！」",
-		   NULL, "Il y a plein de monde !", Line_Normal);
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-
-//そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。",
-		   NULL, "Mion et Rena acquiescèrent, un peu impressionnées.", Line_WaitForInput);
-
-//どうやら今度の想像は当たっていたようだ。kまぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、k……それだと流れも堰き止められるし、なにより後始末が大変だしな。
-	OutputLine(NULL, "どうやら今度の想像は当たっていたようだ。",
-		   NULL, " Il semble que j'ai vu juste.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "まぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、",
-		   NULL, " Même si la première fois que j'en ai entendu parler, j'imaginais que ça consistait à empiler des futons sur l'eau.", Line_WaitForInput);
-	OutputLine(NULL, "……それだと流れも堰き止められるし、なにより後始末が大変だしな。",
-		   NULL, " Mais ça aurait bloqué la rivière, c'est pas pratique du tout.", Line_Normal);
-
-//圭一「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。布団の供養っては初耳だな。どんな謂れがあるんだ？」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", "<size=-4>", Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_03", 256, TRUE);
-	OutputLine(NULL, "「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
-		   NULL, "— J'ai déjà entendu parler de cérémonies à la mémoire des ancêtres, ou celles des combattants morts à la guerre. J'ai vu des reportages sur des cérémonies pour les vieux couteaux ou les aiguilles,", Line_Continue);
-	OutputLine(NULL, "布団の供養っては初耳だな。",
-		   NULL, " mais une prière pour du coton ?", Line_Continue);
-	OutputLine(NULL, "どんな謂れがあるんだ？」",
-		   NULL, " Il y a une légende particulière par ici, pourquoi tant de ferveur religieuse ?", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog006()
@@ -129,14 +52,4 @@ void dialog007()
 
 void dialog008()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600093", 256, TRUE);
-	OutputLine(NULL, "「それよりもさっきのあれ。",
-		   NULL, "— Mais dis-voir, je voulais te demander,", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600094", 256, TRUE);
-	OutputLine(NULL, "……驚きましたか？」",
-		   NULL, " tu as eu peur tout à l'heure ?", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

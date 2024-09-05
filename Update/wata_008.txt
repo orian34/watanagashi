@@ -309,7 +309,7 @@ void main()
 
 //「雛見沢中から出てきてるんだろうなぁ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300007", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1012", 256, TRUE);
 	OutputLine(NULL, "「雛見沢中から出てきてるんだろうなぁ。",
 		   NULL, "— Je parie que presque tout le village est ici.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -317,10 +317,13 @@ void main()
 
 //　ありゃ、公由分家の寝たきり爺さんまで来てるじゃない＠　あの爺さん、去年の綿流し以降、ずーっと布団の中で過ごしてたんじゃないかなぁ。￥
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_008_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_008_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1013", 256, TRUE);
+	OutputLine(NULL, "　ありゃ、公由分家の寝たきり爺さんまで来てるじゃない！",
+		   NULL, "Tiens, mais c'est le doyen des Kimiyoshi, là-bas !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1014", 256, TRUE);
+	OutputLine(NULL, "　あの爺さん、去年の綿流し以降、ずーっと布団の中で過ごしてたんじゃないかなぁ。」",
+		   NULL, " Il est si vieux qu'il ne sort plus de son lit. D'ailleurs, la dernière fois qu'il s'est levé, c'était pour la fête l'année dernière, je crois bien…", Line_Normal);
 
 	ClearMessage();
 
@@ -2347,10 +2350,11 @@ void main()
 
 //「......ボクの平らなお胸ではどうなのです？＠
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog006");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog006");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "org/rika1001", 256, TRUE);
+	OutputLine(NULL, "「……ボクの平らなお胸ではどうなのです？」",
+		   NULL, "— Et moi, quel effet je vous fais, Keiichi ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	ModSetLayerFilter(3, 256, "none");
@@ -3300,10 +3304,16 @@ void main()
 
 //（逢引の生現場に決まってるじゃないですか～＠ほらほら、よく見て下さい＠あれ、誰だかわかります？￥
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog007");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog007");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion1004", 256, TRUE);
+	OutputLine(NULL, "（逢引の生現場に決まってるじゃないですか〜。",
+		   NULL, "— Sois pas stupide, évidemment qu'ils sont là pour se bécoter dans l'obscurité !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion1005", 256, TRUE);
+	OutputLine(NULL, "ほらほら、よく見て下さい。",
+		   NULL, " Regarde bien qui c'est !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion1006", 256, TRUE);
+	OutputLine(NULL, "あれ、誰だかわかります？）",
+		   NULL, " Tu les reconnais ?", Line_Normal);
 
 	ClearMessage();
 
@@ -3450,10 +3460,17 @@ void main()
 
 //「おやおや......、圭一くんも隅に置けないねぇ＠　こんな所で逢引かい＠　だとしたら、僕たち、とんでもないお邪魔をしちゃったかな。あっはっはっは！！＠
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog008");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog008");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "org/tomitake1010", 256, TRUE);
+	OutputLine(NULL, "「おやおや……、圭一くんも隅に置けないねぇ！",
+		   NULL, "— Ohho, mais dis-voir, Keiichi, tu es un petit fripon ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake1011", 256, TRUE);
+	OutputLine(NULL, "　こんな所で逢引かい？",
+		   NULL, " Un rendez-vous galant dans les buissons, tard le soir ? Tu me diras, vous avez l'âge, tout doucement...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake1012", 256, TRUE);
+	OutputLine(NULL, "　だとしたら、僕たち、とんでもないお邪魔をしちゃったかな。あっはっはっは！！」",
+		   NULL, " Je crois que nous vous devons des excuses. Ahahahaha !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 
@@ -3477,10 +3494,11 @@ void main()
 
 //「ってことは富竹さんたちは、逢引してたってわけじゃないみたいですね。＠
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog010");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog010");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion1007", 256, TRUE);
+	OutputLine(NULL, "「ってことは富竹さんたちは、逢引してたってわけじゃないみたいですね。」",
+		   NULL, "— Oh, mais alors, vous n'êtes pas là pour des questions d'hormones ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "night");
@@ -3508,10 +3526,16 @@ void main()
 
 //「くすくす...＠残念だけど、貴方たちが覗き見したくなるような逢引現場じゃないのよ＠期待に添えなくて申し訳ないわね。￥
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog011");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog011");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1004", 256, TRUE);
+	OutputLine(NULL, "「くすくす…。",
+		   NULL, "— Ahahahaha…", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1005", 256, TRUE);
+	OutputLine(NULL, "残念だけど、貴方たちが覗き見したくなるような逢引現場じゃないのよ。",
+		   NULL, " Non, je vais vous décevoir, nous ne sommes pas là en tant que couple pressé.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1006", 256, TRUE);
+	OutputLine(NULL, "期待に添えなくて申し訳ないわね。」",
+		   NULL, " Désolée, il n'y aura pas de spectacle.", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3520,10 +3544,16 @@ void main()
 
 //「ふーん＠逢引現場じゃなかったら、何してるんですか＠　富竹さん、今、扉の南京錠をいじってませんでした？￥
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog012");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog012");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion1008", 256, TRUE);
+	OutputLine(NULL, "「ふーん。",
+		   NULL, "— Hmmmmm.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion1009", 256, TRUE);
+	OutputLine(NULL, "逢引現場じゃなかったら、何してるんですか？",
+		   NULL, " Mais alors, que faites-vous ici ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion1010", 256, TRUE);
+	OutputLine(NULL, "　富竹さん、今、扉の南京錠をいじってませんでした？」",
+		   NULL, " Tomitake, vous n'étiez pas en train de trafiquer ce cadenas à l'instant ?", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3702,10 +3732,21 @@ void main()
 
 
 //　もちろん、古手家の人間以外は/
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n02","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n02","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1012", 256, TRUE);
+	OutputLine(NULL, "　もちろん、古手家の人間以外は",
+		   NULL, "Bien sûr, toute personne ne faisant pas partie du clan des Furude est déclarée", Line_WaitForInput);
+
+	PlaySE( 3, "wa_024", 56, 64 );
+
+//「穢れ（ケガレ）」を持ち込むから立入禁止の不可侵領域＠......聖域なの。＠
+	ModPlayVoiceLS(4, 9, "org/takano1013", 256, TRUE);
+	OutputLine(NULL, "「穢れ（ケガレ）」を持ち込むから立入禁止の不可侵領域。",
+		   NULL, " impure et ne doit donc pas souiller ce lieu.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1014", 256, TRUE);
+	OutputLine(NULL, "……聖域なの。」",
+		   NULL, " Il est considéré comme sacré.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　そんな場所、ますます踏み込んじゃいけないんじゃないのか？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4872,7 +4913,7 @@ void main()
 		   NULL, "Mais un jour, il s'est passé quelque chose.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-//	DrawSceneWithMask( "bg_160", "left", 0, 0, 300 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/aka2", "left", 0, 0, 300 );}
 	DrawSceneWithMask("scene/sil1a", "left", 0, 0, 300 );
 	ShakeScreen( 1, 20, 20, 5, 0, );
 
@@ -5649,10 +5690,22 @@ void main()
 	PlayBGM( 1, "msys07", 56, 0 );
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog003");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1015", 256, TRUE);
+	OutputLine(NULL, "「人食い鬼だから。",
+		   NULL, "— De temps en temps, tous les dix, quinze, vingt ans, ce n'est pas documenté,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1016", 256, TRUE);
+	OutputLine(NULL, "何十年かに一度、どうしても人肉が食べたくて仕方がなくなる周期があるんですって。",
+		   NULL, "les descendants des ogres mangeurs d'hommes avaient besoin de chair humaine.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1017", 256, TRUE);
+	OutputLine(NULL, "だからって村人同士で共食いするわけにはいかない。",
+		   NULL, "Mais évidemment, ils ne pouvaient pas se permettre de se manger entre eux. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1018", 256, TRUE);
+	OutputLine(NULL, "……だから彼らはその度に人里へ降り、「鬼隠し」をしたと伝えられてるわ。」",
+		   NULL, "Alors parfois, ils partaient à la chasse dans un village et ils enlevaient quelqu'un. On appelait ce rituel “l'enlèvement des démons”.", Line_Normal);
 
 	ClearMessage();
 
@@ -5669,11 +5722,14 @@ void main()
 	ModDrawCharacter(2, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「平たく言えば、鬼たちによる誘拐行為よ＠鬼ヶ淵村の村人たちが人里に押し寄せ、哀れな生贄を無理やり力尽くでさらったんですって。￥
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog004");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog004");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1019", 256, TRUE);
+	OutputLine(NULL, "「平たく言えば、鬼たちによる誘拐行為よ。",
+		   NULL, "— Eh bien, il n'y a pas grand'chose à expliquer, je pense.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1020", 256, TRUE);
+	OutputLine(NULL, "鬼ヶ淵村の村人たちが人里に押し寄せ、哀れな生贄を無理やり力尽くでさらったんですって。」",
+		   NULL, " Les habitants du village allaient tous ensemble en attaquer un autre, et ils enlevaient de force une pauvre victime.", Line_Normal);
+	ClearMessage();
 
 //　鷹野さんの説明はあまりに簡素だったが...それは想像すると...とてつもなく恐ろしいものだった＠
 	OutputLine(NULL, "　鷹野さんの説明はあまりに簡素だったが…それは想像すると…とてつもなく恐ろしいものだった。",
@@ -5714,17 +5770,16 @@ void main()
 
 //「もちろんオヤシロさまも了承してたそうよ＠だから『鬼隠し』は無差別ではなく、神さまが決めた生贄以外には誰もさらわなかったらしいし＠ほとんどの場合は１人か２人だったって記されてるわね。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900111", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1021", 256, TRUE);
 	OutputLine(NULL, "「もちろんオヤシロさまも了承してたそうよ。",
 		   NULL, "— Oh, mais la déesse Yashiro était d'accord.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900112", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1022", 256, TRUE);
 	OutputLine(NULL, "だから「鬼隠し」は無差別ではなく、神さまが決めた生贄以外には誰もさらわなかったらしいし。",
 		   NULL, " Les victimes de l'enlèvement des démons étaient choisies par la déesse, et les ogres n'avaient pas le droit de toucher à quelqu'un d'autre.", Line_Normal);
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog005");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog005");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1023", 256, TRUE);
+	OutputLine(NULL, "ほとんどの場合は１人か２人だったって記されてるわね。」",
+		   NULL, "Et puis, c'était généralement une seule personne, parfois deux à la rigueur.", Line_Normal);
 
 	ClearMessage();
 
@@ -5751,11 +5806,13 @@ void main()
 	StopSE( 3 );
 
 //「そうして生贄をさらってきた夜にはね＠...哀れな犠牲者を美味しく頂くため、『綿流し』の儀式が開かれたというわ。￥
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog006");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog006");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1024", 256, TRUE);
+	OutputLine(NULL, "「そうして生贄をさらってきた夜にはね。",
+		   NULL, "— Et le soir où les ogres avaient enlevé quelqu'un, ils faisaient une cérémonie pour pouvoir la manger.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1025", 256, TRUE);
+	OutputLine(NULL, "…哀れな犠牲者を美味しく頂くため、「綿流し」の儀式が開かれたというわ。」",
+		   NULL, " Cette cérémonie était appelée la purification du coton.", Line_Normal);
 
 	ClearMessage();
 
@@ -5867,10 +5924,10 @@ void main()
 
 //「そう＠前原くんの想像している通りよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900116", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1026", 256, TRUE);
 	OutputLine(NULL, "「そう。",
 		   NULL, "— Exact.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900117", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1027", 256, TRUE);
 	OutputLine(NULL, "前原くんの想像している通りよ。",
 		   NULL, " Je pense que c'est exactement comme tu es en train de te l'imaginer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5878,14 +5935,14 @@ void main()
 
 //　...今でこそ綿流しは毎年６月に行なわれるちょっと早い夏祭りに過ぎないけど、昔は違った＠哀れな食材をさらってきた夜にだけ開かれた......凄惨な人食いの宴のことだったの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900118", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1028", 256, TRUE);
 	OutputLine(NULL, "　「…今でこそ綿流しは毎年６月に行なわれるちょっと早い夏祭りに過ぎないけど、昔は違った。」",
 		   NULL, "Ces dernières années, la purification du coton est devenue une fête banale qui tombe toujours en juin, un peu avant le début de l'été, mais jadis, c'était complètement autre chose.", GetGlobalFlag(GLinemodeSp));
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog007");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog007");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1029", 256, TRUE);
+	OutputLine(NULL, "哀れな食材をさらってきた夜にだけ開かれた……凄惨な人食いの宴のことだったの。」",
+		   NULL, "C'était un festin cannibale qui se déroulait uniquement pendant une nuit bien spéciale.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -5909,18 +5966,66 @@ void main()
 	ModDrawCharacter(1, 9, "sprite/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog008");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog008");}
-	//VoiceMatchingEnd
+//「前原くんはさっき、綿流しは布団を清める儀式だと言ったわね＠ワタが詰まった布団って、何を意味してると思うかしら？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1030", 256, TRUE);
+	OutputLine(NULL, "「前原くんはさっき、綿流しは布団を清める儀式だと言ったわね。",
+		   NULL, "— Tu as dis tout à l'heure que la cérémonie servait à purifier le coton des couettes.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1031", 256, TRUE);
+	OutputLine(NULL, "ワタが詰まった布団って、何を意味してると思うかしら？」",
+		   NULL, " Et si la couette pleine de coton était en fait un symbole ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「布団は布団だろ？＠　寝具＠　寝るための道具だよ＠　他に何の意味があるんだよ？！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi1021", 256, TRUE);
+	OutputLine(NULL, "「布団は布団だろ？！",
+		   NULL, "— Nan, une couette,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1022", 256, TRUE);
+	OutputLine(NULL, "　寝具！",
+		   NULL, " c'est une couette, point barre !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1023", 256, TRUE);
+	OutputLine(NULL, "　寝るための道具だよ！",
+		   NULL, " Elle sert pour dormir !", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1024", 256, TRUE);
+	OutputLine(NULL, "　他に何の意味があるんだよ？！」",
+		   NULL, " C'est un objet qui ne sert qu'au repos !", Line_Normal);
+	ClearMessage();
+
+//　...自分のうわべは、鷹野さんの言うおぞましい『綿流し』を否定しようと必死にまくし立てる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…自分のうわべは、鷹野さんの言うおぞましい「綿流し」を否定しようと必死にまくし立てる。",
+		   NULL, "Il fallait absolument nier l'explication qu'elle voulait me faire comprendre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　...だが、心の奥底は...鷹野さんの言った意味をよく理解してしまっていた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だが、心の奥底は…鷹野さんの言った意味をよく理解してしまっていた。",
+		   NULL, "Mais tout au fond de mon âme, j'avais très bien compris ce qu'elle avait voulu dire.", Line_Normal);
+	ClearMessage();
+
+//　ワタの詰まった布団＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ワタの詰まった布団。",
+		   NULL, "Des couettes remplies de cotons.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　ワタは腸（はらわた）を意味するものなのだとしたら、腸の詰まった布団というのは...人間のことに他ならない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ワタは腸（はらわた）を意味するものなのだとしたら、腸の詰まった布団というのは…人間のことに他ならない。",
+		   NULL, "Si le coton était un symbole pour les entrailles, alors la couette pleine de coton désignait en fait un être humain.", Line_Normal);
+	ClearMessage();
 
 
 //「では、梨花ちゃんがやった奉納演舞を思い出してちょうだい＠梨花ちゃんがあそこで何をしていたか、!w1000...わかってくる？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900122", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1031_130900122", 256, TRUE);
 	OutputLine(NULL, "「では、梨花ちゃんがやった奉納演舞を思い出してちょうだい。",
 		   NULL, "— Maintenant, souviens-toi de la danse et des mouvements de la cérémonie que faisait Rika.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900123", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1031_130900123", 256, TRUE);
 	OutputLine(NULL, "梨花ちゃんがあそこで何をしていたか、",
 		   NULL, " Tu comprends", Line_Continue);
 
@@ -5969,11 +6074,22 @@ void main()
 	ModDrawCharacter(1, 9, "sprite/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「梨花ちゃんが持っていた祭事用の鍬＠...もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて＠/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1032", 256, TRUE);
+	OutputLine(NULL, "「梨花ちゃんが持っていた祭事用の鍬。",
+		   NULL, "— Tu vois le râteau de cérémonie qu'elle portait ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1033", 256, TRUE);
+	OutputLine(NULL, "…もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて。",
+		   NULL, "Tu t'es quand même rendu compte que ce n'était pas un râteau pour travailler dans les champs, j'espère ?", GetGlobalFlag(GLinemodeSp));
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog009");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog009");}
-	//VoiceMatchingEnd
+	PlaySE( 3, "wa_023", 56, 64 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1034", 256, TRUE);
+	OutputLine(NULL, "…人間の腹をこじ開けるための解剖道具なのよ。」",
+		   NULL, "... Il servait très probablement à ouvrir le ventre de la victime.", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawScene("scene/106", 1500 );
@@ -6013,10 +6129,29 @@ void main()
 		   NULL, " En gros.", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog011");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog011");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
+
+//「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね＠...それで儀式はおしまい＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1035", 256, TRUE);
+	OutputLine(NULL, "「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね。",
+		   NULL, "— C'est un peu comme lorsqu'on vide le poisson vite fait en jetant les entrailles à la poubelle,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1036", 256, TRUE);
+	OutputLine(NULL, "…それで儀式はおしまい。",
+		   NULL, " sauf qu'eux le font avec toute une cérémonie et un grand respect.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　そのあとは、それぞれの役割を持った村人たちが、各々に肉を解体して美味しく頂いたって考えられてるわね＠...くすくす。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1037", 256, TRUE);
+	OutputLine(NULL, "　そのあとは、それぞれの役割を持った村人たちが、各々に肉を解体して美味しく頂いたって考えられてるわね。",
+		   NULL, "Après, chaque haut dignitaire découpe une partie de la chair et la mange, enfin, c'est la supposition la plus probable.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1038", 256, TRUE);
+	OutputLine(NULL, "…くすくす。」",
+		   NULL, " ...Heehee.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...さも愉快そうな鷹野さんの笑いに、どうしてか、猛烈な不快さを感じた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6058,6 +6193,9 @@ void main()
 		   NULL, "Quand je pense que Rika avait fourni tellement d'efforts, qu'elle était tellement nerveuse ce soir...", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(3, 256, "night");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 6, "sprite/si1a_majime_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );}
 
 //「...鷹野さんももう少し、言葉を選んでほしいです＠圭ちゃん、ナイーブなんですから、あまりからかわないでください。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -6085,10 +6223,10 @@ void main()
 
 //「ごめんなさい＠...男の子だから、ショッキングな話は結構好きかと思って。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900131", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1038_130900131", 256, TRUE);
 	OutputLine(NULL, "「ごめんなさい。",
 		   NULL, "— Ah, excuse-moi,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900132", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1038_130900132", 256, TRUE);
 	OutputLine(NULL, "…男の子だから、ショッキングな話は結構好きかと思って。」",
 		   NULL, " je pensais que les garçons aimaient les histoires un peu choquantes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -6099,6 +6237,9 @@ void main()
 	OutputLine(NULL, "　鷹野さんは悪びれた様子もなく、優雅に笑いながらそう言った。",
 		   NULL, "Elle se repassa la main dans les cheveux avec grâce et élégance.", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 6, "sprite/si1a_akuwarai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );}
 
 //「この辺まで話を聞けば、!w1000...圭ちゃんにも、この祭具殿の中にどういうものがあるのか、理解できるようになってきませんか＠　ほら。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -6117,6 +6258,8 @@ void main()
 		   NULL, " Regarde là-bas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/saiguden_01", 400 );}
 
 //　詩音はそう言い、ランタンの灯りにぼんやりと照らし出された壁を指差した￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6187,10 +6330,14 @@ void main()
 		   NULL, "J'avais vu ces outils dans mon livre d'histoire.", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog012");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog012");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1039", 256, TRUE);
+	OutputLine(NULL, "「こういうのはね。",
+		   NULL, "— Hmm,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1040", 256, TRUE);
+	OutputLine(NULL, "医学の本場、ドイツの文献の方がリアルに掲載されてるわよ。」",
+		   NULL, " c'est vrai que les écrits allemands du moyen-âge étaient un peu mieux du point de vue médical, un peu plus réalistes surtout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　これは...大工道具なんかじゃない＠...この歪な形をした道具類は...解剖道具なのだ＠
@@ -6221,10 +6368,15 @@ void main()
 	ModDrawCharacterWithFiltering(3, 9, "sprite/ta1_akuwarai_", "1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/saiguden_01", "left", 0, 0, 300 );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog013");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog013");}
-	//VoiceMatchingEnd
+//「もっと怖い言い方をするなら、調理道具と言ったところかしらね＠...くすくす。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1041", 256, TRUE);
+	OutputLine(NULL, "「もっと怖い言い方をするなら、調理道具と言ったところかしらね。",
+		   NULL, "— Si on veut vraiment le dire de manière répugnante, on peut considérer que ces objets servaient à faire la cuisine.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1042", 256, TRUE);
+	OutputLine(NULL, "…くすくす。」",
+		   NULL, " ...Heehee.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //　鷹野さんは唯一の灯りであるランタンを持って、壁に沿って先導していく＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6243,10 +6395,11 @@ void main()
 	ModDrawCharacter(3, 9, "sprite/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog014");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog014");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1043", 256, TRUE);
+	OutputLine(NULL, "「…ほら。」",
+		   NULL, "— Regardez.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //　鷹野さんが照らし出す先には、見るものを威圧しそうな鎖のとぐろ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6304,10 +6457,22 @@ void main()
 //	DisableWindow();
 //	DrawBustshotWithFiltering( 1, "ta_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog015");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog015");}
-	//VoiceMatchingEnd
+//「多分、...まな板じゃないかしら＠犠牲者を拘束してこの台の上でお料理をしたんだと思うわね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1044", 256, TRUE);
+	OutputLine(NULL, "「多分、…まな板じゃないかしら。",
+		   NULL, "— Hmmm, je pense que c'est une planche à découper.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1045", 256, TRUE);
+	OutputLine(NULL, "犠牲者を拘束してこの台の上でお料理をしたんだと思うわね。」",
+		   NULL, " Ils attachaient la victime dessus et la préparait sur ce meuble, comme on préparerait de la viande.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　まな板という言葉にぞくりとする......￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まな板という言葉にぞくりとする……。",
+		   NULL, "À ses mots, je tressaillis.", Line_Normal);
+	ClearMessage();
 
 //　目を凝らすと......確かに、包丁のようなノコギリのような、そんなどす黒い切り傷が、幾重にも刻み付けられていた...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6649,10 +6814,24 @@ void main()
 		   NULL, "Madame Takano savait ce qu'il me passait par la tête, et elle en rigolait...", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog016");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog016");}
-	//VoiceMatchingEnd
+//「魔女狩りで有名な火刑、火あぶりなんかはすぐに死んじゃうのよ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1046", 256, TRUE);
+	OutputLine(NULL, "「魔女狩りで有名な火刑、火あぶりなんかはすぐに死んじゃうのよ。",
+		   NULL, "— Pendant les chasses aux sorcières en Europe, on les brûlait vives, mais elles mouraient très vite.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　全身の皮膚が広範囲にわたって重度の火傷を負うと、組織の分解産物で中毒症状を引き起こし、重度なショックを併発しちゃうから＠...まぁ確かに、それに至るまでが、ギロチンなんかに比べれば遥かに長いところに残虐性があるんだけど。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1047", 256, TRUE);
+	OutputLine(NULL, "　全身の皮膚が広範囲にわたって重度の火傷を負うと、組織の分解産物で中毒症状を引き起こし、重度なショックを併発しちゃうから。",
+		   NULL, "Lorsque le corps se recouvre de brûlures, il entre en état de choc et libère des substances chimiques qui nous font perdre connaissance. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1048", 256, TRUE);
+	OutputLine(NULL, "…まぁ確かに、それに至るまでが、ギロチンなんかに比べれば遥かに長いところに残虐性があるんだけど。」",
+		   NULL, "Enfin bon, c'est vrai que c'est nettement plus douloureux et plus long que la guillotine.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......恐ろしい話を、何だか妙に医学的に描写する＠...その疑問には、すぐに詩音が答えてくれた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6679,12 +6858,198 @@ void main()
 	OutputLine(NULL, "　…医者のなんとかほど恐ろしいものはないと言うが……本当のようだ。",
 		   NULL, "On dit souvent que les médecins sont les personnes les plus terrifiantes... eh ben c'est vrai, je vous assure.", Line_Normal);
 	ClearMessage();
-//	DisableWindow();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog017");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog017");}
-	//VoiceMatchingEnd
+	DisableWindow();
+	ModSetLayerFilter(1, 256, "night");
+	ModDrawCharacter(1, 9, "sprite/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「ところがね＠ローマの時代の処刑方法にね、網焼きというものがあったの＠バーベキューと同じにね＠金網で挟みつけて、炭火でじっくりと焼いたんですって。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1049", 256, TRUE);
+	OutputLine(NULL, "「ところがね。",
+		   NULL, "— Mais dans certains écrits de la Rome antique,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1050", 256, TRUE);
+	OutputLine(NULL, "ローマの時代の処刑方法にね、網焼きというものがあったの。",
+		   NULL, "on trouve des descriptions de tortures aussi. Par exemple, le grill, une simple grille en fer posée sur un feu,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1051", 256, TRUE);
+	OutputLine(NULL, "バーベキューと同じにね。",
+		   NULL, "une sorte d'ancêtre du barbecue, donc.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1052", 256, TRUE);
+	OutputLine(NULL, "金網で挟みつけて、炭火でじっくりと焼いたんですって。」",
+		   NULL, "Ils faisaient griller les gens lentement en les plaçant entre deux grilles placées au contact des cendres chaudes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　家族でデイキャンプに行った時の思い出が...こんな時に限って鮮明に蘇る...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　家族でデイキャンプに行った時の思い出が…こんな時に限って鮮明に蘇る…。",
+		   NULL, "Mes souvenirs eurent la mauvaise idée de me rappeler les saucisses que l'on mangeait chaque année lorsque l'on partait en camping.", Line_Normal);
+	ClearMessage();
+
+//「...これだとね＠どういうわけか、なかなか死なないらしいのよ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1053", 256, TRUE);
+	OutputLine(NULL, "「…これだとね。",
+		   NULL, "— De cette manière,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1054", 256, TRUE);
+	OutputLine(NULL, "どういうわけか、なかなか死なないらしいのよ。",
+		   NULL, " étrangement, les gens mettaient un temps fou à mourir.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　ものの本によると、一昼夜かけて片側が炭化するくらいこんがり焼いても、まだ意識があって流暢に話をした、なんて記述も出てくるから。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1055", 256, TRUE);
+	OutputLine(NULL, "　ものの本によると、一昼夜かけて片側が炭化するくらいこんがり焼いても、まだ意識があって流暢に話をした、なんて記述も出てくるから。」",
+		   NULL, "Certains récits disent que même après avoir été cuits d'un côté pendant un jour et une nuit, certains prisonniers étaient carbonisés, mais pouvaient encore parler intelligiblement.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　...そんな...丸一日火あぶりにしても...、まだ意識があるなんて......￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そんな…丸一日火あぶりにしても…、まだ意識があるなんて……。",
+		   NULL, "C'est pas vrai... ils étaient encore conscients ?", Line_Normal);
+	ClearMessage();
+
+//　死刑がひとつの見世物だったローマの時代には、いかにして死を長引かせるかに主眼を置いた処刑方法がいろいろと考案されたという...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　死刑がひとつの見世物だったローマの時代には、いかにして死を長引かせるかに主眼を置いた処刑方法がいろいろと考案されたという…。",
+		   NULL, "Dans la Rome antique, les exécutions étaient publiques, et il fallait les faire durer longtemps pour pouvoir satisfaire la curiosité de tout le monde, alors ils avaient dû beaucoup y réfléchir.", Line_Normal);
+	ClearMessage();
+
+//「その中にね＠お腹を開いて、腸をウィンナーみたいに引っ張り出して、ウィンチで引っ張り上げてさらし者にする刑があったんですって。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1056", 256, TRUE);
+	OutputLine(NULL, "「その中にね。",
+		   NULL, "— Il y avait paraît-il", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1057", 256, TRUE);
+	OutputLine(NULL, "お腹を開いて、腸をウィンナーみたいに引っ張り出して、ウィンチで引っ張り上げてさらし者にする刑があったんですって。」",
+		   NULL, " une méthode pour ouvrir un prisonnier, lui sortir les tripes avec un crochet de boucher et le garder conscient.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 6, "sprite/si1a_yowaki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//　詩音が俺の背中に、しがみ付くようにくっついてくる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　詩音が俺の背中に、しがみ付くようにくっついてくる。",
+		   NULL, "Je sentis Shion se placer tout contre mon dos et passer ses bras autour de ma taille.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　......それは怖いからだけじゃない＠...お腹をかばっているのだ...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……それは怖いからだけじゃない。",
+		   NULL, "Elle se protégeait le ventre,", Line_WaitForInput);
+	OutputLine(NULL, "…お腹をかばっているのだ…。",
+		   NULL, " et le mien par la même occasion...", Line_Normal);
+	ClearMessage();
+
+//「臓物を引っ張り出すなんて、聞いただけでもすぐに死んじゃいそうでしょう＠　でもね＠...丁寧にやさしくやるとね＠意識がはっきりとした状態のまま、ハラワタを引きずりだすことって可能らしいのよ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1058", 256, TRUE);
+	OutputLine(NULL, "「臓物を引っ張り出すなんて、聞いただけでもすぐに死んじゃいそうでしょう？",
+		   NULL, "— On pourrait croire que lorsqu'on tire les intestins hors du ventre, la personne meurt tout de suite,", Line_WaitForInput);
+
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+	ModPlayVoiceLS(4, 9, "org/takano1059", 256, TRUE);
+	OutputLine(NULL, "　でもね。",
+		   NULL, " mais en fait, pas du tout.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1060", 256, TRUE);
+	OutputLine(NULL, "…丁寧にやさしくやるとね。",
+		   NULL, " Si l'on fait très attention et qu'on ne brusque pas trop, ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1061", 256, TRUE);
+	OutputLine(NULL, "意識がはっきりとした状態のまま、ハラワタを引きずりだすことって可能らしいのよ。」",
+		   NULL, "on peut faire en sorte que la personne se rende compte que vous êtes en train de lui retirer les intestins.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　お腹の内側に、嫌な感触を感じる...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お腹の内側に、嫌な感触を感じる…。",
+		   NULL, "Je commençai à sentir une drôle de sensation dans mon ventre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　まるで、鷹野さんが目線だけで...俺の内臓をこね回しているかのようだった...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まるで、鷹野さんが目線だけで…俺の内臓をこね回しているかのようだった…。",
+		   NULL, "Comme si mes entrailles se bougeaient d'elles-même pour se cacher du regard de madame Takano...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど＠もっと野蛮に、裂いた腹から臓物を、千切っては投げ千切っては投げという...!w1000そんな恐ろしい刑もあったんじゃないかって充分に考えられない＠　でも処刑者には意識があるの＠...それは痛い以上に...恐ろしい体験なんでしょうね...。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1062", 256, TRUE);
+	OutputLine(NULL, "「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど。",
+		   NULL, "— Il n'est pas difficile d'imaginer une méthode plus barbare", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1063", 256, TRUE);
+	OutputLine(NULL, "もっと野蛮に、裂いた腹から臓物を、千切っては投げ千切っては投げという…",
+		   NULL, " où l'on tirerait un morceau pour le couper et le jeter aux bêtes, puis retirer un morceau, le recouper, etc.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1064", 256, TRUE);
+	OutputLine(NULL, "そんな恐ろしい刑もあったんじゃないかって充分に考えられない？",
+		   NULL, " Ça ne semble pas inimaginable, n'est-ce pas ? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1065", 256, TRUE);
+	OutputLine(NULL, "　でも処刑者には意識があるの。",
+		   NULL, "Sauf que la victime était encore consciente.", Line_WaitForInput);
+
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+	ModPlayVoiceLS(4, 9, "org/takano1066", 256, TRUE);
+	OutputLine(NULL, "…それは痛い以上に…恐ろしい体験なんでしょうね…。」",
+		   NULL, " Ça doit être une expérience plus effroyable que douloureuse, je pense.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　まるで、どこかで観光してきたかのように楽しく語る＠...耳元で、詩音が何度も唾を飲み込む音がした......￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まるで、どこかで観光してきたかのように楽しく語る。",
+		   NULL, "J'entendis Shion déglutir plusieurs fois.", Line_WaitForInput);
+	OutputLine(NULL, "…耳元で、詩音が何度も唾を飲み込む音がした……。",
+		   NULL, " Madame Takano, quant à elle, continuait de nous raconter tout cela sur un ton passionné.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「雛見沢の、いえ、鬼ヶ淵村の綿流しもそんな感じだったのかしらね＠......ほら＠耳を澄ませば......聞こえてくるような気がしない？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1067", 256, TRUE);
+	OutputLine(NULL, "「雛見沢の、いえ、鬼ヶ淵村の綿流しもそんな感じだったのかしらね。",
+		   NULL, "— Je pense que la purification du coton était quelque chose de ce genre, à l'origine.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1068", 256, TRUE);
+	OutputLine(NULL, "……ほら。",
+		   NULL, " Tiens ? Écoutez-voir ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1069", 256, TRUE);
+	OutputLine(NULL, "耳を澄ませば……聞こえてくるような気がしない？」",
+		   NULL, " Vous n'entendez rien ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　何も聞きたくないとこれほどにも強く思うのに...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何も聞きたくないとこれほどにも強く思うのに…、",
+		   NULL, "Je n'avais rien envie d'entendre...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　なぜこんな時ばかり、聞こえないはずの音まで聞こえるようになってしまうのか...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜこんな時ばかり、聞こえないはずの音まで聞こえるようになってしまうのか…。",
+		   NULL, "et pourtant bien sûr, justement à ce moment-là, mon cerveau me joua des tours et j'eus l'impression d'entendre toutes sortes de bruits.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
 
 
 	DrawSceneWithMask("black", "down", 0, 0, 3000 );
@@ -6863,10 +7228,91 @@ void main()
 	ModDrawCharacterWithFiltering(1, 9, "sprite/ta1_def_", "0", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/saiguden_01", "up", 0, 0, 300 );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog018");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog018");}
-	//VoiceMatchingEnd
+//「ヨーロッパの拷問道具に、こう言った鳥篭がたくさん登場するわね＠日本にもあったなんて驚きだわ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1070", 256, TRUE);
+	OutputLine(NULL, "「ヨーロッパの拷問道具に、こう言った鳥篭がたくさん登場するわね。",
+		   NULL, "— Ce sont des types d'instruments très courants en Europe,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1071", 256, TRUE);
+	OutputLine(NULL, "日本にもあったなんて驚きだわ。」",
+		   NULL, " mais pas au Japon. Je dois avouer que c'est très intéressant...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModDrawCharacterWithFiltering(3, 6, "sprite/si1a_odoroki_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「け、......圭ちゃん、!w800......あれ、中に入ってない？＠　人＠　ミイラ？！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion1011", 256, TRUE);
+	OutputLine(NULL, "「け、……圭ちゃん、",
+		   NULL, "— Kei…", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion1012", 256, TRUE);
+	OutputLine(NULL, "……あれ、中に入ってない？！",
+		   NULL, " Il y a quoi, là-bas ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion1013", 256, TRUE);
+	OutputLine(NULL, "　人？",
+		   NULL, " Un squelette ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion1014", 256, TRUE);
+	OutputLine(NULL, "　ミイラ？！」",
+		   NULL, " Une momie ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「え？！　ど、どれ...？！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi1025", 256, TRUE);
+	OutputLine(NULL, "「え？！　ど、どれ…？！」",
+		   NULL, "— Hein, quoi, où ça ?", Line_Normal);
+	ClearMessage();
+
+//　いくつもぶら下がっている人間鳥篭の中のひとつを、詩音は懸命に指差すが、どれのことを言っているのかわからない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いくつもぶら下がっている人間鳥篭の中のひとつを、詩音は懸命に指差すが、どれのことを言っているのかわからない。",
+		   NULL, "Shion pointait obstinément du doigt vers plusieurs cages qui pendaient l'une contre l'autre, mais je ne sus pas dire de quelle cage elle me parlait.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　...それに、この暗がりで、中に何かが入っているのかどうなのか、わかるわけがない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…それに、この暗がりで、中に何かが入っているのかどうなのか、わかるわけがない。",
+		   NULL, "Et puis il faisait tellement sombre que je n'aurais pas su discerner grand'chose.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「......私には何も見えないけど＠見間違いじゃないの？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1072", 256, TRUE);
+	OutputLine(NULL, "「……私には何も見えないけど。",
+		   NULL, "— ... Hmm, je ne vois rien, personnellement.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1073", 256, TRUE);
+	OutputLine(NULL, "見間違いじゃないの？」",
+		   NULL, " Tu es sûre que ton imagination ne te joue pas des tours ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+//	DrawBustshot( 2, "si_si_yw_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(3, 6, "sprite/si1a_yowaki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「...................................................。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion1015", 256, TRUE);
+	OutputLine(NULL, "「……………………………………………。」",
+		   NULL, "— ... ... ...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　詩音は納得できないようだったが...、確かめる術がなく、途方に暮れるしかなかった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　詩音は納得できないようだったが…、確かめる術がなく、途方に暮れるしかなかった。",
+		   NULL, "Shion n'avait pas l'air d'accepter ça comme réponse, mais elle n'avait aucun moyen de vérifier.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
+	ModDrawCharacter(1, 9, "sprite/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「これで前原くんにも、何となく信じられるようになったんじゃないかしら＠　雛見沢に伝えられる恐ろしい儀式の数々が。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -7053,10 +7499,10 @@ void main()
 
 //「前原くんも内緒にしてね＠　知られたら私、オヤシロさまの祟りにあうか、生贄にされちゃうかするかもしれない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900181", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1074", 256, TRUE);
 	OutputLine(NULL, "「前原くんも内緒にしてね？",
 		   NULL, "— Keiichi, tu me promets de garder le secret ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900182", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1075", 256, TRUE);
 	OutputLine(NULL, "　知られたら私、オヤシロさまの祟りにあうか、生贄にされちゃうかするかもしれない。",
 		   NULL, " Si ça se savait, je serais peut-être frappée par la malédiction de la déesse Yashiro, ou bien même sacrifiée rituellement, qui sait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -7066,11 +7512,20 @@ void main()
 	ModDrawCharacter(1, 9, "sprite/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　祟りなら、今年はどんな死に方をさせられちゃうのかしら＠生贄なら...鬼ヶ淵の沼に生きたまま沈められちゃうのかしら＠......そう言えば今夜よね＠オヤシロさまの祟りがある夜は。＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog019");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog019");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1076", 256, TRUE);
+	OutputLine(NULL, "　祟りなら、今年はどんな死に方をさせられちゃうのかしら。",
+		   NULL, "Si c'est la malédiction, je me demande comment ils vont me cuisiner cette année.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1077", 256, TRUE);
+	OutputLine(NULL, "生贄なら…鬼ヶ淵の沼に生きたまま沈められちゃうのかしら？",
+		   NULL, " Si je sers pour le sacrifice... on verra s'ils me plongent dans le marais.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1078", 256, TRUE);
+	OutputLine(NULL, "……そう言えば今夜よね。",
+		   NULL, " Mais au fait, c'est ce soir", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1079", 256, TRUE);
+	OutputLine(NULL, "オヤシロさまの祟りがある夜は。」",
+		   NULL, " que la malédiction doit frapper, non ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　額がぶつかりそうになるくらい、鷹野さんは顔を寄せて...そう言った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -7264,11 +7719,56 @@ void main()
 	ClearMessage();
 
 
+	DisableWindow();
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 9, "sprite/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog020");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog020");}
-	//VoiceMatchingEnd
+//「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1080", 256, TRUE);
+	OutputLine(NULL, "「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって。",
+		   NULL, "— Ils disent que la personne était encore vivante lorsqu'ils lui ont arraché la peau du corps, et qu'ils l'ont torturée seulement après.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　......そして死後にもさらに遺体を分解・解剖と残虐の限りを尽くしたのではないか、って筆者は見ているはね＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1081", 256, TRUE);
+	OutputLine(NULL, "　……そして死後にもさらに遺体を分解・解剖と残虐の限りを尽くしたのではないか、って筆者は見ているはね。",
+		   NULL, "La personne qui a commenté cet article pense qu'ils l'ont éviscérée après l'avoir tuée.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModDrawCharacter(2, 9, "sprite/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//　......私は、どの工程も『生きている』!w900内にやったんじゃないか、って思ってるんだけどね＠前原くんはどう思うかしら？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1082_1083", 256, TRUE);
+	OutputLine(NULL, "　……私は、どの工程も「生きている」",
+		   NULL, "Mais pour ma part, je pense que toutes les exactions", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "内にやったんじゃないか、って思ってるんだけどね。",
+		   NULL, " ont été commises pendant qu'elle était encore consciente.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1084", 256, TRUE);
+	OutputLine(NULL, "前原くんはどう思うかしら？」",
+		   NULL, " Qu'est-ce que tu en penses ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　...彼女がもっともっと残酷な想像を掻き立てるようなことを言ったが...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…彼女がもっともっと残酷な想像を掻き立てるようなことを言ったが…。",
+		   NULL, "… Sa manière de parler était clairement destinée à me faire imaginer des choses plus horribles encore…", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
 
 
 //　俺の脳のキャパシティはとっくに限界で、それ以上の凄惨な想像などできるはずもなかった￥
@@ -7385,15 +7885,40 @@ void main()
 
 
 //「たったよ＠...たった百年前のことよ＠それにね＠昭和に入ってからだって、あるんだから＠...終戦直後に騒ぎになった/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900201", 256, TRUE);
+	OutputLine(NULL, "「たったよ。",
+		   NULL, "— C'est tout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900202", 256, TRUE);
+	OutputLine(NULL, "…たった百年前のことよ。",
+		   NULL, "Tu trouves que c'est beaucoup, 100 ans ? Moi pas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900203", 256, TRUE);
+	OutputLine(NULL, "それにね。",
+		   NULL, "Et puis", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900204", 256, TRUE);
+	OutputLine(NULL, "昭和に入ってからだって、あるんだから。",
+		   NULL, "ça a continué même après le début de l'ère Shôwa,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano1089", 256, TRUE);
+	OutputLine(NULL, "…終戦直後に騒ぎになった",
+		   NULL, "juste après la fin de la 2e guerre mondiale, il y a eu l'histoire des", Line_WaitForInput);
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog021");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog021");}
-	//VoiceMatchingEnd
+	FadeOutBGM( 1, 1000, TRUE );
+
+//人肉缶詰事件、!w1200......あ、ごめんなさい＠この話はタブーだったわよね...？￥
+	ModPlayVoiceLS(4, 9, "org/takano1090", 256, TRUE);
+	OutputLine(NULL, "人肉缶詰事件、",
+		   NULL, " boîtes de conserves de chair humaine.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano1091", 256, TRUE);
+	OutputLine(NULL, "……あ、ごめんなさい。",
+		   NULL, " Oh désolée, Shion. ", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900206", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano1092", 256, TRUE);
 	OutputLine(NULL, "この話はタブーだったわよね…？」",
 		   NULL, "J'avais oublié que cette histoire te rendait malade.", Line_Normal);
 	ClearMessage();
@@ -7412,11 +7937,16 @@ void main()
 	ClearMessage();
 
 //「......え＠　今、鷹野さん、何て言いました＠　人肉缶詰って...、￥
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog022");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog022");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi1026", 256, TRUE);
+	OutputLine(NULL, "「……え？",
+		   NULL, "— Pardon ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1027", 256, TRUE);
+	OutputLine(NULL, "　今、鷹野さん、何て言いました？",
+		   NULL, " J'ai pas rêvé, vous venez de parler de…", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1028", 256, TRUE);
+	OutputLine(NULL, "　人肉缶詰って…、」",
+		   NULL, " Chair humaine en conserve ?", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();

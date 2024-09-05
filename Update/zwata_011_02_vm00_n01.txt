@@ -16,11 +16,6 @@ void dialog001()
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/130700241", 540, TRUE);
-	OutputLine(NULL, "……鷹野さんの方はちょっとあやふやですが、富竹さんとほぼ同じ時刻に殺害され、岐阜の山中に遺棄されたと考えるのが妥当でしょうなぁ。」",
-		   NULL, "Pour Mme Takano, l'autopsie n'est pas très concluante, mais celle de Tomitake indique clairement l'heure du décès. Ils ont sûrement été tués ensemble, et elle a été transportée jusque dans la province d'à-côté.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
@@ -50,8 +45,4 @@ void dialog003()
 
 void dialog004()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700237", 256, TRUE);
-	OutputLine(NULL, "　…管轄が岐阜県さんでね。",
-		NULL, "Elle a été retrouvée à Gifu,", Line_WaitForInput);
 }

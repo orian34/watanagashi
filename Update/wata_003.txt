@@ -159,16 +159,15 @@ void main()
 
 //「普段は温厚ないい先生なんだけどねぇ＠...どういうわけかカレーにだけはうるさいんだよ＠　偏執的なくらいに！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300001", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1009", 256, TRUE);
 	OutputLine(NULL, "「普段は温厚ないい先生なんだけどねぇ。",
 		   NULL, "— Eh bien, d'habitude, elle est très gentille et très indulgente.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300002", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1010", 256, TRUE);
 	OutputLine(NULL, "…どういうわけかカレーにだけはうるさいんだよ！",
 		   NULL, " On ne sait pas trop pourquoi, mais dès qu'on parle de curry, alors là, elle n'arrête plus !", Line_WaitForInput);
-		//VoiceMatching
-		if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_003_vm0x_n01","dialog001");}
-		if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_003_vm00_n01","dialog001");}
-		//VoiceMatchingEnd
+	ModPlayVoiceLS(4, 3, "org/mion1011", 256, TRUE);
+	OutputLine(NULL, "　偏執的なくらいに！！」",
+		   NULL, " Faut croire qu'elle en rafolle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4207,7 +4206,7 @@ void main()
 		   NULL, " des plats nés de notre consommation du riz !", Line_Continue);
 	DisableWindow();
 	DrawScene("white", 10 );
-	DrawBustshot(5, "background/furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 50, TRUE );
+	DrawBustshot(5, "background/furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 50, TRUE );
 	PlaySE( 3, "wa_007", 56, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
 	ModDrawCharacter(2, 22, "sprite/tie_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
@@ -5910,7 +5909,7 @@ void main()
 
 
 	DisableWindow();
-//	DrawBustshot( 2, "si_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 6, "sprite/si1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 	DrawScene("scene/105a", 1000 );
 
 //「ありゃ...、!w800......図星を突かれちゃって何だかがっかりですけど、これ。＠

@@ -2073,13 +2073,13 @@ void main()
 
 //「あれは絞殺された後に焼かれたことがわかってます＠......検死したのは岐阜県警さんなんですけどね＠これがちょっとおかしいんですよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700521", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1031", 256, TRUE);
 	OutputLine(NULL, "「あれは絞殺された後に焼かれたことがわかってます。",
 		   NULL, "— On sait qu'elle a été d'abord étranglée, puis brûlée.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700522", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1032", 256, TRUE);
 	OutputLine(NULL, "……検死したのは岐阜県警さんなんですけどね。",
 		   NULL, " Ce sont les policiers de Gifu qui ont procédé à l'autopsie.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700523", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1033", 256, TRUE);
 	OutputLine(NULL, "これがちょっとおかしいんですよ。",
 		   NULL, " En fait, il y a un problème aussi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2438,6 +2438,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 1000 );}
 	DrawScene("scene/107a", 1000 );
 
 //　俺にとっての事件を終わらせようと思って...＠

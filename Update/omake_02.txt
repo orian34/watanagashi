@@ -203,10 +203,12 @@ void main()
 	DrawScene("white", 200 );
 
 	DrawBustshot(5, "scene/001a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawBustshot(5, "background/furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );}
 	ShakeScreen( 1, 50, 20, 3, 0, );
 	PlaySE( 3, "wa_005", 56, 64 );
 	Wait( 100 );
 	DrawBustshot(5, "scene/001b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawBustshot(5, "background/furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );}
 	PlaySE( 3, "wa_005", 56, 64 );
 	Wait( 100 );
 	PlaySE( 3, "wa_005", 56, 64 );

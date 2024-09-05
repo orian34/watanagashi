@@ -2535,11 +2535,9 @@ void main()
 	DisableWindow();
 
 	ModDrawCharacter(2, 3, "portrait/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot(1, "e1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot(1, "e1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 
 	DrawSceneWithMask("background/yhu2", "up", 0, 0, 300 );
-//	DrawBustshotWithFiltering( 3, "e1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
-//	DrawBustshotWithFiltering( 1, "night/me_si_him_a1_zoom", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 
@@ -2653,7 +2651,6 @@ void main()
 	OutputLine(NULL, "　…魅音は…俺以外の誰かの問いかけに答えるように、…聞いてもいないのにそう答えた。",
 		   NULL, "Je n'avais pourtant demandé aucune explication... mais Mion se mit quand même à parler toute seule.", Line_Normal);
 	ClearMessage();
-//	DrawBustshotWithFiltering( 5, "black", "down", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
 
 //「公園の展望台から転落死したのは両親だけ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2702,15 +2699,12 @@ void main()
 
 //　あの子を虐めていなかったのに消されてしまった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300175", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/s02/03/130300175a_org", 256, TRUE);
 	OutputLine(NULL, "　あの子を虐めていなかったのに消されてしまった。",
-		   NULL, "Il a été enlevé, alors que pourtant il ne l'avait jamais fait souffrir.", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "Il a été enlevé, alors que pourtant il ne l'avait jamais fait souffrir.", Line_WaitForInput);
 
 //　...警察は家出したんだって決め付けたけど、悟史くんは逃げ出すような人じゃなかった＠いつも一生懸命＠誰の力も借りずにこつこつと、一人懸命に努力する人だった＠たった１人の妹のために身を粉にして頑張ってたのに、消されてしまった＠
+	ModPlayVoiceLS(4, 3, "org/s02/03/130300175b_org", 256, TRUE);
 	OutputLine(NULL, "　…警察は家出したんだって決め付けたけど、悟史くんは逃げ出すような人じゃなかった。",
 		   NULL, " La police défend mordicus qu'il a fait une fugue, mais Satoshi n'était pas du genre à fuir les problèmes.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300176", 256, TRUE);
@@ -2738,11 +2732,12 @@ void main()
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300181", 256, TRUE);
 	OutputLine(NULL, "なんて報われない悟史くん。",
 		   NULL, " Il n'a jamais eu de chance.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300182", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/s02/03/130300182a_org", 256, TRUE);
 	OutputLine(NULL, "なんて恩知らずなあの子なの。",
-		   NULL, " Elle n'a jamais appris la gratitude.", Line_Continue);
+		   NULL, " Elle n'a jamais appris la gratitude.", Line_WaitForInput);
 
 //　......あの子は呪われた子＠あの子に近付けば、それが誰でも末路は同じ＠祟りで死ぬか、!w800祟りで消えるか＠あの子に安らぎなんてあるものか、!w1000あの子に安らぎなんてあるものか＠......梨花ちゃんが消えたのもきっと沙都子のせいだよ!s0違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100違!w100違!w100違!w100違!w100違!w100違!sd...￥
+	ModPlayVoiceLS(4, 3, "org/s02/03/130300182b_org", 256, TRUE);
 	OutputLine(NULL, "　……あの子は呪われた子。",
 		   NULL, " Elle est maudite.", Line_Normal);
 
